@@ -1,8 +1,13 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+
+//create chatterbox and load yarn file
+
 ChatterboxLoadFromFile("llamaStub.yarn");
 chatterbox = ChatterboxCreate("llamaStub.yarn");
+
+//determine which node from yarn file to load based on room name
 
 if (room == room_start) {
 	ChatterboxJump(chatterbox,"Start");
@@ -20,9 +25,13 @@ if (room == room_start) {
 	ChatterboxJump(chatterbox,"End");
 }
 
+
+//variables for text box set up
 textWidth = 400;
 lineHeight = 28;
 
+
+//get text and node title from yarn file
 text = ChatterboxGetContent(chatterbox, 0);
 nodeTitle = ChatterboxGetCurrent(chatterbox);
 
