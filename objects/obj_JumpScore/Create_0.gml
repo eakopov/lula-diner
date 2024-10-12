@@ -1,0 +1,1 @@
+global.jpoints = 0;
