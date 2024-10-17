@@ -1,5 +1,10 @@
 {
-  "FolderOrderSettings":[],
+  "FolderOrderSettings":[
+    {"name":"Pizza Sprites","order":2,"path":"folders/Sprites/Pizza Sprites.yy",},
+    {"name":"Environment","order":1,"path":"folders/Sprites/Pizza Sprites/Environment.yy",},
+    {"name":"Food","order":2,"path":"folders/Sprites/Pizza Sprites/Food.yy",},
+    {"name":"Customers","order":3,"path":"folders/Sprites/Pizza Sprites/Customers.yy",},
+  ],
   "ResourceOrderSettings":[
     {"name":"globals","order":17,"path":"objects/globals/globals.yy",},
     {"name":"obj_lula_deck","order":1,"path":"objects/obj_lula_deck/obj_lula_deck.yy",},
