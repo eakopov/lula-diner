@@ -34,3 +34,8 @@ else
 // Move and collide with oSolid
 move_and_collide(xsp, ysp, obj_ph_jump_ground);
 
+// Check if player goes offscreen (outside room boundaries)
+if (x < 0 || x > room_width || y < 0 || y > room_height)
+{
+    room_restart(); // Reset the room
+}
