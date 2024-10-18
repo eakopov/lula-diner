@@ -1,9 +1,9 @@
 {
   "FolderOrderSettings":[
     {"name":"Pizza Sprites","order":2,"path":"folders/Sprites/Pizza Sprites.yy",},
+    {"name":"Customers","order":3,"path":"folders/Sprites/Pizza Sprites/Customers.yy",},
     {"name":"Environment","order":1,"path":"folders/Sprites/Pizza Sprites/Environment.yy",},
     {"name":"Food","order":2,"path":"folders/Sprites/Pizza Sprites/Food.yy",},
-    {"name":"Customers","order":3,"path":"folders/Sprites/Pizza Sprites/Customers.yy",},
   ],
   "ResourceOrderSettings":[
     {"name":"globals","order":17,"path":"objects/globals/globals.yy",},
@@ -118,11 +118,15 @@
     {"name":"ChatterboxVariablesResetAll","order":10,"path":"scripts/ChatterboxVariablesResetAll/ChatterboxVariablesResetAll.yy",},
     {"name":"ChatterboxWait","order":9,"path":"scripts/ChatterboxWait/ChatterboxWait.yy",},
     {"name":"IsChatterbox","order":5,"path":"scripts/IsChatterbox/IsChatterbox.yy",},
-    {"name":"spr_background","order":2,"path":"sprites/spr_background/spr_background.yy",},
+    {"name":"spr_bg","order":5,"path":"sprites/spr_bg/spr_bg.yy",},
     {"name":"spr_chef","order":4,"path":"sprites/spr_chef/spr_chef.yy",},
+    {"name":"spr_clock","order":6,"path":"sprites/spr_clock/spr_clock.yy",},
     {"name":"spr_counter","order":1,"path":"sprites/spr_counter/spr_counter.yy",},
+    {"name":"spr_pepperoni_pizza","order":1,"path":"sprites/spr_pepperoni_pizza/spr_pepperoni_pizza.yy",},
+    {"name":"spr_pineapple_pizza","order":2,"path":"sprites/spr_pineapple_pizza/spr_pineapple_pizza.yy",},
+    {"name":"spr_sign","order":3,"path":"sprites/spr_sign/spr_sign.yy",},
+    {"name":"spr_spinach_pizza","order":3,"path":"sprites/spr_spinach_pizza/spr_spinach_pizza.yy",},
     {"name":"spr_text_display_start","order":6,"path":"sprites/spr_text_display_start/spr_text_display_start.yy",},
-    {"name":"spr_waiting","order":3,"path":"sprites/spr_waiting/spr_waiting.yy",},
     {"name":"sprite_blk_bkground","order":1,"path":"sprites/sprite_blk_bkground/sprite_blk_bkground.yy",},
   ],
 }
