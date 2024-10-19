@@ -25,7 +25,7 @@ if (vx !=0 || vy != 0) {
 	x += vx;
 	}
 	
-	if !collision_point(x, y+(2*vy), obj_par_environment, true, true) {
+	if !collision_point(x, y+vy, obj_par_environment, true, true) {
 	y += vy;	
 	}
 }
