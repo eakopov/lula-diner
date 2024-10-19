@@ -1,16 +1,19 @@
 {
   "FolderOrderSettings":[
     {"name":"Jump_Objects","order":18,"path":"folders/Objects/Jump_Objects.yy",},
-    {"name":"Jump_Sprites","order":2,"path":"folders/Sprites/Jump_Sprites.yy",},
+    {"name":"Jump_Sprites","order":3,"path":"folders/Sprites/Jump_Sprites.yy",},
+    {"name":"Text Boxes","order":1,"path":"folders/Sprites/Text Boxes.yy",},
   ],
   "ResourceOrderSettings":[
     {"name":"globals","order":17,"path":"objects/globals/globals.yy",},
+    {"name":"obj_hoop_manager","order":2,"path":"objects/obj_hoop_manager/obj_hoop_manager.yy",},
     {"name":"obj_lula_deck","order":1,"path":"objects/obj_lula_deck/obj_lula_deck.yy",},
     {"name":"obj_lula_end","order":2,"path":"objects/obj_lula_end/obj_lula_end.yy",},
     {"name":"obj_lula_jump","order":3,"path":"objects/obj_lula_jump/obj_lula_jump.yy",},
     {"name":"obj_lula_pizza","order":4,"path":"objects/obj_lula_pizza/obj_lula_pizza.yy",},
     {"name":"obj_lula_rhythm","order":5,"path":"objects/obj_lula_rhythm/obj_lula_rhythm.yy",},
     {"name":"obj_lula_start","order":6,"path":"objects/obj_lula_start/obj_lula_start.yy",},
+    {"name":"obj_ph_hoops","order":1,"path":"objects/obj_ph_hoops/obj_ph_hoops.yy",},
     {"name":"obj_text_display_deck","order":1,"path":"objects/obj_text_display_deck/obj_text_display_deck.yy",},
     {"name":"obj_text_display_end","order":2,"path":"objects/obj_text_display_end/obj_text_display_end.yy",},
     {"name":"obj_text_display_jump","order":3,"path":"objects/obj_text_display_jump/obj_text_display_jump.yy",},
@@ -116,7 +119,8 @@
     {"name":"ChatterboxVariablesResetAll","order":10,"path":"scripts/ChatterboxVariablesResetAll/ChatterboxVariablesResetAll.yy",},
     {"name":"ChatterboxWait","order":9,"path":"scripts/ChatterboxWait/ChatterboxWait.yy",},
     {"name":"IsChatterbox","order":5,"path":"scripts/IsChatterbox/IsChatterbox.yy",},
+    {"name":"obj_ph_hoops_sprite","order":1,"path":"sprites/obj_ph_hoops_sprite/obj_ph_hoops_sprite.yy",},
     {"name":"spr_text_display_start","order":6,"path":"sprites/spr_text_display_start/spr_text_display_start.yy",},
-    {"name":"sprite_blk_bkground","order":1,"path":"sprites/sprite_blk_bkground/sprite_blk_bkground.yy",},
+    {"name":"sprite_blk_bkground","order":2,"path":"sprites/sprite_blk_bkground/sprite_blk_bkground.yy",},
   ],
 }
