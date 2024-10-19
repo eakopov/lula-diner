@@ -188,6 +188,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Text Boxes","folderPath":"folders/Sprites/Text Boxes.yy","order":9,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy","order":2,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy","order":8,},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Rythem Assets","folderPath":"folders/Rythem Assets.yy","order":16,},
   ],
   "AudioGroups": [
     {"resourceType":"GMAudioGroup","resourceVersion":"1.3","name":"audiogroup_default","targets":-1,},
@@ -199,6 +200,7 @@
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"chatterbox_license.txt","CopyToMask":-1,"filePath":"datafiles",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"llamaStub.yarn","CopyToMask":-1,"filePath":"datafiles",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"practiceYarn.yarn","CopyToMask":-1,"filePath":"datafiles",},
+    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"gmlChart.chart","CopyToMask":-1,"filePath":"datafiles",},
   ],
   "MetaData": {
     "IDEVersion": "2022.0.2.51",
