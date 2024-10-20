@@ -1,5 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
+// Create Event in obj_start (or an equivalent object)
+room_goto(room_deck);  // This will immediately skip to room_deck when the game starts
 
 
 //create chatterbox and load yarn file
