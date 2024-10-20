@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_scientist_1",
+  "name": "obj_scientist_2",
   "spriteId": {
-    "name": "spr_scientist_1",
-    "path": "sprites/spr_scientist_1/spr_scientist_1.yy",
+    "name": "spr_scientist_2",
+    "path": "sprites/spr_scientist_2/spr_scientist_2.yy",
   },
   "solid": false,
   "visible": true,

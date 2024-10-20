@@ -21,6 +21,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_718BE2FC","properties":[],"isDnd":false,"objectId":{"name":"obj_boundary","path":"objects/obj_boundary/obj_boundary.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":21.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":352.0,"y":320.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_70204F70","properties":[],"isDnd":false,"objectId":{"name":"obj_boundary","path":"objects/obj_boundary/obj_boundary.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":21.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":352.0,"y":704.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6543BE43","properties":[],"isDnd":false,"objectId":{"name":"obj_boundary","path":"objects/obj_boundary/obj_boundary.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":13.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":704.0,"y":512.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_20D2B000","properties":[],"isDnd":false,"objectId":{"name":"obj_scientist_2","path":"objects/obj_scientist_2/obj_scientist_2.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":224.0,"y":416.0,},
       ],"visible":true,"depth":100,"userdefinedDepth":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_16FE51CB","properties":[],"isDnd":false,"objectId":{"name":"obj_lula_clothing","path":"objects/obj_lula_clothing/obj_lula_clothing.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":64.0,"y":544.0,},
@@ -86,6 +87,7 @@
     {"name":"inst_70204F70","path":"rooms/room_clothing/room_clothing.yy",},
     {"name":"inst_6543BE43","path":"rooms/room_clothing/room_clothing.yy",},
     {"name":"inst_18111A09","path":"rooms/room_clothing/room_clothing.yy",},
+    {"name":"inst_20D2B000","path":"rooms/room_clothing/room_clothing.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
