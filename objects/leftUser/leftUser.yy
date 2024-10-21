@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "rigntNotes",
+  "name": "leftUser",
   "spriteId": {
-    "name": "rightNote",
-    "path": "sprites/rightNote/rightNote.yy",
+    "name": "LeftNote",
+    "path": "sprites/LeftNote/LeftNote.yy",
   },
   "solid": false,
   "visible": true,
@@ -25,7 +25,7 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":37,"eventType":9,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],

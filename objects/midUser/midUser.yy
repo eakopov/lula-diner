@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "rigntNotes",
+  "name": "midUser",
   "spriteId": {
-    "name": "rightNote",
-    "path": "sprites/rightNote/rightNote.yy",
+    "name": "MidNote",
+    "path": "sprites/MidNote/MidNote.yy",
   },
   "solid": false,
   "visible": true,
@@ -25,7 +25,7 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":40,"eventType":9,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
