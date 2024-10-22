@@ -1,13 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_text_display_deck",
-  "eventList":[],
+  "%Name":"obj_scientist_2_select",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"obj_text_display_deck",
+  "name":"obj_scientist_2_select",
   "overriddenProperties":[],
   "parent":{
-    "name":"Text Boxes",
-    "path":"folders/Objects/Text Boxes.yy",
+    "name":"Select",
+    "path":"folders/Objects/Deck/Select.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -28,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sprite4",
-    "path":"sprites/Sprite4/Sprite4.yy",
+    "name":"Sprite_scientist_2",
+    "path":"sprites/Sprite_scientist_2/Sprite_scientist_2.yy",
   },
   "spriteMaskId":null,
   "visible":true,

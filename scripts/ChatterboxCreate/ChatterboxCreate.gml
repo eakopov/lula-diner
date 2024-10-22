@@ -197,47 +197,48 @@ function __ChatterboxClass(_filename, _singleton, _local_scope) constructor
         __ChatterboxVM();
     }
     
-    static Select = function(_index)
+ SelectOption = function(_index)
+{
+    if (!VerifyIsLoaded())
     {
-        if (!VerifyIsLoaded())
+        __ChatterboxError("Could not select option because \"", filename, "\" is not loaded");
+        return undefined;
+    }
+
+    if (stopped)
+    {
+        __ChatterboxTrace("Warning! Could not select option because this chatterbox has been stopped");
+        return undefined;
+    }
+
+    if ((_index < 0) || (_index >= array_length(option)))
+    {
+        __ChatterboxTrace("Out of bounds option index (got ", _index, ", maximum index for options is ", array_length(option)-1, ")");
+        return undefined;
+    }
+
+    if (optionConditionBool[_index])
+    {
+        var _lookup = __CHATTERBOX_OPTION_CHOSEN_PREFIX + string(__optionUUIDArray[_index]);
+        if (ds_map_exists(_system.__variablesMap, _lookup))
         {
-            __ChatterboxError("Could not select option because \"", filename, "\" is not loaded");
-            return undefined;
-        }
-        
-        if (stopped)
-        {
-            __ChatterboxTrace("Warning! Could not select option because this chatterbox has been stopped");
-            return undefined;
-        }
-        
-        if ((_index < 0) || (_index >= array_length(option)))
-        {
-            __ChatterboxTrace("Out of bounds option index (got ", _index, ", maximum index for options is ", array_length(option)-1, ")");
-            return undefined;
-        }
-        
-        if (optionConditionBool[_index])
-        {
-            var _lookup = __CHATTERBOX_OPTION_CHOSEN_PREFIX + string(__optionUUIDArray[_index]);
-            if (ds_map_exists(_system.__variablesMap, _lookup))
-            {
-                __ChatterboxVariableSetInternal(_lookup, _system.__variablesMap[? _lookup] + 1);
-            }
-            else
-            {
-                __ChatterboxVariableSetInternal(_lookup, 1);
-                ds_list_add(_system.__constantsList, _lookup);
-            }
-            
-            current_instruction = optionInstruction[_index];
-            __ChatterboxVM();
+            __ChatterboxVariableSetInternal(_lookup, _system.__variablesMap[? _lookup] + 1);
         }
         else
         {
-            __ChatterboxTrace("Warning! Trying to select an option that failed its conditional check");
+            __ChatterboxVariableSetInternal(_lookup, 1);
+            ds_list_add(_system.__constantsList, _lookup);
         }
+
+        current_instruction = optionInstruction[_index];
+        __ChatterboxVM();
     }
+    else
+    {
+        __ChatterboxTrace("Warning! Trying to select an option that failed its conditional check");
+    }
+}
+
     
     static Continue = function()
     {
