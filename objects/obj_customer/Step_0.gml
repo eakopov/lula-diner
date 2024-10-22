@@ -1,16 +1,14 @@
 if (!ready_to_seat) {
-    var table = scr_find_empty_table();  // Find an empty table
+    // Move the customer to the carpet at (50, 576)
+    move_towards_point(50, 576, move_speed);
+    
+    // Check if the customer is close enough to the carpet and stop them
+    if (point_distance(x, y, 50, 576) < 5) {
+        ready_to_seat = true;  // Mark the customer as ready to be seated
+        x = 50;  // Snap customer to carpet X position
+        y = 576;  // Snap customer to carpet Y position
 
-    if (table != noone) {
-        // Move toward the empty table
-        move_towards_point(table.x, table.y, move_speed);
-
-        // If close enough to the table, mark the customer as seated
-        if (point_distance(x, y, table.x, table.y) < 5) {
-            ready_to_seat = true;
-            table.occupied = true;  // Mark the table as occupied
-            x = table.x;  // Snap customer to table position
-            y = table.y;
-        }
+        // The customer should now wait here until interacted with
+        speed = 0;  // Completely stop movement
     }
 }
