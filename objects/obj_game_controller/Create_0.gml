@@ -1,12 +1,37 @@
-/// @description Insert description here
-// You can write your code in this editor
-if(instance_exists(globals)){
-	if(id != instance_find(globals, 0)){
-		instance_destroy();
-	}
-}	
+// Scientist Selection and Quiz Initialization Logic
 
-global.PointsCounter = 0;
+if (mouse_check_button_pressed(mb_left)) {
+    if (place_meeting(mouse_x, mouse_y, obj_scientist_1_select)) {
+        global.questions = global.scientist_1_questions;
+        global.current_question_index = 0;
+        instance_create_layer(100, 100, "LayerName", obj_question_display);  // Create question display at coordinates (100, 100)
+    }
+    else if (place_meeting(mouse_x, mouse_y, obj_scientist_2_select)) {
+        global.questions = global.scientist_2_questions;
+        global.current_question_index = 0;
+        instance_create_layer(100, 100, "LayerName", obj_question_display);  // Create question display
+    }
+    else if (place_meeting(mouse_x, mouse_y, obj_scientist_3_select)) {
+        global.questions = global.scientist_3_questions;
+        global.current_question_index = 0;
+        instance_create_layer(100, 100, "LayerName", obj_question_display);  // Create question display
+    }
+    else if (place_meeting(mouse_x, mouse_y, obj_scientist_4_select)) {
+        global.questions = global.scientist_4_questions;
+        global.current_question_index = 0;
+        instance_create_layer(100, 100, "LayerName", obj_question_display);  // Create question display
+    }
+    else if (place_meeting(mouse_x, mouse_y, obj_scientist_5_select)) {
+        global.questions = global.scientist_5_questions;
+        global.current_question_index = 0;
+        instance_create_layer(100, 100, "LayerName", obj_question_display);  // Create question display
+    }
+    else if (place_meeting(mouse_x, mouse_y, obj_scientist_6_select)) {
+        global.questions = global.scientist_6_questions;
+        global.current_question_index = 0;
+        instance_create_layer(100, 100, "LayerName", obj_question_display);  // Create question display
+    }
+}
 
 // Questions for Scientist 1 (Chemistry)
 global.scientist_1_questions = [

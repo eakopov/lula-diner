@@ -1,5 +1,3 @@
-// Left Pressed Event for Scientist 1
-global.scientist_4_selected = true;
-
-// Mouse Left Pressed for Scientist
-room_goto(room_deck);  // Go to the quiz room when the player selects a scientist
+// Mouse Left Button Event
+global.selected_scientist = 4;
+room_goto(room_deck);
