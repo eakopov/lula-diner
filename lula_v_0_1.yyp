@@ -26,6 +26,7 @@
     {"$GMFolder":"","%Name":"Fonts","folderPath":"folders/Fonts.yy","name":"Fonts","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Notes","folderPath":"folders/Notes.yy","name":"Notes","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Objects","folderPath":"folders/Objects.yy","name":"Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Pizza Objects","folderPath":"folders/Objects/Pizza Objects.yy","name":"Pizza Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Lula","folderPath":"folders/Objects/Lula.yy","name":"Lula","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Text Boxes","folderPath":"folders/Objects/Text Boxes.yy","name":"Text Boxes","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Paths","folderPath":"folders/Paths.yy","name":"Paths","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -57,6 +58,7 @@
   "name":"lula_v_0_1",
   "resources":[
     {"id":{"name":"globals","path":"objects/globals/globals.yy",},},
+    {"id":{"name":"obj_bg","path":"objects/obj_bg/obj_bg.yy",},},
     {"id":{"name":"obj_lula_clothing","path":"objects/obj_lula_clothing/obj_lula_clothing.yy",},},
     {"id":{"name":"obj_lula_deck","path":"objects/obj_lula_deck/obj_lula_deck.yy",},},
     {"id":{"name":"obj_lula_end","path":"objects/obj_lula_end/obj_lula_end.yy",},},
