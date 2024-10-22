@@ -6,19 +6,20 @@ var customer_waiting = false;  // Initialize as false
 
 // Loop through all obj_customer instances and check their position
 with (obj_customer) {
-    if (point_distance(x, y, 50, 576) < 10) {  // Check if any customer is near (50, 576)
-        customer_waiting = true;  // A customer is already waiting near the carpet
-        break;  // No need to check further if we found a waiting customer
+    if (point_distance(x, y, 50, 576) < 10) {
+        customer_waiting = true; 
+        break; 
     }
 }
 
-// Only spawn a new customer if no customer is currently waiting near the carpet
+// spawn logic
 if (spawn_timer >= spawn_interval && !customer_waiting) {
-    // Spawn customer off-screen at (0, 576)
+    // spawn customer off-screen at (0, 576)
     var customer = instance_create_layer(0, 576, "Instances", obj_customer);
     
     show_debug_message("Customer spawned at (0, 576)");
     
-    // Reset the timer
-    spawn_timer = 0;  // Reset the timer
+    // reset the timer
+    spawn_timer = 0; 
 }
+ 

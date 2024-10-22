@@ -12,3 +12,12 @@ if (!ready_to_seat) {
         speed = 0;  // Completely stop movement
     }
 }
+
+if (ready_to_seat && !ready_to_order) {
+    order_timer -= 1;  // Count down the timer
+    
+    if (order_timer <= 0) {
+        ready_to_order = true;  // customer is ready to order
+        show_debug_message("Customer is ready to order");
+    }
+}

@@ -3,3 +3,5 @@ move_speed = 2;
 ready_to_seat = false;
 depth = -10;
 image_xscale = -1;
+ready_to_order = false;
+order_timer = 300;

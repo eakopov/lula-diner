@@ -1,12 +1,12 @@
 function scr_find_empty_table() {
     var table_found = noone;
 
-    // Loop through all tables in the room
+    // loop through all tables in the room
     with (obj_table) {
-        if (!occupied) {  // Check if the table is unoccupied
-            table_found = id;  // Set this table as found
-            break;  // Stop checking once we find an empty table
+        if (!occupied) {  // check if the table is unoccupied
+            table_found = id;  // set this table as found
+            break;
         }
     }
-    return table_found;  // Return the table's ID or noone if none found
+    return table_found;
 }
