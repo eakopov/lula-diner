@@ -163,12 +163,12 @@
     "children": [],
   },
   "RoomOrderNodes": [
+    {"roomId":{"name":"room_rhythm","path":"rooms/room_rhythm/room_rhythm.yy",},},
     {"roomId":{"name":"room_start","path":"rooms/room_start/room_start.yy",},},
     {"roomId":{"name":"room_clothing","path":"rooms/room_clothing/room_clothing.yy",},},
     {"roomId":{"name":"room_jump","path":"rooms/room_jump/room_jump.yy",},},
     {"roomId":{"name":"room_pizza","path":"rooms/room_pizza/room_pizza.yy",},},
     {"roomId":{"name":"room_deck","path":"rooms/room_deck/room_deck.yy",},},
-    {"roomId":{"name":"room_rhythm","path":"rooms/room_rhythm/room_rhythm.yy",},},
     {"roomId":{"name":"room_end","path":"rooms/room_end/room_end.yy",},},
   ],
   "Folders": [
