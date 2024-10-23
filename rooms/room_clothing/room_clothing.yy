@@ -30,6 +30,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_18111A09","properties":[],"isDnd":false,"objectId":{"name":"obj_scientist_1","path":"objects/obj_scientist_1/obj_scientist_1.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":160.0,"y":416.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_253361B8","properties":[],"isDnd":false,"objectId":{"name":"obj_scientist_3","path":"objects/obj_scientist_3/obj_scientist_3.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":416.0,"y":416.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_62DE2800","properties":[],"isDnd":false,"objectId":{"name":"obj_scientist_2","path":"objects/obj_scientist_2/obj_scientist_2.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":288.0,"y":416.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_55D67916","properties":[],"isDnd":false,"objectId":{"name":"obj_clothing_goggles","path":"objects/obj_clothing_goggles/obj_clothing_goggles.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":64.0,"y":544.0,},
       ],"visible":true,"depth":-100,"userdefinedDepth":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"clothing_room","tilesetId":{"name":"tile_clothing_floor","path":"tilesets/tile_clothing_floor/tile_clothing_floor.yy",},"x":0,"y":0,"tiles":{"TileDataFormat":1,"SerialiseWidth":45,"SerialiseHeight":45,"TileCompressedData":[
 -945,-2147483648,1080,3,2,3,2,3,2,3,2,3,2,3,2,3,2,3,2,3,2,3,2,3,2,3,2,3,2,3,2,3,2,3,2,3,2,3,2,3,2,3,2,3,2,
@@ -120,6 +121,7 @@
     {"name":"inst_62DE2800","path":"rooms/room_clothing/room_clothing.yy",},
     {"name":"inst_12B5BC6B","path":"rooms/room_clothing/room_clothing.yy",},
     {"name":"inst_299105BC","path":"rooms/room_clothing/room_clothing.yy",},
+    {"name":"inst_55D67916","path":"rooms/room_clothing/room_clothing.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

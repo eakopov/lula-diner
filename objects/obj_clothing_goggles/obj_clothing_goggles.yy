@@ -1,20 +1,17 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_scientist_3",
+  "name": "obj_clothing_goggles",
   "spriteId": {
-    "name": "spr_scientist_3",
-    "path": "sprites/spr_scientist_3/spr_scientist_3.yy",
+    "name": "spr_clothing_goggles",
+    "path": "sprites/spr_clothing_goggles/spr_clothing_goggles.yy",
   },
   "solid": false,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": {
-    "name": "obj_par_environment",
-    "path": "objects/obj_par_environment/obj_par_environment.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -31,7 +28,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "scientists",
-    "path": "folders/Objects/clothing_game/scientists.yy",
+    "name": "clothing",
+    "path": "folders/Objects/clothing_game/clothing.yy",
   },
 }

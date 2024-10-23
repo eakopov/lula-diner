@@ -31,7 +31,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "clothing_game",
-    "path": "folders/Objects/clothing_game.yy",
+    "name": "environment",
+    "path": "folders/Objects/clothing_game/environment.yy",
   },
 }
