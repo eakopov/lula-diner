@@ -68,7 +68,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "clothing_game",
-    "path": "folders/Sprites/clothing_game.yy",
+    "name": "clothing",
+    "path": "folders/Sprites/clothing_game/clothing.yy",
   },
 }
