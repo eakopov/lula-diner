@@ -14,6 +14,7 @@
     {"name":"obj_lula_rhythm","order":5,"path":"objects/obj_lula_rhythm/obj_lula_rhythm.yy",},
     {"name":"obj_lula_start","order":6,"path":"objects/obj_lula_start/obj_lula_start.yy",},
     {"name":"obj_ph_hoops","order":1,"path":"objects/obj_ph_hoops/obj_ph_hoops.yy",},
+    {"name":"obj_ph_score","order":3,"path":"objects/obj_ph_score/obj_ph_score.yy",},
     {"name":"obj_text_display_deck","order":1,"path":"objects/obj_text_display_deck/obj_text_display_deck.yy",},
     {"name":"obj_text_display_end","order":2,"path":"objects/obj_text_display_end/obj_text_display_end.yy",},
     {"name":"obj_text_display_jump","order":3,"path":"objects/obj_text_display_jump/obj_text_display_jump.yy",},

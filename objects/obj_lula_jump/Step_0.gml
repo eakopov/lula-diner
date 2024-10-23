@@ -23,12 +23,12 @@ if place_meeting(x, y + 1, obj_ph_jump_ground)
     ysp = 0; // Stop falling
     if keyboard_check(vk_up) || keyboard_check(ord("W"))
     {
-        ysp = -2; // Jump
+        ysp = -100; // Jump
     }
 }
 else
 {
-    ysp += 0.1; // Continue falling if not on the ground
+    ysp += 1; // Continue falling if not on the ground
 }
 
 // Move and collide with oSolid
@@ -38,4 +38,23 @@ move_and_collide(xsp, ysp, obj_ph_jump_ground);
 if (x < 0 || x > room_width || y < 0 || y > room_height)
 {
     room_restart(); // Reset the room
+}
+
+// Check if the player has passed through a hoop
+if place_meeting(x, y, obj_ph_hoops)
+{
+    // Get the y-position of the hoop the player is currently passing through
+    var hoop_y = instance_place(x, y, obj_ph_hoops).y;
+
+    // Check if the player is passing upwards or downwards through the hoop
+    if (y < hoop_y && ysp < 0) // Passing upwards
+    {
+        global.jump_score += 50; // Add 50 points for upward pass
+        with (instance_place(x, y, obj_ph_hoops)) instance_destroy(); // Destroy hoop 
+    }
+    else if (y > hoop_y && ysp > 0) // Passing downwards
+    {
+        global.jump_score += 50; // Add 50 points for downward pass
+        with (instance_place(x, y, obj_ph_hoops)) instance_destroy(); // Destroy hoop
+    }
 }
