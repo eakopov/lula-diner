@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_clothing_helm",
+  "name": "obj_clothing_briefcase",
   "spriteId": {
-    "name": "spr_clothing_helm",
-    "path": "sprites/spr_clothing_helm/spr_clothing_helm.yy",
+    "name": "spr_clothing_briefcase",
+    "path": "sprites/spr_clothing_briefcase/spr_clothing_briefcase.yy",
   },
   "solid": false,
   "visible": true,
