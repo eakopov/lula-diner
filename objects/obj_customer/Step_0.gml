@@ -21,3 +21,13 @@ if (ready_to_seat && !ready_to_order) {
         show_debug_message("Customer is ready to order");
     }
 }
+
+if (ready_to_seat && ready_to_order) {
+    show_debug_message("Order taken by Lula");
+
+    // Send the order to the chef (implement logic below)
+    receive_order(id);  // Send the customer ID to the chef
+
+    ready_to_order = false;  // Prevent taking the order again
+    obj_controller.selected_customer = noone;  // Clear the selected customer
+}
