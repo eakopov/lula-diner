@@ -3,5 +3,8 @@
 if(place_meeting(x, y, midNote)){
 	with( instance_place(x, y, midNote) ){
 		instance_destroy();
+		addPoints(50);
 	}	
-}
+} else {
+	removePoints(10);
+}	
