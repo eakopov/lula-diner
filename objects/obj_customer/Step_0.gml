@@ -31,3 +31,20 @@ if (ready_to_seat && ready_to_order) {
     ready_to_order = false;  // Prevent taking the order again
     obj_controller.selected_customer = noone;  // Clear the selected customer
 }
+
+if (ready_to_eat) {
+    eating_timer -= 1;  // Count down the eating timer
+    
+    if (eating_timer <= 0) {
+        show_debug_message("Customer finished eating and is leaving.");
+        instance_destroy(id);  // Customer leaves the restaurant
+        
+        // Mark the table as unoccupied
+        var nearest_table = instance_nearest(x, y, obj_table);
+        nearest_table.occupied = false;
+        nearest_table.customer_id = noone;
+
+        // Give points to the player
+        obj_controller.player_score += 10;
+    }
+}

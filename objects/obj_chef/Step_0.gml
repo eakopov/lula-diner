@@ -8,7 +8,8 @@ if (array_length(order_queue) > 0) {
         // Pizza is ready, place it on the counter
         instance_create_layer(46, 678, "Instances", obj_cheese);  // Create pizza at counter position
         obj_cheese.customer_id = current_order;  // Attach the customer ID to the pizza
-        
+		obj_cheese.is_ready = true;
+		
         // Remove the order from the queue
         array_delete(order_queue, 0, 1);
         
