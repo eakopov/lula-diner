@@ -13,7 +13,7 @@ if (!ready_to_seat) {
     }
 }
 
-if (seated) {
+if (seated && !order_taken) {
     order_timer -= 1;  // Count down the timer
     
     if (order_timer <= 0) {
@@ -22,15 +22,6 @@ if (seated) {
     }
 }
 
-if (ready_to_seat && ready_to_order) {
-    show_debug_message("Order for customer " + string(id) + "is ready to be taken");
-
-    // Send the order to the chef (implement logic below)
-    receive_order(id);  // Send the customer ID to the chef
-
-    ready_to_order = false;  // Prevent taking the order again
-    obj_controller.selected_customer = noone;  // Clear the selected customer
-}
 
 if (ready_to_eat) {
     eating_timer -= 1;  // Count down the eating timer

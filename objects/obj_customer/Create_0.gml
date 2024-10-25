@@ -6,3 +6,4 @@ image_xscale = -1;
 ready_to_order = false;
 order_timer = 300;
 seated = false;
+order_taken = false;
