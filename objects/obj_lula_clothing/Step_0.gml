@@ -30,3 +30,6 @@ if (vx !=0 || vy != 0) {
 	}
 }
 
+obj_clothing_controller.colliding_with_scientist_1 = place_meeting(x + vx, y + vy, obj_scientist_1);
+obj_clothing_controller.colliding_with_scientist_2 = place_meeting(x + vx, y + vy, obj_scientist_2);
+obj_clothing_controller.colliding_with_scientist_3 = place_meeting(x + vx, y + vy, obj_scientist_3);

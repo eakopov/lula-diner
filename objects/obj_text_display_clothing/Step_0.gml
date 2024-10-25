@@ -6,13 +6,31 @@
 var _select = -1;
 
 
+if (obj_clothing_controller.colliding_with_scientist_1) {
+			text = "collide scientist 1";
+		} else if (obj_clothing_controller.colliding_with_scientist_2) {
+			text = "collide scientist 2";
+		} else if (obj_clothing_controller.colliding_with_scientist_3) {
+			text = "collide scientist 3";
+		}
+		
+		
 
 //waiting means one line of diaglogue has been given but there are more lines, press space to advance
 if ChatterboxIsWaiting(chatterbox){
 	if keyboard_check_pressed(vk_space){
 		ChatterboxContinue(chatterbox);
-		text = ChatterboxGetContent(chatterbox,0);
-		nodeTitle   = ChatterboxGetCurrent(chatterbox); }
+		
+		if (obj_clothing_controller.colliding_with_scientist_1) {
+			text = "collide scientist 1";
+		} else if (obj_clothing_controller.colliding_with_scientist_2) {
+			text = "collide scientist 2";
+		} else if (obj_clothing_controller.colliding_with_scientist_3) {
+			text = "collide scientist 3";
+		} else {
+			text = ChatterboxGetContent(chatterbox,0);
+			nodeTitle   = ChatterboxGetCurrent(chatterbox); }
+		}		
 } else
 	{
 		
