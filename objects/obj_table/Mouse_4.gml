@@ -8,7 +8,10 @@ if (!occupied && obj_controller.selected_customer != noone) {
 
     // Mark the table as occupied
     occupied = true;
-    
+	
+	// Set customer as ready to order
+	customer_id.seated = true;
+	
     // Clear the selected customer
     obj_controller.selected_customer = noone;
 }
@@ -28,6 +31,9 @@ if (occupied && obj_controller.selected_pizza != noone) {
         customer.ready_to_eat = true;
         customer.eating_timer = 300;  // Set eating duration
 
+		// Remove pizza from counter
+		instance_destroy(selected_pizza);
+		
         // Mark the table as having the pizza delivered
         obj_controller.selected_pizza = noone;  // Clear the selected pizza
         show_debug_message("Cheese pizza delivered to the correct customer.");

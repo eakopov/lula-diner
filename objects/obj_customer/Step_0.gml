@@ -13,7 +13,7 @@ if (!ready_to_seat) {
     }
 }
 
-if (ready_to_seat && !ready_to_order) {
+if (seated) {
     order_timer -= 1;  // Count down the timer
     
     if (order_timer <= 0) {
@@ -23,7 +23,7 @@ if (ready_to_seat && !ready_to_order) {
 }
 
 if (ready_to_seat && ready_to_order) {
-    show_debug_message("Order taken by Lula");
+    show_debug_message("Order for customer " + string(id) + "is ready to be taken");
 
     // Send the order to the chef (implement logic below)
     receive_order(id);  // Send the customer ID to the chef
