@@ -34,8 +34,23 @@ if (ready_to_eat) {
         var nearest_table = instance_nearest(x, y, obj_table);
         nearest_table.occupied = false;
         nearest_table.customer_id = noone;
-
-        // Give points to the player
-        obj_controller.player_score += 10;
+		
+		// Calculate total time spent in restaurant
+		var total_time = (current_time - entry_time) / 1000;
+		show_debug_message("Time spent in restaurant: " + string(total_time));
+		
+		var money;
+		
+		if (total_time < 30) {
+			money = 20;
+		} else if (total_time < 60) {
+			money = 10;
+		} else {
+			money = 2;
+		}
+		
+		obj_controller.player_money += money;
+		
+		
     }
 }
