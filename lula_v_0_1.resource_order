@@ -7,6 +7,7 @@
   "ResourceOrderSettings":[
     {"name":"globals","order":17,"path":"objects/globals/globals.yy",},
     {"name":"obj_hoop_manager","order":2,"path":"objects/obj_hoop_manager/obj_hoop_manager.yy",},
+    {"name":"obj_loss_screen","order":5,"path":"objects/obj_loss_screen/obj_loss_screen.yy",},
     {"name":"obj_lula_deck","order":1,"path":"objects/obj_lula_deck/obj_lula_deck.yy",},
     {"name":"obj_lula_end","order":2,"path":"objects/obj_lula_end/obj_lula_end.yy",},
     {"name":"obj_lula_jump","order":3,"path":"objects/obj_lula_jump/obj_lula_jump.yy",},
@@ -21,6 +22,7 @@
     {"name":"obj_text_display_pizza","order":4,"path":"objects/obj_text_display_pizza/obj_text_display_pizza.yy",},
     {"name":"obj_text_display_rhythm","order":5,"path":"objects/obj_text_display_rhythm/obj_text_display_rhythm.yy",},
     {"name":"obj_text_display_start","order":6,"path":"objects/obj_text_display_start/obj_text_display_start.yy",},
+    {"name":"obj_win_screen","order":4,"path":"objects/obj_win_screen/obj_win_screen.yy",},
     {"name":"room_clothing","order":1,"path":"rooms/room_clothing/room_clothing.yy",},
     {"name":"room_deck","order":4,"path":"rooms/room_deck/room_deck.yy",},
     {"name":"room_end","order":6,"path":"rooms/room_end/room_end.yy",},
