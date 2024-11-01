@@ -23,7 +23,18 @@ for (var i = 0; i < num_hoops; i++)
 {
     // Select an x-coordinate from the randomized set
     var spawn_x = randomized_x_positions[i];
-
-    // Create the hoop object at the chosen x position and fixed y position
-    instance_create_layer(spawn_x, fixed_y, "Instances", obj_ph_hoops);
+	
+	// 10% chance to spawn a failure hoop instead of a normal hoop
+    if (irandom(9) == 0)
+    {
+        instance_create_layer(spawn_x, fixed_y, "Instances", obj_ph_fail_hoops);
+    }
+    else
+    {
+        instance_create_layer(spawn_x, fixed_y, "Instances", obj_ph_hoops);
+    }
 }
+
+// Initialize the loss message with a default message
+global.loss_message = "You Lose! (You need 300 Points)";
+

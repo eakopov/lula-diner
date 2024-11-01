@@ -17,6 +17,11 @@ if (global.jump_timer <= 0)
     {
        instance_destroy();
     }
+	
+	with (obj_ph_fail_hoops)
+    {
+       instance_destroy();
+    }
 
     if (global.jump_score >= 300)
     {
