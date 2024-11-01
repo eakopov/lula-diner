@@ -1,4 +1,17 @@
-// Increment the spawn timer
+if (global.gamepaused) {
+    // Deactivate all instances except the controller to pause the game
+    instance_deactivate_layer("instances_bg");
+    instance_activate_object(obj_controller);
+	instance_activate_object(obj_pause);
+	instance_activate_object(obj_bg);
+	// Set the pause message's text color, scale, and position
+    draw_set_color(c_red);  // Example: Red text color for visibility
+    draw_text_transformed(room_width / 2, room_height / 2, "PAUSED", 3, 3, 0);  // Centered, scaled text
+    draw_set_color(c_white);  // Reset color afterward
+} else {
+	// Reactivate all instances to resume the game
+    instance_activate_layer("instances_bg");
+	// Increment the spawn timer
 spawn_timer += 1;
 
 // Check if any customer is near the carpet area
@@ -22,4 +35,4 @@ if (spawn_timer >= spawn_interval && !customer_waiting) {
     // reset the timer
     spawn_timer = 0; 
 }
- 
+}
