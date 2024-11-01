@@ -1,4 +1,13 @@
-if (!ready_to_seat) {
+if (global.gamepaused) {
+	instance_deactivate_object(obj_customer);
+	move_speed = 0;
+} else {
+	if (obj_pause.pause_clicked && !global.gamepaused) {
+		instance_activate_object(obj_customer);
+		move_speed = 2;
+	}
+	
+	if (!ready_to_seat) {
     // Move the customer to the carpet at (50, 576)
     move_towards_point(50, 576, move_speed);
     
@@ -18,7 +27,6 @@ if (seated && !order_taken) {
     
     if (order_timer <= 0) {
         ready_to_order = true;  // customer is ready to order
-        show_debug_message("Customer is ready to order");
     }
 }
 
@@ -53,4 +61,5 @@ if (ready_to_eat) {
 		
 		
     }
+}
 }

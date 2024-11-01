@@ -1,1 +1,0 @@
-obj_controller.game_paused = !obj_controller.game_paused;

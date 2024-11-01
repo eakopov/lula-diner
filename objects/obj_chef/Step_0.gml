@@ -15,6 +15,6 @@ if (array_length(order_queue) > 0) {
         
         // Reset the preparation timer for the next pizza
         preparation_timer = 300;  // Example time for next pizza
-        show_debug_message("Pizza ready for customer: " + string(current_order));
+        
     }
 }
