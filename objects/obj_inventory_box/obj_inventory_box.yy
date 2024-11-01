@@ -1,15 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_clothing_goggles",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_inventory_box",
+  "eventList":[],
   "managed":true,
-  "name":"obj_clothing_goggles",
+  "name":"obj_inventory_box",
   "overriddenProperties":[],
   "parent":{
-    "name":"clothing",
-    "path":"folders/Objects/clothing_game/clothing.yy",
+    "name":"environment",
+    "path":"folders/Objects/clothing_game/environment.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_clothing_goggles",
-    "path":"sprites/spr_clothing_goggles/spr_clothing_goggles.yy",
+    "name":"spr_inventory_box",
+    "path":"sprites/spr_inventory_box/spr_inventory_box.yy",
   },
   "spriteMaskId":null,
   "visible":true,

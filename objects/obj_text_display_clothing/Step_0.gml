@@ -25,6 +25,8 @@ if (obj_clothing_controller.colliding_with_scientist_1) {
 			nodeTitle = ChatterboxGetCurrent(chatterbox);			
 		}
 		
+		else text = "Help Lula Dress for Success!  Talk to the scientists in the room!";
+		
 		
 
 //waiting means one line of diaglogue has been given but there are more lines, press space to advance
