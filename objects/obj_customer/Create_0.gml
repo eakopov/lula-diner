@@ -1,0 +1,10 @@
+ready_to_eat = false; // Customer is not seated yet
+move_speed = 2;
+ready_to_seat = false;
+depth = -10;
+image_xscale = -1;
+ready_to_order = false;
+order_timer = 300;
+seated = false;
+order_taken = false;
+entry_time = current_time; // Record the time the customer is created
