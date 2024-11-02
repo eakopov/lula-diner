@@ -8,3 +8,4 @@ order_timer = 300;
 seated = false;
 order_taken = false;
 entry_time = current_time; // Record the time the customer is created
+customer_pizza = obj_cheese; // default pizza choice
