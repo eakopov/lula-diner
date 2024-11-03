@@ -25,6 +25,10 @@ else if (failure_type == "end_game")
        instance_destroy();
     }
 	
+    with(obj_double_jump_powerup){
+		instance_destroy();
+	}
+	
     // Update the loss message
     global.loss_message = "You hit a bad hoop! Sorry, game over!";
     

@@ -6,6 +6,7 @@
   ],
   "ResourceOrderSettings":[
     {"name":"globals","order":17,"path":"objects/globals/globals.yy",},
+    {"name":"obj_double_jump_powerup","order":7,"path":"objects/obj_double_jump_powerup/obj_double_jump_powerup.yy",},
     {"name":"obj_hoop_manager","order":2,"path":"objects/obj_hoop_manager/obj_hoop_manager.yy",},
     {"name":"obj_loss_screen","order":5,"path":"objects/obj_loss_screen/obj_loss_screen.yy",},
     {"name":"obj_lula_deck","order":1,"path":"objects/obj_lula_deck/obj_lula_deck.yy",},
@@ -123,6 +124,7 @@
     {"name":"ChatterboxVariablesResetAll","order":10,"path":"scripts/ChatterboxVariablesResetAll/ChatterboxVariablesResetAll.yy",},
     {"name":"ChatterboxWait","order":9,"path":"scripts/ChatterboxWait/ChatterboxWait.yy",},
     {"name":"IsChatterbox","order":5,"path":"scripts/IsChatterbox/IsChatterbox.yy",},
+    {"name":"obj_double_jump_power_sprite","order":3,"path":"sprites/obj_double_jump_power_sprite/obj_double_jump_power_sprite.yy",},
     {"name":"obj_ph_fail_hoops_sprite","order":2,"path":"sprites/obj_ph_fail_hoops_sprite/obj_ph_fail_hoops_sprite.yy",},
     {"name":"obj_ph_hoops_sprite","order":1,"path":"sprites/obj_ph_hoops_sprite/obj_ph_hoops_sprite.yy",},
     {"name":"spr_text_display_start","order":6,"path":"sprites/spr_text_display_start/spr_text_display_start.yy",},

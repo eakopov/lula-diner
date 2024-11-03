@@ -35,6 +35,22 @@ for (var i = 0; i < num_hoops; i++)
     }
 }
 
+// 30% chance to spawn a double jump power-up in between hoops
+if (irandom(9) < 3) // 0, 1, or 2 (30% chance)
+{
+    // Select a random x position between hoops
+    var powerup_x = x_positions[irandom(array_length(x_positions) - 2) + 1]; // Pick an x between hoops
+    var powerup_y = fixed_y - 50; // Place the power-up above hoops
+
+    instance_create_layer(powerup_x, powerup_y, "Instances", obj_double_jump_powerup);
+}
+
 // Initialize the loss message with a default message
 global.loss_message = "You Lose! (You need 300 Points)";
 
+// Initialize double jump globals if not already set
+if (!variable_global_exists("double_jump_active"))
+{
+    global.double_jump_active = false;
+    global.double_jump_timer = 0;
+}

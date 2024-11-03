@@ -55,6 +55,7 @@
   "name":"lula_v_0_1",
   "resources":[
     {"id":{"name":"globals","path":"objects/globals/globals.yy",},},
+    {"id":{"name":"obj_double_jump_powerup","path":"objects/obj_double_jump_powerup/obj_double_jump_powerup.yy",},},
     {"id":{"name":"obj_hoop_manager","path":"objects/obj_hoop_manager/obj_hoop_manager.yy",},},
     {"id":{"name":"obj_loss_screen","path":"objects/obj_loss_screen/obj_loss_screen.yy",},},
     {"id":{"name":"obj_lula_clothing","path":"objects/obj_lula_clothing/obj_lula_clothing.yy",},},
@@ -185,6 +186,7 @@
     {"id":{"name":"ChatterboxWait","path":"scripts/ChatterboxWait/ChatterboxWait.yy",},},
     {"id":{"name":"IsChatterbox","path":"scripts/IsChatterbox/IsChatterbox.yy",},},
     {"id":{"name":"pointsFunctions","path":"scripts/pointsFunctions/pointsFunctions.yy",},},
+    {"id":{"name":"obj_double_jump_power_sprite","path":"sprites/obj_double_jump_power_sprite/obj_double_jump_power_sprite.yy",},},
     {"id":{"name":"obj_ph_fail_hoops_sprite","path":"sprites/obj_ph_fail_hoops_sprite/obj_ph_fail_hoops_sprite.yy",},},
     {"id":{"name":"obj_ph_hoops_sprite","path":"sprites/obj_ph_hoops_sprite/obj_ph_hoops_sprite.yy",},},
     {"id":{"name":"obj_ph_jum_ground_sprite","path":"sprites/obj_ph_jum_ground_sprite/obj_ph_jum_ground_sprite.yy",},},
