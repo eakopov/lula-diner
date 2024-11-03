@@ -1,18 +1,30 @@
-// Only proceed if the questions array is initialized
-if (array_length(global.questions) > 0) {
+// Draw current question and answers if quiz is not completed
+if (!global.quiz_completed) {
     var question_data = global.questions[global.current_question];
+    draw_text(150, 100, "Question: " + question_data[0]);
+    draw_text(150, 150, question_data[1]);
+    draw_text(150, 200, question_data[2]);
+    draw_text(150, 250, question_data[3]);
 
-    // Drawing the question and answers
-    var frame_x = 150;
-    var frame_y = 150;
-    var question_x_offset = 30;
-    var answer_y_offset = 40;
+    // Display score and timer
+    draw_text(500, 100, "Score: " + string(global.score));
+    draw_text(500, 150, "Time: " + string(global.timer div 60) + " seconds");
 
-    // Draw the question
-    draw_text(frame_x + question_x_offset, frame_y + 20, "Question: " + question_data[0]);
+    // Display feedback (e.g., Correct!, Incorrect!, Time's up!)
+    if (global.result_text != "") {
+        draw_text(150, 300, global.result_text);
+    }
+} else {
+    // Show end screen options
+    draw_text(150, 350, "Quiz completed! Final Score: " + string(global.score));
+    draw_text(150, 400, "Click here to retry.");
 
-    // Draw the answers
-    draw_text(frame_x + question_x_offset, frame_y + 60, question_data[1]);  // Answer 1
-    draw_text(frame_x + question_x_offset, frame_y + 60 + answer_y_offset, question_data[2]);  // Answer 2
-    draw_text(frame_x + question_x_offset, frame_y + 60 + (2 * answer_y_offset), question_data[3]);  // Answer 3
+    // Check for mouse click to restart game
+    if (mouse_check_button_pressed(mb_left) && mouse_y >= 400 && mouse_y <= 430) {
+        global.current_question = 0;
+        global.score = 0;
+        global.quiz_completed = false;
+        global.timer = 300;
+        global.result_text = "";
+    }
 }
