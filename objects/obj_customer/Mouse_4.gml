@@ -3,9 +3,11 @@ if (ready_to_seat) {  // Only allow selection if the customer is waiting
 }
 
 if (ready_to_order) {
-    show_debug_message("Order taken by Lula");
+	var pizza_types = ["cheese", "pepperoni", "pineapple", "spinach"];
+    customer_pizza = pizza_types[irandom(array_length(pizza_types) - 1)];
+	show_debug_message("Pizza for " + string(id) + " is of type" + string(customer_pizza));
 
-    receive_order(id);
+    receive_order(id, customer_pizza);
 	
 	// Update state
 	ready_to_order = false;
