@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_clothing_briefcase",
-    "path":"sprites/spr_clothing_briefcase/spr_clothing_briefcase.yy",
+    "name":"spr_clothing_briefcase_64",
+    "path":"sprites/spr_clothing_briefcase_64/spr_clothing_briefcase_64.yy",
   },
   "spriteMaskId":null,
   "visible":true,

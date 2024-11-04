@@ -1,11 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_clothing_helm",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_clothing_cravate",
+  "eventList":[],
   "managed":true,
-  "name":"obj_clothing_helm",
+  "name":"obj_clothing_cravate",
   "overriddenProperties":[],
   "parent":{
     "name":"clothing",
@@ -30,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_clothing_helm_64",
-    "path":"sprites/spr_clothing_helm_64/spr_clothing_helm_64.yy",
+    "name":"spr_clothing_cravate_64",
+    "path":"sprites/spr_clothing_cravate_64/spr_clothing_cravate_64.yy",
   },
   "spriteMaskId":null,
   "visible":true,

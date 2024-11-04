@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_clothing_goggles",
-    "path":"sprites/spr_clothing_goggles/spr_clothing_goggles.yy",
+    "name":"spr_clothing_goggles_64",
+    "path":"sprites/spr_clothing_goggles_64/spr_clothing_goggles_64.yy",
   },
   "spriteMaskId":null,
   "visible":true,
