@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_clothing_snorkel",
+  "%Name":"obj_clothing_armor",
   "eventList":[],
   "managed":true,
-  "name":"obj_clothing_snorkel",
+  "name":"obj_clothing_armor",
   "overriddenProperties":[],
   "parent":{
     "name":"clothing",
@@ -27,10 +27,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_clothing_snorkel_64",
-    "path":"sprites/spr_clothing_snorkel_64/spr_clothing_snorkel_64.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

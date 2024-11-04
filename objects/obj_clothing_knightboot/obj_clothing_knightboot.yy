@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_clothing_snorkel",
+  "%Name":"obj_clothing_knightboot",
   "eventList":[],
   "managed":true,
-  "name":"obj_clothing_snorkel",
+  "name":"obj_clothing_knightboot",
   "overriddenProperties":[],
   "parent":{
     "name":"clothing",
@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_clothing_snorkel_64",
-    "path":"sprites/spr_clothing_snorkel_64/spr_clothing_snorkel_64.yy",
+    "name":"spr_clothing_knightboots_64",
+    "path":"sprites/spr_clothing_knightboots_64/spr_clothing_knightboots_64.yy",
   },
   "spriteMaskId":null,
   "visible":true,
