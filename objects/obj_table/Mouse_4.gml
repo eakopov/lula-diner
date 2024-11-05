@@ -22,6 +22,20 @@ if (occupied && obj_controller.selected_pizza != noone) {
     
     // Check if the customer sitting at this table matches the pizza's customer ID
     if (selected_pizza.customer_id == customer_id) {
+		// Clear pizza from plate on counter
+		var plate_found = noone;
+        for (var i = 0; i < array_length(global.plates); i++) {
+            if (global.plates[i].pizza_instance == selected_pizza) {
+                plate_found = global.plates[i];
+                break;
+            }
+        }
+		
+		if (plate_found != noone) {
+            plate_found.occupied = false;  // Mark plate as free
+            plate_found.pizza_instance = noone;  // Remove pizza reference
+        }
+		
         // Move the pizza to the table's position
         selected_pizza.x = x + 50;  // Align the pizza to the table's position
         selected_pizza.y = y + 10;
@@ -31,8 +45,18 @@ if (occupied && obj_controller.selected_pizza != noone) {
         customer.ready_to_eat = true;
         customer.eating_timer = 300;  // Set eating duration
 
-		// Remove pizza from counter
-		instance_destroy(selected_pizza);
+		// Mark the plate as delivered
+        var plate_found = noone;
+        for (var i = 0; i < array_length(global.plates); i++) {
+            if (global.plates[i].pizza_instance == selected_pizza) {
+                plate_found = global.plates[i];
+                break;
+            }
+        }
+        
+        if (plate_found != noone) {
+            plate_found.delivered = true;  // Mark this plate's pizza as delivered
+        }
 		
         // Mark the table as having the pizza delivered
         obj_controller.selected_pizza = noone;  // Clear the selected pizza
