@@ -1,15 +1,22 @@
 function check_answer() {
     var question_data = global.questions[global.current_question];
-    var correct_answer = question_data[4];  // Correct answer is at index 4
+    var correct_answer = question_data[4];
 
-    // Check if the player's answer matches the correct answer
     if (global.player_answer == correct_answer) {
-        global.result_text = "Correct!";
-        global.score += 1;  // Increase score for a correct answer
+        global.result_text = "Correct Answer!";
+        global.score += 1;
     } else {
-        global.result_text = "Incorrect!";
+        global.result_text = "Wrong Answer!";
     }
 
-    // Set a delay before moving to the next question
-    alarm[0] = 30;  // 30 frames delay (half a second) before proceeding
+    global.current_question += 1;
+
+    // Check if there are more questions; if not, mark quiz as completed
+    if (global.current_question >= array_length(global.questions)) {
+        global.quiz_completed = true;
+    }
+
+    // Reset answer for next question
+    global.player_answer = -1;
+    global.timer = 300; // Reset timer for the next question
 }
