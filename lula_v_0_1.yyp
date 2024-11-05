@@ -63,6 +63,7 @@
   "IncludedFiles":[
     {"$GMIncludedFile":"","%Name":"chatterbox_license.txt","CopyToMask":-1,"filePath":"datafiles","name":"chatterbox_license.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"clothing_game.yarn","CopyToMask":-1,"filePath":"datafiles","name":"clothing_game.yarn","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"intro_video.mp4","CopyToMask":-1,"filePath":"datafiles","name":"intro_video.mp4","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"llamaStub.yarn","CopyToMask":-1,"filePath":"datafiles","name":"llamaStub.yarn","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"practiceYarn.yarn","CopyToMask":-1,"filePath":"datafiles","name":"practiceYarn.yarn","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"rythNotes.csv","CopyToMask":3035426170322551022,"filePath":"datafiles","name":"rythNotes.csv","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
@@ -100,6 +101,7 @@
     {"id":{"name":"obj_controller","path":"objects/obj_controller/obj_controller.yy",},},
     {"id":{"name":"obj_counter","path":"objects/obj_counter/obj_counter.yy",},},
     {"id":{"name":"obj_customer","path":"objects/obj_customer/obj_customer.yy",},},
+    {"id":{"name":"obj_intro","path":"objects/obj_intro/obj_intro.yy",},},
     {"id":{"name":"obj_inv_brief","path":"objects/obj_inv_brief/obj_inv_brief.yy",},},
     {"id":{"name":"obj_inv_gog","path":"objects/obj_inv_gog/obj_inv_gog.yy",},},
     {"id":{"name":"obj_inv_helm","path":"objects/obj_inv_helm/obj_inv_helm.yy",},},
