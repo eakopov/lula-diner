@@ -19,5 +19,5 @@ lineHeight = 28;
 
 //get text and node title from yarn file
 text = ChatterboxGetContent(chatterbox, 0);
-nodeTitle = ChatterboxGetCurrent(chatterbox);
+node_title = ChatterboxGetCurrent(chatterbox);
 

@@ -1,15 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_clothing_armor",
+  "%Name":"obj_inventory_middle",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_clothing_armor",
+  "name":"obj_inventory_middle",
   "overriddenProperties":[],
   "parent":{
-    "name":"clothing",
-    "path":"folders/Objects/clothing_game/clothing.yy",
+    "name":"inventory",
+    "path":"folders/Objects/clothing_game/inventory.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_clothing_armor_64",
-    "path":"sprites/spr_clothing_armor_64/spr_clothing_armor_64.yy",
+    "name":"spr_inventory_box",
+    "path":"sprites/spr_inventory_box/spr_inventory_box.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -30,6 +30,9 @@ if (vx != 0 || vy != 0) {
     }
 }
 
+
+
+
 // Collision checks with fixed radius around the object
 var detection_radius = 16; // Adjust radius as needed
 
@@ -37,3 +40,4 @@ obj_clothing_controller.colliding_with_scientist_1 = collision_circle(x, y, dete
 obj_clothing_controller.colliding_with_scientist_2 = collision_circle(x, y, detection_radius, obj_scientist_2, true, true);
 obj_clothing_controller.colliding_with_scientist_3 = collision_circle(x, y, detection_radius, obj_scientist_3, true, true);
 obj_clothing_controller.colliding_with_door = collision_circle(x, y, detection_radius+30, obj_clothing_door, true, true);
+obj_clothing_controller.colliding_with_mirror = collision_circle(x, y, detection_radius+30, obj_clothing_mirror, true, true);

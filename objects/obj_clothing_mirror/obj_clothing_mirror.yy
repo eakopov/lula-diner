@@ -1,17 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"obj_clothing_armor",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_clothing_mirror",
+  "eventList":[],
   "managed":true,
-  "name":"obj_clothing_armor",
+  "name":"obj_clothing_mirror",
   "overriddenProperties":[],
   "parent":{
-    "name":"clothing",
-    "path":"folders/Objects/clothing_game/clothing.yy",
+    "name":"environment",
+    "path":"folders/Objects/clothing_game/environment.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_par_environment",
+    "path":"objects/obj_par_environment/obj_par_environment.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -30,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_clothing_armor_64",
-    "path":"sprites/spr_clothing_armor_64/spr_clothing_armor_64.yy",
+    "name":"spr_clothing_mirror",
+    "path":"sprites/spr_clothing_mirror/spr_clothing_mirror.yy",
   },
   "spriteMaskId":null,
   "visible":true,
