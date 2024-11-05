@@ -44,8 +44,8 @@
   },
   "origin":0,
   "parent":{
-    "name":"lula_v_0_1",
-    "path":"lula_v_0_1.yyp",
+    "name":"rythem",
+    "path":"folders/Sprites/rythem.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
