@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"LeftNote",
-    "path":"sprites/LeftNote/LeftNote.yy",
+    "name":"Left_Note",
+    "path":"sprites/Left_Note/Left_Note.yy",
   },
   "spriteMaskId":null,
   "visible":true,
