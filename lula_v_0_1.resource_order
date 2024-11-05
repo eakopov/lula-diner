@@ -1,5 +1,7 @@
 {
-  "FolderOrderSettings":[],
+  "FolderOrderSettings":[
+    {"name":"rythem","order":1,"path":"folders/Sprites/rythem.yy",},
+  ],
   "ResourceOrderSettings":[
     {"name":"globals","order":17,"path":"objects/globals/globals.yy",},
     {"name":"obj_boundary","order":1,"path":"objects/obj_boundary/obj_boundary.yy",},
@@ -27,6 +29,7 @@
     {"name":"obj_par_environment","order":1,"path":"objects/obj_par_environment/obj_par_environment.yy",},
     {"name":"obj_scientist_2","order":1,"path":"objects/obj_scientist_2/obj_scientist_2.yy",},
     {"name":"obj_scientist_3","order":2,"path":"objects/obj_scientist_3/obj_scientist_3.yy",},
+    {"name":"obj_skip_button","order":1,"path":"objects/obj_skip_button/obj_skip_button.yy",},
     {"name":"obj_text_display_deck","order":1,"path":"objects/obj_text_display_deck/obj_text_display_deck.yy",},
     {"name":"obj_text_display_end","order":2,"path":"objects/obj_text_display_end/obj_text_display_end.yy",},
     {"name":"obj_text_display_jump","order":3,"path":"objects/obj_text_display_jump/obj_text_display_jump.yy",},
@@ -133,6 +136,11 @@
     {"name":"ChatterboxWait","order":9,"path":"scripts/ChatterboxWait/ChatterboxWait.yy",},
     {"name":"clothing_room_scripts","order":1,"path":"scripts/clothing_room_scripts/clothing_room_scripts.yy",},
     {"name":"IsChatterbox","order":5,"path":"scripts/IsChatterbox/IsChatterbox.yy",},
+    {"name":"LeftNote","order":1,"path":"sprites/LeftNote/LeftNote.yy",},
+    {"name":"Mid_Note","order":2,"path":"sprites/Mid_Note/Mid_Note.yy",},
+    {"name":"MidNote","order":3,"path":"sprites/MidNote/MidNote.yy",},
+    {"name":"Right_Note","order":4,"path":"sprites/Right_Note/Right_Note.yy",},
+    {"name":"rightNote","order":5,"path":"sprites/rightNote/rightNote.yy",},
     {"name":"spr_clothing_armor_64","order":8,"path":"sprites/spr_clothing_armor_64/spr_clothing_armor_64.yy",},
     {"name":"spr_clothing_briefcase_64","order":2,"path":"sprites/spr_clothing_briefcase_64/spr_clothing_briefcase_64.yy",},
     {"name":"spr_clothing_cravate_64","order":3,"path":"sprites/spr_clothing_cravate_64/spr_clothing_cravate_64.yy",},
@@ -151,6 +159,7 @@
     {"name":"spr_red_square","order":3,"path":"sprites/spr_red_square/spr_red_square.yy",},
     {"name":"spr_scientist_2","order":1,"path":"sprites/spr_scientist_2/spr_scientist_2.yy",},
     {"name":"spr_scientist_3","order":2,"path":"sprites/spr_scientist_3/spr_scientist_3.yy",},
+    {"name":"spr_skip","order":1,"path":"sprites/spr_skip/spr_skip.yy",},
     {"name":"tile_clothing_floor","order":1,"path":"tilesets/tile_clothing_floor/tile_clothing_floor.yy",},
   ],
 }
