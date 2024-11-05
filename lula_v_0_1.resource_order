@@ -3,10 +3,12 @@
     {"name":"rythem","order":1,"path":"folders/Sprites/rythem.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"obj_skip_button","order":1,"path":"objects/obj_skip_button/obj_skip_button.yy",},
     {"name":"LeftNote","order":1,"path":"sprites/LeftNote/LeftNote.yy",},
     {"name":"Mid_Note","order":2,"path":"sprites/Mid_Note/Mid_Note.yy",},
     {"name":"MidNote","order":3,"path":"sprites/MidNote/MidNote.yy",},
     {"name":"Right_Note","order":4,"path":"sprites/Right_Note/Right_Note.yy",},
     {"name":"rightNote","order":5,"path":"sprites/rightNote/rightNote.yy",},
+    {"name":"spr_skip","order":1,"path":"sprites/spr_skip/spr_skip.yy",},
   ],
 }
