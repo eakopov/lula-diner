@@ -11,13 +11,13 @@ for(var i = 0; i < ds_list_size(noteTimings); i++){
 		
 		switch(note){
 			case 0:
-				instance_create_layer(160, -64, "Instances", leftNote);
+				instance_create_layer(160, -64, "notes", leftNote);
 			break;
 			case 1:
-				instance_create_layer(320, -64, "Instances", midNote);
+				instance_create_layer(320, -64, "notes", midNote);
 			break;
 			case 2:
-				instance_create_layer(480, -64, "Instances", rigntNotes);
+				instance_create_layer(480, -64, "notes", rigntNotes);
 		}	
 		
 	}	

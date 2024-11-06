@@ -12,8 +12,8 @@
   "duration":63.408,
   "name":"RetroFuture_Dirty_timing",
   "parent":{
-    "name":"Sounds",
-    "path":"folders/Sounds.yy",
+    "name":"rythem",
+    "path":"folders/Sounds/rythem.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

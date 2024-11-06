@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"rightNote",
-    "path":"sprites/rightNote/rightNote.yy",
+    "name":"Right_User",
+    "path":"sprites/Right_User/Right_User.yy",
   },
   "spriteMaskId":null,
   "visible":true,

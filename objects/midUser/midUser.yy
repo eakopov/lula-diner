@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"MidNote",
-    "path":"sprites/MidNote/MidNote.yy",
+    "name":"Mid_User",
+    "path":"sprites/Mid_User/Mid_User.yy",
   },
   "spriteMaskId":null,
   "visible":true,
