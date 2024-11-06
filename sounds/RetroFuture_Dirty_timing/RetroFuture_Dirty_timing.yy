@@ -12,8 +12,8 @@
   "duration":63.408,
   "name":"RetroFuture_Dirty_timing",
   "parent":{
-    "name":"lula_v_0_1",
-    "path":"lula_v_0_1.yyp",
+    "name":"Sounds",
+    "path":"folders/Sounds.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
