@@ -42,7 +42,12 @@ if (irandom(9) < 3) // 0, 1, or 2 (30% chance)
     var powerup_x = x_positions[irandom(array_length(x_positions) - 2) + 1]; // Pick an x between hoops
     var powerup_y = fixed_y - 50; // Place the power-up above hoops
 
-    instance_create_layer(powerup_x, powerup_y, "Instances", obj_double_jump_powerup);
+    // Randomly select which power-up to spawn (50/50 chance)
+    if (choose(true, false)) {
+        instance_create_layer(powerup_x, powerup_y, "Instances", obj_double_jump_powerup);
+    } else {
+        instance_create_layer(powerup_x, powerup_y, "Instances", obj_timer_powerup);
+    }
 }
 
 // Initialize the loss message with a default message
