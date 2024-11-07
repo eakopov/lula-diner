@@ -75,6 +75,7 @@ if (ready_to_eat) {
 		}
 		
 		obj_controller.player_money += money;
+		global.PointsCounter += money;
 		
 		
     }
