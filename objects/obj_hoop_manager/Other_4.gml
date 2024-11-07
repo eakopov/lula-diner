@@ -24,15 +24,19 @@ for (var i = 0; i < num_hoops; i++)
     // Select an x-coordinate from the randomized set
     var spawn_x = randomized_x_positions[i];
 	
-	// 10% chance to spawn a failure hoop instead of a normal hoop
-    if (irandom(9) == 0)
-    {
-        instance_create_layer(spawn_x, fixed_y, "Instances", obj_ph_fail_hoops);
-    }
-    else
-    {
-        instance_create_layer(spawn_x, fixed_y, "Instances", obj_ph_hoops);
-    }
+// 10% chance to spawn a failure hoop, 10% chance for speed boost hoop, 80% for normal hoop
+if (irandom(9) < 1) // 10% chance for failure hoop
+{
+    instance_create_layer(spawn_x, fixed_y, "Instances", obj_ph_fail_hoops);
+}
+else if (irandom(9) < 2) // 10% chance for speed boost hoop
+{
+    instance_create_layer(spawn_x, fixed_y, "Instances", obj_speed_boost_hoop);
+}
+else
+{
+    instance_create_layer(spawn_x, fixed_y, "Instances", obj_ph_hoops);
+}
 }
 
 // 30% chance to spawn a double jump power-up in between hoops
@@ -58,4 +62,10 @@ if (!variable_global_exists("double_jump_active"))
 {
     global.double_jump_active = false;
     global.double_jump_timer = 0;
+}
+
+if (!variable_global_exists("speed_boost_active"))
+{
+    global.speed_boost_active = false;
+    global.speed_boost_timer = 0;
 }

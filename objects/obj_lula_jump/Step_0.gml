@@ -7,13 +7,17 @@ ysp += 0.1;
 
 // Horizontal movement (Arrow keys and WASD)
 xsp = 0;
+
+// Check if speed boost is active
+var speed_multiplier = (global.speed_boost_active) ? 2 : 1; // Double speed when boosted
+
 if keyboard_check(vk_left) || keyboard_check(ord("A"))
 {
-    xsp = -1;
+    xsp = -1 * speed_multiplier;
 }
 if keyboard_check(vk_right) || keyboard_check(ord("D"))
 {
-    xsp = 1;
+    xsp = 1 * speed_multiplier;
 }
 
 // Jumping (Arrow key up or W)
@@ -74,3 +78,12 @@ if (global.double_jump_active) {
         global.double_jump_active = false; // Disable double jump when time runs out
     }
 }
+
+// Speed Boost Timer Logic
+if (global.speed_boost_active) {
+    global.speed_boost_timer -= 1;
+    if (global.speed_boost_timer <= 0) {
+        global.speed_boost_active = false; // Disable speed boost when time runs out
+    }
+}
+
