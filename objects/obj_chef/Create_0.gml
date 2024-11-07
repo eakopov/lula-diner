@@ -1,3 +1,3 @@
 order_queue = [];
 preparation_timer = 300;
-depth = -11;
+depth = -20;
