@@ -1,0 +1,11 @@
+// Set color to white and draw the rectangle background
+draw_set_color(c_white);
+draw_rectangle(room_width / 2 - 200, room_height / 2 - 50, room_width / 2 + 200, room_height / 2 + 150, false); 
+
+// Set color back to black for text
+draw_set_color(c_black);
+
+// Draw the text content on top of the white rectangle
+draw_text(room_width / 2 - 100, room_height / 2, global.loss_message); // Display the dynamic loss message
+draw_text(room_width / 2 - 100, room_height / 2 + 40, "Score: " + string(global.jump_score));
+draw_text(room_width / 2 - 100, room_height / 2 + 80, "[R] Restart Game");
