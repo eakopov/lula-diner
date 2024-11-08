@@ -1,16 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_pepperoni",
+  "%Name":"obj_instructions",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_pepperoni",
+  "name":"obj_instructions",
   "overriddenProperties":[],
   "parent":{
-    "name":"Pizzas",
-    "path":"folders/Objects/Pizza Objects/Pizzas.yy",
+    "name":"Pizza Objects",
+    "path":"folders/Objects/Pizza Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,10 +29,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_pepperoni_pizza",
-    "path":"sprites/spr_pepperoni_pizza/spr_pepperoni_pizza.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

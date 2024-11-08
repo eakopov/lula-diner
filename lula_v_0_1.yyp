@@ -118,6 +118,7 @@
     {"id":{"name":"obj_inventory_box","path":"objects/obj_inventory_box/obj_inventory_box.yy",},},
     {"id":{"name":"obj_inventory_middle","path":"objects/obj_inventory_middle/obj_inventory_middle.yy",},},
     {"id":{"name":"obj_inventory_top","path":"objects/obj_inventory_top/obj_inventory_top.yy",},},
+    {"id":{"name":"obj_instructions","path":"objects/obj_instructions/obj_instructions.yy",},},
     {"id":{"name":"obj_lula_clothing","path":"objects/obj_lula_clothing/obj_lula_clothing.yy",},},
     {"id":{"name":"obj_lula_deck","path":"objects/obj_lula_deck/obj_lula_deck.yy",},},
     {"id":{"name":"obj_lula_end","path":"objects/obj_lula_end/obj_lula_end.yy",},},
