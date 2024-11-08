@@ -1,16 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_lula_jump",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_ph_jump_ground",
+  "eventList":[],
   "managed":true,
-  "name":"obj_lula_jump",
+  "name":"obj_ph_jump_ground",
   "overriddenProperties":[],
   "parent":{
-    "name":"Lula",
-    "path":"folders/Objects/Lula.yy",
+    "name":"Jump_Objects",
+    "path":"folders/Objects/Jump_Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_lula",
-    "path":"sprites/spr_lula/spr_lula.yy",
+    "name":"obj_ph_jum_ground_sprite",
+    "path":"sprites/obj_ph_jum_ground_sprite/obj_ph_jum_ground_sprite.yy",
   },
   "spriteMaskId":null,
   "visible":true,
