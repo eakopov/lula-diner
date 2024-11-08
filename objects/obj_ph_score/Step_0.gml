@@ -26,6 +26,22 @@ if (global.jump_timer <= 0)
 	with(obj_double_jump_powerup){
 		instance_destroy();
 	}
+	
+	with(obj_speed_boost_hoop) {
+		instance_destroy();
+	}
+	
+	with(obj_double_points_hoop) {
+		instance_destroy();
+	}
+	
+	with(obj_double_jump_powerup) {
+		instance_destroy();
+	}
+	
+	with(obj_timer_powerup) {
+		instance_destroy();
+	}
 
     if (global.jump_score >= 300)
     {

@@ -32,6 +32,8 @@ if (irandom(9) < 1) // 10% chance for failure hoop
 else if (irandom(9) < 2) // 10% chance for speed boost hoop
 {
     instance_create_layer(spawn_x, fixed_y, "Instances", obj_speed_boost_hoop);
+} else if (irandom(9) < 3) {
+	instance_create_layer(spawn_x, fixed_y, "Instances", obj_double_points_hoop);
 }
 else
 {
@@ -68,4 +70,10 @@ if (!variable_global_exists("speed_boost_active"))
 {
     global.speed_boost_active = false;
     global.speed_boost_timer = 0;
+}
+
+if (!variable_global_exists("double_points_active"))
+{
+    global.double_points_active = false;
+    global.double_points_timer = 0;
 }

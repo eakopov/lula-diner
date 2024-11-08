@@ -58,15 +58,18 @@ if place_meeting(x, y, obj_ph_hoops)
     // Get the y-position of the hoop the player is currently passing through
     var hoop_y = instance_place(x, y, obj_ph_hoops).y;
 
+    // Determine score multiplier
+    var score_multiplier = global.double_points_active ? 2 : 1;
+
     // Check if the player is passing upwards or downwards through the hoop
     if (y < hoop_y && ysp < 0) // Passing upwards
     {
-        global.jump_score += 50; // Add 50 points for upward pass
+        global.jump_score += 50 * score_multiplier; // Add 50 points (or double if active) for upward pass
         with (instance_place(x, y, obj_ph_hoops)) instance_destroy(); // Destroy hoop 
     }
     else if (y > hoop_y && ysp > 0) // Passing downwards
     {
-        global.jump_score += 50; // Add 50 points for downward pass
+        global.jump_score += 50 * score_multiplier; // Add 50 points (or double if active) for downward pass
         with (instance_place(x, y, obj_ph_hoops)) instance_destroy(); // Destroy hoop
     }
 }
@@ -84,6 +87,14 @@ if (global.speed_boost_active) {
     global.speed_boost_timer -= 1;
     if (global.speed_boost_timer <= 0) {
         global.speed_boost_active = false; // Disable speed boost when time runs out
+    }
+}
+
+// Double Points Timer Logic
+if (global.double_points_active) {
+    global.double_points_timer -= 1; // Decrease timer
+    if (global.double_points_timer <= 0) {
+        global.double_points_active = false; // Disable double points when time runs out
     }
 }
 
