@@ -62,8 +62,10 @@
     {"$GMFolder":"","%Name":"Timelines","folderPath":"folders/Timelines.yy","name":"Timelines","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
   "IncludedFiles":[
+    {"$GMIncludedFile":"","%Name":"backgroundRythem.mp4","CopyToMask":-1,"filePath":"datafiles","name":"backgroundRythem.mp4","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"chatterbox_license.txt","CopyToMask":-1,"filePath":"datafiles","name":"chatterbox_license.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"clothing_game.yarn","CopyToMask":-1,"filePath":"datafiles","name":"clothing_game.yarn","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"end_video.mp4","CopyToMask":-1,"filePath":"datafiles","name":"end_video.mp4","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"intro_video.mp4","CopyToMask":-1,"filePath":"datafiles","name":"intro_video.mp4","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"llamaStub.yarn","CopyToMask":-1,"filePath":"datafiles","name":"llamaStub.yarn","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"practiceYarn.yarn","CopyToMask":-1,"filePath":"datafiles","name":"practiceYarn.yarn","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
@@ -77,6 +79,7 @@
   },
   "name":"lula_v_0_1",
   "resources":[
+    {"id":{"name":"backgroundVideo","path":"objects/backgroundVideo/backgroundVideo.yy",},},
     {"id":{"name":"globals","path":"objects/globals/globals.yy",},},
     {"id":{"name":"leftNote","path":"objects/leftNote/leftNote.yy",},},
     {"id":{"name":"leftUser","path":"objects/leftUser/leftUser.yy",},},
