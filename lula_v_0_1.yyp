@@ -296,8 +296,6 @@
     {"id":{"name":"sprite_blk_bkground","path":"sprites/sprite_blk_bkground/sprite_blk_bkground.yy",},},
     {"id":{"name":"tile_blk_bkground","path":"tilesets/tile_blk_bkground/tile_blk_bkground.yy",},},
     {"id":{"name":"clothing_room_scripts","path":"scripts/clothing_room_scripts/clothing_room_scripts.yy",},},
-    {"id":{"name":"IsChatterbox","path":"scripts/IsChatterbox/IsChatterbox.yy",},},
-    {"id":{"name":"pointsFunctions","path":"scripts/pointsFunctions/pointsFunctions.yy",},},
     {"id":{"name":"restart_game","path":"scripts/restart_game/restart_game.yy",},},
     {"id":{"name":"rythemFunctions","path":"scripts/rythemFunctions/rythemFunctions.yy",},},
     {"id":{"name":"scr_find_empty_table","path":"scripts/scr_find_empty_table/scr_find_empty_table.yy",},},
