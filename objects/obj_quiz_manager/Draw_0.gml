@@ -49,7 +49,7 @@ else {
             global.timeouts = 0;
             global.show_difficulty_selection = true;
         } else if (mouse_y_pos >= 400 && mouse_y_pos <= 430) {
-            room_goto(room_deck);
+            room_goto(room_rhythm);
         }
     }
 }
