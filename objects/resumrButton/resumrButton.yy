@@ -1,11 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"PlayButton",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"resumrButton",
+  "eventList":[],
   "managed":true,
-  "name":"PlayButton",
+  "name":"resumrButton",
   "overriddenProperties":[],
   "parent":{
     "name":"rythem",
@@ -30,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"startButton",
-    "path":"sprites/startButton/startButton.yy",
+    "name":"continueButton",
+    "path":"sprites/continueButton/continueButton.yy",
   },
   "spriteMaskId":null,
   "visible":true,
