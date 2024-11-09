@@ -29,10 +29,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_lula",
-    "path":"sprites/spr_lula/spr_lula.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

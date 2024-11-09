@@ -1,17 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"obj_text_display_rhythm",
+  "%Name":"obj_d_wrong_feedback",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_text_display_rhythm",
+  "name":"obj_d_wrong_feedback",
   "overriddenProperties":[],
   "parent":{
-    "name":"Text Boxes",
-    "path":"folders/Objects/Text Boxes.yy",
+    "name":"Deck",
+    "path":"folders/Objects/Deck.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -32,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_text_display_start",
-    "path":"sprites/spr_text_display_start/spr_text_display_start.yy",
+    "name":"Spr_Wrong",
+    "path":"sprites/Spr_Wrong/Spr_Wrong.yy",
   },
   "spriteMaskId":null,
   "visible":true,

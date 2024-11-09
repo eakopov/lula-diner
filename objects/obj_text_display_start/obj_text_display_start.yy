@@ -31,10 +31,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_text_display_start",
-    "path":"sprites/spr_text_display_start/spr_text_display_start.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

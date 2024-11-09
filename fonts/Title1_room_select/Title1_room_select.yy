@@ -1,6 +1,6 @@
 {
   "$GMFont":"",
-  "%Name":"Select",
+  "%Name":"Title1_room_select",
   "AntiAlias":1,
   "applyKerning":0,
   "ascender":81,
@@ -233,7 +233,7 @@
   "last":0,
   "lineHeight":100,
   "maintainGms1Font":false,
-  "name":"Select",
+  "name":"Title1_room_select",
   "parent":{
     "name":"Fonts",
     "path":"folders/Fonts.yy",
