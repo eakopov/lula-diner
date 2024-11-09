@@ -38,6 +38,23 @@ if (ready_to_eat) {
         show_debug_message("Customer finished eating and is leaving.");
         instance_destroy(id);  // Customer leaves the restaurant
         
+		// Destroy pizza on table
+		var pizza_found = false;
+
+    // Loop through all potential pizza types and destroy the one with the matching customer_id
+    var pizza_types = [obj_cheese, obj_pepperoni, obj_pineapple, obj_spinach];  // Add all pizza types here
+
+    for (var i = 0; i < array_length(pizza_types); i++) {
+        with (pizza_types[i]) {
+            if (customer_id == other.id) {  // Check if this pizza belongs to the current customer
+                instance_destroy();  // Destroy the pizza instance
+                pizza_found = true;
+                break;  // Exit the loop once the correct pizza is found and destroyed
+            }
+        }
+        if (pizza_found) break;  // Exit outer loop if pizza is already destroyed
+    }
+		
         // Mark the table as unoccupied
         var nearest_table = instance_nearest(x, y, obj_table);
         nearest_table.occupied = false;
@@ -58,6 +75,7 @@ if (ready_to_eat) {
 		}
 		
 		obj_controller.player_money += money;
+		global.PointsCounter += money;
 		
 		
     }
