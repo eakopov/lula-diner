@@ -183,6 +183,7 @@
     {"name":"spr_text_display_start","order":6,"path":"sprites/spr_text_display_start/spr_text_display_start.yy",},
     {"name":"sprite_blk_bkground","order":2,"path":"sprites/sprite_blk_bkground/sprite_blk_bkground.yy",},
     {"name":"clothing_room_scripts","order":1,"path":"scripts/clothing_room_scripts/clothing_room_scripts.yy",},
+    {"name":"IsChatterbox","order":5,"path":"scripts/IsChatterbox/IsChatterbox.yy",},
     {"name":"RetroFuture_Dirty_timing","order":1,"path":"sounds/RetroFuture_Dirty_timing/RetroFuture_Dirty_timing.yy",},
     {"name":"introRyth","order":9,"path":"sprites/introRyth/introRyth.yy",},
     {"name":"Left_User","order":6,"path":"sprites/Left_User/Left_User.yy",},
