@@ -24,3 +24,12 @@ for(var i = 0; i < ds_list_size(noteTimings); i++){
 }
 songPos = songPosition;
 
+if(!audio_is_playing(singinID)){
+	instance_create_layer(64, 32, "endRyth", winPrompt);
+	instance_create_layer(224, 608, "endRyth", resumrButton);
+	var myLayer = layer_get_id("Instances");
+	layer_set_visible(myLayer, false);
+	myLayer = layer_get_id("backgroundInstance");
+	layer_set_visible(myLayer, false);
+	instance_destroy();
+}	

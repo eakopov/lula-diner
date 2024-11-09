@@ -2,7 +2,7 @@
   "$GMObject":"",
   "%Name":"rythStarter",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
@@ -33,6 +33,7 @@
     {"$GMObjectProperty":"v1","%Name":"song","filters":[],"listItems":[],"multiselect":false,"name":"song","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"RetroFuture_Dirty","path":"sounds/RetroFuture_Dirty/RetroFuture_Dirty.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"RetroFuture_Dirty","varType":5,},
     {"$GMObjectProperty":"v1","%Name":"songTiming","filters":[],"listItems":[],"multiselect":false,"name":"songTiming","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"RetroFuture_Dirty_timing","path":"sounds/RetroFuture_Dirty_timing/RetroFuture_Dirty_timing.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"RetroFuture_Dirty_timing","varType":5,},
     {"$GMObjectProperty":"v1","%Name":"songPos","filters":[],"listItems":[],"multiselect":false,"name":"songPos","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"singinID","filters":[],"listItems":[],"multiselect":false,"name":"singinID","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":1,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

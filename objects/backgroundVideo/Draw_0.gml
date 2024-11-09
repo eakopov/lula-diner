@@ -10,7 +10,7 @@ if (_videoStatus == 0) {  // If the video is playing correctly
         var window_width = window_get_width();
         var window_height = window_get_height();
         
-        // Draw a white background covering the entire window
+        // Draw a black background covering the entire window
 		draw_set_colour(c_black);
         draw_rectangle(0, 0, window_width, window_height, false);
         
