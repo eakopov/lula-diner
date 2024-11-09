@@ -48,7 +48,20 @@ global.score = 0;
 global.quiz_completed = false;
 global.timer = 1000; // Set the timer for 5 seconds (300 frames)
 global.result_text = "";
+global.timeouts = 0;
 global.show_difficulty_selection = true; // Start with difficulty selection screen
 
 // Play background music on a loop
 audio_play_sound(snd_background_music, 1, true);
+
+// Winning and Losing Messages
+global.win_messages = [
+    "Congratulations! You won with an excellent score on the easy level!",
+    "Great job! You won with a solid performance on the medium level!",
+    "Amazing! You won with impressive knowledge on the hard level!"
+];
+
+global.lose_messages = [
+    "Sorry, you didn’t score high enough. Try again to improve!",
+    "Time ran out too often. Be quicker next time to win!"
+];
