@@ -65,3 +65,10 @@ global.lose_messages = [
     "Sorry, you didn’t score high enough. Try again to improve!",
     "Time ran out too often. Be quicker next time to win!"
 ];
+
+// Instrument information: image and brief fact
+global.instruments = [
+    ["Gamma-Ray Spectrometer", "Helps identify elements on Psyche’s surface by analyzing gamma rays.", spr_gamma_ray_spectrometer],
+    ["Magnetometer", "Measures magnetic fields to see if Psyche has a remnant magnetic field.", spr_magnetometer],
+    ["Imaging System", "Captures high-resolution images to map Psyche's surface.", spr_imaging_system]
+];
