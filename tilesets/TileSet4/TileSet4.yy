@@ -1,14 +1,14 @@
 {
   "$GMTileSet":"v1",
-  "%Name":"tile_clothing_floor",
+  "%Name":"TileSet4",
   "autoTileSets":[],
   "macroPageTiles":{
     "SerialiseHeight":0,
     "SerialiseWidth":0,
     "TileSerialiseData":[],
   },
-  "name":"tile_clothing_floor",
-  "out_columns":2,
+  "name":"TileSet4",
+  "out_columns":5,
   "out_tilehborder":2,
   "out_tilevborder":2,
   "parent":{
@@ -18,10 +18,10 @@
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"spr_clothing_floor",
-    "path":"sprites/spr_clothing_floor/spr_clothing_floor.yy",
+    "name":"spr_color_blocks",
+    "path":"sprites/spr_color_blocks/spr_color_blocks.yy",
   },
-  "spriteNoExport":true,
+  "spriteNoExport":false,
   "textureGroupId":{
     "name":"Default",
     "path":"texturegroups/Default",
@@ -29,10 +29,10 @@
   "tileAnimationFrames":[],
   "tileAnimationSpeed":15.0,
   "tileHeight":16,
-  "tilehsep":0,
-  "tilevsep":0,
+  "tilehsep":2,
+  "tilevsep":2,
   "tileWidth":16,
   "tilexoff":0,
   "tileyoff":0,
-  "tile_count":4,
+  "tile_count":25,
 }
