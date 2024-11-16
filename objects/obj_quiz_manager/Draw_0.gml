@@ -83,3 +83,23 @@ function draw_text_wrapped(x, y, text, char_limit, line_spacing) {
     // Draw any remaining text
     draw_text(x, current_y, text);
 }
+if (global.show_instrument_popup) {
+    var instrument_data = global.instruments[global.current_instrument_index];
+    var instrument_name = instrument_data[0];
+    var instrument_fact = instrument_data[1];
+    var instrument_sprite = instrument_data[2];
+    
+    // Draw a semi-transparent background for the pop-up
+    draw_rectangle_color(100, 100, 540, 280, c_black, c_black, c_black, c_black, 0.7);
+    
+    // Draw instrument image and text
+    draw_sprite(instrument_sprite, 0, 120, 130);
+    draw_text(200, 130, instrument_name);
+    draw_text(200, 170, instrument_fact);
+
+    // Decrement timer and hide pop-up when time is up
+    global.instrument_popup_timer -= 1;
+    if (global.instrument_popup_timer <= 0) {
+        global.show_instrument_popup = false;
+    }
+}
