@@ -1,16 +1,20 @@
-// Define basic camera properties
-var cam_width = 1280;
-var cam_height = 720;
-var border_x = 120;   // Horizontal buffer
-var border_y = 120;   // Vertical buffer
+window_set_size(1280, 720);
 
-// Create the camera with a follow speed of 0 (no smoothing, no tilt)
-var camera = camera_create_view(0, 0, cam_width, cam_height, 0, obj_lula_clothing, border_x, border_y, cam_width, cam_height);
+view_set_visible(0, true);
+view_set_wport(0, 1280);
+view_set_hport(0, 480);
+view_set_xport(0,0);
+view_set_yport(0,0);
 
-// Assign the camera to Viewport 0
-view_set_camera(0, camera);
+var _cam0 = camera_create_view(0,0,1280, 720, false, obj_lula_clothing, 1280/2, 720/2, -1);
+view_set_camera(0, _cam0);
 
-// Set the viewport’s display size to match the window size
-view_wport[0] = display_get_width();   // Full screen width
-view_hport[0] = display_get_height();  // Full screen height
-view_visible[0] = true;
+
+view_set_visible(1,true);
+view_set_wport(1,1280);
+view_set_hport(1, 240);
+view_set_xport(1,0);
+view_set_yport(1, 480);
+
+var _cam1 = camera_create_view(3000, 0, 1000, 720, false, -1, -1, -1, -1);
+view_set_camera(1, _cam1);
