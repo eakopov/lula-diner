@@ -218,6 +218,7 @@
     {"id":{"name":"spr_plate","path":"sprites/spr_plate/spr_plate.yy",},},
     {"id":{"name":"spr_psyche_magnetrometer","path":"sprites/spr_psyche_magnetrometer/spr_psyche_magnetrometer.yy",},},
     {"id":{"name":"spr_quit","path":"sprites/spr_quit/spr_quit.yy",},},
+    {"id":{"name":"spr_radio_science","path":"sprites/spr_radio_science/spr_radio_science.yy",},},
     {"id":{"name":"spr_sign","path":"sprites/spr_sign/spr_sign.yy",},},
     {"id":{"name":"spr_spinach_pizza","path":"sprites/spr_spinach_pizza/spr_spinach_pizza.yy",},},
     {"id":{"name":"spr_table","path":"sprites/spr_table/spr_table.yy",},},

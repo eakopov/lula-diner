@@ -149,6 +149,7 @@
     {"name":"spr_plate","order":9,"path":"sprites/spr_plate/spr_plate.yy",},
     {"name":"spr_psyche_magnetrometer","order":3,"path":"sprites/spr_psyche_magnetrometer/spr_psyche_magnetrometer.yy",},
     {"name":"spr_quit","order":8,"path":"sprites/spr_quit/spr_quit.yy",},
+    {"name":"spr_radio_science","order":4,"path":"sprites/spr_radio_science/spr_radio_science.yy",},
     {"name":"spr_sign","order":3,"path":"sprites/spr_sign/spr_sign.yy",},
     {"name":"spr_spinach_pizza","order":3,"path":"sprites/spr_spinach_pizza/spr_spinach_pizza.yy",},
     {"name":"spr_text_display_start","order":6,"path":"sprites/spr_text_display_start/spr_text_display_start.yy",},
