@@ -51,7 +51,10 @@ if (global.show_difficulty_selection) {
 // After quiz completion, determine win/lose condition
 if (global.quiz_completed) {
     var score_percentage = (global.score / array_length(global.questions)) * 100;
-
+	
+	global.current_instrument_index = 0; // Start with the first instrument
+    global.show_instrument_popup = true; // Enable the pop-up
+    global.instrument_popup_timer = 180; // Show each instrument for 3 seconds
     // Winning cases based on score percentage
     if (score_percentage >= 80 && global.current_level == "easy") {
         global.result_text = "Congratulations! You won on the Easy level!";

@@ -51,6 +51,12 @@ global.result_text = "";
 global.timeouts = 0;
 global.show_difficulty_selection = true; // Start with difficulty selection screen
 
+// Initialize global variables for the instrument pop-up
+global.show_instrument_popup = false;  // Determines if the pop-up should be shown
+global.current_instrument_index = -1; // Tracks which instrument to display
+global.instrument_popup_timer = 0;    // Timer for how long the pop-up is displayed
+
+
 // Play background music on a loop
 audio_play_sound(snd_background_music, 1, true);
 
@@ -68,7 +74,8 @@ global.lose_messages = [
 
 // Instrument information: image and brief fact
 global.instruments = [
-    ["Gamma-Ray Spectrometer", "Helps identify elements on Psyche’s surface by analyzing gamma rays.", spr_gamma_ray_spectrometer],
-    ["Magnetometer", "Measures magnetic fields to see if Psyche has a remnant magnetic field.", spr_magnetometer],
-    ["Imaging System", "Captures high-resolution images to map Psyche's surface.", spr_imaging_system]
+    ["Gamma-Ray Spectrometer", "Gamma-Ray Spectrometer, Helps identify elements on Psyche’s surface by analyzing gamma rays.", spr_gamma_ray_spectrometer],
+    ["Magnetometer", "Magnetometer, Measures magnetic fields to see if Psyche has a remnant magnetic field.", spr_magnetometer],
+    ["Imaging System", "Imaging System, Captures high-resolution images to map Psyche's surface.", spr_imaging_system]
 ];
+

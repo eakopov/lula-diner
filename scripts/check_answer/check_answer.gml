@@ -17,8 +17,4 @@ function check_answer() {
     
     global.player_answer = -1;  // Reset player answer
 	
-	// Trigger the pop-up for a random instrument
-    global.current_instrument_index = irandom(array_length(global.instruments) - 1);
-    global.show_instrument_popup = true;
-    global.instrument_popup_timer = 500; // Set timer to show pop-up
 }
