@@ -12,10 +12,8 @@ title:  Scientist1_Briefcase
 Scientist1:  Hi!  If you answer my questions, I will help you prepare for your presentation!
 
 Scientist1:  Is Psyche a class M asteroid?
-  ->Yes
-     Scientist1:  Correct!  Here, take this briefcase!
+  ->Yes!
   ->No
-    Scientist1:  Incorrect!
 
 Scientist1:  Thanks!
 

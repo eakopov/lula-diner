@@ -117,7 +117,8 @@ if (obj_clothing_controller.convo_in_progress) {
 			    if (_select != -1) {
 			        show_debug_message("Processing choice: " + string(_select) + " for node: " + string(node_title));
 			        process_choice(node_title, _select); // Call the choice-processing script
-					ChatterboxSelect(chatterbox, _select - 1)
+					show_debug_message("ready for ChatterboxSelect");
+					ChatterboxSelect(chatterbox, _select - 1);
 			        _select = -1;
 					
 					

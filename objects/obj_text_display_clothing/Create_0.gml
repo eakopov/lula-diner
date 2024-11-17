@@ -7,6 +7,11 @@
 ChatterboxLoadFromFile("clothing_game.yarn");
 chatterbox = ChatterboxCreate("clothing_game.yarn");
 
+chatterbox = ChatterboxCreate("clothing_game.yarn");
+if (is_undefined(chatterbox)) {
+    show_debug_message("Error: chatterbox failed to initialize!");
+}
+
 //determine which node from yarn file to load based on room name
 
 ChatterboxJump(chatterbox, "Start");
