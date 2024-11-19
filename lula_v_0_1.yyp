@@ -208,6 +208,7 @@
     {"id":{"name":"spr_clock","path":"sprites/spr_clock/spr_clock.yy",},},
     {"id":{"name":"spr_counter","path":"sprites/spr_counter/spr_counter.yy",},},
     {"id":{"name":"spr_customer","path":"sprites/spr_customer/spr_customer.yy",},},
+    {"id":{"name":"spr_DSOC","path":"sprites/spr_DSOC/spr_DSOC.yy",},},
     {"id":{"name":"spr_gamma_ray_spectrometer","path":"sprites/spr_gamma_ray_spectrometer/spr_gamma_ray_spectrometer.yy",},},
     {"id":{"name":"spr_lula","path":"sprites/spr_lula/spr_lula.yy",},},
     {"id":{"name":"spr_multispectral_imager","path":"sprites/spr_multispectral_imager/spr_multispectral_imager.yy",},},
