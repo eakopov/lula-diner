@@ -27,6 +27,7 @@
     {"name":"obj_pepperoni","order":1,"path":"objects/obj_pepperoni/obj_pepperoni.yy",},
     {"name":"obj_pineapple","order":2,"path":"objects/obj_pineapple/obj_pineapple.yy",},
     {"name":"obj_plate","order":11,"path":"objects/obj_plate/obj_plate.yy",},
+    {"name":"obj_progress_bar","order":1,"path":"objects/obj_progress_bar/obj_progress_bar.yy",},
     {"name":"obj_quit","order":10,"path":"objects/obj_quit/obj_quit.yy",},
     {"name":"obj_sign","order":6,"path":"objects/obj_sign/obj_sign.yy",},
     {"name":"obj_spinach","order":3,"path":"objects/obj_spinach/obj_spinach.yy",},
