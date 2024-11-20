@@ -1,14 +1,19 @@
-// If selecting difficulty
+/// Difficulty selection mouse handling
 if (global.show_difficulty_selection) {
-    if (mouse_y >= global.easy_y && mouse_y <= global.easy_y + 30) {
-        global.questions = global.easy_questions;
-        global.show_difficulty_selection = false;
-    } else if (mouse_y >= global.medium_y && mouse_y <= global.medium_y + 30) {
-        global.questions = global.medium_questions;
-        global.show_difficulty_selection = false;
-    } else if (mouse_y >= global.hard_y && mouse_y <= global.hard_y + 30) {
-        global.questions = global.hard_questions;
-        global.show_difficulty_selection = false;
+    if (mouse_check_button_pressed(mb_left)) {
+        if (mouse_y >= 250 && mouse_y <= 280) {
+            global.questions = shuffle_array(global.easy_questions); // Shuffle easy questions
+            global.show_difficulty_selection = false;
+            global.current_level = "easy";
+        } else if (mouse_y >= 300 && mouse_y <= 330) {
+            global.questions = shuffle_array(global.medium_questions); // Shuffle medium questions
+            global.show_difficulty_selection = false;
+            global.current_level = "medium";
+        } else if (mouse_y >= 350 && mouse_y <= 380) {
+            global.questions = shuffle_array(global.hard_questions); // Shuffle hard questions
+            global.show_difficulty_selection = false;
+            global.current_level = "hard";
+        }
     }
 }
 

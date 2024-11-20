@@ -1,3 +1,15 @@
+/// Shuffle Function
+/// Randomly shuffles the given array
+function shuffle_array(array) {
+    for (var i = array_length(array) - 1; i > 0; i--) {
+        var j = irandom(i); // Random index between 0 and i
+        var temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+    }
+    return array;
+}
+
 // Easy questions with feedback messages for each answer choice
 global.easy_questions = [
     ["What is the main goal of the Psyche mission?", "1) To study a metal-rich asteroid", "2) To explore Mars", "3) To discover new stars", 1, 
