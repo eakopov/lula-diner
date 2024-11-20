@@ -70,15 +70,16 @@ if (!obj_clothing_controller.convo_in_progress) {
 
 if (obj_clothing_controller.convo_in_progress) {
 	
-		show_debug_message("Start of convo in progress switch state" + obj_clothing_controller.conversation_state);
+		
 		switch (obj_clothing_controller.conversation_state) {
     
 		    // Displaying Text State
 		    case "displaying_text":
-				show_debug_message("inside displaying text case");
+				
 		        text = ChatterboxGetContent(chatterbox, 0);
 		        node_title = ChatterboxGetCurrent(chatterbox);
         
+				
 		        if (ChatterboxIsWaiting(chatterbox)) {
 		            obj_clothing_controller.conversation_state = "waiting_for_input";
 		        } else if (ChatterboxGetOptionCount(chatterbox)) {
