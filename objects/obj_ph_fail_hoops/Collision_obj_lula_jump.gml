@@ -4,6 +4,7 @@ if (failure_type == "decrease_timer")
     global.jump_timer -= room_speed * 5; // Reduces timer by 5 seconds
     instance_destroy(); // Remove the failure hoop after collision
 }
+/*
 else if (failure_type == "end_game")
 {	
 	global.jump_timer = 0;
@@ -53,5 +54,5 @@ else if (failure_type == "end_game")
     
     // Destroy the failure hoop to prevent further collisions
     instance_destroy();
-}
+} */
 

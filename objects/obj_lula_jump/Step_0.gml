@@ -13,11 +13,11 @@ var speed_multiplier = (global.speed_boost_active) ? 2 : 1; // Double speed when
 
 if keyboard_check(vk_left) || keyboard_check(ord("A"))
 {
-    xsp = -1 * speed_multiplier;
+    xsp = -2 * speed_multiplier;
 }
 if keyboard_check(vk_right) || keyboard_check(ord("D"))
 {
-    xsp = 1 * speed_multiplier;
+    xsp = 2 * speed_multiplier;
 }
 
 // Jumping (Arrow key up or W)

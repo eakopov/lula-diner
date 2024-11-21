@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_lula",
-    "path":"sprites/spr_lula/spr_lula.yy",
+    "name":"spr_luna_Walk_1",
+    "path":"sprites/spr_luna_Walk_1/spr_luna_Walk_1.yy",
   },
   "spriteMaskId":null,
   "visible":true,
