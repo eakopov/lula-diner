@@ -137,6 +137,7 @@
     {"name":"ChatterboxWait","order":9,"path":"scripts/ChatterboxWait/ChatterboxWait.yy",},
     {"name":"IsChatterbox","order":5,"path":"scripts/IsChatterbox/IsChatterbox.yy",},
     {"name":"scr_receive_order","order":1,"path":"scripts/scr_receive_order/scr_receive_order.yy",},
+    {"name":"background_desert","order":7,"path":"sprites/background_desert/background_desert.yy",},
     {"name":"bigBoost","order":3,"path":"sprites/bigBoost/bigBoost.yy",},
     {"name":"Explosion_01","order":6,"path":"sprites/Explosion_01/Explosion_01.yy",},
     {"name":"Rocket_Effect_01","order":4,"path":"sprites/Rocket_Effect_01/Rocket_Effect_01.yy",},
