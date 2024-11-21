@@ -11,6 +11,7 @@
     {"name":"Tools","order":4,"path":"folders/Sprites/Pizza Sprites/Tools.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"font","order":2,"path":"fonts/font/font.yy",},
     {"name":"globals","order":17,"path":"objects/globals/globals.yy",},
     {"name":"obj_chef","order":3,"path":"objects/obj_chef/obj_chef.yy",},
     {"name":"obj_clock","order":5,"path":"objects/obj_clock/obj_clock.yy",},
@@ -149,6 +150,7 @@
     {"name":"spr_counter","order":1,"path":"sprites/spr_counter/spr_counter.yy",},
     {"name":"spr_DSOC","order":5,"path":"sprites/spr_DSOC/spr_DSOC.yy",},
     {"name":"spr_gamma_ray_spectrometer","order":2,"path":"sprites/spr_gamma_ray_spectrometer/spr_gamma_ray_spectrometer.yy",},
+    {"name":"spr_jim_bell","order":3,"path":"sprites/spr_jim_bell/spr_jim_bell.yy",},
     {"name":"spr_neutron_spectrometer","order":1,"path":"sprites/spr_neutron_spectrometer/spr_neutron_spectrometer.yy",},
     {"name":"spr_pause","order":7,"path":"sprites/spr_pause/spr_pause.yy",},
     {"name":"spr_pepperoni_pizza","order":1,"path":"sprites/spr_pepperoni_pizza/spr_pepperoni_pizza.yy",},

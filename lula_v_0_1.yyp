@@ -61,6 +61,7 @@
   },
   "name":"lula_v_0_1",
   "resources":[
+    {"id":{"name":"font","path":"fonts/font/font.yy",},},
     {"id":{"name":"globals","path":"objects/globals/globals.yy",},},
     {"id":{"name":"obj_bg","path":"objects/obj_bg/obj_bg.yy",},},
     {"id":{"name":"obj_cheese","path":"objects/obj_cheese/obj_cheese.yy",},},
@@ -217,6 +218,7 @@
     {"id":{"name":"spr_customer","path":"sprites/spr_customer/spr_customer.yy",},},
     {"id":{"name":"spr_DSOC","path":"sprites/spr_DSOC/spr_DSOC.yy",},},
     {"id":{"name":"spr_gamma_ray_spectrometer","path":"sprites/spr_gamma_ray_spectrometer/spr_gamma_ray_spectrometer.yy",},},
+    {"id":{"name":"spr_jim_bell","path":"sprites/spr_jim_bell/spr_jim_bell.yy",},},
     {"id":{"name":"spr_lula","path":"sprites/spr_lula/spr_lula.yy",},},
     {"id":{"name":"spr_multispectral_imager","path":"sprites/spr_multispectral_imager/spr_multispectral_imager.yy",},},
     {"id":{"name":"spr_neutron_spectrometer","path":"sprites/spr_neutron_spectrometer/spr_neutron_spectrometer.yy",},},
