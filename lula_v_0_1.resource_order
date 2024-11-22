@@ -1,6 +1,7 @@
 {
   "FolderOrderSettings":[],
   "ResourceOrderSettings":[
+    {"name":"obj_skip_button_deck","order":1,"path":"objects/obj_skip_button_deck/obj_skip_button_deck.yy",},
     {"name":"spr_gamma_ray_spectrometer","order":2,"path":"sprites/spr_gamma_ray_spectrometer/spr_gamma_ray_spectrometer.yy",},
     {"name":"spr_imaging_system","order":1,"path":"sprites/spr_imaging_system/spr_imaging_system.yy",},
     {"name":"spr_magnetometer","order":3,"path":"sprites/spr_magnetometer/spr_magnetometer.yy",},

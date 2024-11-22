@@ -165,6 +165,7 @@
     {"id":{"name":"obj_scientist_6_select","path":"objects/obj_scientist_6_select/obj_scientist_6_select.yy",},},
     {"id":{"name":"obj_scientist_selector","path":"objects/obj_scientist_selector/obj_scientist_selector.yy",},},
     {"id":{"name":"obj_sign","path":"objects/obj_sign/obj_sign.yy",},},
+    {"id":{"name":"obj_skip_button_deck","path":"objects/obj_skip_button_deck/obj_skip_button_deck.yy",},},
     {"id":{"name":"obj_skip_button","path":"objects/obj_skip_button/obj_skip_button.yy",},},
     {"id":{"name":"obj_speed_boost_hoop","path":"objects/obj_speed_boost_hoop/obj_speed_boost_hoop.yy",},},
     {"id":{"name":"obj_spinach","path":"objects/obj_spinach/obj_spinach.yy",},},
