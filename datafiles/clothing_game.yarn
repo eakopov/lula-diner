@@ -158,10 +158,9 @@ title:  Door_Knight
 
 title: Mirror
 ---
-: What would you like to wear?
-  ->Cravate, Monocle, Briefcase
-  ->Goggles, Snorkel, Floaties
-  ->Knight Helmet, Armor, Knight Boots
+: Are you ready to get dressed?
+  -> Yes
+  -> No
 
 :  Looking good!
 ===
@@ -187,4 +186,13 @@ Incorrect. Psyche is not a type A asteroid.
 title:  Book1
 ---
 Psyche is a Class M asteroid.
+===
+
+title:  DoorGeneral
+---
+Are you ready to go to the pitch?
+
+  ->Yes
+  ->No
+
 ===

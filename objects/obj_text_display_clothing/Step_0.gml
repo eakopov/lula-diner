@@ -54,6 +54,7 @@ if (!obj_clothing_controller.convo_in_progress) {
 	        start_conversation("Door_Incomplete");
 	    }
 	    else {
+			/*
 	        if (obj_clothing_controller.wear_professional) {
 	            start_conversation("Door_Professional");
 	        }
@@ -63,6 +64,9 @@ if (!obj_clothing_controller.convo_in_progress) {
 	        else if (obj_clothing_controller.wear_knight) {
 	            start_conversation("Door_Knight");
 	        }
+			*/
+			
+			start_conversation("DoorGeneral");
 		}
 	}
 	

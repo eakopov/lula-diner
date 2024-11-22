@@ -5,6 +5,7 @@
   "ResourceOrderSettings":[
     {"name":"obj_clothing_book","order":2,"path":"objects/obj_clothing_book/obj_clothing_book.yy",},
     {"name":"obj_clothing_lib_door","order":1,"path":"objects/obj_clothing_lib_door/obj_clothing_lib_door.yy",},
+    {"name":"obj_par_clothing","order":1,"path":"objects/obj_par_clothing/obj_par_clothing.yy",},
     {"name":"__ChatterboxArrayCopyPart","order":1,"path":"scripts/__ChatterboxArrayCopyPart/__ChatterboxArrayCopyPart.yy",},
     {"name":"__ChatterboxArrayToString","order":2,"path":"scripts/__ChatterboxArrayToString/__ChatterboxArrayToString.yy",},
     {"name":"__ChatterboxBufferBatch","order":3,"path":"scripts/__ChatterboxBufferBatch/__ChatterboxBufferBatch.yy",},

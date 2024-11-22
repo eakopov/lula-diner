@@ -11,7 +11,10 @@
     "name":"clothing",
     "path":"folders/Objects/clothing_game/clothing.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_par_clothing",
+    "path":"objects/obj_par_clothing/obj_par_clothing.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

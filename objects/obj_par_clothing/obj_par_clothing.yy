@@ -1,19 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"obj_clothing_goggles",
+  "%Name":"obj_par_clothing",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_clothing_goggles",
+  "name":"obj_par_clothing",
   "overriddenProperties":[],
   "parent":{
-    "name":"clothing",
-    "path":"folders/Objects/clothing_game/clothing.yy",
+    "name":"control",
+    "path":"folders/Objects/clothing_game/control.yy",
   },
   "parentObjectId":{
-    "name":"obj_par_clothing",
-    "path":"objects/obj_par_clothing/obj_par_clothing.yy",
+    "name":"obj_par_environment",
+    "path":"objects/obj_par_environment/obj_par_environment.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -32,10 +32,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_clothing_goggles_64",
-    "path":"sprites/spr_clothing_goggles_64/spr_clothing_goggles_64.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

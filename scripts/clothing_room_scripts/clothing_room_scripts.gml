@@ -80,16 +80,28 @@ function process_choice(_node_title, _choice) {
         case "Door_Knight":
             if (_choice == 1) room_goto_next(); 
             break;
+			
+		case "DoorGeneral":
+			if (_choice == 1) room_goto_next(); 
+            break;
 
         // Mirror Node
         case "Mirror":
+		
+			/*
             if (_choice == 1) {obj_clothing_controller.wear_professional = true; 
 			addPoints(100);}
             else if (_choice == 2) obj_clothing_controller.wear_swim = true;
             else if (_choice == 3) obj_clothing_controller.wear_knight = true;
 			
 			if (_choice == 1 || _choice == 2 || _choice ==3) obj_clothing_controller.dressed = true;
+			
+			*/
+			
+			if (_choice == 1) {obj_clothing_controller.dress_up_time = true;}
+			else {}
             break;
+			
         
         
     }

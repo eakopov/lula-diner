@@ -42,3 +42,9 @@ scientist3_counter = 0;
 
 question_counter = 0;
 
+
+clothing_item_1 = -1;
+clothing_item_2 = -1;
+clothing_item_3 = -1;
+clothing_item_counter = 0;
+dress_up_time = false;
