@@ -155,6 +155,7 @@
     {"name":"spr_neutron_spectrometer","order":1,"path":"sprites/spr_neutron_spectrometer/spr_neutron_spectrometer.yy",},
     {"name":"spr_pause","order":7,"path":"sprites/spr_pause/spr_pause.yy",},
     {"name":"spr_pepperoni_pizza","order":1,"path":"sprites/spr_pepperoni_pizza/spr_pepperoni_pizza.yy",},
+    {"name":"spr_peter_brauer","order":6,"path":"sprites/spr_peter_brauer/spr_peter_brauer.yy",},
     {"name":"spr_pineapple_pizza","order":2,"path":"sprites/spr_pineapple_pizza/spr_pineapple_pizza.yy",},
     {"name":"spr_plate","order":9,"path":"sprites/spr_plate/spr_plate.yy",},
     {"name":"spr_psyche_magnetrometer","order":3,"path":"sprites/spr_psyche_magnetrometer/spr_psyche_magnetrometer.yy",},

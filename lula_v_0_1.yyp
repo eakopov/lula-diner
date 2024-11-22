@@ -225,6 +225,7 @@
     {"id":{"name":"spr_neutron_spectrometer","path":"sprites/spr_neutron_spectrometer/spr_neutron_spectrometer.yy",},},
     {"id":{"name":"spr_pause","path":"sprites/spr_pause/spr_pause.yy",},},
     {"id":{"name":"spr_pepperoni_pizza","path":"sprites/spr_pepperoni_pizza/spr_pepperoni_pizza.yy",},},
+    {"id":{"name":"spr_peter_brauer","path":"sprites/spr_peter_brauer/spr_peter_brauer.yy",},},
     {"id":{"name":"spr_pineapple_pizza","path":"sprites/spr_pineapple_pizza/spr_pineapple_pizza.yy",},},
     {"id":{"name":"spr_plate","path":"sprites/spr_plate/spr_plate.yy",},},
     {"id":{"name":"spr_psyche_magnetrometer","path":"sprites/spr_psyche_magnetrometer/spr_psyche_magnetrometer.yy",},},
