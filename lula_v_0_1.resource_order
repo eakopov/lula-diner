@@ -3,6 +3,8 @@
     {"name":"clothing_game","order":1,"path":"folders/Tile Sets/clothing_game.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"obj_clothing_book","order":2,"path":"objects/obj_clothing_book/obj_clothing_book.yy",},
+    {"name":"obj_clothing_lib_door","order":1,"path":"objects/obj_clothing_lib_door/obj_clothing_lib_door.yy",},
     {"name":"__ChatterboxArrayCopyPart","order":1,"path":"scripts/__ChatterboxArrayCopyPart/__ChatterboxArrayCopyPart.yy",},
     {"name":"__ChatterboxArrayToString","order":2,"path":"scripts/__ChatterboxArrayToString/__ChatterboxArrayToString.yy",},
     {"name":"__ChatterboxBufferBatch","order":3,"path":"scripts/__ChatterboxBufferBatch/__ChatterboxBufferBatch.yy",},
@@ -98,6 +100,7 @@
     {"name":"ChatterboxVariablesResetAll","order":10,"path":"scripts/ChatterboxVariablesResetAll/ChatterboxVariablesResetAll.yy",},
     {"name":"ChatterboxWait","order":10,"path":"scripts/ChatterboxWait/ChatterboxWait.yy",},
     {"name":"IsChatterbox","order":6,"path":"scripts/IsChatterbox/IsChatterbox.yy",},
+    {"name":"spr_clothing_book","order":1,"path":"sprites/spr_clothing_book/spr_clothing_book.yy",},
     {"name":"spr_color_blocks","order":2,"path":"sprites/spr_color_blocks/spr_color_blocks.yy",},
     {"name":"spr_pink_square","order":1,"path":"sprites/spr_pink_square/spr_pink_square.yy",},
     {"name":"TileSet4","order":1,"path":"tilesets/TileSet4/TileSet4.yy",},

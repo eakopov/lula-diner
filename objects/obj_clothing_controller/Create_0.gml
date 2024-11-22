@@ -27,11 +27,12 @@ dressed = false;
 
 
 colliding_with_scientist_1 = false;
-if (colliding_with_scientist_1) show_debug_message("colliding");
 colliding_with_scientist_2 = false;
 colliding_with_scientist_3 = false;
 colliding_with_door = false;
 colliding_with_mirror = false;
+
+colliding_with_book1 = false;
 
 convo_in_progress = false;
 
@@ -39,4 +40,5 @@ scientist1_counter = 0;
 scientist2_counter = 0;
 scientist3_counter = 0;
 
-question_coutner = 0;
+question_counter = 0;
+

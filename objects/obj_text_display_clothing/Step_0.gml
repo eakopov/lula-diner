@@ -64,7 +64,11 @@ if (!obj_clothing_controller.convo_in_progress) {
 	            start_conversation("Door_Knight");
 	        }
 		}
-	}    
+	}
+	
+	else if (obj_clothing_controller.colliding_with_book1) {
+				start_conversation("Book1");
+	}
     
 }
 

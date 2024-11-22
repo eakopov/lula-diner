@@ -41,3 +41,31 @@ obj_clothing_controller.colliding_with_scientist_2 = collision_circle(x, y, dete
 obj_clothing_controller.colliding_with_scientist_3 = collision_circle(x, y, detection_radius, obj_scientist_3, true, true);
 obj_clothing_controller.colliding_with_door = collision_circle(x, y, detection_radius+30, obj_clothing_door, true, true);
 obj_clothing_controller.colliding_with_mirror = collision_circle(x, y, detection_radius+30, obj_clothing_mirror, true, true);
+obj_clothing_controller.colliding_with_book1 = collision_circle(x, y, detection_radius+64, obj_clothing_book, true, true);
+
+// Initialize the flag if it doesn't already exist
+if (!variable_instance_exists(id, "has_crossed_door")) {
+   has_crossed_door = false;
+}
+
+// Check for collision with obj_clothing_lib_door using collision_circle
+if (collision_circle(x, y, 64, obj_clothing_lib_door, false, true)) {
+    if (!has_crossed_door) {
+        // Check position relative to the door and adjust
+        if (x > obj_clothing_lib_door.x) {
+            x = obj_clothing_lib_door.x - 64; // Move to the right of the door
+        } else {
+            x = obj_clothing_lib_door.x + 64; // Move to the left of the door
+        }
+
+        // Set the flag to prevent repeated movement
+        has_crossed_door = true;
+    }
+}
+
+// Reset the flag when no longer colliding
+if (!collision_circle(x, y, 128, obj_clothing_lib_door, false, true)) {
+    has_crossed_door = false;
+}
+
+

@@ -30,7 +30,7 @@ view_set_yport(1, 480);
 
 
 // configure camera for Viewport 1
-var _cam1 = camera_create_view(5000, 0, 1000, 240, false, -1, -1, -1, -1);
+var _cam1 = camera_create_view(4720, 0, 1280, 240, false, -1, -1, -1, -1);
 view_set_camera(1, _cam1);
 
 window_center();
