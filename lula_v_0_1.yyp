@@ -221,6 +221,7 @@
     {"id":{"name":"spr_gamma_ray_spectrometer","path":"sprites/spr_gamma_ray_spectrometer/spr_gamma_ray_spectrometer.yy",},},
     {"id":{"name":"spr_jim_bell","path":"sprites/spr_jim_bell/spr_jim_bell.yy",},},
     {"id":{"name":"spr_lula","path":"sprites/spr_lula/spr_lula.yy",},},
+    {"id":{"name":"spr_maria_zuber","path":"sprites/spr_maria_zuber/spr_maria_zuber.yy",},},
     {"id":{"name":"spr_multispectral_imager","path":"sprites/spr_multispectral_imager/spr_multispectral_imager.yy",},},
     {"id":{"name":"spr_neutron_spectrometer","path":"sprites/spr_neutron_spectrometer/spr_neutron_spectrometer.yy",},},
     {"id":{"name":"spr_pause","path":"sprites/spr_pause/spr_pause.yy",},},
