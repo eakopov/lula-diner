@@ -28,8 +28,8 @@
     {"$GMFolder":"","%Name":"Objects","folderPath":"folders/Objects.yy","name":"Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Lula","folderPath":"folders/Objects/Lula.yy","name":"Lula","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Pizza Objects","folderPath":"folders/Objects/Pizza Objects.yy","name":"Pizza Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"Tools","folderPath":"folders/Objects/Pizza Objects/Tools.yy","name":"Tools","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Pizzas","folderPath":"folders/Objects/Pizza Objects/Pizzas.yy","name":"Pizzas","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"rythem","folderPath":"folders/Objects/rythem.yy","name":"rythem","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Text Boxes","folderPath":"folders/Objects/Text Boxes.yy","name":"Text Boxes","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Paths","folderPath":"folders/Paths.yy","name":"Paths","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Rooms","folderPath":"folders/Rooms.yy","name":"Rooms","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -61,7 +61,7 @@
   },
   "name":"lula_v_0_1",
   "resources":[
-    {"id":{"name":"font","path":"fonts/font/font.yy",},},
+    {"id":{"name":"pizza_room_font","path":"fonts/pizza_room_font/pizza_room_font.yy",},},
     {"id":{"name":"globals","path":"objects/globals/globals.yy",},},
     {"id":{"name":"obj_bg","path":"objects/obj_bg/obj_bg.yy",},},
     {"id":{"name":"obj_cheese","path":"objects/obj_cheese/obj_cheese.yy",},},

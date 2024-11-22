@@ -6,8 +6,8 @@
   "name":"obj_gamma",
   "overriddenProperties":[],
   "parent":{
-    "name":"Tools",
-    "path":"folders/Objects/Pizza Objects/Tools.yy",
+    "name":"lula_v_0_1",
+    "path":"lula_v_0_1.yyp",
   },
   "parentObjectId":null,
   "persistent":false,
