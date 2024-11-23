@@ -33,4 +33,10 @@ if (!variable_global_exists("show_fun_fact")) {
     global.show_fun_fact = false; // Controls whether the fun fact is shown
 }
 
+// Global array of mission setbacks
+global.mission_setbacks = [
+    "Mission Setback: Delay in communication with the spacecraft caused by a solar storm.",
+    "Mission Setback: One of our key instruments had a power outage!",
+    "Mission Setback: Unexpected trajectory adjustment needed due to asteroid debris."
+];
 
