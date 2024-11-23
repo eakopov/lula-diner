@@ -1,6 +1,7 @@
 {
   "FolderOrderSettings":[
     {"name":"Pizza Objects","order":18,"path":"folders/Objects/Pizza Objects.yy",},
+    {"name":"Tools","order":13,"path":"folders/Objects/Pizza Objects/Tools.yy",},
     {"name":"Pizzas","order":7,"path":"folders/Objects/Pizza Objects/Pizzas.yy",},
     {"name":"Pizza Scripts","order":1,"path":"folders/Scripts/Pizza Scripts.yy",},
     {"name":"Pizza Sprites","order":2,"path":"folders/Sprites/Pizza Sprites.yy",},
