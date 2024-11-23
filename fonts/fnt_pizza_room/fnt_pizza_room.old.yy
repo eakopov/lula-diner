@@ -1,6 +1,6 @@
 {
   "$GMFont":"",
-  "%Name":"font",
+  "%Name":"fnt_pizza_room",
   "AntiAlias":1,
   "applyKerning":0,
   "ascender":26,
@@ -118,10 +118,10 @@
   "last":0,
   "lineHeight":30,
   "maintainGms1Font":false,
-  "name":"font",
+  "name":"fnt_pizza_room",
   "parent":{
-    "name":"Customers",
-    "path":"folders/Sprites/Pizza Sprites/Customers.yy",
+    "name":"Fonts",
+    "path":"folders/Fonts.yy",
   },
   "pointRounding":0,
   "ranges":[
