@@ -1,6 +1,7 @@
 {
   "FolderOrderSettings":[],
   "ResourceOrderSettings":[
+    {"name":"obj_next_game_button","order":12,"path":"objects/obj_next_game_button/obj_next_game_button.yy",},
     {"name":"obj_skip_button_deck","order":1,"path":"objects/obj_skip_button_deck/obj_skip_button_deck.yy",},
     {"name":"Spr_Correct","order":8,"path":"sprites/Spr_Correct/Spr_Correct.yy",},
     {"name":"spr_gamma_ray_spectrometer","order":10,"path":"sprites/spr_gamma_ray_spectrometer/spr_gamma_ray_spectrometer.yy",},
