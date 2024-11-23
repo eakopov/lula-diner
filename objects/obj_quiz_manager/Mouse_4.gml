@@ -43,3 +43,4 @@ if (global.quiz_completed) {
         room_goto(room_next);
     }
 }
+
