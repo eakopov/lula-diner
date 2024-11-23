@@ -6,8 +6,8 @@
   "name":"obj_DSOC",
   "overriddenProperties":[],
   "parent":{
-    "name":"lula_v_0_1",
-    "path":"lula_v_0_1.yyp",
+    "name":"Tools",
+    "path":"folders/Objects/Pizza Objects/Tools.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_neutron",
+  "%Name":"obj_brauer",
   "eventList":[],
   "managed":true,
-  "name":"obj_neutron",
+  "name":"obj_brauer",
   "overriddenProperties":[],
   "parent":{
-    "name":"Tools",
-    "path":"folders/Objects/Pizza Objects/Tools.yy",
+    "name":"Customers",
+    "path":"folders/Objects/Pizza Objects/Customers.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_neutron_spectrometer",
-    "path":"sprites/spr_neutron_spectrometer/spr_neutron_spectrometer.yy",
+    "name":"spr_peter_brauer",
+    "path":"sprites/spr_peter_brauer/spr_peter_brauer.yy",
   },
   "spriteMaskId":null,
   "visible":true,

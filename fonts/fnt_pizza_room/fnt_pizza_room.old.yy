@@ -1,6 +1,6 @@
 {
   "$GMFont":"",
-  "%Name":"pizza_room_font",
+  "%Name":"fnt_pizza_room",
   "AntiAlias":1,
   "applyKerning":0,
   "ascender":26,
@@ -118,7 +118,7 @@
   "last":0,
   "lineHeight":30,
   "maintainGms1Font":false,
-  "name":"pizza_room_font",
+  "name":"fnt_pizza_room",
   "parent":{
     "name":"Fonts",
     "path":"folders/Fonts.yy",
