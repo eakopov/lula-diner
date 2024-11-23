@@ -25,4 +25,12 @@ global.psyche_fun_facts = [
     "Powerup! Fun Fact: The name for the Psyche asteroid comes from the Greek goddess of the soul!"
 ];
 
+if (!variable_global_exists("current_fun_fact")) {
+    global.current_fun_fact = ""; // Holds the current fun fact text
+}
+
+if (!variable_global_exists("show_fun_fact")) {
+    global.show_fun_fact = false; // Controls whether the fun fact is shown
+}
+
 
