@@ -11,8 +11,8 @@
   "name":"obj_customer",
   "overriddenProperties":[],
   "parent":{
-    "name":"Pizza Objects",
-    "path":"folders/Objects/Pizza Objects.yy",
+    "name":"Customers",
+    "path":"folders/Objects/Pizza Objects/Customers.yy",
   },
   "parentObjectId":null,
   "persistent":false,

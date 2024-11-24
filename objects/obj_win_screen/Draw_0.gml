@@ -9,5 +9,5 @@ draw_set_color(c_black);
 draw_text(room_width / 2 - 100, room_height / 2, "You Win!");
 draw_text(room_width / 2 - 100, room_height / 2 + 40, "Score: " + string(global.jump_score));
 
-draw_text(room_width / 2 - 100, room_height / 2 + 80, "[R] Restart Game");
+draw_text(room_width / 2 - 100, room_height / 2 + 80, "[P] Restart Game");
 draw_text(room_width / 2 - 100, room_height / 2 + 110, "[C] Continue to Next Room");

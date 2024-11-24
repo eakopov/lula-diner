@@ -4,6 +4,18 @@ if (failure_type == "decrease_timer")
     global.jump_timer -= room_speed * 5; // Reduces timer by 5 seconds
     instance_destroy(); // Remove the failure hoop after collision
 }
+
+// Choose a random mission setback
+var setback_text = global.mission_setbacks[irandom(array_length(global.mission_setbacks) - 1)];
+
+// Create a setback text object at the fail hoop's position
+var setback_instance = instance_create_layer(x, y, "Instances", obj_setback_text);
+
+// Assign the setback text to the object
+setback_instance.text = setback_text;
+
+
+/*
 else if (failure_type == "end_game")
 {	
 	global.jump_timer = 0;
@@ -53,5 +65,5 @@ else if (failure_type == "end_game")
     
     // Destroy the failure hoop to prevent further collisions
     instance_destroy();
-}
+} */
 

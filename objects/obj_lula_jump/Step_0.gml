@@ -13,11 +13,11 @@ var speed_multiplier = (global.speed_boost_active) ? 2 : 1; // Double speed when
 
 if keyboard_check(vk_left) || keyboard_check(ord("A"))
 {
-    xsp = -1 * speed_multiplier;
+    xsp = -2 * speed_multiplier;
 }
 if keyboard_check(vk_right) || keyboard_check(ord("D"))
 {
-    xsp = 1 * speed_multiplier;
+    xsp = 2 * speed_multiplier;
 }
 
 // Jumping (Arrow key up or W)
@@ -60,18 +60,21 @@ if place_meeting(x, y, obj_ph_hoops)
 
     // Determine score multiplier
     var score_multiplier = global.double_points_active ? 2 : 1;
+	
+	    if (y < hoop_y && ysp < 0) || (y > hoop_y && ysp > 0) { // Passing upward or downward
+        global.jump_score += 50 * score_multiplier; // Add points
+        global.hoops_passed += 1; // Increment hoop count
 
-    // Check if the player is passing upwards or downwards through the hoop
-    if (y < hoop_y && ysp < 0) // Passing upwards
-    {
-        global.jump_score += 50 * score_multiplier; // Add 50 points (or double if active) for upward pass
-        with (instance_place(x, y, obj_ph_hoops)) instance_destroy(); // Destroy hoop 
-    }
-    else if (y > hoop_y && ysp > 0) // Passing downwards
-    {
-        global.jump_score += 50 * score_multiplier; // Add 50 points (or double if active) for downward pass
-        with (instance_place(x, y, obj_ph_hoops)) instance_destroy(); // Destroy hoop
-    }
+        // Check if 3 hoops have been passed to advance the text
+        if (global.hoops_passed >= 3) {
+            global.hoops_passed = 0; // Reset the hoop count
+            if (global.current_text_index < 6) {
+                global.current_text_index += 1; // Advance the text index
+             }
+           }
+		}
+		
+		with (instance_place(x, y, obj_ph_hoops)) instance_destroy(); // Destroy hoop
 }
 
 // Double Jump Timer Logic

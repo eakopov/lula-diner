@@ -77,3 +77,8 @@ if (!variable_global_exists("double_points_active"))
     global.double_points_active = false;
     global.double_points_timer = 0;
 }
+
+if (!variable_global_exists("hoops_passed")) {
+    global.hoops_passed = 0; // Initialize the hoop count
+}
+
