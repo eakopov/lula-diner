@@ -1,6 +1,5 @@
 with (obj_portrait) {
     if (popup_visible) {
-        // Copy your popup drawing logic here
         var rect_x1 = x;
         var rect_y1 = y + 100;
         var rect_x2 = x + 200;
