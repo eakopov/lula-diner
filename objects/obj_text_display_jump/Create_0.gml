@@ -40,3 +40,76 @@ global.mission_setbacks = [
     "Mission Setback: Unexpected trajectory adjustment needed due to asteroid debris."
 ];
 
+// Global array to store questions
+global.mc_questions = [
+    ["What is the Psyche asteroid known as?",
+        "A piece of moon", 
+        "An exposed core of a protoplanet", 
+        "A fragment from a star", 
+        "Mars rubble", 
+        1],
+
+    ["Where is the Psyche asteroid in space?",
+        "Between Mars and Jupiter", 
+        "Close to the moon", 
+        "Close to the Sun", 
+        "In Saturn's rings", 
+        0],
+
+    ["What is created in Phase 1?",
+        "A picture of a spaceship", 
+        "A concept study", 
+        "Moon boots", 
+        "A science experiment", 
+        1],
+
+    ["How far is the Psyche asteroid from the Sun compared to Earth?",
+        "The same distance", 
+        "Twice as far", 
+        "Three times as far", 
+        "Half as far", 
+        2],
+
+    ["What is tested in Phase 4?",
+        "The fuel for the rocket", 
+        "The spacecraft and its instruments", 
+        "The gravity of the asteroid", 
+        "The current speed of the solar system", 
+        1],
+
+    ["Which instrument is used to help figure out what the asteroid is made of?",
+        "Telescope", 
+        "Camera", 
+        "Gamma ray", 
+        "Microscope", 
+        2],
+
+    ["What powers up the Psyche spacecraft?",
+        "Gasoline", 
+        "Batteries", 
+        "Solar-electric propulsion", 
+        "Wind turbines", 
+        2],
+
+    ["What does the Psyche mission study and document?",
+        "How planets form", 
+        "How humans can live in space", 
+        "How much light is in the sun", 
+        "The rotation of Mars", 
+        0],
+
+    ["What is the Psyche asteroid named after?",
+        "A scientist", 
+        "A Greek goddess", 
+        "A constellation", 
+        "A folk tale", 
+        1],
+
+    ["Which planet’s gravity help the spacecraft reach the asteroid belt?",
+        "Venus", 
+        "Saturn", 
+        "Mars", 
+        "Neptune", 
+        2]
+];
+
