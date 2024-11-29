@@ -70,10 +70,39 @@ if (!obj_clothing_controller.convo_in_progress) {
 		}
 	}
 	
+	else if (obj_clothing_controller.colliding_with_book) {
+				start_conversation("Book");
+	}
+	
 	else if (obj_clothing_controller.colliding_with_book1) {
 				start_conversation("Book1");
 	}
-    
+	
+	else if (obj_clothing_controller.colliding_with_book2) {
+				start_conversation("Book2");
+	}
+	
+	else if (obj_clothing_controller.colliding_with_book3) {
+				start_conversation("Book3");
+	}
+	
+	else if (obj_clothing_controller.colliding_with_book4) {
+				start_conversation("Book4");
+	}
+	
+	else if (obj_clothing_controller.colliding_with_book5) {
+				start_conversation("Book5");
+	}
+	
+	else if (obj_clothing_controller.colliding_with_book6) {
+				start_conversation("Book6");
+	}
+	
+	else if (obj_clothing_controller.colliding_with_book7) {
+				start_conversation("Book7");
+	}
+	
+	    
 }
 
 if (obj_clothing_controller.convo_in_progress) {

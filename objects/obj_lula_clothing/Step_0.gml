@@ -41,7 +41,18 @@ obj_clothing_controller.colliding_with_scientist_2 = collision_circle(x, y, dete
 obj_clothing_controller.colliding_with_scientist_3 = collision_circle(x, y, detection_radius, obj_scientist_3, true, true);
 obj_clothing_controller.colliding_with_door = collision_circle(x, y, detection_radius+30, obj_clothing_door, true, true);
 obj_clothing_controller.colliding_with_mirror = collision_circle(x, y, detection_radius+30, obj_clothing_mirror, true, true);
-obj_clothing_controller.colliding_with_book1 = collision_circle(x, y, detection_radius+64, obj_clothing_book, true, true);
+
+
+obj_clothing_controller.colliding_with_book = collision_circle(x, y, detection_radius+64, obj_clothing_book, true, true);
+obj_clothing_controller.colliding_with_book1 = collision_circle(x, y, detection_radius+64, obj_clothing_book_1, true, true);
+obj_clothing_controller.colliding_with_book2 = collision_circle(x, y, detection_radius+64, obj_clothing_book_2, true, true);
+obj_clothing_controller.colliding_with_book3 = collision_circle(x, y, detection_radius+64, obj_clothing_book_3, true, true);
+obj_clothing_controller.colliding_with_book4 = collision_circle(x, y, detection_radius+64, obj_clothing_book_4, true, true);
+obj_clothing_controller.colliding_with_book5 = collision_circle(x, y, detection_radius+64, obj_clothing_book_5, true, true);
+obj_clothing_controller.colliding_with_book6 = collision_circle(x, y, detection_radius+64, obj_clothing_book_6, true, true);
+obj_clothing_controller.colliding_with_book7 = collision_circle(x, y, detection_radius+64, obj_clothing_book_7, true, true);
+obj_clothing_controller.colliding_with_book8 = collision_circle(x, y, detection_radius+64, obj_clothing_book_8, true, true);
+
 
 // Initialize the flag if it doesn't already exist
 if (!variable_instance_exists(id, "has_crossed_door")) {

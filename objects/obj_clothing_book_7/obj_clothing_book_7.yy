@@ -6,8 +6,8 @@
   "name":"obj_clothing_book_7",
   "overriddenProperties":[],
   "parent":{
-    "name":"environment",
-    "path":"folders/Objects/clothing_game/environment.yy",
+    "name":"lib_books",
+    "path":"folders/Objects/clothing_game/environment/lib_books.yy",
   },
   "parentObjectId":{
     "name":"obj_par_environment",

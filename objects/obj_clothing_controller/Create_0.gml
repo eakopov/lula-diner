@@ -32,7 +32,15 @@ colliding_with_scientist_3 = false;
 colliding_with_door = false;
 colliding_with_mirror = false;
 
+colliding_with_book = false;
 colliding_with_book1 = false;
+colliding_with_book2 = false;
+colliding_with_book3 = false;
+colliding_with_book4 = false;
+colliding_with_book5 = false;
+colliding_with_book6 = false;
+colliding_with_book7 = false;
+colliding_with_book8 = false;
 
 convo_in_progress = false;
 
