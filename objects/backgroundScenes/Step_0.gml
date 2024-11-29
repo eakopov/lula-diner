@@ -13,7 +13,7 @@ if (frame_count >= switch_timer) {
     // Move to the next layer
     current_layer_index++;
     if (current_layer_index >= array_length(layer_names)) {
-        current_layer_index = 0; // Loop back to the first layer
+        current_layer_index--; // keeps layer at last
     }
 
     // Show the new layer
