@@ -70,6 +70,9 @@ if place_meeting(x, y, obj_ph_hoops)
             global.hoops_passed = 0; // Reset the hoop count
             if (global.current_text_index < 6) {
                 global.current_text_index += 1; // Advance the text index
+				    
+        // Play the phase passed sound
+        audio_play_sound(phase_passed_sound, 1, false); // Sound, priority, looping (false)
              }
            }
 		}

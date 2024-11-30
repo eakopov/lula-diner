@@ -1,4 +1,6 @@
 {
-  "FolderOrderSettings":[],
+  "FolderOrderSettings":[
+    {"name":"jump_sounds","order":1,"path":"folders/Sounds/jump_sounds.yy",},
+  ],
   "ResourceOrderSettings":[],
 }
