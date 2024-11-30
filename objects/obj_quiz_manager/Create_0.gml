@@ -12,17 +12,28 @@ function shuffle_array(array) {
 
 // Easy questions with feedback messages for each answer choice
 global.easy_questions = [
-    ["What is the main goal of the Psyche mission?", "1) To study a metal-rich asteroid", "2) To explore Mars", "3) To discover new stars", 1, 
-        ["Correct! The Psyche mission aims to study a metal-rich asteroid.", "Incorrect. The mission's goal is not to explore Mars.", "Incorrect. The mission focuses on an asteroid, not star discovery."]],
-    ["Where is the Psyche asteroid located?", "1) Near Earth", "2) Between Mars and Jupiter", "3) In the Kuiper Belt", 2, 
-        ["Incorrect. Psyche is farther from Earth, located in the asteroid belt.", "Correct! Psyche orbits between Mars and Jupiter.", "Incorrect. Psyche is located in the asteroid belt, not the Kuiper Belt."]],
-    ["What is likely the primary composition of the Psyche asteroid?", "1) Ice", "2) Rock", "3) Metal", 3, 
-        ["Incorrect. Psyche is not composed mainly of ice.", "Incorrect. Psyche is not primarily rock.", "Correct! Psyche is thought to be metal-rich."]],
-    ["Who is leading the Psyche mission?", "1) NASA", "2) SpaceX", "3) ESA", 1, 
-        ["Correct! NASA is leading the mission.", "Incorrect. SpaceX is not leading this mission.", "Incorrect. ESA is not leading the Psyche mission."]],
-    ["What type of asteroid is Psyche?", "1) Chondrite", "2) Metallic", "3) Stony", 2, 
-        ["Incorrect. Psyche is not ice-rich.", "Correct! Psyche is thought to be metal-rich.", "Incorrect. Psyche is not primarily rock-rich."]]
+    ["Which planet does Psyche orbit near?", "1) Mars", "2) Jupiter", "3) Saturn", 1, 
+        ["Correct! Psyche orbits near Mars in the asteroid belt.", "Incorrect. Psyche does not orbit near Jupiter.", "Incorrect. Psyche is not near Saturn."]],
+    ["What is the Psyche mission named after?", "1) A scientist", "2) A goddess", "3) A planet", 2, 
+        ["Incorrect. Psyche is not named after a scientist.", "Correct! Psyche is named after the Greek goddess of the soul.", "Incorrect. Psyche is not a planet."]],
+    ["How does Psyche's size compare to other asteroids?", "1) Very small", "2) Average", "3) One of the largest", 3, 
+        ["Incorrect. Psyche is not very small.", "Incorrect. Psyche is larger than average.", "Correct! Psyche is one of the largest asteroids in the belt."]],
+    ["What does the Psyche mission hope to understand?", "1) The early solar system", "2) Alien life", "3) Star formation", 1, 
+        ["Correct! Psyche helps us understand the early solar system.", "Incorrect. Psyche does not study alien life.", "Incorrect. Star formation is not related to Psyche."]],
+    ["What makes Psyche unique?", "1) It’s made of metal", "2) It’s the closest asteroid", "3) It has life on it", 1, 
+        ["Correct! Psyche is unique because it’s metal-rich.", "Incorrect. Psyche is not the closest asteroid.", "Incorrect. Psyche does not have life."]],
+    ["Who is the principal investigator of the Psyche mission?", "1) Jim Green", "2) Lindy Elkins-Tanton", "3) Elon Musk", 2, 
+        ["Incorrect. Jim Green is not the principal investigator.", "Correct! Lindy Elkins-Tanton leads the Psyche mission.", "Incorrect. Elon Musk is not involved with this mission."]],
+    ["What is the mission's spacecraft called?", "1) Psyche", "2) Voyager", "3) Perseverance", 1, 
+        ["Correct! The spacecraft itself is called Psyche.", "Incorrect. Voyager is a different mission.", "Incorrect. Perseverance is a Mars rover."]],
+    ["What is the asteroid belt?", "1) A collection of rocks and metals between Mars and Jupiter", "2) A ring of gas around Saturn", "3) A magnetic field around Earth", 1, 
+        ["Correct! The asteroid belt is between Mars and Jupiter.", "Incorrect. Saturn’s rings are gas and ice.", "Incorrect. Earth’s magnetic field is unrelated."]],
+    ["How was Psyche discovered?", "1) By telescope", "2) By spacecraft", "3) By accident", 1, 
+        ["Correct! Psyche was discovered using telescopes.", "Incorrect. No spacecraft discovered Psyche.", "Incorrect. Psyche was identified intentionally."]],
+    ["How long has Psyche been known to scientists?", "1) Over 100 years", "2) 50 years", "3) Less than 10 years", 1, 
+        ["Correct! Psyche was discovered in the 19th century.", "Incorrect. Psyche was discovered much earlier.", "Incorrect. Psyche has been known for over a century."]]
 ];
+
 
 // Medium questions with feedback messages
 global.medium_questions = [
