@@ -217,6 +217,7 @@
     {"id":{"name":"IsChatterbox","path":"scripts/IsChatterbox/IsChatterbox.yy",},},
     {"id":{"name":"pointsFunctions","path":"scripts/pointsFunctions/pointsFunctions.yy",},},
     {"id":{"name":"scr_find_empty_table","path":"scripts/scr_find_empty_table/scr_find_empty_table.yy",},},
+    {"id":{"name":"scr_init_customer","path":"scripts/scr_init_customer/scr_init_customer.yy",},},
     {"id":{"name":"scr_receive_order","path":"scripts/scr_receive_order/scr_receive_order.yy",},},
     {"id":{"name":"spr_bg","path":"sprites/spr_bg/spr_bg.yy",},},
     {"id":{"name":"spr_cheese_pizza","path":"sprites/spr_cheese_pizza/spr_cheese_pizza.yy",},},

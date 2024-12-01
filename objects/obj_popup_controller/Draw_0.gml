@@ -16,7 +16,7 @@ with (obj_portrait) {
         var tool_x = rect_x1 + 10;
         var tool_y = rect_y1 + 70;
         for (var i = 0; i < array_length(tools); i++) {
-            draw_sprite(tools[i].sprite_index, 0, tool_x, tool_y);
+            draw_sprite(tools[i], 0, tool_x, tool_y);
             tool_x += 90;
             if (tool_x + 40 > rect_x2) {
                 tool_x = rect_x1 + 10;

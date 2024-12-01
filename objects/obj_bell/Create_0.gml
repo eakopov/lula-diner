@@ -4,3 +4,5 @@
 // Inherit the parent event
 event_inherited();
 
+scientist_name = "Jim Bell";
+tools = []; // fill out later
