@@ -43,12 +43,19 @@ with (obj_customer) {
 
 // spawn logic
 if (spawn_timer >= spawn_interval && !customer_waiting) {
-    // spawn customer off-screen at (0, 576)
-    var customer = instance_create_layer(0, 576, "Instances", obj_customer);
+    // Randomly select a scientist object
+    var scientist_types = [obj_bell, obj_brauer, obj_lawrence, obj_zuber];
+    var selected_scientist = choose(scientist_types[0], scientist_types[1], scientist_types[2], scientist_types[3]);
     
-    show_debug_message("Customer spawned at (0, 576)");
+    // Create the scientist instance
+    var customer = instance_create_layer(0, 576, "Instances", selected_scientist);
+
+    // Initialize the customer
+    scr_init_customer(customer);
+
+    show_debug_message("Customer spawned at (0, 576): " + string(selected_scientist));
     
-    // reset the timer
-    spawn_timer = 0; 
+    // Reset the timer
+    spawn_timer = 0;
 }
 }

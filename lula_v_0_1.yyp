@@ -331,6 +331,7 @@
     {"id":{"name":"restart_game","path":"scripts/restart_game/restart_game.yy",},},
     {"id":{"name":"rythemFunctions","path":"scripts/rythemFunctions/rythemFunctions.yy",},},
     {"id":{"name":"scr_find_empty_table","path":"scripts/scr_find_empty_table/scr_find_empty_table.yy",},},
+    {"id":{"name":"scr_init_customer","path":"scripts/scr_init_customer/scr_init_customer.yy",},},
     {"id":{"name":"scr_receive_order","path":"scripts/scr_receive_order/scr_receive_order.yy",},},
     {"id":{"name":"RetroFuture_Dirty_timing","path":"sounds/RetroFuture_Dirty_timing/RetroFuture_Dirty_timing.yy",},},
     {"id":{"name":"RetroFuture_Dirty","path":"sounds/RetroFuture_Dirty/RetroFuture_Dirty.yy",},},
