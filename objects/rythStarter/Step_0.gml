@@ -31,5 +31,15 @@ if(!audio_is_playing(singinID)){
 	layer_set_visible(myLayer, false);
 	myLayer = layer_get_id("backgroundInstance");
 	layer_set_visible(myLayer, false);
+	myLayer = layer_get_id("backgroundInstance_1");
+	layer_set_visible(myLayer, false);
+	myLayer = layer_get_id("backgroundInstance_2");
+	layer_set_visible(myLayer, false);
+	myLayer = layer_get_id("backgroundInstance_3");
+	layer_set_visible(myLayer, false);
+	myLayer = layer_get_id("backgroundInstance_4");
+	layer_set_visible(myLayer, false);
+	myLayer = layer_get_id("backgroundInstance_5");
+	layer_set_visible(myLayer, false);
 	instance_destroy();
 }	
