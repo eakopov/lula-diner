@@ -37,16 +37,26 @@ global.easy_questions = [
 
 // Medium questions with feedback messages
 global.medium_questions = [
-    ["What is the estimated diameter of Psyche?", "1) About 140 miles", "2) About 500 miles", "3) About 1,000 miles", 1, 
-        ["Correct! Psyche is estimated to be around 140 miles in diameter.", "Incorrect. Psyche is smaller than 500 miles.", "Incorrect. Psyche is not 1,000 miles in diameter."]],
-    ["In what year did the Psyche mission launch?", "1) 2022", "2) 2024", "3) 2026", 2, 
-        ["Incorrect. The mission launched in a later year.", "Correct! The mission launched in 2024.", "Incorrect. The mission was launched before 2026."]],
-    ["How long will it take for the Psyche spacecraft to reach the asteroid?", "1) 1 year", "2) 3 years", "3) Over 5 years", 2, 
-        ["Incorrect. It will take longer than 1 year.", "Correct! Psyche will take approximately 3 years.", "Incorrect. It will take less than 5 years."]],
-    ["What type of propulsion does the Psyche spacecraft use?", "1) Chemical", "2) Nuclear", "3) Solar-electric", 3, 
-        ["Incorrect. Psyche uses solar-electric propulsion.", "Incorrect. Nuclear propulsion is not used on Psyche.", "Correct! Psyche uses solar-electric propulsion."]],
-    ["Which organization is funding the Psyche mission?", "1) NASA", "2) ESA", "3) Roscosmos", 1, 
-        ["Correct! NASA funds the Psyche mission.", "Incorrect. ESA is not funding Psyche.", "Incorrect. Roscosmos is not involved in funding Psyche."]]
+    ["What is Psyche's surface likely to be?", "1) Smooth", "2) Cratered and uneven", "3) Covered in ice", 2, 
+        ["Incorrect. Psyche’s surface is not smooth.", "Correct! Psyche’s surface is likely cratered and uneven.", "Incorrect. Psyche is not covered in ice."]],
+    ["How does the Psyche mission communicate with Earth?", "1) Radio waves", "2) Laser signals", "3) Internet satellites", 1, 
+        ["Correct! The Psyche mission uses radio waves.", "Incorrect. Laser signals are not used here.", "Incorrect. Internet satellites are not part of Psyche."]],
+    ["How is Psyche thought to have formed?", "1) As a leftover planetary core", "2) As a gas giant", "3) As a moon", 1, 
+        ["Correct! Psyche is likely a leftover planetary core.", "Incorrect. Psyche is not a gas giant.", "Incorrect. Psyche is not a moon."]],
+    ["What powers the Psyche spacecraft?", "1) Solar-electric propulsion", "2) Nuclear energy", "3) Gas thrusters", 1, 
+        ["Correct! The spacecraft is powered by solar-electric propulsion.", "Incorrect. Nuclear energy is not used.", "Incorrect. Gas thrusters are not used on Psyche."]],
+    ["What instrument measures Psyche's gravitational field?", "1) Magnetometer", "2) X-ray spectrometer", "3) Radio science system", 3, 
+        ["Incorrect. Magnetometer measures magnetic fields.", "Incorrect. X-ray spectrometer is not used for gravity.", "Correct! The radio science system measures gravitational fields."]],
+    ["Which type of orbit will Psyche enter?", "1) Circular", "2) Elliptical", "3) Spiraling closer", 3, 
+        ["Incorrect. Psyche’s orbit isn’t strictly circular.", "Incorrect. Psyche doesn’t use elliptical orbits.", "Correct! Psyche will spiral closer during its mission."]],
+    ["What material might Psyche help locate in asteroids?", "1) Water", "2) Metal", "3) Diamonds", 2, 
+        ["Incorrect. Psyche isn’t expected to locate water.", "Correct! Psyche helps us understand metal-rich asteroids.", "Incorrect. Diamonds are not a focus of Psyche."]],
+    ["How will Psyche’s magnetic field be studied?", "1) Gamma-ray spectrometer", "2) Magnetometer", "3) Solar panels", 2, 
+        ["Incorrect. Gamma-ray spectrometer measures elements.", "Correct! The magnetometer measures magnetic fields.", "Incorrect. Solar panels don’t study magnetic fields."]],
+    ["What is Psyche’s estimated mass?", "1) 2.7 x 10^19 kg", "2) 1.5 x 10^18 kg", "3) 9.8 x 10^20 kg", 1, 
+        ["Correct! Psyche’s mass is estimated at 2.7 x 10^19 kg.", "Incorrect. This value is too low for Psyche.", "Incorrect. This value is too high for Psyche."]],
+    ["Why is Psyche significant?", "1) First mission to a metal-rich asteroid", "2) Closest asteroid to Earth", "3) Part of a new planetary system", 1, 
+        ["Correct! Psyche is the first mission to a metal-rich asteroid.", "Incorrect. Psyche is not the closest to Earth.", "Incorrect. Psyche is not part of a new planetary system."]]
 ];
 
 // Hard questions with feedback messages
