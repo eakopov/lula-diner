@@ -5,6 +5,7 @@ selected_pizza = noone;
 player_money = 0;
 game_paused = false;
 
+global.tools = [obj_DSOC, obj_gamma, obj_magnetrometer, obj_multispectral, obj_neutron, obj_radio];
 global.plates = array_create(7);
 
 // Assign each plate instance to the array

@@ -5,4 +5,4 @@
 event_inherited();
 
 scientist_name = "Jim Bell";
-tools = []; // fill out later
+tools = [obj_multispectral]; // fill out later
