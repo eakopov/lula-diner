@@ -2,5 +2,7 @@
   "FolderOrderSettings":[
     {"name":"jump_sounds","order":1,"path":"folders/Sounds/jump_sounds.yy",},
   ],
-  "ResourceOrderSettings":[],
+  "ResourceOrderSettings":[
+    {"name":"obj_jump_checkbox","order":1,"path":"objects/obj_jump_checkbox/obj_jump_checkbox.yy",},
+  ],
 }

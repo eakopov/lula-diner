@@ -1,3 +1,9 @@
+// Check if the global checkbox is set to hide the text display
+if (global.checkbox_is_checked) {
+    // Do not draw anything if the checkbox indicates hiding
+    return;
+}
+
 // Draw the sprite of obj_text_display_jump
 draw_self();
 

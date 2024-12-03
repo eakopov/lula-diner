@@ -147,6 +147,7 @@
     {"id":{"name":"obj_inventory_box","path":"objects/obj_inventory_box/obj_inventory_box.yy",},},
     {"id":{"name":"obj_inventory_middle","path":"objects/obj_inventory_middle/obj_inventory_middle.yy",},},
     {"id":{"name":"obj_inventory_top","path":"objects/obj_inventory_top/obj_inventory_top.yy",},},
+    {"id":{"name":"obj_jump_checkbox","path":"objects/obj_jump_checkbox/obj_jump_checkbox.yy",},},
     {"id":{"name":"obj_lawrence","path":"objects/obj_lawrence/obj_lawrence.yy",},},
     {"id":{"name":"obj_loss_screen","path":"objects/obj_loss_screen/obj_loss_screen.yy",},},
     {"id":{"name":"obj_lula_clothing","path":"objects/obj_lula_clothing/obj_lula_clothing.yy",},},
