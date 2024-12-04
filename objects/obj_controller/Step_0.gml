@@ -43,7 +43,12 @@ with (obj_customer) {
 
 // spawn logic
 if (spawn_timer >= spawn_interval && !customer_waiting) {
-    // Randomly select a scientist object
+	if (customers_remaining == 0) {
+		game_over = true;
+	} else if (spawn_counter == 5) {
+		instance_create_layer(13, 384, "Instances", obj_sign_closed);
+	} else {
+		// Randomly select a scientist object
     var scientist_types = [obj_bell, obj_brauer, obj_lawrence, obj_zuber];
 	randomize();
 	var index = irandom(3);
@@ -59,5 +64,8 @@ if (spawn_timer >= spawn_interval && !customer_waiting) {
     
     // Reset the timer
     spawn_timer = 0;
+	spawn_counter++;
+	}
+    
 }
 }
