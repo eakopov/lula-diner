@@ -203,6 +203,7 @@
     {"id":{"name":"obj_timer_powerup","path":"objects/obj_timer_powerup/obj_timer_powerup.yy",},},
     {"id":{"name":"obj_win_screen","path":"objects/obj_win_screen/obj_win_screen.yy",},},
     {"id":{"name":"obj_zuber","path":"objects/obj_zuber/obj_zuber.yy",},},
+    {"id":{"name":"pauseScreenRyth","path":"objects/pauseScreenRyth/pauseScreenRyth.yy",},},
     {"id":{"name":"PlayButton","path":"objects/PlayButton/PlayButton.yy",},},
     {"id":{"name":"resumrButton","path":"objects/resumrButton/resumrButton.yy",},},
     {"id":{"name":"rightCatcher","path":"objects/rightCatcher/rightCatcher.yy",},},

@@ -1,12 +1,16 @@
 /// @description add rythem game
 // You can write your code in this editor
 var shows = "";
-var songPosition = (delta_time / 1000) + songPos;
+var songPosition = songPos;
+if(!global.pausedRyth){
+	songPosition = (delta_time / 1000) + songPos;
+}	
+
 for(var i = 0; i < ds_list_size(noteTimings); i++){
 	var noteTime = ds_list_find_value(noteTimings, i);
 	var note = ds_list_find_value(notes, i);
 	shows += string(note)+ ", ";
-	if(songPos < noteTime && songPosition >= noteTime){
+	if(songPos < noteTime && songPosition >= noteTime && !global.pausedRyth){
 		
 		
 		switch(note){

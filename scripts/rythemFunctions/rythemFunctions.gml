@@ -24,3 +24,9 @@ function resetPointsRyth(){
 function setRankRyth(rank){
 	global.rankRyth = rank;
 }	
+function pauseRyth(){
+	global.pausedRyth = true;
+}	
+function unpauseRyth(){
+	global.pausedRyth = false;
+}	

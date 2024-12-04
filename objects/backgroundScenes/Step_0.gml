@@ -1,5 +1,7 @@
 // Increment the frame count
-frame_count++;
+if(!global.pausedRyth){
+	frame_count++;
+}	
 
 // Check if the timer has been reached
 if (frame_count >= switch_timer && !done) {
