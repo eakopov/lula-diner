@@ -6,7 +6,7 @@ draw_rectangle(room_width / 2 - 150, room_height / 2 - 50, room_width / 2 + 150,
 draw_set_color(c_black);
 
 // Draw the text content on top of the white rectangle
-draw_text(room_width / 2 - 100, room_height / 2, "You Win!");
+draw_text(room_width / 2 - 100, room_height / 2, "You Win! :)");
 draw_text(room_width / 2 - 100, room_height / 2 + 40, "Score: " + string(global.jump_score));
 
 draw_text(room_width / 2 - 100, room_height / 2 + 80, "[P] Restart Game");

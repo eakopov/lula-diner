@@ -68,7 +68,7 @@ if place_meeting(x, y, obj_ph_hoops)
         // Check if 3 hoops have been passed to advance the text
         if (global.hoops_passed >= 3) {
             global.hoops_passed = 0; // Reset the hoop count
-            if (global.current_text_index < 6) {
+            if (global.current_text_index < 7) {
                 global.current_text_index += 1; // Advance the text index
 				    
         // Play the phase passed sound
@@ -78,6 +78,12 @@ if place_meeting(x, y, obj_ph_hoops)
 		}
 		
 		with (instance_place(x, y, obj_ph_hoops)) instance_destroy(); // Destroy hoop
+    
+	// Check if all phases are completed
+    if (global.current_text_index == 7) {
+        // Show the win screen
+        global.jump_timer = 0;
+    }
 }
 
 // Double Jump Timer Logic

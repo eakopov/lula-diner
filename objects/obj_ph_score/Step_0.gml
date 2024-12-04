@@ -42,8 +42,12 @@ if (global.jump_timer <= 0)
 	with(obj_timer_powerup) {
 		instance_destroy();
 	}
+	
+	with(obj_jump_checkbox){
+		instance_destroy();
+	}
 
-    if (global.jump_score >= 300)
+    if (global.jump_score >= 1050)
     {
         instance_create_layer(room_width / 2, room_height / 2, "Instances", obj_win_screen);
     }

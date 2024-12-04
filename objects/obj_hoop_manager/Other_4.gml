@@ -57,7 +57,7 @@ if (irandom(9) < 3) // 0, 1, or 2 (30% chance)
 }
 
 // Initialize the loss message with a default message
-global.loss_message = "You Lose! (You need 300 Points)";
+global.loss_message = "You Lose! (More Phases Left!)";
 
 // Initialize double jump globals if not already set
 if (!variable_global_exists("double_jump_active"))
