@@ -1,8 +1,16 @@
-/// @description Insert description here
-// You can write your code in this editor
+if (ready_to_seat) {  // Only allow selection if the customer is waiting
+    obj_controller.selected_customer = id;  // Set this customer as the selected one
+}
 
-// Inherit the parent event
-event_inherited();
+if (ready_to_order) {
+	customer_pizza = choose("DSOC", "radio");
+	show_debug_message("Pizza for " + string(id) + " is of type " + string(customer_pizza));
 
-scientist_name = "Maria Zuber";
-tools = []; // fill out later
+    receive_order(id, customer_pizza);
+	
+	// Update state
+	ready_to_order = false;
+	obj_controller.selected_customer = noone;
+	order_taken = true;
+
+}
