@@ -45,7 +45,9 @@ with (obj_customer) {
 if (spawn_timer >= spawn_interval && !customer_waiting) {
     // Randomly select a scientist object
     var scientist_types = [obj_bell, obj_brauer, obj_lawrence, obj_zuber];
-    var selected_scientist = choose(scientist_types[0], scientist_types[1], scientist_types[2], scientist_types[3]);
+	randomize();
+	var index = irandom(3);
+    var selected_scientist = scientist_types[index];
     
     // Create the scientist instance
     var customer = instance_create_layer(0, 576, "Instances", selected_scientist);
