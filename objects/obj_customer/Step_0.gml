@@ -42,7 +42,7 @@ if (ready_to_eat) {
 		var pizza_found = false;
 
     // Loop through all potential pizza types and destroy the one with the matching customer_id
-    var pizza_types = [obj_cheese, obj_pepperoni, obj_pineapple, obj_spinach];  // Add all pizza types here
+    var pizza_types = global.tools;  // Add all pizza types here
 
     for (var i = 0; i < array_length(pizza_types); i++) {
         with (pizza_types[i]) {

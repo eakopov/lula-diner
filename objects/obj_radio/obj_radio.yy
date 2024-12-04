@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_radio_science",
-    "path":"sprites/spr_radio_science/spr_radio_science.yy",
+    "name":"spr_radio",
+    "path":"sprites/spr_radio/spr_radio.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_multispectral_imager",
-    "path":"sprites/spr_multispectral_imager/spr_multispectral_imager.yy",
+    "name":"spr_multispectral",
+    "path":"sprites/spr_multispectral/spr_multispectral.yy",
   },
   "spriteMaskId":null,
   "visible":true,

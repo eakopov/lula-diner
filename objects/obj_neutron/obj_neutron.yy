@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_neutron_spectrometer",
-    "path":"sprites/spr_neutron_spectrometer/spr_neutron_spectrometer.yy",
+    "name":"spr_neutron",
+    "path":"sprites/spr_neutron/spr_neutron.yy",
   },
   "spriteMaskId":null,
   "visible":true,

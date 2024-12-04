@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_psyche_magnetrometer",
-    "path":"sprites/spr_psyche_magnetrometer/spr_psyche_magnetrometer.yy",
+    "name":"spr_magnetrometer",
+    "path":"sprites/spr_magnetrometer/spr_magnetrometer.yy",
   },
   "spriteMaskId":null,
   "visible":true,

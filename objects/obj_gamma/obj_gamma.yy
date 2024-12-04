@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_gamma_ray_spectrometer",
-    "path":"sprites/spr_gamma_ray_spectrometer/spr_gamma_ray_spectrometer.yy",
+    "name":"spr_gamma",
+    "path":"sprites/spr_gamma/spr_gamma.yy",
   },
   "spriteMaskId":null,
   "visible":true,
