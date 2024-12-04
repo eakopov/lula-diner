@@ -25,6 +25,20 @@ for(var i = 0; i < ds_list_size(noteTimings); i++){
 songPos = songPosition;
 
 if(!audio_is_playing(singinID)){
+	addPoints(global.PointsCounter_ryth);
+	if(global.PointsCounter_ryth > 7648){
+		setRankRyth(0);
+	} else if(global.PointsCounter_ryth > 6843) {
+		setRankRyth(1);
+	} else if(global.PointsCounter_ryth > 5635) {
+		setRankRyth(2);
+	} else if(global.PointsCounter_ryth > 4025) {
+		setRankRyth(3);
+	} else if(global.PointsCounter_ryth > 2013) {
+		setRankRyth(4);
+	} else {
+		setRankRyth(5);
+	}
 	instance_create_layer(64, 32, "endRyth", winPrompt);
 	instance_create_layer(224, 608, "endRyth", resumrButton);
 	var myLayer = layer_get_id("Instances");
@@ -41,5 +55,6 @@ if(!audio_is_playing(singinID)){
 	layer_set_visible(myLayer, false);
 	myLayer = layer_get_id("backgroundInstance_5");
 	layer_set_visible(myLayer, false);
+
 	instance_destroy();
 }	

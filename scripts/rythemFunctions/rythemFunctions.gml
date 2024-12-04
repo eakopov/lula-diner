@@ -21,3 +21,6 @@ function setPointsRyth(points){
 function resetPointsRyth(){
 	global.PointsCounter_ryth = 0;
 }
+function setRankRyth(rank){
+	global.rankRyth = rank;
+}	
