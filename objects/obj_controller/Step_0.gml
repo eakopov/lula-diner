@@ -43,9 +43,16 @@ with (obj_customer) {
 
 // spawn logic
 if (spawn_timer >= spawn_interval && !customer_waiting) {
-    // Randomly select a scientist object
+	if (customers_remaining == 0) {
+		game_over = true;
+	} else if (spawn_counter == 5) {
+		instance_create_layer(13, 384, "Instances", obj_sign_closed);
+	} else {
+		// Randomly select a scientist object
     var scientist_types = [obj_bell, obj_brauer, obj_lawrence, obj_zuber];
-    var selected_scientist = choose(scientist_types[0], scientist_types[1], scientist_types[2], scientist_types[3]);
+	randomize();
+	var index = irandom(3);
+    var selected_scientist = scientist_types[index];
     
     // Create the scientist instance
     var customer = instance_create_layer(0, 576, "Instances", selected_scientist);
@@ -57,5 +64,8 @@ if (spawn_timer >= spawn_interval && !customer_waiting) {
     
     // Reset the timer
     spawn_timer = 0;
+	spawn_counter++;
+	}
+    
 }
 }

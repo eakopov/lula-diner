@@ -1,7 +1,10 @@
 {
   "$GMObject":"",
   "%Name":"obj_neutron",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_neutron",
   "overriddenProperties":[],
@@ -28,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_neutron_spectrometer",
-    "path":"sprites/spr_neutron_spectrometer/spr_neutron_spectrometer.yy",
+    "name":"spr_neutron",
+    "path":"sprites/spr_neutron/spr_neutron.yy",
   },
   "spriteMaskId":null,
   "visible":true,

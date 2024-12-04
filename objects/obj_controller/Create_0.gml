@@ -4,7 +4,11 @@ selected_customer = noone;  // start with no customer selected
 selected_pizza = noone;
 player_money = 0;
 game_paused = false;
+game_over = false;
+customers_remaining = 5;
+spawn_counter = 0;
 
+global.tools = [obj_DSOC, obj_gamma, obj_magnetrometer, obj_multispectral, obj_neutron, obj_radio];
 global.plates = array_create(7);
 
 // Assign each plate instance to the array

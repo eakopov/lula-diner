@@ -3,4 +3,5 @@
 
 // Inherit the parent event
 event_inherited();
+tools = [obj_magnetrometer];
 

@@ -1,7 +1,10 @@
 {
   "$GMObject":"",
   "%Name":"obj_multispectral",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_multispectral",
   "overriddenProperties":[],
@@ -28,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_multispectral_imager",
-    "path":"sprites/spr_multispectral_imager/spr_multispectral_imager.yy",
+    "name":"spr_multispectral",
+    "path":"sprites/spr_multispectral/spr_multispectral.yy",
   },
   "spriteMaskId":null,
   "visible":true,

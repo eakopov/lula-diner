@@ -1,7 +1,10 @@
 {
   "$GMObject":"",
   "%Name":"obj_gamma",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_gamma",
   "overriddenProperties":[],
@@ -28,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_gamma_ray_spectrometer",
-    "path":"sprites/spr_gamma_ray_spectrometer/spr_gamma_ray_spectrometer.yy",
+    "name":"spr_gamma",
+    "path":"sprites/spr_gamma/spr_gamma.yy",
   },
   "spriteMaskId":null,
   "visible":true,

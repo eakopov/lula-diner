@@ -3,4 +3,4 @@
 
 // Inherit the parent event
 event_inherited();
-
+tools = [obj_neutron, obj_gamma];
