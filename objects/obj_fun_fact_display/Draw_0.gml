@@ -1,5 +1,8 @@
 // Draw the fun fact and yellow stars if enabled
 if (global.show_fun_fact) {
+    // Apply alpha for fading
+    draw_set_alpha(global.fade_alpha);
+
     // Define text dimensions
     var x_start = 23; // Starting X position
     var y_start = 245; // Starting Y position
@@ -61,4 +64,7 @@ if (global.show_fun_fact) {
     draw_text(x_start + max_width / 3, y_start + text_height + star_offset_y, "*");
     draw_text(x_start + (2 * max_width) / 3, y_start + text_height + star_offset_y, "*");
     draw_text(x_start + max_width - star_offset_x, y_start + text_height + star_offset_y, "*");
+
+    // Reset alpha
+    draw_set_alpha(1);
 }
