@@ -16,4 +16,5 @@ function check_answer() {
     alarm[0] = 90;  // Adjust this delay (e.g., 90 frames for ~1.5 seconds)
     
     global.player_answer = -1;  // Reset player answer
+	
 }

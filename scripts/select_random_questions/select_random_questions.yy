@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"select_random_questions",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"select_random_questions",
+  "parent":{
+    "name":"Deck",
+    "path":"folders/Scripts/Deck.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
