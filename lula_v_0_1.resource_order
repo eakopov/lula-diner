@@ -3,7 +3,6 @@
     {"name":"jump_sounds","order":1,"path":"folders/Sounds/jump_sounds.yy",},
   ],
   "ResourceOrderSettings":[
-    {"name":"obj_jump_checkbox","order":1,"path":"objects/obj_jump_checkbox/obj_jump_checkbox.yy",},
     {"name":"fnt_pizza_room","order":2,"path":"fonts/fnt_pizza_room/fnt_pizza_room.yy",},
     {"name":"backgroundScenes","order":20,"path":"objects/backgroundScenes/backgroundScenes.yy",},
     {"name":"backgroundSet","order":1,"path":"objects/backgroundSet/backgroundSet.yy",},
@@ -28,6 +27,7 @@
     {"name":"obj_counter","order":2,"path":"objects/obj_counter/obj_counter.yy",},
     {"name":"obj_gamma","order":1,"path":"objects/obj_gamma/obj_gamma.yy",},
     {"name":"obj_instructions","order":12,"path":"objects/obj_instructions/obj_instructions.yy",},
+    {"name":"obj_jump_checkbox","order":1,"path":"objects/obj_jump_checkbox/obj_jump_checkbox.yy",},
     {"name":"obj_lawrence","order":1,"path":"objects/obj_lawrence/obj_lawrence.yy",},
     {"name":"obj_lula_deck","order":1,"path":"objects/obj_lula_deck/obj_lula_deck.yy",},
     {"name":"obj_lula_end","order":2,"path":"objects/obj_lula_end/obj_lula_end.yy",},

@@ -28,7 +28,7 @@ for(var i = 0; i < ds_list_size(noteTimings); i++){
 }
 songPos = songPosition;
 
-if(!audio_is_playing(singinID)){
+if(!audio_is_playing(singinID) && canPause){
 	addPoints(global.PointsCounter_ryth);
 	if(global.PointsCounter_ryth > 7648){
 		setRankRyth(0);
