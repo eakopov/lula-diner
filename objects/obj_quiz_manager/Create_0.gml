@@ -116,3 +116,7 @@ global.hard_questions_selected = select_random_questions(global.hard_questions, 
 
 global.questions = select_random_questions(global.easy_questions, 5);
 
+global.music_on = true; // Music starts as enabled
+if (global.music_on) {
+    audio_play_sound(snd_background_music, 1, true);
+}
