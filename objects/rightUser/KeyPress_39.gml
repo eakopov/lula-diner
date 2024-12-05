@@ -1,10 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
-if(place_meeting(x, y, rigntNotes)){
+if(place_meeting(x, y, rigntNotes) && !global.pausedRyth){
 	with( instance_place(x, y, rigntNotes) ){
 		instance_destroy();
-		addPoints(50);
+		addPointsRyth(50);
 	}	
 } else {
-	removePoints(10);
+	removePointsRyth(10);
 }	

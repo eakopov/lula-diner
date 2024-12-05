@@ -31,6 +31,7 @@
     {"$GMObjectProperty":"v1","%Name":"current_layer_index","filters":[],"listItems":[],"multiselect":false,"name":"current_layer_index","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.0","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"switch_timer","filters":[],"listItems":[],"multiselect":false,"name":"switch_timer","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"frame_count","filters":[],"listItems":[],"multiselect":false,"name":"frame_count","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"done","filters":[],"listItems":[],"multiselect":false,"name":"done","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

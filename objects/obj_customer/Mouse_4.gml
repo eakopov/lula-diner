@@ -3,7 +3,7 @@ if (ready_to_seat) {  // Only allow selection if the customer is waiting
 }
 
 if (ready_to_order) {
-	customer_pizza = choose("cheese", "pepperoni", "pineapple", "spinach");
+	customer_pizza = choose("gamma", "magnetrometer", "multispectral", "neutron", "DSOC", "radio");
 	show_debug_message("Pizza for " + string(id) + " is of type " + string(customer_pizza));
 
     receive_order(id, customer_pizza);

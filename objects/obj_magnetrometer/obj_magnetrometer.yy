@@ -1,7 +1,10 @@
 {
   "$GMObject":"",
   "%Name":"obj_magnetrometer",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_magnetrometer",
   "overriddenProperties":[],
@@ -28,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_psyche_magnetrometer",
-    "path":"sprites/spr_psyche_magnetrometer/spr_psyche_magnetrometer.yy",
+    "name":"spr_magnetrometer",
+    "path":"sprites/spr_magnetrometer/spr_magnetrometer.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -1,7 +1,10 @@
 {
   "$GMObject":"",
   "%Name":"obj_radio",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_radio",
   "overriddenProperties":[],
@@ -28,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_radio_science",
-    "path":"sprites/spr_radio_science/spr_radio_science.yy",
+    "name":"spr_radio",
+    "path":"sprites/spr_radio/spr_radio.yy",
   },
   "spriteMaskId":null,
   "visible":true,

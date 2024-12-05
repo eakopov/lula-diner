@@ -43,6 +43,21 @@ for (var j = 0; j < ds_list_size(notes); j++) {
     show_debug_message("Note: " + string(ds_list_find_value(notes, j)));
 }
 
+var creditsCheck = file_text_open_read("song_ryth_cred.txt");
+
+
+if (creditsCheck != -1) {
+    credits = "";
+    while (!file_text_eof(creditsCheck)) {
+        credits += file_text_readln(creditsCheck) + "\n"; // Concatenate lines
+    }
+    file_text_close(creditsCheck);
+    show_debug_message(credits); // Example: Output all content
+} else {
+    show_debug_message("Failed to load song_ryth_cred.txt");
+}
+draw_set_color(c_white);
+
 
 
 

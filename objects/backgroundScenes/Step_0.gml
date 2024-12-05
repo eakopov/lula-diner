@@ -1,8 +1,10 @@
 // Increment the frame count
-frame_count++;
+if(!global.pausedRyth){
+	frame_count++;
+}	
 
 // Check if the timer has been reached
-if (frame_count >= switch_timer) {
+if (frame_count >= switch_timer && !done) {
     // Reset the frame count
     frame_count = 0;
 
@@ -13,7 +15,8 @@ if (frame_count >= switch_timer) {
     // Move to the next layer
     current_layer_index++;
     if (current_layer_index >= array_length(layer_names)) {
-        current_layer_index = 0; // Loop back to the first layer
+        current_layer_index--; // keeps layer at last
+		done = true;
     }
 
     // Show the new layer
