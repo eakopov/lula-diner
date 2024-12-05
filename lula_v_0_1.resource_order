@@ -198,6 +198,5 @@
     {"name":"spr_text_display_start","order":6,"path":"sprites/spr_text_display_start/spr_text_display_start.yy",},
     {"name":"spr_thought_bubble","order":1,"path":"sprites/spr_thought_bubble/spr_thought_bubble.yy",},
     {"name":"sprite_blk_bkground","order":1,"path":"sprites/sprite_blk_bkground/sprite_blk_bkground.yy",},
->>>>>>> origin/test
   ],
 }
