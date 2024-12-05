@@ -1,15 +1,3 @@
-/// Shuffle Function
-/// Randomly shuffles the given array
-function shuffle_array(array) {
-    for (var i = array_length(array) - 1; i > 0; i--) {
-        var j = irandom(i); // Random index between 0 and i
-        var temp = array[i];
-        array[i] = array[j];
-        array[j] = temp;
-    }
-    return array;
-}
-
 // Easy questions with feedback messages for each answer choice
 global.easy_questions = [
     ["Which planet does Psyche orbit near?", "1) Mars", "2) Jupiter", "3) Saturn", 1, 
@@ -120,4 +108,11 @@ global.instruments = [
     ["Magnetometer", "Magnetometer, Measures magnetic fields to see if Psyche has a remnant magnetic field.", spr_magnetometer],
     ["Imaging System", "Imaging System, Captures high-resolution images to map Psyche's surface.", spr_imaging_system]
 ];
+
+// Initialize global variables
+global.easy_questions_selected = select_random_questions(global.easy_questions, 5);
+global.medium_questions_selected = select_random_questions(global.medium_questions, 5);
+global.hard_questions_selected = select_random_questions(global.hard_questions, 5);
+
+global.questions = select_random_questions(global.easy_questions, 5);
 
