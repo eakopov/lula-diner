@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+clothing_counter = 0;
 
 has_briefcase = false;
 has_cravate = false;
@@ -26,11 +27,20 @@ dressed = false;
 
 
 colliding_with_scientist_1 = false;
-if (colliding_with_scientist_1) show_debug_message("colliding");
 colliding_with_scientist_2 = false;
 colliding_with_scientist_3 = false;
 colliding_with_door = false;
 colliding_with_mirror = false;
+
+colliding_with_book = false;
+colliding_with_book1 = false;
+colliding_with_book2 = false;
+colliding_with_book3 = false;
+colliding_with_book4 = false;
+colliding_with_book5 = false;
+colliding_with_book6 = false;
+colliding_with_book7 = false;
+colliding_with_book8 = false;
 
 convo_in_progress = false;
 
@@ -38,4 +48,11 @@ scientist1_counter = 0;
 scientist2_counter = 0;
 scientist3_counter = 0;
 
-question_coutner = 0;
+question_counter = 0;
+
+
+clothing_item_1 = -1;
+clothing_item_2 = -1;
+clothing_item_3 = -1;
+clothing_item_counter = 0;
+dress_up_time = false;

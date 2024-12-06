@@ -54,6 +54,7 @@ if (!obj_clothing_controller.convo_in_progress) {
 	        start_conversation("Door_Incomplete");
 	    }
 	    else {
+			/*
 	        if (obj_clothing_controller.wear_professional) {
 	            start_conversation("Door_Professional");
 	        }
@@ -63,22 +64,63 @@ if (!obj_clothing_controller.convo_in_progress) {
 	        else if (obj_clothing_controller.wear_knight) {
 	            start_conversation("Door_Knight");
 	        }
+			*/
+			
+			start_conversation("DoorGeneral");
 		}
-	}    
-    
+	}
+	
+	else if (obj_clothing_controller.colliding_with_book) {
+				start_conversation("Book");
+	}
+	
+	else if (obj_clothing_controller.colliding_with_book1) {
+				start_conversation("Book1");
+	}
+	
+	else if (obj_clothing_controller.colliding_with_book2) {
+				start_conversation("Book2");
+	}
+	
+	else if (obj_clothing_controller.colliding_with_book3) {
+				start_conversation("Book3");
+	}
+	
+	else if (obj_clothing_controller.colliding_with_book4) {
+				start_conversation("Book4");
+	}
+	
+	else if (obj_clothing_controller.colliding_with_book5) {
+				start_conversation("Book5");
+	}
+	
+	else if (obj_clothing_controller.colliding_with_book6) {
+				start_conversation("Book6");
+	}
+	
+	else if (obj_clothing_controller.colliding_with_book7) {
+				start_conversation("Book7");
+	}
+	
+	else if (obj_clothing_controller.colliding_with_book8) {
+				start_conversation("Book8");
+	}
+	
+	    
 }
 
 if (obj_clothing_controller.convo_in_progress) {
 	
-		show_debug_message("Start of convo in progress switch state" + obj_clothing_controller.conversation_state);
+		
 		switch (obj_clothing_controller.conversation_state) {
     
 		    // Displaying Text State
 		    case "displaying_text":
-				show_debug_message("inside displaying text case");
+				
 		        text = ChatterboxGetContent(chatterbox, 0);
 		        node_title = ChatterboxGetCurrent(chatterbox);
         
+				
 		        if (ChatterboxIsWaiting(chatterbox)) {
 		            obj_clothing_controller.conversation_state = "waiting_for_input";
 		        } else if (ChatterboxGetOptionCount(chatterbox)) {
@@ -117,7 +159,8 @@ if (obj_clothing_controller.convo_in_progress) {
 			    if (_select != -1) {
 			        show_debug_message("Processing choice: " + string(_select) + " for node: " + string(node_title));
 			        process_choice(node_title, _select); // Call the choice-processing script
-					ChatterboxSelect(chatterbox, _select - 1)
+					show_debug_message("ready for ChatterboxSelect");
+					ChatterboxSelect(chatterbox, _select - 1);
 			        _select = -1;
 					
 					

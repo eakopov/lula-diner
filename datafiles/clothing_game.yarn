@@ -13,7 +13,7 @@ Scientist1:  Hi!  If you answer my questions, I will help you prepare for your p
 
 Scientist1:  Is Psyche a class M asteroid?
   ->Yes
-     Scientist1:  Correct!  Here, take this briefcase!
+    Scientist1:  Correct!  Here, take this briefcase!
   ->No
     Scientist1:  Incorrect!
 
@@ -25,10 +25,10 @@ title:  Scientist1_Cravate
 ---
 Scientist1:  Are you ready for my second question?
 
-Scientist1:  What is the mean diameter of Psyche?
-  ->220 kilometers
+Scientist1:  Approximately how big is Psyche?
+  ->About 220 kilometers across
       Scientist1:  Yes! Here, take this cravate!
-  ->2200 kilometers
+  ->About 2200 kilometers across
       Scientist1:  Oh, no!
 Scientist1:  Thanks!
 ===
@@ -37,11 +37,12 @@ title:  Scientist1_Monocle
 ---
 Scientist1:  Are you ready for my third question?
 
-Scientist1:  When is the Psyche mission expected to arrive at the asteroid?
-  ->2029
-      Scientist1:  Yes! It seems so far away!  Here, take this monocle!
-  ->2026
-      Scientist1:  Too soon!
+Scientist1:  True or False?  Psyche is likely rich in metals.
+  ->True
+      Scientist1:  Correct!
+  ->False
+      Scientist1:  Incorrect!
+
 Scientist1:  Thanks!
 ===
 
@@ -54,11 +55,11 @@ title:  Scientist2_Goggles
 ---
 Scientist2:  If you answer this question, I will help you get ready for your presentation!
 
-Scientist2:  True or false?  The Psyche mission will *not* include astronauts walking on the asteroid.
-  ->True
-      Scientist2:  Correct!  The Psyche mission involves an orbiter and no human astronauts!  Here, take these goggles!
-  ->False
-      Scientist2:  Incorrect!  The Psyche mission involves an orbiter and no human astronauts!
+Scientist2:  Psyche was the _____ asteroid to be discovered.
+  ->16th
+      Scientist2:  Correct!
+  ->20th
+      Scientist2:  Incorrect!
 
 Scientist2:  Thanks!
 ===
@@ -67,10 +68,10 @@ title:  Scientist2_Snorkel
 ---
 Scientist2:  Are you ready for my second question??
 
-Scientist2:  Which of these is an objective of the Psyche mission?
-  ->To study the topography and composition of the asteroid
+Scientist2:  Who discovered Psyche?
+  ->Annibale de Gasparis, an Italian astronomer
       Scientist2:  Correct! Here, take this snorkel!
-  ->To colonize the asteroid in case Earth becomes uninhabitable
+  ->Neil de Grasse Tyson, a famous contemporary astrophysicist
       Scientist2:  Incorrect!
 
 Scientist2:  Thanks!
@@ -78,9 +79,11 @@ Scientist2:  Thanks!
 
 title:  Scientist2_Floaties
 ---
-Scientist2:  Did you answer my final question correctly?
-  ->Yes
-  ->No
+Scientist2:  A goal of the Pysche mission is...
+  ->...to study the composition of the asteroid
+    Scientist2:  Correct!
+  ->...to walk on the surface of the asteroid
+    Scientist2:  Incorrect!
 
 Scientist2:  Let's talk soon!
 ===
@@ -92,25 +95,33 @@ Scientist2:  That's all from me!  Good luck with your pitch!  Psyche, here we co
 
 title:  Scientist3_Helm
 ---
-Scientist3:  Did you answer my question correctly?
-  ->Yes
-  ->No
+Scientist3:  Scientists will use a magnetometer to...
+  ->...help determine if Psyche is the core of an early planet
+    Scientist3:  Correct!
+  ->...determine the chemical composition of Psyche
+    Scientist3:  Incorrect!
+
 Scientist3:  Let's talk soon!
 ===
 
 title:  Scientist3_Armor
 ---
-Scientist3:  Did you answer my question correctly?
-  ->Yes
-  ->No
+Scientist3:  Scientists will use a spectrometer to...
+  ->...determine the chemical composition of the asteroid
+    Scientist3:  Correct!
+  ->...capture images of the asteroid
+    Scientist3:  Incorrect!
+    
 Scientist3:  Let's talk soon!
 ===
 
 title:  Scientist3_Boots
 ---
-Scientist3:  Did you answer my question correctly?
-  ->Yes
-  ->No
+Scientist3:  Scientists will use multispectral imagers to...
+  ->...capture images of the surface of Psyche
+    Scientist3:  Correct!
+  ->...help determine if Psyche is the core of an early planet
+    Scientist3:  Incorrect!
 Scientist3:  Let's talk soon!
 ===
 
@@ -158,10 +169,9 @@ title:  Door_Knight
 
 title: Mirror
 ---
-: What would you like to wear?
-  ->Cravate, Monocle, Briefcase
-  ->Goggles, Snorkel, Floaties
-  ->Knight Helmet, Armor, Knight Boots
+: Are you ready to get dressed?
+  -> Yes
+  -> No
 
 :  Looking good!
 ===
@@ -181,4 +191,68 @@ Correct! Psyche is a type M asteroid.
 title: incorrect
 ---
 Incorrect. Psyche is not a type A asteroid.
+===
+
+
+title:  Book
+---
+Psyche is a Class M asteroid.
+===
+
+title:  Book1
+---
+Psyche is about 226 km (140 miles) across.
+===
+
+
+title:  Book2
+---
+Psyche is likely rich in metals.
+===
+
+
+title:  Book3
+---
+Psyche was the 16th asteroid to be discovered.
+===
+
+
+title:  Book4
+---
+Psyche was discovered in 1852 by Annibale de Gasparis, an Italian astronomer.
+===
+
+
+title:  Book5
+---
+A goal of the Psyche mission is to discover the composition of Psyche.
+===
+
+
+title:  Book6
+---
+Scientists will use a magnetometer to help determine if Psyche is the core of an early planet.
+===
+
+
+title:  Book7
+---
+Scientists will use a spectrometer to determine the chemical composition of the asteroid.
+===
+
+title:  Book8
+---
+Scientists will use multispectral imagers to capture images of the surface of Psyche.
+===
+
+
+
+
+title:  DoorGeneral
+---
+Are you ready to go to the pitch?
+
+  ->Yes
+  ->No
+
 ===

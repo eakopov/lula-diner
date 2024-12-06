@@ -71,11 +71,13 @@ function __ChatterboxClass(_filename, _singleton, _local_scope) constructor
     
     hopStack = [];
     
+    previous_node       = undefined;
     current_node        = undefined;
     current_instruction = undefined;
     stopped             = true;
     waiting             = false;
     forced_waiting      = false;
+    waitingName         = "";
     fastForward         = false;
     loaded              = true;
     wait_instruction    = undefined;
@@ -87,10 +89,12 @@ function __ChatterboxClass(_filename, _singleton, _local_scope) constructor
     #region Flow
     
     //Jumps to a given node in the given source
-    static Jump = function()
+    static Jump = function(_title, _filename = undefined)
     {
-        var _title    = argument[0];
-        var _filename = (argument_count > 1)? argument[1] : undefined;
+        if (_title == undefined)
+        {
+            return;
+        }
         
         if (_filename != undefined)
         {
@@ -116,23 +120,26 @@ function __ChatterboxClass(_filename, _singleton, _local_scope) constructor
             return undefined;
         }
         
-        __ChangeNode(_node, true);
+        __ChangeNode(_node, true, "jump");
+        current_instruction = current_node.root_instruction;
+        
+        __ChatterboxVM();
+    }
+    
+    static JumpBack = function()
+    {
+        if (previous_node == undefined) return;
+        
+        __ChangeNode(previous_node, true, "jump");
         current_instruction = current_node.root_instruction;
         
         __ChatterboxVM();
     }
     
     //Jumps to a given node in the given source
-    static Hop = function()
+    static Hop = function(_title, _filename = undefined)
     {
-        var _title    = argument[0];
-        var _filename = (argument_count > 1)? argument[1] : undefined;
-        
-        array_push(hopStack, {
-            next:     current_instruction,
-            node:     current_node,
-            filename: filename,
-        });
+        __HopPush(current_instruction);
         
         if (_filename != undefined)
         {
@@ -158,26 +165,53 @@ function __ChatterboxClass(_filename, _singleton, _local_scope) constructor
             return undefined;
         }
         
-        __ChangeNode(_node, true);
+        __ChangeNode(_node, true, "hop");
         current_instruction = current_node.root_instruction;
         
         __ChatterboxVM();
+    }
+    
+    static __HopPush = function(_next)
+    {
+        if (__CHATTERBOX_DEBUG_VM) __ChatterboxTrace("Pushing to hop stack: node = <", current_node, ">, next instruction = <", json_stringify(_next), ">, filename = \"", filename, "\"");
+        
+        array_push(hopStack, {
+            next:     _next,
+            node:     current_node,
+            filename: filename,
+        });
+    }
+    
+    static __HopPop = function()
+    {
+        if (__HopEmpty())
+        {
+            __ChatterboxError("Hop stack is empty");
+        }
+        
+        var _data = array_pop(hopStack);
+        
+        if (__CHATTERBOX_DEBUG_VM) __ChatterboxTrace("Pushing to hop stack: node = <", _data.node, ">, next instruction = <", json_stringify(_data.next), ">, filename = \"", _data.filename, "\"");
+        
+        return _data;
+    }
+    
+    static __HopEmpty = function()
+    {
+        return (array_length(hopStack) <= 0);
     }
     
     //Jumps to a given node in the given source
     static HopBack = function()
     {
-        if (array_length(hopStack) <= 0)
+        if (__HopEmpty())
         {
             __ChatterboxError("Hop stack is empty");
         }
         
         //Otherwise pop a node off of our stack and go to it
-        var _hop_data = hopStack[array_length(hopStack)-1];
-        var _next     = _hop_data.next;
-        var _node     = _hop_data.node;
+        var _hop_data = __HopPop();
         var _filename = __ChatterboxReplaceBackslashes(_hop_data.filename);
-        array_pop(hopStack);
         
         var _file = _system.__files[? _filename];
         if (instanceof(_file) != "__ChatterboxClassSource") __ChatterboxTrace("Error! File \"", _filename, "\" not found or not loaded");
@@ -191,56 +225,55 @@ function __ChatterboxClass(_filename, _singleton, _local_scope) constructor
             return undefined;
         }
         
-        __ChangeNode(_node, false);
-        current_instruction = _next;
+        __ChangeNode(_hop_data.node, false, "hopback");
+        current_instruction = _hop_data.next;
         
         __ChatterboxVM();
     }
     
- SelectOption = function(_index)
-{
-    if (!VerifyIsLoaded())
+    static Select = function(_index)
     {
-        __ChatterboxError("Could not select option because \"", filename, "\" is not loaded");
-        return undefined;
-    }
-
-    if (stopped)
-    {
-        __ChatterboxTrace("Warning! Could not select option because this chatterbox has been stopped");
-        return undefined;
-    }
-
-    if ((_index < 0) || (_index >= array_length(option)))
-    {
-        __ChatterboxTrace("Out of bounds option index (got ", _index, ", maximum index for options is ", array_length(option)-1, ")");
-        return undefined;
-    }
-
-    if (optionConditionBool[_index])
-    {
-        var _lookup = __CHATTERBOX_OPTION_CHOSEN_PREFIX + string(__optionUUIDArray[_index]);
-        if (ds_map_exists(_system.__variablesMap, _lookup))
+        if (!VerifyIsLoaded())
         {
-            __ChatterboxVariableSetInternal(_lookup, _system.__variablesMap[? _lookup] + 1);
+            __ChatterboxError("Could not select option because \"", filename, "\" is not loaded");
+            return undefined;
+        }
+        
+        if (stopped)
+        {
+            __ChatterboxTrace("Warning! Could not select option because this chatterbox has been stopped");
+            return undefined;
+        }
+        
+        if ((_index < 0) || (_index >= array_length(option)))
+        {
+            __ChatterboxTrace("Out of bounds option index (got ", _index, ", maximum index for options is ", array_length(option)-1, ")");
+            return undefined;
+        }
+        
+        if (optionConditionBool[_index])
+        {
+            var _lookup = __CHATTERBOX_OPTION_CHOSEN_PREFIX + string(__optionUUIDArray[_index]);
+            if (ds_map_exists(_system.__variablesMap, _lookup))
+            {
+                __ChatterboxVariableSetInternal(_lookup, _system.__variablesMap[? _lookup] + 1);
+            }
+            else
+            {
+                __ChatterboxVariableSetInternal(_lookup, 1);
+                ds_list_add(_system.__constantsList, _lookup);
+            }
+            
+            current_instruction = optionInstruction[_index];
+            __ChatterboxVM();
         }
         else
         {
-            __ChatterboxVariableSetInternal(_lookup, 1);
-            ds_list_add(_system.__constantsList, _lookup);
+            __ChatterboxTrace("Warning! Trying to select an option that failed its conditional check");
         }
-
-        current_instruction = optionInstruction[_index];
-        __ChatterboxVM();
     }
-    else
-    {
-        __ChatterboxTrace("Warning! Trying to select an option that failed its conditional check");
-    }
-}
-
     
-    static Continue = function()
+    static Continue = function(_name = "")
     {
         if (!VerifyIsLoaded())
         {
@@ -260,6 +293,11 @@ function __ChatterboxClass(_filename, _singleton, _local_scope) constructor
             return undefined;
         }
         
+        if (waitingName != _name)
+        {
+            return;
+        }
+        
         current_instruction = wait_instruction;
         __ChatterboxVM();
     }
@@ -277,7 +315,7 @@ function __ChatterboxClass(_filename, _singleton, _local_scope) constructor
         return false;
     }
     
-    static Wait = function()
+    static Wait = function(_name = "")
     {
         if (!VerifyIsLoaded())
         {
@@ -298,12 +336,14 @@ function __ChatterboxClass(_filename, _singleton, _local_scope) constructor
             //We pick this global up at the bottom of the VM
             _system.__vmWait      = true;
             _system.__vmForceWait = true;
+            _system.__vmWaitName  = _name;
         }
         else
         {
             //Otherwise set up a waiting state
             waiting          = true;
             forced_waiting   = true;
+            waitingName      = _name;
             wait_instruction = current_instruction;
         }
     }
@@ -463,6 +503,12 @@ function __ChatterboxClass(_filename, _singleton, _local_scope) constructor
         return current_node.title;
     }
     
+    static GetPreviousNodeTitle = function()
+    {
+        VerifyIsLoaded();
+        return (previous_node != undefined)? previous_node.title : undefined;
+    }
+    
     static GetCurrentNodeMetadata = function()
     {
         VerifyIsLoaded();
@@ -480,11 +526,13 @@ function __ChatterboxClass(_filename, _singleton, _local_scope) constructor
                 __ClearContent();
                 __ClearOptions();
                 
+                previous_node       = undefined;
                 current_node        = undefined;
                 current_instruction = undefined;
                 stopped             = true;
                 waiting             = false;
                 forced_waiting      = false;
+                waitingName         = "";
             }
             
             loaded = false;
@@ -512,11 +560,13 @@ function __ChatterboxClass(_filename, _singleton, _local_scope) constructor
         array_resize(optionWeightArray,   _count);
     }
     
-    static __ChangeNode = function(_newNode, _markAsVisited)
+    static __ChangeNode = function(_newNode, _markAsVisited, _type)
     {
         var _oldNode = current_node;
         
+        if (_oldNode != _newNode) previous_node = _oldNode;
         current_node = _newNode;
+        
         if (_markAsVisited) current_node.MarkVisited();
         
         if (is_undefined(_system.__nodeChangeCallback))
@@ -526,7 +576,8 @@ function __ChatterboxClass(_filename, _singleton, _local_scope) constructor
         else if (is_method(_system.__nodeChangeCallback) || script_exists(_system.__nodeChangeCallback))
         {
             _system.__nodeChangeCallback((_oldNode != undefined)? _oldNode.title : undefined, 
-                                         (_newNode != undefined)? _newNode.title : undefined);
+                                         (_newNode != undefined)? _newNode.title : undefined,
+                                         _type);
         }
     }
 }
