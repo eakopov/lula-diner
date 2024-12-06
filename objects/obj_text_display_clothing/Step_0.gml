@@ -102,6 +102,10 @@ if (!obj_clothing_controller.convo_in_progress) {
 				start_conversation("Book7");
 	}
 	
+	else if (obj_clothing_controller.colliding_with_book8) {
+				start_conversation("Book8");
+	}
+	
 	    
 }
 
