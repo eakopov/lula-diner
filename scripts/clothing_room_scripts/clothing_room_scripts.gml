@@ -26,13 +26,13 @@ function process_choice(_node_title, _choice) {
             break;
             
         case "Scientist1_Cravate":
-            if (_choice == 1) {obj_clothing_controller.has_cravate = true; addPoints(10);}
+            if (_choice == 1) {obj_clothing_controller.has_cravate = true; addPoints(20);}
             break;
             
         case "Scientist1_Monocle":
             if (_choice == 1) {
                 obj_clothing_controller.has_monocle = true; addPoints(10);
-                obj_clothing_controller.has_all_from_s1 = true; addPoints(10);
+                obj_clothing_controller.has_all_from_s1 = true; addPoints(20);
             }
             break;
         
@@ -42,13 +42,13 @@ function process_choice(_node_title, _choice) {
             break;
             
         case "Scientist2_Snorkel":
-            if (_choice == 1) {obj_clothing_controller.has_snorkel = true; addPoints(10);}
+            if (_choice == 1) {obj_clothing_controller.has_snorkel = true; addPoints(20);}
             break;
             
         case "Scientist2_Floaties":
             if (_choice == 1) {
                 obj_clothing_controller.has_floaties = true; addPoints(10);
-                obj_clothing_controller.has_all_from_s2 = true; addPoints(10);
+                obj_clothing_controller.has_all_from_s2 = true; addPoints(20);
             }
             break;
 
@@ -58,13 +58,13 @@ function process_choice(_node_title, _choice) {
             break;
             
         case "Scientist3_Armor":
-            if (_choice == 1) {obj_clothing_controller.has_armor = true; addPoints(10);}
+            if (_choice == 1) {obj_clothing_controller.has_armor = true; addPoints(20);}
             break;
             
         case "Scientist3_Boots":
             if (_choice == 1) {
                 obj_clothing_controller.has_boots = true; addPoints(10);
-                obj_clothing_controller.has_all_from_s3 = true; addPoints(10);
+                obj_clothing_controller.has_all_from_s3 = true; addPoints(30);
             }
             break;
 
