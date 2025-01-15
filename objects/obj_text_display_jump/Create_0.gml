@@ -114,3 +114,18 @@ global.mc_questions = [
         2]
 ];
 
+// Global array for incorrect response feedback
+global.mc_incorrect_feedback = [
+    "Close but incorrect! The Psyche asteroid is known as an exposed core of a protoplanet, leftover from early planet formation.",
+    "Close but incorrect! The Psyche asteroid is located between Mars and Jupiter in the main asteroid belt.",
+    "Close but incorrect! Phase 1 creates a concept study that outlines the mission’s purpose, plan, and feasibility.",
+    "Close but incorrect! The Psyche asteroid is three times as far from the Sun as Earth is!",
+    "Close but incorrect! In Phase 4, the spacecraft and its instruments are rigorously tested to ensure readiness.",
+    "Close but incorrect! A gamma ray instrument helps determine the elements that make up the asteroid’s surface.",
+    "Close but incorrect! Solar-electric propulsion, powered by solar panels, drives the Psyche spacecraft.",
+    "Close but incorrect! The Psyche mission investigates how planets form by studying what may be a planetary core.",
+    "Close but incorrect! The Psyche asteroid gets its name from the Greek goddess Psyche, who represents the soul.",
+    "Close but incorrect! Mars’ gravity assists the spacecraft in reaching the main asteroid belt."
+];
+
+

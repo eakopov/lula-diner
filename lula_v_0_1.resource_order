@@ -1,131 +1,31 @@
 {
-    "FolderOrderSettings": [
-        {
-            "name": "jump_sounds",
-            "order": 1,
-            "path": "folders/Sounds/jump_sounds.yy"
-        },
-        {
-            "name": "lib_books",
-            "order": 2,
-            "path": "folders/Objects/clothing_game/environment/lib_books.yy"
-        },
-        {
-            "name": "clothing_game",
-            "order": 3,
-            "path": "folders/Tile Sets/clothing_game.yy"
-        }
-    ],
-    "ResourceOrderSettings": [
-        {
-            "name": "fnt_pizza_room",
-            "order": 1,
-            "path": "fonts/fnt_pizza_room/fnt_pizza_room.yy"
-        },
-        {
-            "name": "backgroundScenes",
-            "order": 2,
-            "path": "objects/backgroundScenes/backgroundScenes.yy"
-        },
-        {
-            "name": "backgroundSet",
-            "order": 3,
-            "path": "objects/backgroundSet/backgroundSet.yy"
-        },
-        {
-            "name": "backgroundVideo",
-            "order": 4,
-            "path": "objects/backgroundVideo/backgroundVideo.yy"
-        },
-        {
-            "name": "globals",
-            "order": 5,
-            "path": "objects/globals/globals.yy"
-        },
-        {
-            "name": "introPrompt",
-            "order": 6,
-            "path": "objects/introPrompt/introPrompt.yy"
-        },
-        {
-            "name": "obj_clothing_book_1",
-            "order": 7,
-            "path": "objects/obj_clothing_book_1/obj_clothing_book_1.yy"
-        },
-        {
-            "name": "obj_clothing_book_2",
-            "order": 8,
-            "path": "objects/obj_clothing_book_2/obj_clothing_book_2.yy"
-        },
-        {
-            "name": "obj_clothing_book_3",
-            "order": 9,
-            "path": "objects/obj_clothing_book_3/obj_clothing_book_3.yy"
-        },
-        {
-            "name": "obj_clothing_book_4",
-            "order": 10,
-            "path": "objects/obj_clothing_book_4/obj_clothing_book_4.yy"
-        },
-        {
-            "name": "obj_clothing_book_5",
-            "order": 11,
-            "path": "objects/obj_clothing_book_5/obj_clothing_book_5.yy"
-        },
-        {
-            "name": "obj_clothing_book_6",
-            "order": 12,
-            "path": "objects/obj_clothing_book_6/obj_clothing_book_6.yy"
-        },
-        {
-            "name": "obj_clothing_book_7",
-            "order": 13,
-            "path": "objects/obj_clothing_book_7/obj_clothing_book_7.yy"
-        },
-        {
-            "name": "obj_clothing_book_8",
-            "order": 14,
-            "path": "objects/obj_clothing_book_8/obj_clothing_book_8.yy"
-        },
-        {
-            "name": "obj_clothing_book_9",
-            "order": 15,
-            "path": "objects/obj_clothing_book_9/obj_clothing_book_9.yy"
-        },
-        {
-            "name": "obj_clothing_lib_door",
-            "order": 16,
-            "path": "objects/obj_clothing_lib_door/obj_clothing_lib_door.yy"
-        },
-        {
-            "name": "obj_par_clothing",
-            "order": 17,
-            "path": "objects/obj_par_clothing/obj_par_clothing.yy"
-        },
-        {
-            "name": "__ChatterboxArrayCopyPart",
-            "order": 18,
-            "path": "scripts/__ChatterboxArrayCopyPart/__ChatterboxArrayCopyPart.yy"
-        },
-        {
-            "name": "__ChatterboxArrayToString",
-            "order": 19,
-            "path": "scripts/__ChatterboxArrayToString/__ChatterboxArrayToString.yy"
-        },
-        {
-            "name": "__ChatterboxBufferBatch",
-            "order": 20,
-            "path": "scripts/__ChatterboxBufferBatch/__ChatterboxBufferBatch.yy"
-        },
-        {
-            "name": "__ChatterboxCompile",
-            "order": 21,
-            "path": "scripts/__ChatterboxCompile/__ChatterboxCompile.yy"
-        },
-        {
-            "name": "__ChatterboxCompilerRemoveWhitespace",
-            "order": 22,
-            "path": "scripts/__ChatterboxCompilerRemoveWhitespace/__ChatterboxCompilerRemoveWhitespace.yy"
-        }
-    ]
+  "FolderOrderSettings":[
+    {"name":"lib_books","order":2,"path":"folders/Objects/clothing_game/environment/lib_books.yy",},
+    {"name":"jump_sounds","order":1,"path":"folders/Sounds/jump_sounds.yy",},
+    {"name":"clothing_game","order":3,"path":"folders/Tile Sets/clothing_game.yy",},
+  ],
+  "ResourceOrderSettings":[
+    {"name":"fnt_pizza_room","order":1,"path":"fonts/fnt_pizza_room/fnt_pizza_room.yy",},
+    {"name":"backgroundScenes","order":2,"path":"objects/backgroundScenes/backgroundScenes.yy",},
+    {"name":"backgroundSet","order":3,"path":"objects/backgroundSet/backgroundSet.yy",},
+    {"name":"backgroundVideo","order":4,"path":"objects/backgroundVideo/backgroundVideo.yy",},
+    {"name":"globals","order":5,"path":"objects/globals/globals.yy",},
+    {"name":"introPrompt","order":6,"path":"objects/introPrompt/introPrompt.yy",},
+    {"name":"obj_clothing_book_1","order":7,"path":"objects/obj_clothing_book_1/obj_clothing_book_1.yy",},
+    {"name":"obj_clothing_book_2","order":8,"path":"objects/obj_clothing_book_2/obj_clothing_book_2.yy",},
+    {"name":"obj_clothing_book_3","order":9,"path":"objects/obj_clothing_book_3/obj_clothing_book_3.yy",},
+    {"name":"obj_clothing_book_4","order":10,"path":"objects/obj_clothing_book_4/obj_clothing_book_4.yy",},
+    {"name":"obj_clothing_book_5","order":11,"path":"objects/obj_clothing_book_5/obj_clothing_book_5.yy",},
+    {"name":"obj_clothing_book_6","order":12,"path":"objects/obj_clothing_book_6/obj_clothing_book_6.yy",},
+    {"name":"obj_clothing_book_7","order":13,"path":"objects/obj_clothing_book_7/obj_clothing_book_7.yy",},
+    {"name":"obj_clothing_book_8","order":14,"path":"objects/obj_clothing_book_8/obj_clothing_book_8.yy",},
+    {"name":"obj_clothing_book_9","order":15,"path":"objects/obj_clothing_book_9/obj_clothing_book_9.yy",},
+    {"name":"obj_clothing_lib_door","order":16,"path":"objects/obj_clothing_lib_door/obj_clothing_lib_door.yy",},
+    {"name":"obj_par_clothing","order":17,"path":"objects/obj_par_clothing/obj_par_clothing.yy",},
+    {"name":"__ChatterboxArrayCopyPart","order":18,"path":"scripts/__ChatterboxArrayCopyPart/__ChatterboxArrayCopyPart.yy",},
+    {"name":"__ChatterboxArrayToString","order":19,"path":"scripts/__ChatterboxArrayToString/__ChatterboxArrayToString.yy",},
+    {"name":"__ChatterboxBufferBatch","order":20,"path":"scripts/__ChatterboxBufferBatch/__ChatterboxBufferBatch.yy",},
+    {"name":"__ChatterboxCompile","order":21,"path":"scripts/__ChatterboxCompile/__ChatterboxCompile.yy",},
+    {"name":"__ChatterboxCompilerRemoveWhitespace","order":22,"path":"scripts/__ChatterboxCompilerRemoveWhitespace/__ChatterboxCompilerRemoveWhitespace.yy",},
+  ],
 }
