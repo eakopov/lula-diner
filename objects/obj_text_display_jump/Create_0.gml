@@ -6,7 +6,7 @@ global.psyche_mission_phases = [
         "You Jumped Through The Fourth Phase: Assembling and Testing the Spacecraft and instruments! The key instruments designed in our last phase, one being the magnetometer, are tested along with the spacecraft. The spacecraft is subjected to vibration testing, environmental thermal-vacuum testing and electromagnetic interference to ensure that no conditions will deter it! Let’s ship the spacecraft off so we can launch it!",
         "You Jumped Through The Fifth Phase: Assuming you jumped through all the previous hoops (or phases) for the Psyche Mission our spacecraft is now in space, using Mars’ gravity to intersect the Psyche Asteroid’s orbit around the sun. The spacecraft will orbit the Psyche asteroid, monitoring it, measuring its rotation, and mapping the elements and topography of it using the key instruments on board that send data back to earth!",
         "You Jumped Through The Sixth Phase: Finishing up the mission! The space flight systems are decommissioned and final deliverables are made that document any findings the spacecraft gathered! Good job! You jumped through all the necessary hoops! But there’s still more to be done!",
-		"All Phases Passed! Good job! :)"
+		"You got Through all the Phases of the NASA Psyche Mission! Bonus Round! You have 100 seconds to answer questions and continue collecting hoops!"
     ];
 
 if (!variable_global_exists("current_text_index")) {
@@ -127,5 +127,21 @@ global.mc_incorrect_feedback = [
     "Close but incorrect! The Psyche asteroid gets its name from the Greek goddess Psyche, who represents the soul.",
     "Close but incorrect! Mars’ gravity assists the spacecraft in reaching the main asteroid belt."
 ];
+
+// Placeholder NASA questions for the bonus round
+if (!variable_global_exists("bonus_nasa_questions")) {
+    global.bonus_nasa_questions = [
+        "Placeholder: Why is Mars sometimes called the Red Planet?",
+        "Placeholder: How many moons does Jupiter have?",
+        "Placeholder: What is the largest planet in our solar system?",
+        "Placeholder: Why do scientists want to study asteroids?",
+        "Placeholder: When did the first human-made object leave the solar system?"
+    ];
+}
+
+// Index to track which placeholder question to display next
+if (!variable_global_exists("bonus_question_index")) {
+    global.bonus_question_index = 0;
+}
 
 

@@ -10,8 +10,19 @@ draw_self();
 // Set the text color to black
 draw_set_color(c_black);
 
+var text = "";
 // Define text and bounds
-var text = global.psyche_mission_phases[global.current_text_index]; // Get the current text
+if(global.current_text_index < 8) {
+	text = global.psyche_mission_phases[global.current_text_index]; // Get the current text
+} else {
+	if (global.jump_timer > 0) {
+           text = global.bonus_nasa_questions[global.bonus_question_index]; //sets text to placeholder question
+        } else if (global.bonus_question_index >= 5) { 
+           text = "All Phases and Question Past! Bonus Points! Good Job! :)"
+        } else {
+           text = "All Phases Past! Good Job! :)"
+        }
+}
 var x_start = 322; // Starting x position
 var x_end = 660;   // Ending x position
 var y_start = 65; // Starting y position
