@@ -75,7 +75,7 @@ if place_meeting(x, y, obj_ph_hoops)
 		
 		    if (global.current_text_index > 7) {
 		        global.bonus_question_index+=1;
-		        if(global.bonus_question_index > 4) {
+		        if(global.bonus_question_index > 9) {
 			       global.jump_timer = 0;
 		        }
 	          }

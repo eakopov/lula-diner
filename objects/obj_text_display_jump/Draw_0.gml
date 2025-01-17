@@ -1,4 +1,4 @@
-// Check if the global checkbox is set to hide the text display
+// Check if the global checkbox is set to hide the text display 
 if (global.checkbox_is_checked) {
     // Do not draw anything if the checkbox indicates hiding
     return;
@@ -11,21 +11,43 @@ draw_self();
 draw_set_color(c_black);
 
 var text = "";
+
 // Define text and bounds
-if(global.current_text_index < 8) {
-	text = global.psyche_mission_phases[global.current_text_index]; // Get the current text
+if (global.current_text_index < 8) {
+    // Use the normal phase text
+    text = global.psyche_mission_phases[global.current_text_index];
 } else {
-	if (global.jump_timer > 0) {
-           text = global.bonus_nasa_questions[global.bonus_question_index]; //sets text to placeholder question
-        } else if (global.bonus_question_index >= 5) { 
-           text = "All Phases and Question Past! Bonus Points! Good Job! :)"
-        } else {
-           text = "All Phases Past! Good Job! :)"
-        }
+    //In the "bonus" round (global.current_text_index >= 8)
+    
+    // If there's time left in the bonus round, display questions from the `global.mc_questions` array
+    if (global.jump_timer > 0) {
+        var qIndex = global.bonus_question_index; 
+        var question_data = global.mc_questions[qIndex]; 
+        // question_data is in the format: 
+        // [ questionText, optionA, optionB, optionC, optionD, correctIndex ]
+        
+        // Construct a single string with the question and each answer on its own line
+        var question_text = question_data[0] 
+                           + "\nA: " + question_data[1]
+                           + "\nB: " + question_data[2]
+                           + "\nC: " + question_data[3]
+                           + "\nD: " + question_data[4];
+        
+        // This will be wrapped below by `string_wrap`
+        text = question_text;
+    }
+    // If bonus_question_index is out of range or time is up, fallback messages:
+    else if (global.bonus_question_index >= array_length(global.mc_questions)) { 
+        text = "All Phases and Questions Passed! Bonus Points! Good Job! :)";
+    } else {
+        text = "All Phases Passed! Good Job! :)";
+    }
 }
+
+// X/Y bounds for text drawing
 var x_start = 322; // Starting x position
 var x_end = 660;   // Ending x position
-var y_start = 65; // Starting y position
+var y_start = 65;  // Starting y position
 var line_height = 20; // Vertical spacing between lines
 
 // Calculate the maximum line width
