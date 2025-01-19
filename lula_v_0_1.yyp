@@ -82,7 +82,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.8.1.171",
+    "IDEVersion":"2024.11.0.179",
   },
   "name":"lula_v_0_1",
   "resources":[
@@ -133,6 +133,7 @@
     {"id":{"name":"obj_inventory_box","path":"objects/obj_inventory_box/obj_inventory_box.yy",},},
     {"id":{"name":"obj_inventory_middle","path":"objects/obj_inventory_middle/obj_inventory_middle.yy",},},
     {"id":{"name":"obj_inventory_top","path":"objects/obj_inventory_top/obj_inventory_top.yy",},},
+    {"id":{"name":"obj_leaderboard_controller","path":"objects/obj_leaderboard_controller/obj_leaderboard_controller.yy",},},
     {"id":{"name":"obj_loss_screen","path":"objects/obj_loss_screen/obj_loss_screen.yy",},},
     {"id":{"name":"obj_lula_clothing","path":"objects/obj_lula_clothing/obj_lula_clothing.yy",},},
     {"id":{"name":"obj_lula_deck","path":"objects/obj_lula_deck/obj_lula_deck.yy",},},
@@ -304,7 +305,9 @@
     {"id":{"name":"restart_game","path":"scripts/restart_game/restart_game.yy",},},
     {"id":{"name":"rythemFunctions","path":"scripts/rythemFunctions/rythemFunctions.yy",},},
     {"id":{"name":"scr_find_empty_table","path":"scripts/scr_find_empty_table/scr_find_empty_table.yy",},},
+    {"id":{"name":"scr_load_leaderboard","path":"scripts/scr_load_leaderboard/scr_load_leaderboard.yy",},},
     {"id":{"name":"scr_receive_order","path":"scripts/scr_receive_order/scr_receive_order.yy",},},
+    {"id":{"name":"scr_save_leaderboard","path":"scripts/scr_save_leaderboard/scr_save_leaderboard.yy",},},
     {"id":{"name":"select_random_questions","path":"scripts/select_random_questions/select_random_questions.yy",},},
     {"id":{"name":"RetroFuture_Dirty_timing","path":"sounds/RetroFuture_Dirty_timing/RetroFuture_Dirty_timing.yy",},},
     {"id":{"name":"RetroFuture_Dirty","path":"sounds/RetroFuture_Dirty/RetroFuture_Dirty.yy",},},
