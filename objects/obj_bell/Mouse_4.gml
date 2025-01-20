@@ -13,4 +13,7 @@ if (ready_to_order) {
 	obj_controller.selected_customer = noone;
 	order_taken = true;
 
+	// Reset Lula's action state
+    obj_lula_pizza.current_action = noone;
+    obj_lula_pizza.action_in_progress = false;
 }
