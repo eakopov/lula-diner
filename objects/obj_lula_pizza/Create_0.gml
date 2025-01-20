@@ -1,10 +1,6 @@
-// Initialize movement-related variables
-move_speed = 2;  // Movement speed for Lula
-move_target_x = x;  // Target x-coordinate for movement
-move_target_y = y;  // Target y-coordinate for movement
-
-// Initialize action-related variables
-current_action = "";  // Tracks what Lula is currently doing ("take_order", "deliver_tool", etc.)
-action_complete = false;  // Tracks whether the current action is finished
-
-target_customer = noone;
+// Initialize Lula's variables
+move_target_x = -1;  // Target x-coordinate for movement
+move_target_y = -1;  // Target y-coordinate for movement
+move_speed = 0;      // Speed of Lula's movement
+current_action = "idle"; // Current action Lula is performing
+target_customer = noone; // The customer Lula is interacting with
