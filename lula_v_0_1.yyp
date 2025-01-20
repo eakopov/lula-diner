@@ -83,7 +83,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.8.1.171",
+    "IDEVersion":"2024.11.0.179",
   },
   "name":"lula_v_0_1",
   "resources":[
@@ -153,6 +153,7 @@
     {"id":{"name":"obj_lula_pizza","path":"objects/obj_lula_pizza/obj_lula_pizza.yy",},},
     {"id":{"name":"obj_lula_rhythm","path":"objects/obj_lula_rhythm/obj_lula_rhythm.yy",},},
     {"id":{"name":"obj_lula_start","path":"objects/obj_lula_start/obj_lula_start.yy",},},
+    {"id":{"name":"obj_nasa_psyche_logo","path":"objects/obj_nasa_psyche_logo/obj_nasa_psyche_logo.yy",},},
     {"id":{"name":"obj_par_clothing","path":"objects/obj_par_clothing/obj_par_clothing.yy",},},
     {"id":{"name":"obj_par_environment","path":"objects/obj_par_environment/obj_par_environment.yy",},},
     {"id":{"name":"obj_pause","path":"objects/obj_pause/obj_pause.yy",},},
@@ -368,6 +369,7 @@
     {"id":{"name":"spr_inventory_box","path":"sprites/spr_inventory_box/spr_inventory_box.yy",},},
     {"id":{"name":"spr_lula_walk","path":"sprites/spr_lula_walk/spr_lula_walk.yy",},},
     {"id":{"name":"spr_lula","path":"sprites/spr_lula/spr_lula.yy",},},
+    {"id":{"name":"spr_nasa_psyche_logo","path":"sprites/spr_nasa_psyche_logo/spr_nasa_psyche_logo.yy",},},
     {"id":{"name":"spr_pause","path":"sprites/spr_pause/spr_pause.yy",},},
     {"id":{"name":"spr_pepperoni_pizza","path":"sprites/spr_pepperoni_pizza/spr_pepperoni_pizza.yy",},},
     {"id":{"name":"spr_pineapple_pizza","path":"sprites/spr_pineapple_pizza/spr_pineapple_pizza.yy",},},
