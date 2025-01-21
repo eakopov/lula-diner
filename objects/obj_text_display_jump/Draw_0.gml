@@ -21,20 +21,24 @@ if (global.current_text_index < 8) {
     
     // If there's time left in the bonus round, display questions from the `global.mc_questions` array
     if (global.jump_timer > 0) {
-        var qIndex = global.bonus_question_index; 
-        var question_data = global.mc_questions[qIndex]; 
-        // question_data is in the format: 
-        // [ questionText, optionA, optionB, optionC, optionD, correctIndex ]
-        
-        // Construct a single string with the question and each answer on its own line
-        var question_text = question_data[0] 
-                           + "\nA: " + question_data[1]
-                           + "\nB: " + question_data[2]
-                           + "\nC: " + question_data[3]
-                           + "\nD: " + question_data[4];
-        
-        // This will be wrapped below by `string_wrap`
-        text = question_text;
+	    if (global.question_in_progress) {
+        if (!global.question_answered) {
+            // Show the question 
+            var qIndex = global.bonus_question_index; 
+            var question_data = global.mc_questions[qIndex]; 
+            
+            var question_text = question_data[0] 
+                               + "\n1) " + question_data[1]
+                               + "\n2) " + question_data[2]
+                               + "\n3) " + question_data[3]
+                               + "\n4) " + question_data[4];
+            
+            text = question_text;
+        } else {
+            // If the user answered, display feedback
+            text = global.current_answer_feedback;
+        }
+      }
     }
     // If bonus_question_index is out of range or time is up, fallback messages:
     else if (global.bonus_question_index >= array_length(global.mc_questions)) { 

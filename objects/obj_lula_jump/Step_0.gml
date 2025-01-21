@@ -73,8 +73,9 @@ if place_meeting(x, y, obj_ph_hoops)
             // Play the phase passed sound
             audio_play_sound(phase_passed_sound, 1, false); // Sound, priority, looping (false)
 		
-		    if (global.current_text_index > 7) {
-		        global.bonus_question_index+=1;
+		    if (global.current_text_index > 7 && !global.question_in_progress && !global.question_answered) {
+				global.question_in_progress = true;
+                global.question_answered = false;
 		        if(global.bonus_question_index > 9) {
 			       global.jump_timer = 0;
 		        }

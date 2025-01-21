@@ -128,20 +128,31 @@ global.mc_incorrect_feedback = [
     "Close but incorrect! Mars’ gravity assists the spacecraft in reaching the main asteroid belt."
 ];
 
-// Placeholder NASA questions for the bonus round
-if (!variable_global_exists("bonus_nasa_questions")) {
-    global.bonus_nasa_questions = [
-        "Placeholder: Why is Mars sometimes called the Red Planet?",
-        "Placeholder: How many moons does Jupiter have?",
-        "Placeholder: What is the largest planet in our solar system?",
-        "Placeholder: Why do scientists want to study asteroids?",
-        "Placeholder: When did the first human-made object leave the solar system?"
-    ];
-}
 
 // Index to track which placeholder question to display next
 if (!variable_global_exists("bonus_question_index")) {
     global.bonus_question_index = 0;
 }
+
+// Ensures we only show one question at a time
+if (!variable_global_exists("question_in_progress")) {
+    global.question_in_progress = false; 
+}
+
+// Tracks whether the question has been answered
+if (!variable_global_exists("question_answered")) {
+    global.question_answered = false;
+}
+
+// Holds the feedback text (correct/incorrect) to display
+if (!variable_global_exists("current_answer_feedback")) {
+    global.current_answer_feedback = "";
+}
+
+// Timer for displaying feedback (5 seconds)
+if (!variable_global_exists("answer_feedback_timer")) {
+    global.answer_feedback_timer = 0;
+}
+
 
 
