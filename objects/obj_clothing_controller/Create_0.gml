@@ -56,3 +56,5 @@ clothing_item_2 = -1;
 clothing_item_3 = -1;
 clothing_item_counter = 0;
 dress_up_time = false;
+
+SCALE_MULTIPLIER = 4 / 3;

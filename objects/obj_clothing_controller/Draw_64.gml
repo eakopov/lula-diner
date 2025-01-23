@@ -1,11 +1,11 @@
 // Viewport dimensions
 var view_x = 0;            // Horizontal start of the viewport
-var view_y = 480;          // Vertical start of the viewport
-var view_w = 1280;         // Width of the viewport
-var view_h = 240;          // Height of the viewport
+var view_y = 480 * obj_clothing_controller.SCALE_MULTIPLIER;  // Vertical start of the viewport
+var view_w = 1280 * obj_clothing_controller.SCALE_MULTIPLIER; // Width of the viewport
+var view_h = 240 * obj_clothing_controller.SCALE_MULTIPLIER; // Height of the viewport
 
 // Border properties
-var border_thickness = 4;  // Thickness of the border
+var border_thickness = 4 * obj_clothing_controller.SCALE_MULTIPLIER; // Thickness of the border
 draw_set_color(c_white);   // Border color
 
 // Draw the top border
