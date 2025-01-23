@@ -8,8 +8,8 @@
   "name":"obj_quit",
   "overriddenProperties":[],
   "parent":{
-    "name":"Pizza Objects",
-    "path":"folders/Objects/Pizza Objects.yy",
+    "name":"Environmentals",
+    "path":"folders/Objects/Pizza Objects/Environmentals.yy",
   },
   "parentObjectId":null,
   "persistent":false,
