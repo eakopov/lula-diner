@@ -1,18 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_counter",
+  "%Name":"obj_collision",
   "eventList":[],
   "managed":true,
-  "name":"obj_counter",
+  "name":"obj_collision",
   "overriddenProperties":[],
   "parent":{
-    "name":"Environmentals",
-    "path":"folders/Objects/Pizza Objects/Environmentals.yy",
+    "name":"Pizza Objects",
+    "path":"folders/Objects/Pizza Objects.yy",
   },
-  "parentObjectId":{
-    "name":"obj_collision",
-    "path":"objects/obj_collision/obj_collision.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -30,10 +27,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_counter",
-    "path":"sprites/spr_counter/spr_counter.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

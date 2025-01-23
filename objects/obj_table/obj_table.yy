@@ -12,7 +12,10 @@
     "name":"Environmentals",
     "path":"folders/Objects/Pizza Objects/Environmentals.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_collision",
+    "path":"objects/obj_collision/obj_collision.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
