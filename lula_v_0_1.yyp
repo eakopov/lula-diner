@@ -308,6 +308,7 @@
     {"id":{"name":"scr_load_leaderboard","path":"scripts/scr_load_leaderboard/scr_load_leaderboard.yy",},},
     {"id":{"name":"scr_receive_order","path":"scripts/scr_receive_order/scr_receive_order.yy",},},
     {"id":{"name":"scr_save_leaderboard","path":"scripts/scr_save_leaderboard/scr_save_leaderboard.yy",},},
+    {"id":{"name":"scr_update_leaderboard","path":"scripts/scr_update_leaderboard/scr_update_leaderboard.yy",},},
     {"id":{"name":"select_random_questions","path":"scripts/select_random_questions/select_random_questions.yy",},},
     {"id":{"name":"RetroFuture_Dirty_timing","path":"sounds/RetroFuture_Dirty_timing/RetroFuture_Dirty_timing.yy",},},
     {"id":{"name":"RetroFuture_Dirty","path":"sounds/RetroFuture_Dirty/RetroFuture_Dirty.yy",},},

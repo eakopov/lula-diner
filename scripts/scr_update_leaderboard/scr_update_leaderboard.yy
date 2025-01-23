@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_update_leaderboard",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_update_leaderboard",
+  "parent":{
+    "name":"Deck",
+    "path":"folders/Scripts/Deck.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
