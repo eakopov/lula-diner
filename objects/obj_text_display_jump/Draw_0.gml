@@ -42,7 +42,11 @@ if (global.current_text_index < 8) {
     }
     // If bonus_question_index is out of range or time is up, fallback messages:
     else if (global.bonus_question_index >= array_length(global.mc_questions)) { 
-        text = "All Phases and Questions Passed! Bonus Points! Good Job! :)";
+        text = "All Phases and Questions Passed! 1000 Bonus Points! Good Job! :)";
+		global.jump_score += 1000;
+		
+		// Play the bonus points sound
+        audio_play_sound(bonuspoints, 1, false); // Sound, priority, looping (false)
     } else {
         text = "All Phases Passed! Good Job! :)";
     }

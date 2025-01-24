@@ -27,5 +27,6 @@
     {"name":"__ChatterboxBufferBatch","order":20,"path":"scripts/__ChatterboxBufferBatch/__ChatterboxBufferBatch.yy",},
     {"name":"__ChatterboxCompile","order":21,"path":"scripts/__ChatterboxCompile/__ChatterboxCompile.yy",},
     {"name":"__ChatterboxCompilerRemoveWhitespace","order":22,"path":"scripts/__ChatterboxCompilerRemoveWhitespace/__ChatterboxCompilerRemoveWhitespace.yy",},
+    {"name":"bonuspoints","order":1,"path":"sounds/bonuspoints/bonuspoints.yy",},
   ],
 }

@@ -357,6 +357,7 @@
     {"id":{"name":"scr_init_customer","path":"scripts/scr_init_customer/scr_init_customer.yy",},},
     {"id":{"name":"scr_receive_order","path":"scripts/scr_receive_order/scr_receive_order.yy",},},
     {"id":{"name":"select_random_questions","path":"scripts/select_random_questions/select_random_questions.yy",},},
+    {"id":{"name":"bonuspoints","path":"sounds/bonuspoints/bonuspoints.yy",},},
     {"id":{"name":"phase_passed_sound","path":"sounds/phase_passed_sound/phase_passed_sound.yy",},},
     {"id":{"name":"RetroFuture_Dirty_timing","path":"sounds/RetroFuture_Dirty_timing/RetroFuture_Dirty_timing.yy",},},
     {"id":{"name":"RetroFuture_Dirty","path":"sounds/RetroFuture_Dirty/RetroFuture_Dirty.yy",},},
