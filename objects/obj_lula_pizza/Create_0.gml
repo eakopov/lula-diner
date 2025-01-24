@@ -1,13 +1,6 @@
-/// @description Insert description here
-// You can write your code in this editor
-
-xspd = 0;
-yspd = 0;
-
-move_spd = 1;
-depth = -12;
-
-right_key = keyboard_check(vk_right);
-left_key = keyboard_check(vk_left);
-up_key = keyboard_check(vk_up);
-down_key = keyboard_check(vk_down);
+// Initialize Lula's variables
+move_target_x = -1;  // Target x-coordinate for movement
+move_target_y = -1;  // Target y-coordinate for movement
+move_speed = 0;      // Speed of Lula's movement
+current_action = "idle"; // Current action Lula is performing
+target_customer = noone; // The customer Lula is interacting with
