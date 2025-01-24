@@ -154,5 +154,12 @@ if (!variable_global_exists("answer_feedback_timer")) {
     global.answer_feedback_timer = 0;
 }
 
+if (!variable_global_exists("bonusmusic_id")) {
+    global.bonusmusic_id = -1; // Holds the audio index for the bonus round music
+}
+
+bonusOver = -1; 
+
+
 
 

@@ -19,6 +19,11 @@ if (global.current_text_index < 8) {
 } else {
     //In the "bonus" round (global.current_text_index >= 8)
     
+	//If bonus music is not on, activate it (loop = true)
+	if(global.bonusmusic_id == -1) { 
+       global.bonusmusic_id = audio_play_sound(bonusmusic, 1, true);
+	}
+	
     // If there's time left in the bonus round, display questions from the `global.mc_questions` array
     if (global.jump_timer > 0) {
 	    if (global.question_in_progress) {
@@ -38,17 +43,28 @@ if (global.current_text_index < 8) {
             // If the user answered, display feedback
             text = global.current_answer_feedback;
         }
-      }
+      } else { 
+		// We are still in the bonus round, but no question is active
+        text = "Waiting for the next question... Keep collecting hoops!";
+	  }
     }
     // If bonus_question_index is out of range or time is up, fallback messages:
     else if (global.bonus_question_index >= array_length(global.mc_questions)) { 
         text = "All Phases and Questions Passed! 1000 Bonus Points! Good Job! :)";
-		global.jump_score += 1000;
 		
-		// Play the bonus points sound
-        audio_play_sound(bonuspoints, 1, false); // Sound, priority, looping (false)
+		if(bonusOver == -1) {
+		   global.jump_score += 1000;
+		   // Play the bonus points sound
+           audio_play_sound(bonuspoints, 1, false); // Sound, priority, looping (false)
+		   audio_stop_sound(global.bonusmusic_id);
+		   bonusOver = 1;
+		}
     } else {
         text = "All Phases Passed! Good Job! :)";
+		if(bonusOver == -1) {
+		   audio_stop_sound(global.bonusmusic_id);
+		   bonusOver = 1;
+		}	    
     }
 }
 

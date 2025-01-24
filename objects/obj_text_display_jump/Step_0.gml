@@ -1,5 +1,7 @@
 if (keyboard_check_pressed(vk_space))
 {
+	audio_stop_sound(global.bonusmusic_id);
+    global.bonusmusic_id = -1;
     room_goto_next()
 }
 
@@ -53,4 +55,8 @@ if (global.question_in_progress) {
             global.bonus_question_index += 1;
         }
     }
+}
+
+if (global.jump_timer <= 0) {
+  audio_stop_sound(global.bonusmusic_id);
 }
