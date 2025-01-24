@@ -67,3 +67,38 @@ if (move_target_x != -1 && move_target_y != -1) {
     show_debug_message("Target Customer: " + string(target_customer));
     show_debug_message("Move Target: (" + string(move_target_x) + ", " + string(move_target_y) + ")");
 }
+
+// Logic for picking up the tool
+if (current_action == "pick_up_tool") {
+    if (move_target_x != -1 && move_target_y != -1) {
+        show_debug_message("Lula Position: (" + string(x) + ", " + string(y) + ")");
+        show_debug_message("Current Action: " + current_action);
+        show_debug_message("Target Tool: " + string(target_tool));
+        show_debug_message("Move Target: (" + string(move_target_x) + ", " + string(move_target_y) + ")");
+
+        // Move toward the tool
+        move_speed = 3;
+        move_towards_point(move_target_x, move_target_y, move_speed);
+
+        // Check if Lula has reached the tool
+        if (point_distance(x, y, move_target_x, move_target_y) < 5) {
+            x = move_target_x;  // Snap to the tool's x
+            y = move_target_y + 50;  // Snap to the tool's y
+            move_target_x = -1; // Reset target x
+            move_target_y = -1; // Reset target y
+            speed = 0;
+
+            // Logic to "pick up" the tool
+            if (target_tool != noone) {
+                with (target_tool) {
+                    // Perform logic for removing the tool from the counter
+                   
+                }
+            }
+
+            target_tool = noone; // Reset tool target
+            current_action = "idle"; // Reset Lula's action
+            show_debug_message("Tool picked up successfully!");
+        }
+    }
+}

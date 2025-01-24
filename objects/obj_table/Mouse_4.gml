@@ -19,50 +19,27 @@ if (!occupied && obj_controller.selected_customer != noone) {
     }
 }
 
-if (occupied && obj_controller.selected_pizza != noone) {
-    // Get the selected pizza instance
-    var selected_pizza = obj_controller.selected_pizza;
+if (occupied && obj_controller.selected_tool != noone) {
+    // Get the selected tool instance
+    var selected_tool = obj_controller.selected_tool;
     
-    // Check if the selected pizza instance is valid and matches the customer's ID
-    if (instance_exists(selected_pizza) && instance_exists(customer_id) && selected_pizza.customer_id == customer_id) {
-        // Clear pizza from plate on counter
-        var plate_found = noone;
-        for (var i = 0; i < array_length(global.plates); i++) {
-            if (global.plates[i].pizza_instance == selected_pizza) {
-                plate_found = global.plates[i];
-                break;
-            }
-        }
-        
-        if (plate_found != noone) {
-            plate_found.occupied = false;  // Mark plate as free
-            //plate_found.pizza_instance = noone;  // Remove pizza reference
-            plate_found.delivered = true;  // Mark this plate's pizza as delivered
-        }
-        
-        // Move the pizza to the table's position
-        selected_pizza.x = x + 50;  // Align the pizza to the table's position
-        selected_pizza.y = y + 10;
+    // Check if the selected tool instance matches the customer's required tool
+    if (instance_exists(selected_tool) && instance_exists(customer_id) && selected_tool.tool_type == customer_id.required_tool) {
+        // Move the tool to the table's position
+        selected_tool.x = x + 50;  // Align the tool to the table's position
+        selected_tool.y = y + 10;
 
-        // Start the customer eating state
+        // Start the customer using the tool
         var customer = instance_nearest(x, y, obj_customer);
         if (instance_exists(customer)) {
-            customer.ready_to_eat = true;
-            customer.eating_timer = 300;  // Set eating duration
+            customer.ready_to_use_tool = true;
+            customer.using_tool_timer = 300;  // Set tool usage duration
         }
 
-        // Remove the specific order from the order queue after delivery
-        for (var j = 0; j < array_length(obj_chef.order_queue); j++) {
-            if (obj_chef.order_queue[j].customer_id == customer_id) {
-                array_delete(obj_chef.order_queue, j, 1);  // Remove the specific order
-                break;
-            }
-        }
-        
-        // Mark the table as having the pizza delivered
-        obj_controller.selected_pizza = noone;  // Clear the selected pizza
-        show_debug_message("Pizza delivered to the correct customer.");
+        // Clear the selected tool
+        obj_controller.selected_tool = noone;
+        show_debug_message("Correct tool delivered to the customer.");
     } else {
-        show_debug_message("This pizza doesn't belong to the customer at this table or no longer exists.");
+        show_debug_message("This tool doesn't match the customer's request or no longer exists.");
     }
 }
