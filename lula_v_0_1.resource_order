@@ -3,6 +3,7 @@
     {"name":"Deck","order":1,"path":"folders/Scripts/Deck.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"obj_game_over","order":3,"path":"objects/obj_game_over/obj_game_over.yy",},
     {"name":"obj_leaderboard_controller","order":2,"path":"objects/obj_leaderboard_controller/obj_leaderboard_controller.yy",},
     {"name":"obj_next_game_button","order":12,"path":"objects/obj_next_game_button/obj_next_game_button.yy",},
     {"name":"obj_skip_button_deck","order":1,"path":"objects/obj_skip_button_deck/obj_skip_button_deck.yy",},
