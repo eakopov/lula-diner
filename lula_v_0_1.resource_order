@@ -35,5 +35,6 @@
     {"name":"__ChatterboxCompilerRemoveWhitespace","order":22,"path":"scripts/__ChatterboxCompilerRemoveWhitespace/__ChatterboxCompilerRemoveWhitespace.yy",},
     {"name":"bonusmusic","order":2,"path":"sounds/bonusmusic/bonusmusic.yy",},
     {"name":"bonuspoints","order":1,"path":"sounds/bonuspoints/bonuspoints.yy",},
+    {"name":"introRyth_1","order":1,"path":"sprites/introRyth_1/introRyth_1.yy",},
   ],
 }

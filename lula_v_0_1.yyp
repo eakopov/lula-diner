@@ -370,6 +370,7 @@
     {"id":{"name":"bigBoost","path":"sprites/bigBoost/bigBoost.yy",},},
     {"id":{"name":"continueButton","path":"sprites/continueButton/continueButton.yy",},},
     {"id":{"name":"Explosion_01","path":"sprites/Explosion_01/Explosion_01.yy",},},
+    {"id":{"name":"introRyth_1","path":"sprites/introRyth_1/introRyth_1.yy",},},
     {"id":{"name":"introRyth","path":"sprites/introRyth/introRyth.yy",},},
     {"id":{"name":"Left_Note","path":"sprites/Left_Note/Left_Note.yy",},},
     {"id":{"name":"Left_User","path":"sprites/Left_User/Left_User.yy",},},
