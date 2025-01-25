@@ -5,5 +5,6 @@ if(!global.pausedRyth){
 
 
 if(y >= 756){
+	healthHurtRyth(10);
 	instance_destroy()
 }	

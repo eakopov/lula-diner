@@ -8,4 +8,5 @@ var myLayer = layer_get_id("IntroRyth");
 layer_set_visible(myLayer, false);
 myLayer = layer_get_id("Instances");
 layer_set_visible(myLayer, true);
+startRyth(true);
 instance_destroy();

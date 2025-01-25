@@ -1,9 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"introPrompt",
-  "eventList":[],
+  "%Name":"healthBar",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"introPrompt",
+  "name":"healthBar",
   "overriddenProperties":[],
   "parent":{
     "name":"rythem",
@@ -28,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"introRyth_1",
-    "path":"sprites/introRyth_1/introRyth_1.yy",
+    "name":"healthSprite",
+    "path":"sprites/healthSprite/healthSprite.yy",
   },
   "spriteMaskId":null,
   "visible":true,
