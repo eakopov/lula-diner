@@ -11,4 +11,5 @@ if (global.pausedRyth) {
     draw_set_color(c_white);
     draw_text(room_width / 2 - string_width("Game Paused") / 2, room_height / 2 - 20, "Game Paused");
     draw_text(room_width / 2 - string_width("Press P to Resume") / 2, room_height / 2 + 20, "Press P to Resume");
+	draw_text(room_width / 2 - string_width("Press R to Restart") / 2, room_height / 2 + 40, "Press R to Restart");
 }
