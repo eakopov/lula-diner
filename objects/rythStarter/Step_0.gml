@@ -29,6 +29,7 @@ for(var i = 0; i < ds_list_size(noteTimings); i++){
 songPos = songPosition;
 
 if(!audio_is_playing(singinID) && canPause){
+	endRyth(true);
 	addPoints(global.PointsCounter_ryth);
 	if(global.PointsCounter_ryth > 7648){
 		setRankRyth(0);
@@ -61,4 +62,10 @@ if(!audio_is_playing(singinID) && canPause){
 	layer_set_visible(myLayer, false);
 
 	instance_destroy();
+}	
+
+if(global.healthRyth <= 0 && canPause){
+	endRyth(true);
+			pauseRyth();
+		audio_pause_all();
 }	

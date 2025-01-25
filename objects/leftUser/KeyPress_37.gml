@@ -4,7 +4,15 @@ if(place_meeting(x, y, leftNote) && !global.pausedRyth){
 	with( instance_place(x, y, leftNote) ){
 		instance_destroy();
 		addPointsRyth(50);
+		healthRecoverRyth(5);
 	}	
 } else {
 	removePointsRyth(10);
+	healthHurtRyth(10);
 }	
+if(global.healthRyth > 400){
+	healthSet(400);
+}
+if(global.healthRyth < 0){
+	healthSet(00);
+}

@@ -3,3 +3,7 @@ if(canPause){
 		room_restart();
 	}
 }	
+
+if(global.pausedRyth && global.enderRyth){
+	room_restart();
+}
