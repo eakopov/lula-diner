@@ -160,6 +160,10 @@ if (!variable_global_exists("bonusmusic_id")) {
 
 bonusOver = -1; 
 
+if (!variable_global_exists("leftOverTimeScore")) {
+    global.leftOverTimeScore = 0; // keeps track of the time the user had left over and the score it converts to
+}
+
 
 
 

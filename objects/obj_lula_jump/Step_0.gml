@@ -77,6 +77,7 @@ if place_meeting(x, y, obj_ph_hoops)
 				global.question_in_progress = true;
                 global.question_answered = false;
 		        if(global.bonus_question_index > 9) {
+				   global.leftOverTimeScore = 2 * (global.jump_timer / room_speed);
 			       global.jump_timer = 0;
 		        }
 	          }
