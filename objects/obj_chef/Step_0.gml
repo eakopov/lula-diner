@@ -13,27 +13,27 @@ if (array_length(order_queue) > 0) {
         }
     }
 
-    // Proceed with pizza preparation only if a plate is available
+    // Proceed with tool preparation only if a plate is available
     if (available_plate != noone && preparation_timer <= 0) {
-        // Reset the preparation timer for the next pizza
+        // Reset the preparation timer for the next tool
         preparation_timer = 300;  // Adjust as needed for preparation time
         
-        // Create the pizza at the available plate's position
-        var pizza_object = asset_get_index("obj_" + current_order.pizza_id);
-        var pizza_instance = instance_create_layer(available_plate.x, available_plate.y, "Instances", pizza_object);
-		show_debug_message("Creating pizza at x: " + string(available_plate.x) + " y: " + string(available_plate.y));
+        // Create the tool at the available plate's position
+        var tool_object = asset_get_index("obj_" + current_order.tool_id);
+        var tool_instance = instance_create_layer(available_plate.x, available_plate.y, "Instances", tool_object);
+		show_debug_message("Creating tool at x: " + string(available_plate.x) + " y: " + string(available_plate.y));
 
-        // Assign customer_id to the pizza for tracking
-        pizza_instance.customer_id = current_order.customer_id;
-        pizza_instance.is_ready = true;
+        // Assign customer_id to the tool for tracking
+        tool_instance.customer_id = current_order.customer_id;
+        tool_instance.is_ready = true;
         
-        // Mark the plate as occupied and link the pizza to the plate
+        // Mark the plate as occupied and link the tool to the plate
         available_plate.occupied = true;
-        available_plate.pizza_instance = pizza_instance;
+        available_plate.tool_instance = tool_instance;
 
         // Remove the order from the queue after placing it on a plate
         array_delete(order_queue, 0, 1);
         
-        show_debug_message("Pizza ready for customer: " + string(current_order.customer_id));
+        show_debug_message("tool ready for customer: " + string(current_order.customer_id));
     }
 }

@@ -6,7 +6,7 @@ if (ready_to_seat && ready_to_order) {
 }
 
 if (ready_to_eat && eating_timer > 0) {
-	var tool_sprite = asset_get_index("spr_" + customer_pizza);
+	var tool_sprite = asset_get_index("spr_" + customer_tool);
 	var nearest_table = instance_nearest(x, y, obj_table);
 	draw_sprite(tool_sprite, 0, x + 70, y - 40);
 }

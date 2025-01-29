@@ -3,6 +3,7 @@ if (global.gamepaused) {
     return;  // Pause the game logic
 }
 
+var scientist_tool = "";
 // Movement Logic
 if (current_action == "move_to_customer") {
 if (move_target_x != -1 && move_target_y != -1) {
@@ -25,25 +26,26 @@ if (move_target_x != -1 && move_target_y != -1) {
 		show_debug_message("WE DID THIS PART SUCCESSFULLY");
     }}
 	
+	
 	if (target_customer != noone && current_action == "take_order") {
                 // Interact with the customer to take their order
                 with (target_customer) {
                     if (ready_to_order) {
 						switch (object_index) {
 							case obj_bell:
-							customer_pizza = "multispectral";
+							scientist_tool = "multispectral";
 							break;
 							
 							case obj_brauer:
-							customer_pizza = "magnetrometer";
+							scientist_tool = "magnetrometer";
 							break;
 							
 							case obj_lawrence:
-							customer_pizza = "magnetrometer";
+							scientist_tool = "magnetrometer";
 							break;
 							
 							case obj_zuber:
-							customer_pizza = choose("DSOC", "radio");
+							scientist_tool = choose("DSOC", "radio");
 							break;
 							
 							default:
@@ -53,7 +55,7 @@ if (move_target_x != -1 && move_target_y != -1) {
 						
                         ready_to_order = false;
 						
-						receive_order(id, customer_pizza);
+						receive_order(id, scientist_tool);
 						
 						obj_controller.selected_customer = noone;
 						order_taken = true;
@@ -71,19 +73,18 @@ if (move_target_x != -1 && move_target_y != -1) {
 // Logic for picking up the tool
 if (current_action == "pick_up_tool") {
     if (move_target_x != -1 && move_target_y != -1) {
-        show_debug_message("Lula Position: (" + string(x) + ", " + string(y) + ")");
-        show_debug_message("Current Action: " + current_action);
-        show_debug_message("Target Tool: " + string(target_tool));
-        show_debug_message("Move Target: (" + string(move_target_x) + ", " + string(move_target_y) + ")");
-
+        //show_debug_message("Lula Position: (" + string(x) + ", " + string(y) + ")");
+        //show_debug_message("Current Action: " + current_action);
+        //show_debug_message("Target Tool: " + string(target_tool));
+        //show_debug_message("Move Target: (" + string(move_target_x) + ", " + string(move_target_y) + ")");
         // Move toward the tool
         move_speed = 3;
-        move_towards_point(move_target_x, move_target_y, move_speed);
+        move_towards_point(move_target_x, move_target_y - 100, move_speed);
 
         // Check if Lula has reached the tool
-        if (point_distance(x, y, move_target_x, move_target_y) < 5) {
+        if (point_distance(x, y, move_target_x, move_target_y - 100) < 5) {
             x = move_target_x;  // Snap to the tool's x
-            y = move_target_y + 50;  // Snap to the tool's y
+            y = move_target_y - 100;  // Snap to the tool's y
             move_target_x = -1; // Reset target x
             move_target_y = -1; // Reset target y
             speed = 0;
@@ -91,7 +92,7 @@ if (current_action == "pick_up_tool") {
             // Logic to "pick up" the tool
             if (target_tool != noone) {
                 with (target_tool) {
-                    // Perform logic for removing the tool from the counter
+                    
                    
                 }
             }
