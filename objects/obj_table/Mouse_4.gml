@@ -24,7 +24,7 @@ if (occupied && obj_controller.selected_tool != noone) {
     var selected_tool = obj_controller.selected_tool;
     
     // Check if the selected tool instance matches the customer's required tool
-    if (instance_exists(selected_tool) && instance_exists(customer_id) && selected_tool.tool_type == customer_id.required_tool) {
+    if (instance_exists(selected_tool) && instance_exists(customer_id)) {
         // Move the tool to the table's position
         selected_tool.x = x + 50;  // Align the tool to the table's position
         selected_tool.y = y + 10;
