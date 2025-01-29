@@ -38,21 +38,21 @@ if (ready_to_eat) {
         show_debug_message("Customer finished eating and is leaving.");
         instance_destroy(id);  // Customer leaves the restaurant
         
-		// Destroy pizza on table
-		var pizza_found = false;
+		// Destroy tool on table
+		var tool_found = false;
 
-    // Loop through all potential pizza types and destroy the one with the matching customer_id
-    var pizza_types = global.tools;  // Add all pizza types here
+    // Loop through all potential tool types and destroy the one with the matching customer_id
+    var tool_types = global.tools;  // Add all tool types here
 
-    for (var i = 0; i < array_length(pizza_types); i++) {
-        with (pizza_types[i]) {
-            if (customer_id == other.id) {  // Check if this pizza belongs to the current customer
-                instance_destroy();  // Destroy the pizza instance
-                pizza_found = true;
-                break;  // Exit the loop once the correct pizza is found and destroyed
+    for (var i = 0; i < array_length(tool_types); i++) {
+        with (tool_types[i]) {
+            if (customer_id == other.id) {  // Check if this tool belongs to the current customer
+                instance_destroy();  // Destroy the tool instance
+                tool_found = true;
+                break;  // Exit the loop once the correct tool is found and destroyed
             }
         }
-        if (pizza_found) break;  // Exit outer loop if pizza is already destroyed
+        if (tool_found) break;  // Exit outer loop if tool is already destroyed
     }
 		
         // Mark the table as unoccupied
