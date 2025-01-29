@@ -118,6 +118,7 @@
     {"id":{"name":"obj_clothing_book_9","path":"objects/obj_clothing_book_9/obj_clothing_book_9.yy",},},
     {"id":{"name":"obj_clothing_book","path":"objects/obj_clothing_book/obj_clothing_book.yy",},},
     {"id":{"name":"obj_clothing_briefcase","path":"objects/obj_clothing_briefcase/obj_clothing_briefcase.yy",},},
+    {"id":{"name":"obj_clothing_control_2","path":"objects/obj_clothing_control_2/obj_clothing_control_2.yy",},},
     {"id":{"name":"obj_clothing_controller","path":"objects/obj_clothing_controller/obj_clothing_controller.yy",},},
     {"id":{"name":"obj_clothing_cravate","path":"objects/obj_clothing_cravate/obj_clothing_cravate.yy",},},
     {"id":{"name":"obj_clothing_door","path":"objects/obj_clothing_door/obj_clothing_door.yy",},},
