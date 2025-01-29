@@ -77,7 +77,6 @@ if (current_action == "pick_up_tool") {
         //show_debug_message("Current Action: " + current_action);
         //show_debug_message("Target Tool: " + string(target_tool));
         //show_debug_message("Move Target: (" + string(move_target_x) + ", " + string(move_target_y) + ")");
-		show_debug_message("Target tool: " + object_get_name(scientist_tool.object_index));
         // Move toward the tool
         move_speed = 3;
         move_towards_point(move_target_x, move_target_y - 100, move_speed);
