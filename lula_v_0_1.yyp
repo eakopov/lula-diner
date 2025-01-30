@@ -367,6 +367,7 @@
     {"id":{"name":"snd_correct","path":"sounds/snd_correct/snd_correct.yy",},},
     {"id":{"name":"snd_wrong","path":"sounds/snd_wrong/snd_wrong.yy",},},
     {"id":{"name":"background_desert","path":"sprites/background_desert/background_desert.yy",},},
+    {"id":{"name":"BackgroundSprite","path":"sprites/BackgroundSprite/BackgroundSprite.yy",},},
     {"id":{"name":"bigBoost","path":"sprites/bigBoost/bigBoost.yy",},},
     {"id":{"name":"continueButton","path":"sprites/continueButton/continueButton.yy",},},
     {"id":{"name":"Explosion_01","path":"sprites/Explosion_01/Explosion_01.yy",},},
