@@ -9,6 +9,4 @@ if (is_ready) {
         move_target_x = other.x;  // Set the target position to the tool's position
         move_target_y = other.y;
     }
-
-    show_debug_message("Tool selected for pickup: " + string(id));
 }
