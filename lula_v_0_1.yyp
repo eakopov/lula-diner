@@ -190,6 +190,7 @@
     {"id":{"name":"obj_popup_controller","path":"objects/obj_popup_controller/obj_popup_controller.yy",},},
     {"id":{"name":"obj_portrait","path":"objects/obj_portrait/obj_portrait.yy",},},
     {"id":{"name":"obj_progress_bar","path":"objects/obj_progress_bar/obj_progress_bar.yy",},},
+    {"id":{"name":"obj_progress_tracker","path":"objects/obj_progress_tracker/obj_progress_tracker.yy",},},
     {"id":{"name":"obj_quit","path":"objects/obj_quit/obj_quit.yy",},},
     {"id":{"name":"obj_quiz_frame","path":"objects/obj_quiz_frame/obj_quiz_frame.yy",},},
     {"id":{"name":"obj_quiz_handler","path":"objects/obj_quiz_handler/obj_quiz_handler.yy",},},
