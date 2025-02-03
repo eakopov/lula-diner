@@ -10,6 +10,7 @@
   ],
   "ResourceOrderSettings":[
     {"name":"continueButtonRyth","order":2,"path":"objects/continueButtonRyth/continueButtonRyth.yy",},
+    {"name":"pause_ryth","order":4,"path":"objects/pause_ryth/pause_ryth.yy",},
     {"name":"resetButtonRyth","order":1,"path":"objects/resetButtonRyth/resetButtonRyth.yy",},
     {"name":"Ryth_lose_screen","order":3,"path":"objects/Ryth_lose_screen/Ryth_lose_screen.yy",},
     {"name":"background_desert","order":8,"path":"sprites/background_desert/background_desert.yy",},
@@ -26,6 +27,7 @@
     {"name":"Mid_Note","order":10,"path":"sprites/Mid_Note/Mid_Note.yy",},
     {"name":"Mid_User","order":3,"path":"sprites/Mid_User/Mid_User.yy",},
     {"name":"MidNote","order":24,"path":"sprites/MidNote/MidNote.yy",},
+    {"name":"pauseScreen_ryth","order":27,"path":"sprites/pauseScreen_ryth/pauseScreen_ryth.yy",},
     {"name":"resetRyth","order":25,"path":"sprites/resetRyth/resetRyth.yy",},
     {"name":"Right_Note","order":6,"path":"sprites/Right_Note/Right_Note.yy",},
     {"name":"Right_User","order":16,"path":"sprites/Right_User/Right_User.yy",},
