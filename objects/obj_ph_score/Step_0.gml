@@ -46,6 +46,9 @@ if (global.jump_timer <= 0)
 	with(obj_jump_checkbox){
 		instance_destroy();
 	}
+	
+    audio_stop_sound(global.jumpmusic_id);
+    global.jumpmusic_id = -1;
 
     if (global.jump_score >= 1050)
     {

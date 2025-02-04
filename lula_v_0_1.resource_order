@@ -43,6 +43,7 @@
     {"name":"__ChatterboxCompilerRemoveWhitespace","order":22,"path":"scripts/__ChatterboxCompilerRemoveWhitespace/__ChatterboxCompilerRemoveWhitespace.yy",},
     {"name":"bonusmusic","order":2,"path":"sounds/bonusmusic/bonusmusic.yy",},
     {"name":"bonuspoints","order":1,"path":"sounds/bonuspoints/bonuspoints.yy",},
+    {"name":"jump_minigame_music","order":3,"path":"sounds/jump_minigame_music/jump_minigame_music.yy",},
     {"name":"BackgroundSprite","order":8,"path":"sprites/BackgroundSprite/BackgroundSprite.yy",},
     {"name":"obj_double_jump_power_sprite","order":4,"path":"sprites/obj_double_jump_power_sprite/obj_double_jump_power_sprite.yy",},
     {"name":"obj_double_points_hoop_sprite","order":2,"path":"sprites/obj_double_points_hoop_sprite/obj_double_points_hoop_sprite.yy",},

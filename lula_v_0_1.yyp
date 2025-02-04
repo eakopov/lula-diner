@@ -361,6 +361,7 @@
     {"id":{"name":"select_random_questions","path":"scripts/select_random_questions/select_random_questions.yy",},},
     {"id":{"name":"bonusmusic","path":"sounds/bonusmusic/bonusmusic.yy",},},
     {"id":{"name":"bonuspoints","path":"sounds/bonuspoints/bonuspoints.yy",},},
+    {"id":{"name":"jump_minigame_music","path":"sounds/jump_minigame_music/jump_minigame_music.yy",},},
     {"id":{"name":"phase_passed_sound","path":"sounds/phase_passed_sound/phase_passed_sound.yy",},},
     {"id":{"name":"RetroFuture_Dirty_timing","path":"sounds/RetroFuture_Dirty_timing/RetroFuture_Dirty_timing.yy",},},
     {"id":{"name":"RetroFuture_Dirty","path":"sounds/RetroFuture_Dirty/RetroFuture_Dirty.yy",},},
