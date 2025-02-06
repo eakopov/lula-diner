@@ -20,7 +20,7 @@ if (!occupied && obj_controller.selected_customer != noone) {
 }
 
 if (occupied && obj_controller.selected_tool != noone) {
-	show_debug_message("deliver_tool");
+	show_debug_message("deliver_tool from table code");
     // Move Lula to the table
     with (obj_lula_pizza) {
         move_target_x = other.x;

@@ -1,3 +1,67 @@
+// Check if the game is paused
+if (global.gamepaused) {
+    return;  // Pause the game logic
+}
+
+
+// Movement Logic for Customer Orders
+if (current_action == "move_to_customer") {
+    if (move_target_x != -1 && move_target_y != -1) {
+        //show_debug_message("Lula Position: (" + string(x) + ", " + string(y) + ")");
+        //show_debug_message("Current Action: " + current_action);
+        //show_debug_message("Target Customer: " + string(target_customer));
+        //show_debug_message("Move Target: (" + string(move_target_x) + ", " + string(move_target_y) + ")");
+        
+        // Move toward the target point
+        move_speed = 3;
+        move_towards_point(move_target_x + 50, move_target_y - 50, move_speed);
+
+        // Check if Lula has reached the target
+        if (point_distance(x, y, move_target_x + 50, move_target_y - 50) < 5) {
+            x = move_target_x + 50;  // Snap to the target x
+            y = move_target_y - 50;  // Snap to the target y
+            move_target_x = -1; // Reset target x
+            move_target_y = -1; // Reset target y
+            speed = 0;
+            current_action = "take_order";
+            //show_debug_message("WE DID THIS PART SUCCESSFULLY");
+        }
+    }
+}
+
+// Taking Order
+if (target_customer != noone && current_action == "take_order") {
+    with (target_customer) {
+        if (ready_to_order) {
+            switch (object_index) {
+                case obj_bell:
+                    scientist_tool = "multispectral";
+                    break;
+                case obj_lawrence:
+					scientist_tool = choose("neutron", "gamma");
+					break;
+                case obj_brauer:
+                    scientist_tool = "magnetrometer";
+                    break;
+                case obj_zuber:
+                    scientist_tool = choose("DSOC", "radio");
+                    break;
+                default:
+                    show_debug_message("Wrong object index indicated");
+                    break;
+            }
+            
+            ready_to_order = false;
+            receive_order(id, scientist_tool);
+            
+            obj_controller.selected_customer = noone;
+            order_taken = true;
+        }
+    }
+    target_customer = noone;
+    current_action = "idle";
+}
+
 // Picking up the tool
 if (current_action == "pick_up_tool") {
     if (move_target_x != -1 && move_target_y != -1) {
@@ -55,7 +119,7 @@ if (current_action == "pick_up_tool") {
 
 // Move the tool with Lula if it's attached
 if (tool_attached != noone) {
-    tool_attached.x = x; // Attach tool to Lula's position
+    tool_attached.x = x + 10; // Attach tool to Lula's position
     tool_attached.y = y - 10;
 }
 
@@ -63,10 +127,10 @@ if (tool_attached != noone) {
 if (current_action == "deliver_tool") {
     if (move_target_x != -1 && move_target_y != -1) {
         move_speed = 3;
-        move_towards_point(move_target_x, move_target_y - 100, move_speed);
+        move_towards_point(move_target_x + 50, move_target_y - 50, move_speed);
 
         // Check if Lula has reached the target table
-        if (point_distance(x, y, move_target_x, move_target_y) < 5) {
+        if (point_distance(x, y, move_target_x, move_target_y) < 10) {
             x = move_target_x;
             y = move_target_y;
             move_target_x = -1;
@@ -78,6 +142,7 @@ if (current_action == "deliver_tool") {
 
             // Check if the tool matches the customer's request
             if (instance_exists(tool_attached) && instance_exists(customer)) {
+				show_debug_message("Instances of tool_attached & customer exist");
                 switch (customer.object_index) {
                     case obj_bell:
                         matching = (tool_attached.tool_name == "multispectral");
