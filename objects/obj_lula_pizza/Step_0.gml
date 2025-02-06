@@ -131,8 +131,8 @@ if (current_action == "deliver_tool") {
 
         // Check if Lula has reached the target table
         if (point_distance(x, y, move_target_x, move_target_y) < 10) {
-            x = move_target_x;
-            y = move_target_y;
+            x = move_target_x + 25;
+            y = move_target_y + 25;
             move_target_x = -1;
             move_target_y = -1;
             speed = 0;
