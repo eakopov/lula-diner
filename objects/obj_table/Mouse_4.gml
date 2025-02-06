@@ -20,46 +20,11 @@ if (!occupied && obj_controller.selected_customer != noone) {
 }
 
 if (occupied && obj_controller.selected_tool != noone) {
+	show_debug_message("deliver_tool");
     // Move Lula to the table
     with (obj_lula_pizza) {
         move_target_x = other.x;
         move_target_y = other.y;
         current_action = "deliver_tool";
-    }
-}
-
-// Logic to deliver the tool once Lula reaches the table
-if (obj_lula_pizza.current_action == "deliver_tool") {
-    if (point_distance(x, y, obj_lula_pizza.move_target_x, obj_lula_pizza.move_target_y) < 5) {
-        x = obj_lula_pizza.move_target_x;
-        y = obj_lula_pizza.move_target_y;
-        obj_lula_pizza.move_target_x = -1;
-        obj_lula_pizza.move_target_y = -1;
-        speed = 0;
-
-        var selected_tool = obj_controller.selected_tool;
-
-        // Check if the tool matches the customer's request
-        if (instance_exists(selected_tool) && instance_exists(customer_id)) {
-            var customer = instance_nearest(x, y, obj_customer);
-            
-            if (customer.required_tool == selected_tool.tool_type) {
-                // Deliver tool
-                selected_tool.x = x + 50;
-                selected_tool.y = y + 10;
-                
-                customer.ready_to_use_tool = true;
-                customer.using_tool_timer = 300;
-                
-                // Clear the selected tool
-                obj_controller.selected_tool = noone;
-                instance_destroy(selected_tool);
-                show_debug_message("Correct tool delivered to the customer.");
-            } else {
-                // Wrong tool, keep holding it
-                show_debug_message("Wrong tool! Lula keeps holding the tool.");
-            }
-        }
-        obj_lula_pizza.current_action = "idle";
     }
 }

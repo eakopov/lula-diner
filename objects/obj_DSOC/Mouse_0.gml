@@ -1,4 +1,4 @@
-if (is_ready) {
+if (is_ready && obj_lula_pizza.current_action != "deliver_tool") {
     obj_controller.selected_tool = id;
 
     // Send Lula to pick up the tool
