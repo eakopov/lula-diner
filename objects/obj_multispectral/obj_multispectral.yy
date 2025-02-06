@@ -13,7 +13,10 @@
     "name":"Tools",
     "path":"folders/Objects/Pizza Objects/Tools.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_tool",
+    "path":"objects/obj_tool/obj_tool.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
