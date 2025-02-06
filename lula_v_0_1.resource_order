@@ -35,6 +35,7 @@
     {"name":"obj_lula_pizza","order":4,"path":"objects/obj_lula_pizza/obj_lula_pizza.yy",},
     {"name":"obj_par_clothing","order":17,"path":"objects/obj_par_clothing/obj_par_clothing.yy",},
     {"name":"obj_progress_tracker","order":1,"path":"objects/obj_progress_tracker/obj_progress_tracker.yy",},
+    {"name":"obj_question_tracker","order":2,"path":"objects/obj_question_tracker/obj_question_tracker.yy",},
     {"name":"rightCatcher","order":11,"path":"objects/rightCatcher/rightCatcher.yy",},
     {"name":"__ChatterboxArrayCopyPart","order":18,"path":"scripts/__ChatterboxArrayCopyPart/__ChatterboxArrayCopyPart.yy",},
     {"name":"__ChatterboxArrayToString","order":19,"path":"scripts/__ChatterboxArrayToString/__ChatterboxArrayToString.yy",},
