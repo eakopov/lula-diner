@@ -2,3 +2,6 @@
 global.leaderboard = []; // Initialize leaderboard array
 load_leaderboard(); // Load leaderboard from file if it exists
 
+
+show_debug_message(json_encode({ leaderboard: global.leaderboard }));
+

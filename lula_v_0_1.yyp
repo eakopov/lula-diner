@@ -320,6 +320,7 @@
     {"id":{"name":"snd_wrong","path":"sounds/snd_wrong/snd_wrong.yy",},},
     {"id":{"name":"continueButton","path":"sprites/continueButton/continueButton.yy",},},
     {"id":{"name":"introRyth","path":"sprites/introRyth/introRyth.yy",},},
+    {"id":{"name":"leaderboard","path":"sprites/leaderboard/leaderboard.yy",},},
     {"id":{"name":"Left_Note","path":"sprites/Left_Note/Left_Note.yy",},},
     {"id":{"name":"Left_User","path":"sprites/Left_User/Left_User.yy",},},
     {"id":{"name":"LeftNote","path":"sprites/LeftNote/LeftNote.yy",},},
