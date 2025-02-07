@@ -58,3 +58,8 @@ clothing_item_counter = 0;
 dress_up_time = false;
 
 SCALE_MULTIPLIER = 4 / 3;
+
+//track number of correct answers per scientist
+scientist1_correct = 0;
+scientist2_correct = 0;
+scientist3_correct = 0;

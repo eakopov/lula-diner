@@ -1,46 +1,48 @@
 var _select = -1;
 
 if (!obj_clothing_controller.convo_in_progress) {
+    var intro_node = "";
+    
     // Check for Scientist 1
-    if (obj_clothing_controller.colliding_with_scientist_1 && !obj_clothing_controller.has_briefcase) {
-        start_conversation("Scientist1_Briefcase");
-    }
-    else if (obj_clothing_controller.colliding_with_scientist_1 && obj_clothing_controller.has_briefcase && !obj_clothing_controller.has_cravate) {
-        start_conversation("Scientist1_Cravate");
-    }
-    else if (obj_clothing_controller.colliding_with_scientist_1 && obj_clothing_controller.has_briefcase && obj_clothing_controller.has_cravate && !obj_clothing_controller.has_monocle) {
-        start_conversation("Scientist1_Monocle");
-    }
-    else if (obj_clothing_controller.colliding_with_scientist_1 && obj_clothing_controller.has_briefcase && obj_clothing_controller.has_cravate && obj_clothing_controller.has_monocle) {
-        start_conversation("Scientist1_Done");
+    if (obj_clothing_controller.colliding_with_scientist_1) {
+        if (obj_clothing_controller.scientist1_correct == 0) {
+            intro_node = "Scientist1_IntroA";
+        } else if (obj_clothing_controller.scientist1_correct == 1) {
+            intro_node = "Scientist1_IntroB";
+        } else if (obj_clothing_controller.scientist1_correct == 2) {
+            intro_node = "Scientist1_IntroC";
+        } else {
+            intro_node = "Scientist1_Done";
+        }
+        start_conversation(intro_node);
     }
 
     // Check for Scientist 2
-    else if (obj_clothing_controller.colliding_with_scientist_2 && !obj_clothing_controller.has_goggles) {
-        start_conversation("Scientist2_Goggles");
-    }
-    else if (obj_clothing_controller.colliding_with_scientist_2 && obj_clothing_controller.has_goggles && !obj_clothing_controller.has_snorkel) {
-        start_conversation("Scientist2_Snorkel");
-    }
-    else if (obj_clothing_controller.colliding_with_scientist_2 && obj_clothing_controller.has_goggles && obj_clothing_controller.has_snorkel && !obj_clothing_controller.has_floaties) {
-        start_conversation("Scientist2_Floaties");
-    }
-    else if (obj_clothing_controller.colliding_with_scientist_2 && obj_clothing_controller.has_goggles && obj_clothing_controller.has_snorkel && obj_clothing_controller.has_floaties) {
-        start_conversation("Scientist2_Done");
+    else if (obj_clothing_controller.colliding_with_scientist_2) {
+        if (obj_clothing_controller.scientist2_correct == 0) {
+            intro_node = "Scientist2_IntroA";
+        } else if (obj_clothing_controller.scientist2_correct == 1) {
+            intro_node = "Scientist2_IntroB";
+        } else if (obj_clothing_controller.scientist2_correct == 2) {
+            intro_node = "Scientist2_IntroC";
+        } else {
+            intro_node = "Scientist2_Done";
+        }
+        start_conversation(intro_node);
     }
 
-    // Check for Scientist 3 
-    else if (obj_clothing_controller.colliding_with_scientist_3 && !obj_clothing_controller.has_helm) {
-        start_conversation("Scientist3_Helm");
-    }
-    else if (obj_clothing_controller.colliding_with_scientist_3 && obj_clothing_controller.has_helm && !obj_clothing_controller.has_armor) {
-        start_conversation("Scientist3_Armor");
-    }
-    else if (obj_clothing_controller.colliding_with_scientist_3 && obj_clothing_controller.has_helm && obj_clothing_controller.has_armor && !obj_clothing_controller.has_boots) {
-        start_conversation("Scientist3_Boots");
-    }
-    else if (obj_clothing_controller.colliding_with_scientist_3 && obj_clothing_controller.has_helm && obj_clothing_controller.has_armor && obj_clothing_controller.has_boots) {
-        start_conversation("Scientist3_Done");
+    // Check for Scientist 3
+    else if (obj_clothing_controller.colliding_with_scientist_3) {
+        if (obj_clothing_controller.scientist3_correct == 0) {
+            intro_node = "Scientist3_IntroA";
+        } else if (obj_clothing_controller.scientist3_correct == 1) {
+            intro_node = "Scientist3_IntroB";
+        } else if (obj_clothing_controller.scientist3_correct == 2) {
+            intro_node = "Scientist3_IntroC";
+        } else {
+            intro_node = "Scientist3_Done";
+        }
+        start_conversation(intro_node);
     }
 	
 	// Check for mirror conditions

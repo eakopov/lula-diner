@@ -4,10 +4,10 @@
 
 //create chatterbox and load yarn file
 
-ChatterboxLoadFromFile("clothing_game.yarn");
-chatterbox = ChatterboxCreate("clothing_game.yarn");
+ChatterboxLoadFromFile("clothing_game_random.yarn");
+chatterbox = ChatterboxCreate("clothing_game_random.yarn");
 
-chatterbox = ChatterboxCreate("clothing_game.yarn");
+chatterbox = ChatterboxCreate("clothing_game_random.yarn");
 if (is_undefined(chatterbox)) {
     show_debug_message("Error: chatterbox failed to initialize!");
 }

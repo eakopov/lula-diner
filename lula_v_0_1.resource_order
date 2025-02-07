@@ -13,7 +13,7 @@
     {"name":"obj_clothing_book_7","order":7,"path":"objects/obj_clothing_book_7/obj_clothing_book_7.yy",},
     {"name":"obj_clothing_book_8","order":8,"path":"objects/obj_clothing_book_8/obj_clothing_book_8.yy",},
     {"name":"obj_clothing_book_9","order":9,"path":"objects/obj_clothing_book_9/obj_clothing_book_9.yy",},
-    {"name":"obj_clothing_control_2","order":2,"path":"objects/obj_clothing_control_2/obj_clothing_control_2.yy",},
+    {"name":"obj_clothing_control_random","order":2,"path":"objects/obj_clothing_control_random/obj_clothing_control_random.yy",},
     {"name":"obj_clothing_lib_door","order":1,"path":"objects/obj_clothing_lib_door/obj_clothing_lib_door.yy",},
     {"name":"obj_mirrored_character","order":1,"path":"objects/obj_mirrored_character/obj_mirrored_character.yy",},
     {"name":"obj_nasa_psyche_logo","order":4,"path":"objects/obj_nasa_psyche_logo/obj_nasa_psyche_logo.yy",},

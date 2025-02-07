@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_clothing_control_2",
+  "%Name":"obj_clothing_control_random",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_clothing_control_2",
+  "name":"obj_clothing_control_random",
   "overriddenProperties":[],
   "parent":{
     "name":"control",
