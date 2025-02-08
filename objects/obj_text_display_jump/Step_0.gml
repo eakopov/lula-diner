@@ -40,7 +40,7 @@ if (global.question_in_progress) {
             // The user has answered
             global.question_answered = true;
             // Start a 5-second feedback timer
-            global.answer_feedback_timer = 10 * room_speed;
+            global.answer_feedback_timer = 5 * room_speed;
         }
     }
     else {

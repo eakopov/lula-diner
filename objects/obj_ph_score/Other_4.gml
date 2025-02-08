@@ -7,5 +7,5 @@ if (!variable_global_exists("jump_score"))
 // Initialize the countdown timer only if it hasn't been set already
 if (!variable_global_exists("jump_timer"))
 {
-    global.jump_timer = 500 * room_speed; // 30 seconds (in steps)
+    global.jump_timer = 500 * room_speed; // 500 seconds (in steps)
 }

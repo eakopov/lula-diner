@@ -160,6 +160,15 @@ if (!variable_global_exists("bonusmusic_id")) {
 
 bonusOver = -1; 
 
+if (!variable_global_exists("leftOverTimeScore")) {
+    global.leftOverTimeScore = 0; // keeps track of the time the user had left over and the score it converts to
+}
+
+if (!variable_global_exists("jumpmusic_id")) {
+    global.jumpmusic_id = audio_play_sound(jump_minigame_music, 1, true); // Holds the audio index for the jump music
+}
+
+
 
 
 
