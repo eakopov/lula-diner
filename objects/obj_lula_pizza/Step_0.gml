@@ -139,10 +139,9 @@ if (current_action == "deliver_tool") {
 
             var matching = false;
             var customer = instance_nearest(x, y, obj_customer);
-
             // Check if the tool matches the customer's request
-            if (instance_exists(tool_attached) && instance_exists(customer)) {
-				show_debug_message("Instances of tool_attached & customer exist");
+            if (instance_exists(customer)) {
+				show_debug_message("Instance of customer exists");
                 switch (customer.object_index) {
                     case obj_bell:
                         matching = (tool_attached.tool_name == "multispectral");
