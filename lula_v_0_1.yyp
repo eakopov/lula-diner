@@ -102,6 +102,7 @@
     {"id":{"name":"obj__d_correct_feedback","path":"objects/obj__d_correct_feedback/obj__d_correct_feedback.yy",},},
     {"id":{"name":"obj_bg","path":"objects/obj_bg/obj_bg.yy",},},
     {"id":{"name":"obj_boundary","path":"objects/obj_boundary/obj_boundary.yy",},},
+    {"id":{"name":"obj_button_back","path":"objects/obj_button_back/obj_button_back.yy",},},
     {"id":{"name":"obj_cheese","path":"objects/obj_cheese/obj_cheese.yy",},},
     {"id":{"name":"obj_chef","path":"objects/obj_chef/obj_chef.yy",},},
     {"id":{"name":"obj_clock","path":"objects/obj_clock/obj_clock.yy",},},
