@@ -9,8 +9,8 @@
   "name":"obj_leaderboard_display",
   "overriddenProperties":[],
   "parent":{
-    "name":"Deck",
-    "path":"folders/Objects/Deck.yy",
+    "name":"LeaderBoard",
+    "path":"folders/Objects/Deck/LeaderBoard.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -11,7 +11,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Deck",
-    "path":"folders/Sprites/Deck.yy",
+    "path":"folders/Objects/Deck.yy",
   },
   "parentObjectId":null,
   "persistent":false,
