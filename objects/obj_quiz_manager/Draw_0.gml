@@ -35,7 +35,7 @@ else {
     draw_text_wrapped(170, 300, global.result_text, 40, 30);
 
     draw_text(170, 350, "Click here to retry.");
-    draw_text(170, 400, "Click here to see the leaderboard and continue to the next game.");
+    draw_text(170, 400, "Click here to continue to the leaderboard.");
 
     // Handle mouse click to restart or continue
     if (mouse_check_button_pressed(mb_left)) {
