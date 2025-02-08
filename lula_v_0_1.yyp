@@ -403,6 +403,7 @@
     {"id":{"name":"Sprite_scientist_4","path":"sprites/Sprite_scientist_4/Sprite_scientist_4.yy",},},
     {"id":{"name":"Sprite_scientist_5","path":"sprites/Sprite_scientist_5/Sprite_scientist_5.yy",},},
     {"id":{"name":"Sprite_scientist_6","path":"sprites/Sprite_scientist_6/Sprite_scientist_6.yy",},},
+    {"id":{"name":"Sprite76","path":"sprites/Sprite76/Sprite76.yy",},},
     {"id":{"name":"startButton","path":"sprites/startButton/startButton.yy",},},
     {"id":{"name":"winscreen","path":"sprites/winscreen/winscreen.yy",},},
     {"id":{"name":"tile_blk_bkground","path":"tilesets/tile_blk_bkground/tile_blk_bkground.yy",},},

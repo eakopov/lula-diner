@@ -139,6 +139,7 @@
     {"name":"spr_pink_square","order":1,"path":"sprites/spr_pink_square/spr_pink_square.yy",},
     {"name":"spr_points_counter_clothing","order":8,"path":"sprites/spr_points_counter_clothing/spr_points_counter_clothing.yy",},
     {"name":"spr_results_box","order":9,"path":"sprites/spr_results_box/spr_results_box.yy",},
+    {"name":"Sprite76","order":3,"path":"sprites/Sprite76/Sprite76.yy",},
     {"name":"TileSet4","order":1,"path":"tilesets/TileSet4/TileSet4.yy",},
   ],
 }
