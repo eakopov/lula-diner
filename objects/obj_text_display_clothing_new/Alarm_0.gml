@@ -6,4 +6,4 @@
 outcome = ChatterboxVariableGet("outcome"); // Get the outcome after Chatterbox updates
 show_debug_message("Outcome retrieved: " + string(outcome));
 
-process_choice(intro_node, outcome); // Pass the outcome to your choice-processing function
+process_choice(intro_node, outcome, obj_clothing_controller); // Pass the outcome to your choice-processing function

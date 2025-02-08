@@ -53,13 +53,13 @@ if (!obj_clothing_controller.convo_in_progress) {
 	
 	// Check for mirror conditions
     else if (obj_clothing_controller.colliding_with_mirror && obj_clothing_controller.has_all && !obj_clothing_controller.dressed) {
-        start_conversation("Mirror");
+        intro_node = "Mirror"; start_conversation("Mirror");
     }
 
     // Check for door
    else if (obj_clothing_controller.colliding_with_door) {
 	    if (!obj_clothing_controller.dressed) {
-	        start_conversation("Door_Incomplete");
+	        intro_node = "Door_Incomplete"; start_conversation("Door_Incomplete");
 	    }
 	    else {
 			/*
@@ -73,7 +73,7 @@ if (!obj_clothing_controller.convo_in_progress) {
 	            start_conversation("Door_Knight");
 	        }
 			*/
-			
+			intro_node = "DoorGeneral";
 			start_conversation("DoorGeneral");
 		}
 	}

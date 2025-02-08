@@ -1,9 +1,10 @@
 {
   "FolderOrderSettings":[
-    {"name":"lib_books","order":3,"path":"folders/Objects/clothing_game/environment/lib_books.yy",},
+    {"name":"lib_books","order":5,"path":"folders/Objects/clothing_game/environment/lib_books.yy",},
     {"name":"clothing_game","order":1,"path":"folders/Tile Sets/clothing_game.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"obj_boundary","order":1,"path":"objects/obj_boundary/obj_boundary.yy",},
     {"name":"obj_clothing_book_1","order":1,"path":"objects/obj_clothing_book_1/obj_clothing_book_1.yy",},
     {"name":"obj_clothing_book_10","order":10,"path":"objects/obj_clothing_book_10/obj_clothing_book_10.yy",},
     {"name":"obj_clothing_book_2","order":2,"path":"objects/obj_clothing_book_2/obj_clothing_book_2.yy",},
@@ -15,10 +16,15 @@
     {"name":"obj_clothing_book_8","order":8,"path":"objects/obj_clothing_book_8/obj_clothing_book_8.yy",},
     {"name":"obj_clothing_book_9","order":9,"path":"objects/obj_clothing_book_9/obj_clothing_book_9.yy",},
     {"name":"obj_clothing_control_random","order":2,"path":"objects/obj_clothing_control_random/obj_clothing_control_random.yy",},
-    {"name":"obj_clothing_lib_door","order":1,"path":"objects/obj_clothing_lib_door/obj_clothing_lib_door.yy",},
+    {"name":"obj_clothing_door","order":3,"path":"objects/obj_clothing_door/obj_clothing_door.yy",},
+    {"name":"obj_clothing_lib_door","order":4,"path":"objects/obj_clothing_lib_door/obj_clothing_lib_door.yy",},
+    {"name":"obj_clothing_mirror","order":2,"path":"objects/obj_clothing_mirror/obj_clothing_mirror.yy",},
     {"name":"obj_mirrored_character","order":1,"path":"objects/obj_mirrored_character/obj_mirrored_character.yy",},
-    {"name":"obj_nasa_psyche_logo","order":4,"path":"objects/obj_nasa_psyche_logo/obj_nasa_psyche_logo.yy",},
+    {"name":"obj_nasa_psyche_logo","order":6,"path":"objects/obj_nasa_psyche_logo/obj_nasa_psyche_logo.yy",},
     {"name":"obj_par_clothing","order":1,"path":"objects/obj_par_clothing/obj_par_clothing.yy",},
+    {"name":"obj_points_counter_clothing","order":7,"path":"objects/obj_points_counter_clothing/obj_points_counter_clothing.yy",},
+    {"name":"obj_results_textbox","order":9,"path":"objects/obj_results_textbox/obj_results_textbox.yy",},
+    {"name":"obj_text_display_clothing_new","order":8,"path":"objects/obj_text_display_clothing_new/obj_text_display_clothing_new.yy",},
     {"name":"__ChatterboxArrayCopyPart","order":1,"path":"scripts/__ChatterboxArrayCopyPart/__ChatterboxArrayCopyPart.yy",},
     {"name":"__ChatterboxArrayToString","order":2,"path":"scripts/__ChatterboxArrayToString/__ChatterboxArrayToString.yy",},
     {"name":"__ChatterboxBufferBatch","order":3,"path":"scripts/__ChatterboxBufferBatch/__ChatterboxBufferBatch.yy",},
@@ -131,6 +137,8 @@
     {"name":"spr_inventory_box","order":5,"path":"sprites/spr_inventory_box/spr_inventory_box.yy",},
     {"name":"spr_nasa_psyche_logo","order":7,"path":"sprites/spr_nasa_psyche_logo/spr_nasa_psyche_logo.yy",},
     {"name":"spr_pink_square","order":1,"path":"sprites/spr_pink_square/spr_pink_square.yy",},
+    {"name":"spr_points_counter_clothing","order":8,"path":"sprites/spr_points_counter_clothing/spr_points_counter_clothing.yy",},
+    {"name":"spr_results_box","order":9,"path":"sprites/spr_results_box/spr_results_box.yy",},
     {"name":"TileSet4","order":1,"path":"tilesets/TileSet4/TileSet4.yy",},
   ],
 }

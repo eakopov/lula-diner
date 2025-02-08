@@ -15,7 +15,7 @@ function start_conversation(_node_title) {
     obj_clothing_controller.conversation_state = "displaying_text";
 }
 
-function process_choice(_node_title, _choice) {
+function process_choice(_node_title, _choice, _obj) {
 	
 	if (_choice != 1) {
         return; // Do nothing if answer is incorrect
@@ -23,6 +23,7 @@ function process_choice(_node_title, _choice) {
 	       
     var clothing_awarded = "";
 	
+	show_debug_message("processing choice method activated with node title " + _node_title);
 	
 
     switch (_node_title) {
@@ -40,7 +41,7 @@ function process_choice(_node_title, _choice) {
             if (array_length(s1_options) > 0) {
                 clothing_awarded = s1_options[irandom(array_length(s1_options) - 1)];
                 assign_clothing_item(clothing_awarded);
-                obj_clothing_controller.clothing_counter++;
+               // obj_clothing_controller.clothing_counter++;
                 update_inventory(clothing_awarded);
 				addPoints(10);
             }
@@ -48,6 +49,7 @@ function process_choice(_node_title, _choice) {
             obj_clothing_controller.scientist1_correct++;
             if (obj_clothing_controller.scientist1_correct >= 3) {
                 obj_clothing_controller.has_all_from_s1 = true;
+				show_debug_message("has all from s1 = true");
                 addPoints(20);
             }
             break;
@@ -66,7 +68,7 @@ function process_choice(_node_title, _choice) {
             if (array_length(s2_options) > 0) {
                 clothing_awarded = s2_options[irandom(array_length(s2_options) - 1)];
                 assign_clothing_item(clothing_awarded);
-                obj_clothing_controller.clothing_counter++;
+                //obj_clothing_controller.clothing_counter++;
                 update_inventory(clothing_awarded);
 				addPoints(10);
             }
@@ -92,7 +94,7 @@ function process_choice(_node_title, _choice) {
             if (array_length(s3_options) > 0) {
                 clothing_awarded = s3_options[irandom(array_length(s3_options) - 1)];
                 assign_clothing_item(clothing_awarded);
-                obj_clothing_controller.clothing_counter++;
+                //obj_clothing_controller.clothing_counter++;
                 update_inventory(clothing_awarded);
 				addPoints(10);
             }
@@ -118,8 +120,11 @@ function process_choice(_node_title, _choice) {
             break;
 			
 		case "DoorGeneral":
-			if (_choice == 1) room_goto_next(); 
-            break;
+			obj_clothing_controller.ready_for_results = true;
+			    
+			// Set the timer to 60 frames (1 second delay)
+			 obj_clothing_controller.wait_timer = 360;
+    break;
 
         // Mirror Node
         case "Mirror":
@@ -133,8 +138,8 @@ function process_choice(_node_title, _choice) {
 			if (_choice == 1 || _choice == 2 || _choice ==3) obj_clothing_controller.dressed = true;
 			
 			*/
-			
-			if (_choice == 1) {obj_clothing_controller.dress_up_time = true;}
+			show_debug_message("inside mirror node");
+			if (_choice == 1) {obj_clothing_controller.dress_up_time = true; show_debug_message("dress-up time enabled");}
 			else {}
             break;
 			

@@ -7,8 +7,8 @@
 
 
 //variables for text box set up
-textWidth = 400;
-lineHeight = 28;
+textWidth = 600;
+lineHeight = 32;
 
 
 text = "";

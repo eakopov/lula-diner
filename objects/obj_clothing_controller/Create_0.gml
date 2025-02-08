@@ -74,3 +74,11 @@ current_rand = -1;
 global.chatterbox_clothing = noone;
 
 just_entered = true;
+
+clothing_from_s1 = 0;
+clothing_from_s2= 0;
+cloting_from_s3 = 0;
+
+ready_for_results = false;
+
+wait_timer = 3200;
