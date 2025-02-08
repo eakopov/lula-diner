@@ -1,24 +1,37 @@
-xsp = 0;
-ysp = 0;
+// Define movement constants
+var move_speed = 0.5; // Acceleration rate
+var max_speed = 4;    // Maximum speed
+var frictionForJump = 0.2;   // Slows down when no key is pressed
 
-// Step Event:
 // Gravity
 ysp += 0.1;
 
-// Horizontal movement (Arrow keys and WASD)
-xsp = 0;
-
 // Check if speed boost is active
-var speed_multiplier = (global.speed_boost_active) ? 2 : 1; // Double speed when boosted
+var speed_multiplier = (global.speed_boost_active) ? 2 : 1;
 
+// Horizontal movement (Arrow keys and WASD)
 if keyboard_check(vk_left) || keyboard_check(ord("A"))
 {
-    xsp = -2 * speed_multiplier;
+    xsp -= move_speed * speed_multiplier; // Apply acceleration
 }
 if keyboard_check(vk_right) || keyboard_check(ord("D"))
 {
-    xsp = 2 * speed_multiplier;
+    xsp += move_speed * speed_multiplier; // Apply acceleration
 }
+
+// Apply friction when no movement key is pressed
+if !(keyboard_check(vk_left) || keyboard_check(ord("A")) ||
+     keyboard_check(vk_right) || keyboard_check(ord("D")))
+{
+    if (xsp > 0) xsp -= frictionForJump; // Slow down when moving right
+    if (xsp < 0) xsp += frictionForJump; // Slow down when moving left
+
+    // Stop completely if very slow
+    if (abs(xsp) < frictionForJump) xsp = 0;
+}
+
+// Clamp speed to max speed
+xsp = clamp(xsp, -max_speed * speed_multiplier, max_speed * speed_multiplier);
 
 // Jumping (Arrow key up or W)
 if place_meeting(x, y + 1, obj_ph_jump_ground)
@@ -28,7 +41,7 @@ if place_meeting(x, y + 1, obj_ph_jump_ground)
     
     if keyboard_check(vk_up) || keyboard_check(ord("W"))
     {
-        ysp = -100; // Jump
+        ysp = -10; // Adjusted jump height for better feel
     }
 }
 else
@@ -36,20 +49,20 @@ else
     // Double Jump Logic
     if (global.double_jump_active && !double_jumped && (keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W"))))
     {
-        ysp = -100; // Double jump
-        double_jumped = true; // Mark double jump as used
+        ysp = -5; // Double jump with controlled height
+        double_jumped = true;
     }
     
-    ysp += 1; // Continue falling if not on the ground
+    ysp += 0.2; // Smooth falling gravity
 }
 
-// Move and collide with oSolid
+// Move and collide with solid objects
 move_and_collide(xsp, ysp, obj_ph_jump_ground);
 
-// Check if player goes offscreen (outside room boundaries)
+// Check if player goes offscreen
 if (x < 0 || x > room_width || y < 0 || y > room_height)
 {
-    room_restart(); // Reset the room
+    room_restart();
 }
 
 // Check if the player has passed through a hoop
@@ -61,7 +74,7 @@ if place_meeting(x, y, obj_ph_hoops)
     // Determine score multiplier
     var score_multiplier = global.double_points_active ? 2 : 1;
 	
-	    if (y < hoop_y && ysp < 0) || (y > hoop_y && ysp > 0) { // Passing upward or downward
+	    if (!place_meeting(x, y, obj_ph_jump_ground)) { // Passing upward or downward
         global.jump_score += 50 * score_multiplier; // Add points
         global.hoops_passed += 1; // Increment hoop count
 
@@ -77,6 +90,7 @@ if place_meeting(x, y, obj_ph_hoops)
 				global.question_in_progress = true;
                 global.question_answered = false;
 		        if(global.bonus_question_index > 9) {
+				   global.leftOverTimeScore = 2 * (global.jump_timer / room_speed);
 			       global.jump_timer = 0;
 		        }
 	          }

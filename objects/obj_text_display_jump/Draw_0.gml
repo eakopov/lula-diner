@@ -21,6 +21,8 @@ if (global.current_text_index < 8) {
     
 	//If bonus music is not on, activate it (loop = true)
 	if(global.bonusmusic_id == -1) { 
+	   audio_stop_sound(global.jumpmusic_id);
+	   global.jumpmusic_id = -1;
        global.bonusmusic_id = audio_play_sound(bonusmusic, 1, true);
 	}
 	
@@ -50,7 +52,11 @@ if (global.current_text_index < 8) {
     }
     // If bonus_question_index is out of range or time is up, fallback messages:
     else if (global.bonus_question_index >= array_length(global.mc_questions)) { 
-        text = "All Phases and Questions Passed! 1000 Bonus Points! Good Job! :)";
+        text = "All Phases and Questions Passed! 1000 Bonus Points! Good Job! :) You had " 
+       + string(global.leftOverTimeScore / 2) 
+       + " seconds left and earned " 
+       + string(global.leftOverTimeScore) 
+       + " extra points!";
 		
 		if(bonusOver == -1) {
 		   global.jump_score += 1000;
