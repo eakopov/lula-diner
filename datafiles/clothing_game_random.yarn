@@ -2,9 +2,6 @@ title: Start
 ---
 Lula:  Help me find the right clothes to impress the board!
 
-Lula:  Did you help me find the right clothes?
-  ->Yes
-  ->No
 ===
 
 title:  Scientist1_IntroA
@@ -18,7 +15,7 @@ title:  Scientist1_IntroB
 ---
 Scientist1:  Are you ready for my second question?
 
-<jump Randomizer>>
+<<jump Randomizer>>
 ===
 
 title:  Scientist1_IntroC
@@ -28,7 +25,7 @@ Scientist1:  Are you ready for my third question?
 <<jump Randomizer>>
 ===
 
-title:  Scientist_Done
+title:  Scientist1_Done
 ---
 Scientist1:  That's all from me!  Good luck with your pitch!  Psyche, here we come!
 ===
@@ -47,7 +44,7 @@ title:  Scientist2_IntroB
 ---
 Scientist2:  Are you ready for my second question?
 
-<jump Randomizer>>
+<<jump Randomizer>>
 ===
 
 title:  Scientist2_IntroC
@@ -75,7 +72,7 @@ title:  Scientist3_IntroB
 ---
 Scientist:  Are you ready for my second question?
 
-<jump Randomizer>>
+<<jump Randomizer>>
 ===
 
 title:  Scientist3_IntroC
@@ -214,6 +211,16 @@ title:  Book8
 Scientists will use multispectral imagers to capture images of the surface of Psyche.
 ===
 
+title:  Book9
+---
+The spacecraft launched towards Psyche is approximately the size of a tennis court.
+===
+
+title:  Book10
+---
+The instruments inside of the spacecraft launched towards Psyche are powered by solar energy.
+===
+
 
 title:  DoorGeneral
 ---
@@ -224,92 +231,117 @@ Are you ready to go to the pitch?
 
 ===
 
+title: Correct
+---
+<<set $outcome = 1>>
+
+Great job! You got it right.
+===
+
+title:  Incorrect
+---
+<<set $outcome = 0>>
+
+Oh no!  That's not right!
+===
+
 title:  ran0
 ---
-ran0
-
+Is Psyche a class M asteroid?
   ->Yes
+    <<jump Correct>>
   ->No
+    <<jump Incorrect>>
 
 ===
 
 title:  ran1
 ---
-ran1
-
-  ->Yes
-  ->No
-
+Approximately how big is Psyche?
+  ->About 220 kilometers across
+    <<jump Correct>>
+  ->About 2200 kilometers across
+    <<jump Incorrect>>
 ===
 
 title:  ran2
 ---
-ran2
-
-  ->Yes
-  ->No
-
+True or False?  Psyche is likely rich in metals.
+  ->True
+      <<jump Correct>>
+  ->False
+      <<jump Incorrect>>
 ===
 
 title:  ran3
 ---
-ran3
-
-  ->Yes
-  ->No
-
+Who discovered Psyche?
+    ->Annibale de Gasparis, an Italian astronomer
+      <<jump Correct>>
+    ->Neil de Grasse Tyson, a famous contemporary astrophysicist
+        <<jump Incorrect>>
 ===
 
 title:  ran4
 ---
-ran4
-
-  ->Yes
-  ->No
-
+A goal of the Pysche mission is...
+  ->...to study the composition of the asteroid
+    <<jump Correct>>
+  ->...to walk on the surface of the asteroid
+    <<jump Incorrect>>
 ===
 
 title:  ran5
 ---
-ran5
-
-  ->Yes
-  ->No
-
+Scientists will use a magnetometer to...
+  ->...help determine if Psyche is the core of an early planet
+    <<jump Correct>>
+  ->...determine the chemical composition of Psyche
+    <<jump Incorrect>>
 ===
 
 title:  ran6
 ---
-ran6
-
-  ->Yes
-  ->No
+Scientists will use a spectrometer to...
+  ->...determine the chemical composition of the asteroid
+    <<jump Correct>>
+  ->...capture images of the asteroid
+    <<jump Incorrect>>
 
 ===
 
 title:  ran7
 ---
-ran7
-
-  ->Yes
-  ->No
+Scientists will use multispectral imagers to...
+  ->...capture images of the surface of Psyche
+    <<jump Correct>>
+  ->...help determine if Psyche is the core of an early planet
+    <<jump Incorrect>>
 
 ===
 
 title:  ran8
 ---
-ran8
+The spacecraft that was launched to reach Psyche is approximately the size of...
 
-  ->Yes
-  ->No
+  ->A basketball court
+    <<jump Incorrect>>
+  ->A tennis court
+    <<jump Correct>>
+  ->A football field
+    <<jump Incorrect>>
 
 ===
 
 title:  ran9
 ---
-ran9
+Everything on board the Psyche spacecraft is powered by...
 
-  ->Yes
-  ->No
+  ->Gasoline
+    <<jump Incorrect>>
+  ->Petroleum
+    <<jump Incorrect>>
+  ->Solar energy
+    <<jump Correct>>
 
 ===

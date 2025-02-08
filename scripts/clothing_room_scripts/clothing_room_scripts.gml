@@ -2,21 +2,36 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 
 
-function start_conversation(_node_title) {    
-    ChatterboxJump(chatterbox, _node_title);
+function start_conversation(_node_title) {
+	
+	if(obj_clothing_controller.colliding_with_scientist_1 || obj_clothing_controller.colliding_with_scientist_2 || obj_clothing_controller.colliding_with_scientist_3) {
+		obj_clothing_controller.rand_branch = get_unique_random_branch();
+		ChatterboxVariableSet("rand_branch", obj_clothing_controller.rand_branch);
+
+	}
+	
+    ChatterboxJump(global.chatterbox_clothing, _node_title);
     obj_clothing_controller.convo_in_progress = true;
     obj_clothing_controller.conversation_state = "displaying_text";
 }
 
 function process_choice(_node_title, _choice) {
+	
+	if (_choice != 1) {
+        return; // Do nothing if answer is incorrect
+    }
 	       
     var clothing_awarded = "";
+	
+	
 
     switch (_node_title) {
         // Scientist 1: Professional Outfit
         case "Scientist1_IntroA":
         case "Scientist1_IntroB":
         case "Scientist1_IntroC":
+			// Add the selected number to the used list
+			array_push(obj_clothing_controller.used_rand_branches, current_rand);
             var s1_options = [];
             if (!obj_clothing_controller.has_briefcase) array_push(s1_options, "briefcase");
             if (!obj_clothing_controller.has_cravate) array_push(s1_options, "cravate");
@@ -41,6 +56,8 @@ function process_choice(_node_title, _choice) {
         case "Scientist2_IntroA":
         case "Scientist2_IntroB":
         case "Scientist2_IntroC":
+			// Add the selected number to the used list
+			array_push(obj_clothing_controller.used_rand_branches, current_rand);
             var s2_options = [];
             if (!obj_clothing_controller.has_goggles) array_push(s2_options, "goggles");
             if (!obj_clothing_controller.has_snorkel) array_push(s2_options, "snorkel");
@@ -65,6 +82,8 @@ function process_choice(_node_title, _choice) {
         case "Scientist3_IntroA":
         case "Scientist3_IntroB":
         case "Scientist3_IntroC":
+			// Add the selected number to the used list
+			array_push(obj_clothing_controller.used_rand_branches, current_rand);
             var s3_options = [];
             if (!obj_clothing_controller.has_helm) array_push(s3_options, "helm");
             if (!obj_clothing_controller.has_armor) array_push(s3_options, "armor");
@@ -215,4 +234,31 @@ function assign_clothing_item(item) {
         case "armor": obj_clothing_controller.has_armor = true; break;
         case "boots": obj_clothing_controller.has_boots = true; break;
     }
+}
+
+function get_unique_random_branch() {
+    var available_numbers = [];
+    
+    // Create a list of available numbers
+    for (var i = 0; i <= 9; i++) {
+        if (!array_contains(obj_clothing_controller.used_rand_branches, i)) {
+            array_push(available_numbers, i);
+        }
+    }
+
+    // If all numbers have been used, reset the list
+    if (array_length(available_numbers) == 0) {
+        obj_clothing_controller.used_rand_branches = []; // Clear history
+        for (var i = 0; i <= 9; i++) {
+            array_push(available_numbers, i); // Refill with all options
+        }
+    }
+
+    // Pick a new random number from the available options
+    var index = irandom(array_length(available_numbers) - 1);
+    current_rand = available_numbers[index];
+
+    
+
+    return current_rand;
 }
