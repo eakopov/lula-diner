@@ -10,3 +10,10 @@ if (attached_to_lula) {
         attached_to_lula = false;
     }
 }
+
+if (tool_delivery_ready) {
+	attached_to_lula = false;
+	
+	x = customer_id.x + 50;
+    y = customer_id.y + 10;	
+}
