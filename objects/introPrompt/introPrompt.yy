@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"introRyth",
-    "path":"sprites/introRyth/introRyth.yy",
+    "name":"introRyth_1",
+    "path":"sprites/introRyth_1/introRyth_1.yy",
   },
   "spriteMaskId":null,
   "visible":true,

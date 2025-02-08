@@ -1,16 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_cheese",
+  "%Name":"obj_game_over",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":5,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_cheese",
+  "name":"obj_game_over",
   "overriddenProperties":[],
   "parent":{
-    "name":"Pizzas",
-    "path":"folders/Objects/Pizza Objects/Pizzas.yy",
+    "name":"Deck",
+    "path":"folders/Objects/Deck.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,10 +31,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_cheese_pizza",
-    "path":"sprites/spr_cheese_pizza/spr_cheese_pizza.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

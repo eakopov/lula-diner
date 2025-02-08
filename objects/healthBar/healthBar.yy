@@ -1,16 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"obj_pineapple",
+  "%Name":"healthBar",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_pineapple",
+  "name":"healthBar",
   "overriddenProperties":[],
   "parent":{
-    "name":"Pizzas",
-    "path":"folders/Objects/Pizza Objects/Pizzas.yy",
+    "name":"rythem",
+    "path":"folders/Objects/rythem.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_pineapple_pizza",
-    "path":"sprites/spr_pineapple_pizza/spr_pineapple_pizza.yy",
+    "name":"healthSprite",
+    "path":"sprites/healthSprite/healthSprite.yy",
   },
   "spriteMaskId":null,
   "visible":true,

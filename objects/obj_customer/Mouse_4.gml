@@ -3,10 +3,10 @@ if (ready_to_seat) {  // Only allow selection if the customer is waiting
 }
 
 if (ready_to_order) {
-	customer_pizza = choose("gamma", "magnetrometer", "multispectral", "neutron", "DSOC", "radio");
-	show_debug_message("Pizza for " + string(id) + " is of type " + string(customer_pizza));
+	customer_tool = choose("gamma", "magnetrometer", "multispectral", "neutron", "DSOC", "radio");
+	show_debug_message("tool for " + string(id) + " is of type " + string(customer_tool));
 
-    receive_order(id, customer_pizza);
+    receive_order(id, customer_tool);
 	
 	// Update state
 	ready_to_order = false;

@@ -30,3 +30,24 @@ function pauseRyth(){
 function unpauseRyth(){
 	global.pausedRyth = false;
 }	
+
+function healthSet(points){
+	global.healthRyth = points;
+}	
+
+function healthHurtRyth(points){
+	global.healthRyth -= points;
+	
+}	
+
+function healthRecoverRyth(points){
+	global.healthRyth += points;
+}
+
+function startRyth(points){
+	global.starterRyth = points;
+}
+
+function endRyth(points){
+	global.enderRyth = points;
+}
