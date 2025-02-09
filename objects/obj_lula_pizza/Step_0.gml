@@ -180,8 +180,7 @@ if (current_action == "deliver_tool") {
                 //        break;
                 //}
 
-                if (matching) {
-                    show_debug_message("Matching == true");
+               
 
                     // Deliver tool
 					obj_tool.attached_to_lula = false;
@@ -191,10 +190,7 @@ if (current_action == "deliver_tool") {
                     // Clear the selected tool
                     obj_controller.selected_tool = noone;
                     instance_destroy(tool_attached);
-                    show_debug_message("Correct tool delivered to the customer.");
-                } else {
-                    show_debug_message("Wrong tool! Lula keeps holding the tool.");
-                }
+                
             }
             
             current_action = "idle";
