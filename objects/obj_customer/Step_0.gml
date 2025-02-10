@@ -33,7 +33,6 @@ if (seated && !order_taken) {
 
 if (ready_to_eat) {
     eating_timer -= 1;  // Count down the eating timer
-    
     if (eating_timer <= 0) {
         show_debug_message("Customer finished eating and is leaving.");
         instance_destroy(id);  // Customer leaves the restaurant

@@ -24,7 +24,6 @@ if (current_action == "move_to_customer") {
             move_target_y = -1; // Reset target y
             speed = 0;
             current_action = "take_order";
-            //show_debug_message("WE DID THIS PART SUCCESSFULLY");
         }
     }
 }
@@ -50,7 +49,7 @@ if (target_customer != noone && current_action == "take_order") {
                     show_debug_message("Wrong object index indicated");
                     break;
             }
-            
+            customer_tool = "spr_" + scientist_tool;
             ready_to_order = false;
             receive_order(id, scientist_tool);
             
@@ -65,8 +64,7 @@ if (target_customer != noone && current_action == "take_order") {
 // Picking up the tool
 if (current_action == "pick_up_tool") {
     if (move_target_x != -1 && move_target_y != -1) {
-        //show_debug_message("Moving to tool at: (" + string(move_target_x) + ", " + string(move_target_y) + ")");
-        
+       
         move_speed = 3;
         move_towards_point(move_target_x, move_target_y - 100, move_speed);
 
@@ -81,9 +79,7 @@ if (current_action == "pick_up_tool") {
             // Picking up the tool
             if (target_tool != noone) {
                 with (target_tool) {
-					show_debug_message("with (target_tool)");
                     if (is_ready) {
-						show_debug_message("if (is_ready)");
                         obj_controller.selected_tool = id;
                         scientist_tool = object_get_name(object_index);
                         show_debug_message("Tool picked up: " + scientist_tool);
@@ -117,16 +113,9 @@ if (current_action == "pick_up_tool") {
 
             target_tool = noone;
             current_action = "idle";
-            //show_debug_message("Tool picked up successfully!");
         }
     }
 }
-
-// Move the tool with Lula if it's attached
-//if (tool_attached != noone) {
-//    tool_attached.x = x + 10; // Attach tool to Lula's position
-//    tool_attached.y = y - 10;
-//}
 
 // Deliver the tool once Lula reaches the table
 if (current_action == "deliver_tool") {
@@ -135,7 +124,7 @@ if (current_action == "deliver_tool") {
         move_towards_point(move_target_x + 50, move_target_y - 50, move_speed);
 
         // Check if Lula has reached the target table
-        if (point_distance(x, y, move_target_x, move_target_y) < 10) {
+        if (point_distance(x, y, move_target_x, move_target_y) < 15) {
             x = move_target_x + 25;
             y = move_target_y + 25;
             move_target_x = -1;
@@ -144,24 +133,13 @@ if (current_action == "deliver_tool") {
 
             var matching = true; //change later once issues resolved
             var customer = instance_nearest(x, y, obj_customer);
-			
-			if (instance_exists(customer)) {
-			    show_debug_message("Customer exists: " + string(customer.id));
-			} else {
-			    show_debug_message("Customer does not exist!");
-			}
-
-			if (instance_exists(tool_attached)) {
-			    show_debug_message("Tool exists: " + string(tool_attached.id));
-			} else {
-			    show_debug_message("Tool does not exist or has been removed!");
-			}
+			var tool = instance_nearest(x, y, obj_tool);
 
 
              //Check if the tool matches the customer's request
-            if (instance_exists(customer) && instance_exists(tool_attached)) {
+            if (instance_exists(customer) && instance_exists(tool)) {
 				show_debug_message("line 149 in step event lula");
-				tool_attached.customer_id = customer.id;
+				tool.customer_id = customer.id;
                 //switch (customer.object_index) {
                 //    case obj_bell:
                 //        matching = (tool_attached.tool_name == "multispectral");
@@ -183,13 +161,13 @@ if (current_action == "deliver_tool") {
                
 
                     // Deliver tool
-					obj_tool.attached_to_lula = false;
-                    obj_tool.tool_delivery_ready = true;
+					tool.attached_to_lula = false;
+                    tool.tool_delivery_ready = true;
                     customer.ready_to_eat = true;
                     
                     // Clear the selected tool
                     obj_controller.selected_tool = noone;
-                    instance_destroy(tool_attached);
+                    instance_destroy(tool);
                 
             }
             
