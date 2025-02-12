@@ -24,17 +24,7 @@ draw_rectangle(view_x - border_thickness, view_y,
 draw_rectangle(view_x + view_w - border_thickness, view_y, 
                view_x + view_w, view_y + view_h, false);
 
-/// @description Insert description here
-// You can write your code in this editor
 
-
-/// @description Displays the player's points counter
-
-/// @description Displays the player's points counter in Draw GUI (after the game is over)
-
-/// @description Displays the player's points counter in Draw GUI (after the game is over) and draws Lula
-
-/// @description Displays the player's final results in Draw GUI (after the game is over)
 
 if (obj_clothing_controller.ready_for_results) {
     // Get screen dimensions
