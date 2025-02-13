@@ -41,6 +41,8 @@ colliding_with_book5 = false;
 colliding_with_book6 = false;
 colliding_with_book7 = false;
 colliding_with_book8 = false;
+colliding_with_book9 = false;
+colliding_with_book10 = false;
 
 convo_in_progress = false;
 
@@ -56,3 +58,29 @@ clothing_item_2 = -1;
 clothing_item_3 = -1;
 clothing_item_counter = 0;
 dress_up_time = false;
+
+SCALE_MULTIPLIER = 4 / 3;
+
+//track number of correct answers per scientist
+scientist1_correct = 0;
+scientist2_correct = 0;
+scientist3_correct = 0;
+
+
+obj_clothing_controller.used_rand_branches = []; 
+
+current_rand = -1;
+
+global.chatterbox_clothing = noone;
+
+just_entered = true;
+
+clothing_from_s1 = 0;
+clothing_from_s2= 0;
+cloting_from_s3 = 0;
+
+ready_for_results = false;
+
+wait_timer = 3200;
+
+number_professional = 0;

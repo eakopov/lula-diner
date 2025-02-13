@@ -1,18 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"obj_text_display_clothing",
+  "%Name":"obj_mirrored_character",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":82,"eventType":9,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_text_display_clothing",
+  "name":"obj_mirrored_character",
   "overriddenProperties":[],
   "parent":{
-    "name":"Text Boxes",
-    "path":"folders/Objects/Text Boxes.yy",
+    "name":"character",
+    "path":"folders/Objects/clothing_game/character.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -32,10 +30,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_text_display_start",
-    "path":"sprites/spr_text_display_start/spr_text_display_start.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
