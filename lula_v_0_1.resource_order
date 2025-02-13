@@ -213,6 +213,7 @@
     {"name":"spr_DSOC","order":5,"path":"sprites/spr_DSOC/spr_DSOC.yy",},
     {"name":"spr_gamma","order":2,"path":"sprites/spr_gamma/spr_gamma.yy",},
     {"name":"spr_jim_bell","order":3,"path":"sprites/spr_jim_bell/spr_jim_bell.yy",},
+    {"name":"spr_jump_clothing_textbox_sprite","order":9,"path":"sprites/spr_jump_clothing_textbox_sprite/spr_jump_clothing_textbox_sprite.yy",},
     {"name":"spr_magnetrometer","order":3,"path":"sprites/spr_magnetrometer/spr_magnetrometer.yy",},
     {"name":"spr_maria_zuber","order":7,"path":"sprites/spr_maria_zuber/spr_maria_zuber.yy",},
     {"name":"spr_neutron","order":1,"path":"sprites/spr_neutron/spr_neutron.yy",},

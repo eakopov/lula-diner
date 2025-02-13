@@ -436,6 +436,7 @@
     {"id":{"name":"spr_imaging_system","path":"sprites/spr_imaging_system/spr_imaging_system.yy",},},
     {"id":{"name":"spr_inventory_box","path":"sprites/spr_inventory_box/spr_inventory_box.yy",},},
     {"id":{"name":"spr_jim_bell","path":"sprites/spr_jim_bell/spr_jim_bell.yy",},},
+    {"id":{"name":"spr_jump_clothing_textbox_sprite","path":"sprites/spr_jump_clothing_textbox_sprite/spr_jump_clothing_textbox_sprite.yy",},},
     {"id":{"name":"spr_lula_walk","path":"sprites/spr_lula_walk/spr_lula_walk.yy",},},
     {"id":{"name":"spr_lula","path":"sprites/spr_lula/spr_lula.yy",},},
     {"id":{"name":"spr_luna_Jump","path":"sprites/spr_luna_Jump/spr_luna_Jump.yy",},},

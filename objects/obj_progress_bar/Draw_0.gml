@@ -1,8 +1,8 @@
 // Define progress bar dimensions
-var bar_x = 31; // Starting X position
-var bar_y = 154; // Starting Y position (under timer)
-var bar_width = 195; // Total width of the progress bar
-var bar_height = 20; // Height of the progress bar
+var bar_x = x - 129;  // Adjust X position relative to the object
+var bar_y = y + 90;   // Adjust Y position relative to the object
+var bar_width = 195;  // Total width of the progress bar
+var bar_height = 20;  // Height of the progress bar
 
 // Set the number of actual phases (6 phases, ignoring index 0 in the array)
 var total_phases = 6;
