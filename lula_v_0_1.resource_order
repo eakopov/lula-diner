@@ -18,6 +18,7 @@
     {"name":"obj_results_textbox","order":9,"path":"objects/obj_results_textbox/obj_results_textbox.yy",},
     {"name":"obj_text_display_clothing_new","order":8,"path":"objects/obj_text_display_clothing_new/obj_text_display_clothing_new.yy",},
     {"name":"room_intro","order":1,"path":"rooms/room_intro/room_intro.yy",},
+    {"name":"room_rhythm_intro","order":2,"path":"rooms/room_rhythm_intro/room_rhythm_intro.yy",},
     {"name":"ChatterboxWait","order":10,"path":"scripts/ChatterboxWait/ChatterboxWait.yy",},
     {"name":"IsChatterbox","order":6,"path":"scripts/IsChatterbox/IsChatterbox.yy",},
     {"name":"spr_boundary","order":4,"path":"sprites/spr_boundary/spr_boundary.yy",},
