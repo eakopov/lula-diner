@@ -4,8 +4,8 @@ if (global.show_fun_fact) {
     draw_set_alpha(global.fade_alpha);
 
     // Define text dimensions
-    var x_start = 23; // Starting X position
-    var y_start = 245; // Starting Y position
+    var x_start = x - 201;  // Adjusted from absolute 23
+    var y_start = y + 181;  // Adjusted from absolute 245
     var max_width = 180; // Maximum width of text
     var line_height = 20; // Line spacing
 

@@ -5,8 +5,9 @@ draw_set_color(c_black);
 var progress_text = "Hoops Passed: " + string(global.hoops_passed) + "/3";
 
 // Define text position
-var text_x = 42;
-var text_y = 630;
+var text_x = x + 10;  // Adjust X position relative to the object's position
+var text_y = y + 374; // Adjust Y position relative to the object's position
+
 
 // Define rectangle padding
 var padding_x = 10; // Extra space around text width
