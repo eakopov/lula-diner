@@ -372,6 +372,7 @@
     {"id":{"name":"pointsFunctions","path":"scripts/pointsFunctions/pointsFunctions.yy",},},
     {"id":{"name":"restart_game","path":"scripts/restart_game/restart_game.yy",},},
     {"id":{"name":"rythemFunctions","path":"scripts/rythemFunctions/rythemFunctions.yy",},},
+    {"id":{"name":"scr_draw_tool","path":"scripts/scr_draw_tool/scr_draw_tool.yy",},},
     {"id":{"name":"scr_find_empty_table","path":"scripts/scr_find_empty_table/scr_find_empty_table.yy",},},
     {"id":{"name":"scr_init_customer","path":"scripts/scr_init_customer/scr_init_customer.yy",},},
     {"id":{"name":"scr_load_leaderboard","path":"scripts/scr_load_leaderboard/scr_load_leaderboard.yy",},},
