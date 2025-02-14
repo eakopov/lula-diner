@@ -1,0 +1,1108 @@
+[33mcommit fe1b3e45feb10575dc48cd58ae4abdd7fd538245[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mclothing_1_0[m[33m, [m[1;31morigin/clothing_1_0[m[33m, [m[1;32mtest1[m[33m)[m
+Author: paulcprovence <pproven1@asu.edu>
+Date:   Sat Feb 8 16:37:56 2025 -0600
+
+    add endings for different number of professional accessories
+
+[33mcommit 318d2fa935f54fdb802d21cb92c3652e5573f7e7[m
+Author: paulcprovence <pproven1@asu.edu>
+Date:   Sat Feb 8 16:12:15 2025 -0600
+
+    add ending scene based on points
+
+[33mcommit 96dd6e06f70c565de72336cd3b8059594052148c[m
+Author: paulcprovence <pproven1@asu.edu>
+Date:   Sat Feb 8 12:30:18 2025 -0600
+
+    update knowledge base
+
+[33mcommit e76c52b6dc8bcbd75d86f4d53738c2e6e35e8e26[m
+Author: paulcprovence <pproven1@asu.edu>
+Date:   Sat Feb 8 12:28:03 2025 -0600
+
+    randomize and update questions
+
+[33mcommit 7bd24264c2c5c4ebcbcb5a4bc000eff4a6b5725b[m
+Author: paulcprovence <pproven1@asu.edu>
+Date:   Fri Feb 7 06:44:00 2025 -0600
+
+    add script for random questioning, currently broken, issue with random number generation and jumps in yarn file, need to fix
+
+[33mcommit fa9da4d1bef54d216e6dd56f869b479b4282ecf6[m
+Author: paulcprovence <pproven1@asu.edu>
+Date:   Tue Jan 28 21:21:48 2025 -0600
+
+    add 2nd control
+
+[33mcommit 8a65a07bfb2247163eb839de2fd0687fdaad2b77[m
+Author: paulcprovence <pproven1@asu.edu>
+Date:   Thu Jan 23 09:51:28 2025 -0600
+
+    update ui, add mirrored character so user can see sprite better
+
+[33mcommit 08a487e66bb90d5252753fa3d3f6d86f7d383cbd[m
+Author: paulcprovence <pproven1@asu.edu>
+Date:   Sun Jan 19 21:41:44 2025 -0600
+
+    enlarge library, add psyche logo
+
+[33mcommit 10a12f3d601610bd8e2003ee0e5d47c22a6b7ea9[m
+Author: paulcprovence <pproven1@asu.edu>
+Date:   Sun Jan 19 21:36:21 2025 -0600
+
+    change version
+
+[33mcommit bcff1d94548c391caf624dae85011e04b6f3ca4f[m
+Author: paulcprovence <pproven1@asu.edu>
+Date:   Thu Dec 5 18:44:28 2024 -0600
+
+    update inventory location
+
+[33mcommit 6a38482b7b422cdaf27348ca003b9fd1c3380352[m
+Author: paulcprovence <pproven1@asu.edu>
+Date:   Thu Dec 5 18:43:31 2024 -0600
+
+    update points
+
+[33mcommit b7589daa7bc9e0e4923dc96354dcb2b87204fa40[m
+Author: paulcprovence <pproven1@asu.edu>
+Date:   Mon Dec 2 22:10:19 2024 -0600
+
+    reorganize books, resize library, update questions from scientists
+
+[33mcommit bb0b040854f8bc14e077832959d4d56a1962c0d1[m
+Author: paulcprovence <pproven1@asu.edu>
+Date:   Fri Nov 29 17:34:49 2024 -0600
+
+    update knowledge base for each book
+
+[33mcommit a34dac3f0e088774e7ecc7c59250b853d6dda598[m
+Author: paulcprovence <pproven1@asu.edu>
+Date:   Tue Nov 26 19:33:37 2024 -0600
+
+    update library by adding more books for knowledge base
+
+[33mcommit 75c284f559020e411c94bd7577bc49df56cece6f[m
+Author: paulcprovence <pproven1@asu.edu>
+Date:   Fri Nov 22 15:10:01 2024 -0600
+
+    add feature for mixed outfits task 252
+
+[33mcommit ff6b9f8457bbd76e7acdc80efc3b167667dc8661[m
+Author: paulcprovence <pproven1@asu.edu>
+Date:   Fri Nov 22 13:56:02 2024 -0600
+
+    add library, books task 249 and 250
+
+[33mcommit 5a329ab88895302b552eaf5f67995d1753490735[m
+Author: paulcprovence <pproven1@asu.edu>
+Date:   Tue Nov 19 21:51:35 2024 -0600
+
+    update inventory bar in 2nd viewport, move main stage to middle of room to avoid camera issues, INCOMPLETE
+
+[33mcommit 7606b6e21bdfec53a54e9e00dda856435562097c[m
+Author: paulcprovence <pproven1@asu.edu>
+Date:   Sun Nov 17 00:54:35 2024 -0600
+
+    update yarn file
+
+[33mcommit 9d9472f1a06865a39605f7d80778f5be981bf396[m
+Author: paulcprovence <pproven1@asu.edu>
+Date:   Sun Nov 17 00:51:56 2024 -0600
+
+    re-import chatterbox package to repair merge error
+
+[33mcommit a2bd355383fa09dce6029d31590f149c67582779[m
+Author: paulcprovence <pproven1@asu.edu>
+Date:   Sat Nov 16 23:56:14 2024 -0600
+
+    align viewports, add inventory bar, Task 243, unfinished
+
+[33mcommit 2edb764a72a4e05a1c04cb4530a3267c92ee82be[m[33m ([m[1;32mclothing_1_242[m[33m)[m
+Author: paulcprovence <pproven1@asu.edu>
+Date:   Tue Nov 12 22:25:10 2024 -0600
+
+    expand game room task 242
+
+[33mcommit 9c27aa0caf167cfdfe5fe91330986f9768066fd3[m
+Author: Peter Dimian <peterdimian@gmail.com>
+Date:   Sat Nov 9 14:23:17 2024 -0500
+
+    #230 Fix conflicts 1.1
+
+[33mcommit 170bd1ae134ee4ca518d2401ebdc73aeda5d4974[m
+Merge: 7525dd3 4ae2061
+Author: Peter Dimian <peterdimian@gmail.com>
+Date:   Sat Nov 9 14:16:42 2024 -0500
+
+    Merge remote-tracking branch 'origin/deck_1_0' into test
+
+[33mcommit 7525dd3da79cb2e2666b590b9974a5ff8922ee88[m
+Author: Jesus Ramos <128015460+jramos60asu@users.noreply.github.com>
+Date:   Sun Nov 10 01:52:29 2024 +0900
+
+    added transitions
+
+[33mcommit 1ee3a75e0f064613de091c55f995447db435b9e3[m
+Merge: 2603dfc c5106e9
+Author: Jesus Ramos <128015460+jramos60asu@users.noreply.github.com>
+Date:   Sun Nov 10 00:39:28 2024 +0900
+
+    Merge branch 'refs/heads/test' into rhythm_1_0
+
+[33mcommit 2603dfc882ea471384fd7f69c305e96a722f222e[m
+Author: Jesus Ramos <128015460+jramos60asu@users.noreply.github.com>
+Date:   Sun Nov 10 00:39:11 2024 +0900
+
+    added end screen
+
+[33mcommit 4ae206148a67adb2cded88b1eb50597706b606f4[m[33m ([m[1;31morigin/deck_1_0[m[33m)[m
+Author: Peter Dimian <peterdimian@gmail.com>
+Date:   Sat Nov 9 10:06:28 2024 -0500
+
+    #230 Fix conflicts
+
+[33mcommit e9d627ab7db32ba5642737161777b979edbf089a[m
+Author: Peter Dimian <peterdimian@gmail.com>
+Date:   Fri Nov 8 23:50:20 2024 -0500
+
+    #208 Design Game Mechanics for Winning and Failure Cases
+
+[33mcommit c5106e945144d74b2b3d7b77e7e39e3779656fac[m
+Merge: 9c18a43 e81e1f3
+Author: cmthom55 <cmthom55@asu.edu>
+Date:   Fri Nov 8 19:50:12 2024 -0800
+
+    Merge branch 'jump_1_0_2' into test
+
+[33mcommit e81e1f3954be7ff55b21d3099b40c78ded9cf203[m
+Author: cmthom55 <cmthom55@asu.edu>
+Date:   Fri Nov 8 19:48:29 2024 -0800
+
+    Merges Test Into Jump Branch
+
+[33mcommit 9c18a430b2306e3cbb5e244734ee52b8a9dfeda9[m
+Merge: 6b81285 b4ac63a
+Author: paulcprovence <pproven1@asu.edu>
+Date:   Fri Nov 8 19:55:35 2024 -0600
+
+    Merge branch 'clothing_1_0' into test
+
+[33mcommit b4ac63a0d770c1ea0d8fbdbbc0f166641fb4a517[m
+Author: paulcprovence <pproven1@asu.edu>
+Date:   Fri Nov 8 19:55:18 2024 -0600
+
+    merge clothing game with updated yarn files 11/8
+
+[33mcommit eaa4e1c92ca027db98721ce2b504f32916a3a6b2[m[33m ([m[1;32mclothing_1_0_test_11_8[m[33m)[m
+Author: paulcprovence <pproven1@asu.edu>
+Date:   Fri Nov 8 19:51:24 2024 -0600
+
+    update yarn
+
+[33mcommit 6b812854fae717421fb799daabd5aabe22b40e75[m
+Author: cmthom55 <cmthom55@asu.edu>
+Date:   Fri Nov 8 16:31:17 2024 -0800
+
+    Revert "Revert "Revert "Merge pull request #4 from MissionToPsyche-Iridium/jump_1_0"""
+    
+    This reverts commit e9dd2845bc020f348bcd50c2f168dfdebba541bf.
+
+[33mcommit d8256a50f3ab34bfefcbfc6730f56a45f773f636[m
+Author: cmthom55 <cmthom55@asu.edu>
+Date:   Fri Nov 8 16:30:57 2024 -0800
+
+    Revert "Removes duplicate lines for pointsFunctions and isChatterbox made when jump was merged to test"
+    
+    This reverts commit dbc5ec57c7c66319775c5cd22c6d9e308d0148fc.
+
+[33mcommit dbc5ec57c7c66319775c5cd22c6d9e308d0148fc[m
+Author: cmthom55 <cmthom55@asu.edu>
+Date:   Fri Nov 8 14:42:50 2024 -0800
+
+    Removes duplicate lines for pointsFunctions and isChatterbox made when jump was merged to test
+
+[33mcommit e9dd2845bc020f348bcd50c2f168dfdebba541bf[m
+Author: cmthom55 <cmthom55@asu.edu>
+Date:   Fri Nov 8 14:01:48 2024 -0800
+
+    Revert "Revert "Merge pull request #4 from MissionToPsyche-Iridium/jump_1_0""
+    
+    This reverts commit ca7b479570cc3c287bd5c6ad5acb49490f148608.
+
+[33mcommit ca7b479570cc3c287bd5c6ad5acb49490f148608[m
+Author: cmthom55 <cmthom55@asu.edu>
+Date:   Fri Nov 8 13:38:59 2024 -0800
+
+    Revert "Merge pull request #4 from MissionToPsyche-Iridium/jump_1_0"
+    
+    This reverts commit 5b853d51226f901610a88b5ddd11cb4bede8305d, reversing
+    changes made to e0e846934299053a2d22f1f09c497b8e70c77758.
+
+[33mcommit 5b853d51226f901610a88b5ddd11cb4bede8305d[m
+Merge: e0e8469 935542c
+Author: cmthom55 <147667983+cmthom55@users.noreply.github.com>
+Date:   Fri Nov 8 13:29:37 2024 -0800
+
+    Merge pull request #4 from MissionToPsyche-Iridium/jump_1_0
+    
+    Merge Jump minigame into test
+
+[33mcommit 935542cac9a0c75a94a2c66c8820c6b5579fb119[m[33m ([m[1;32mjump_1_0[m[33m)[m
+Merge: 255a4e3 e0e8469
+Author: cmthom55 <147667983+cmthom55@users.noreply.github.com>
+Date:   Fri Nov 8 13:29:08 2024 -0800
+
+    Merge branch 'test' into jump_1_0
+
+[33mcommit e0e846934299053a2d22f1f09c497b8e70c77758[m
+Merge: 460072f 72036f5
+Author: Elizabeth Akopov <156018147+eakopov@users.noreply.github.com>
+Date:   Fri Nov 8 13:48:45 2024 -0600
+
+    Merge branch 'pizza_1_0' into test
+
+[33mcommit 72036f557294dd524674cb239002877400526a60[m
+Author: Elizabeth Akopov <156018147+eakopov@users.noreply.github.com>
+Date:   Fri Nov 8 13:47:43 2024 -0600
+
+    Change room order to push to test
+
+[33mcommit 460072fdd341c21ebadd93db1f0586a9b49cbf77[m
+Author: Jesus Ramos <128015460+jramos60asu@users.noreply.github.com>
+Date:   Sat Nov 9 04:08:08 2024 +0900
+
+    added intro banner to rythem
+
+[33mcommit 255a4e37d328438ec3126ddae365591c17a321f6[m
+Author: cmthom55 <cmthom55@asu.edu>
+Date:   Fri Nov 8 10:03:51 2024 -0800
+
+    Task #200 Add hoops that give double points for a set amount of time
+
+[33mcommit 7c54faf133d1aaad42b317c6f0b3a88e09ad6203[m
+Author: Jesus Ramos <128015460+jramos60asu@users.noreply.github.com>
+Date:   Fri Nov 8 12:51:21 2024 +0900
+
+    made the background a video of a rocket being constructed
+
+[33mcommit d5f8f1b1f05ac937475b549360d28406cd9dcd2f[m
+Author: Peter Dimian <peterdimian@gmail.com>
+Date:   Thu Nov 7 22:18:22 2024 -0500
+
+    #213
+
+[33mcommit 9a31d05c6527c82e4fe8788ed340bb70a53f0473[m
+Author: Elizabeth Akopov <156018147+eakopov@users.noreply.github.com>
+Date:   Thu Nov 7 16:37:49 2024 -0600
+
+    Task #192: Add money to player global score.
+
+[33mcommit 72165439b816d9ddcf4a2841758924e0e3fa8a22[m
+Author: Elizabeth Akopov <156018147+eakopov@users.noreply.github.com>
+Date:   Thu Nov 7 16:33:08 2024 -0600
+
+    Task #186: Instructions at top of screen complete.
+
+[33mcommit 7c7d6043c55046b39a48fbdae577365e02ab2175[m
+Author: Elizabeth Akopov <156018147+eakopov@users.noreply.github.com>
+Date:   Thu Nov 7 14:09:10 2024 -0600
+
+    Fixed bugs
+
+[33mcommit ad3501d2a59ba18a51f4636690f1d615864b1fd0[m
+Author: cmthom55 <cmthom55@asu.edu>
+Date:   Thu Nov 7 10:03:22 2024 -0800
+
+    Task #198 Add power up hoops that give a speed boost for a set amount of time
+
+[33mcommit 95de2490db617ef52935bf83484e063e58b63dfe[m
+Author: Peter Dimian <peterdimian@gmail.com>
+Date:   Wed Nov 6 23:22:49 2024 -0500
+
+    #211 Updated quiz manager with improved line-breaking for question and feedback display
+
+[33mcommit 96b1f0ea312455a32950bfdd042dc1b2d374417e[m
+Author: Peter Dimian <peterdimian@gmail.com>
+Date:   Wed Nov 6 23:00:51 2024 -0500
+
+    #229 Added end video and obj_end folder to test branch
+
+[33mcommit 0d8f6365e3490b99d8b40d6766553f36debb78cd[m
+Author: Elizabeth Akopov <156018147+eakopov@users.noreply.github.com>
+Date:   Wed Nov 6 13:35:40 2024 -0600
+
+    Task #179: Finish pizza on table graphics issue
+
+[33mcommit d303a4a8b8aa6a8ae6402131835d4ff4a29a9f6e[m
+Author: cmthom55 <cmthom55@asu.edu>
+Date:   Wed Nov 6 08:56:39 2024 -0800
+
+    Task #202 Add randomly spawning powerups that extend the countdown timer
+
+[33mcommit 5153073fc26d3c0d239adbc5517417d67610bc48[m
+Author: Jesus Ramos <128015460+jramos60asu@users.noreply.github.com>
+Date:   Thu Nov 7 01:19:51 2024 +0900
+
+    adjusted skip room to also stop music
+
+[33mcommit 179db7611ca5cd7f7a5e85b050b40a240e6749ca[m
+Author: Jesus Ramos <128015460+jramos60asu@users.noreply.github.com>
+Date:   Thu Nov 7 01:13:24 2024 +0900
+
+    corrected and updated user UI
+
+[33mcommit c8a8e3f21f066de8ab190af6bc68e191ff5c4fe7[m
+Author: Jesus Ramos <128015460+jramos60asu@users.noreply.github.com>
+Date:   Wed Nov 6 23:54:04 2024 +0900
+
+    moved music back
+
+[33mcommit 51976f3e0f7eb6b10fe5deb97535a07f4df52928[m
+Author: Peter Dimian <peterdimian@gmail.com>
+Date:   Tue Nov 5 18:01:51 2024 -0500
+
+    merge intro_1_0
+
+[33mcommit d553848438aa676efa26314e41aab45ceda77be7[m
+Author: paulcprovence <pproven1@asu.edu>
+Date:   Tue Nov 5 16:51:37 2024 -0600
+
+    updated questions for Scientist 1 and parial Scientist 2
+
+[33mcommit 80d572b9f07811fa5da9b8ad9ee5649ad657e411[m
+Merge: a307a2b ab1613d
+Author: paulcprovence <pproven1@asu.edu>
+Date:   Tue Nov 5 15:14:36 2024 -0600
+
+    merge with clothing
+
+[33mcommit ab1613df34a970d919fa4861ffa16ebb4309123e[m
+Author: Peter Dimian <peterdimian@gmail.com>
+Date:   Tue Nov 5 13:16:16 2024 -0500
+
+    #224 Implement a skipping mechanism
+
+[33mcommit 30e99477bb77c845de732c6c37ec298acec65fb4[m
+Merge: cfe6681 6a65468
+Author: Elizabeth Akopov <156018147+eakopov@users.noreply.github.com>
+Date:   Tue Nov 5 11:29:49 2024 -0600
+
+    Merge branch 'test' of https://github.com/MissionToPsyche-Iridium/iridium_21d_web_game-se into test
+
+[33mcommit cfe6681ab3c089affec6f1d8f2905ce6c97d5853[m
+Author: Elizabeth Akopov <156018147+eakopov@users.noreply.github.com>
+Date:   Tue Nov 5 11:29:40 2024 -0600
+
+    Fix for pizza game!
+
+[33mcommit 6323cf3b1ae7dfb3f3ab09faae0805496a7e09c2[m
+Author: Elizabeth Akopov <156018147+eakopov@users.noreply.github.com>
+Date:   Tue Nov 5 11:28:11 2024 -0600
+
+    Working on fixing order queue
+
+[33mcommit 6a65468fe220e3e4ff173161d06d6e3071b1dd9c[m
+Merge: 0b175f5 419c92c
+Author: Jesus Ramos <128015460+jramos60asu@users.noreply.github.com>
+Date:   Wed Nov 6 02:23:51 2024 +0900
+
+    Merge branch 'test' of https://github.com/MissionToPsyche-Iridium/iridium_21d_web_game-se into test
+
+[33mcommit 0b175f569e3bce359b0d5b5f70f41c89dece8969[m
+Author: Jesus Ramos <128015460+jramos60asu@users.noreply.github.com>
+Date:   Wed Nov 6 02:19:44 2024 +0900
+
+    added proper note sprites
+
+[33mcommit 419c92c0b56d6d60da35f88235e329011f12d8f6[m
+Merge: 9277832 e2fcc2d
+Author: Elizabeth Akopov <156018147+eakopov@users.noreply.github.com>
+Date:   Tue Nov 5 11:06:50 2024 -0600
+
+    Merge branch 'pizza_1_0' into test
+
+[33mcommit e2fcc2d1e3052e372c5f886fd64997e77543b5f5[m
+Author: Elizabeth Akopov <156018147+eakopov@users.noreply.github.com>
+Date:   Tue Nov 5 11:04:22 2024 -0600
+
+    Fixed order of rooms
+
+[33mcommit 9277832d6501e6443b555a6cdf2a50f4c605ea38[m
+Merge: 299b68f 3489af9
+Author: Elizabeth Akopov <156018147+eakopov@users.noreply.github.com>
+Date:   Tue Nov 5 10:59:19 2024 -0600
+
+    Merge branch 'pizza_1_0' into test
+
+[33mcommit a307a2b1c676e5af5a67e4b68d1877de5a0d0bce[m
+Author: paulcprovence <pproven1@asu.edu>
+Date:   Tue Nov 5 09:41:31 2024 -0600
+
+    added code to handle window resizing
+
+[33mcommit f18155c210a555a9526098ae653eb96c0e3173df[m
+Author: Peter Dimian <peterdimian@gmail.com>
+Date:   Mon Nov 4 23:27:32 2024 -0500
+
+    #210 Implement Deck-Building Mechanics - different difficulty - add more questions related to psyche
+
+[33mcommit c9a040ea6975298dc90f72581a07b7222ce6ba56[m
+Author: paulcprovence <pproven1@asu.edu>
+Date:   Mon Nov 4 21:30:08 2024 -0600
+
+    add points task 176 and 177, create mechanic for wearing multiple accessories task 178
+
+[33mcommit 3489af9b0a1be72539d9db048533a96199c70b2f[m
+Author: Elizabeth Akopov <156018147+eakopov@users.noreply.github.com>
+Date:   Mon Nov 4 20:19:27 2024 -0600
+
+    Task #179: Completed
+
+[33mcommit a1dfc36ca8fbd9e8d8b96214cbd30c4d4d534bfd[m
+Author: Elizabeth Akopov <156018147+eakopov@users.noreply.github.com>
+Date:   Mon Nov 4 20:19:02 2024 -0600
+
+    Task #182: Finishing up plate logic and modifications
+
+[33mcommit 299b68f26b6691c75caba834731f50385b6e38cd[m
+Merge: 7d92492 fba8409
+Author: Jesus Ramos <128015460+jramos60asu@users.noreply.github.com>
+Date:   Mon Nov 4 22:22:03 2024 +0900
+
+    merged into test from rythem
+
+[33mcommit fba8409798acc633a47d3df80fe1aa1a0057c77a[m
+Author: Jesus Ramos <128015460+jramos60asu@users.noreply.github.com>
+Date:   Mon Nov 4 22:00:58 2024 +0900
+
+    reafferms ide version
+
+[33mcommit 4b9fb79d4cdfa7c3457c5129e5ba328616f401cc[m
+Author: Jesus Ramos <128015460+jramos60asu@users.noreply.github.com>
+Date:   Mon Nov 4 20:31:13 2024 +0900
+
+    first open with newest game maker in rythem branch
+
+[33mcommit 0996805125b0123e4a9d6f836881ecccc65d6889[m
+Author: paulcprovence <pproven1@asu.edu>
+Date:   Sun Nov 3 20:18:17 2024 -0600
+
+    create sprite for knight boots and armor tasks 168 and 169
+
+[33mcommit 9571adf58fe5b6c5eb499a8bbbd9030fd761ec64[m
+Author: paulcprovence <pproven1@asu.edu>
+Date:   Sun Nov 3 20:06:05 2024 -0600
+
+    create sprite for cravate task 170, create sprite for monocle task 171, create sprite for snorkel task 172, create sprite for floaties task 173
+
+[33mcommit 7d9249236653a7b1f28aa007749022f6c0848049[m
+Merge: f601a68 6f86131
+Author: Elizabeth Akopov <156018147+eakopov@users.noreply.github.com>
+Date:   Sun Nov 3 18:47:32 2024 -0600
+
+    Merge branch 'pizza_1_0' into test
+
+[33mcommit 6f86131baeaab05f9ea58eba3ecc0be8ca651f0c[m
+Author: Elizabeth Akopov <156018147+eakopov@users.noreply.github.com>
+Date:   Sun Nov 3 18:47:04 2024 -0600
+
+    Task #181: See description
+    
+    Created plate sprites and objects, each with their own instance name "plate_n" where n will coordinate with the order queue. This fixes the issue of the counter space as the chef will now place the order snapped to the nth queue item.
+
+[33mcommit f946f20fab702d0e03c7318e0016cc46b6e9e8cf[m
+Author: cmthom55 <cmthom55@asu.edu>
+Date:   Sun Nov 3 08:46:16 2024 -0800
+
+    Task #203 Add randomly spawning powerups that give you a double jump for 15 seconds
+
+[33mcommit af505c30a383ddae37f5ba47564fb53f3f7dc193[m
+Author: Peter Dimian <peterdimian@gmail.com>
+Date:   Sat Nov 2 22:56:25 2024 -0400
+
+    #214
+    Implement Timer Countdown and Time-Out Mechanism
+
+[33mcommit 503e6979d6e6ba43baa830e81b382895d90943f9[m
+Author: Elizabeth Akopov <156018147+eakopov@users.noreply.github.com>
+Date:   Sat Nov 2 13:57:25 2024 -0500
+
+    Task #180: Added random pizza chooser
+
+[33mcommit 34875b9bef12f0ca0fbbe969236cf1cb021b856b[m
+Author: cmthom55 <cmthom55@asu.edu>
+Date:   Fri Nov 1 15:23:56 2024 -0700
+
+    Task #196 Add Failure Hoops that end the game and/or decrease the timer
+
+[33mcommit 9baca1d6af1f188fb6e1b9e6486534a6d7c90f24[m
+Author: Elizabeth Akopov <156018147+eakopov@users.noreply.github.com>
+Date:   Fri Nov 1 15:43:52 2024 -0500
+
+    Re-added accidentally removed money counter.
+
+[33mcommit f601a688322d450e19324c4ba3c284501adc83c7[m
+Merge: 9feda2f 7aaa901
+Author: Elizabeth Akopov <156018147+eakopov@users.noreply.github.com>
+Date:   Fri Nov 1 15:06:27 2024 -0500
+
+    Merge branch 'pizza_1_0' into test
+
+[33mcommit 7aaa90133083525837f26cca49428249ed1a9c3f[m
+Author: Elizabeth Akopov <156018147+eakopov@users.noreply.github.com>
+Date:   Fri Nov 1 14:59:02 2024 -0500
+
+    Change order of rooms
+
+[33mcommit dd33208ad1d31a08ea1e2df5220b925f9554a54b[m
+Author: Elizabeth Akopov <156018147+eakopov@users.noreply.github.com>
+Date:   Fri Nov 1 14:42:49 2024 -0500
+
+    Task #184: Complete pause button
+
+[33mcommit 60ad32f0977f7ae5a4f2cc617e78ab6322a8c637[m
+Author: Elizabeth Akopov <156018147+eakopov@users.noreply.github.com>
+Date:   Fri Nov 1 12:24:10 2024 -0500
+
+    Task 185: quit button complete
+
+[33mcommit eb28e89e3d0f9cb9214450cadc1fa2d748aba350[m
+Author: paulcprovence <pproven1@asu.edu>
+Date:   Thu Oct 31 21:23:19 2024 -0500
+
+    resize sprites task 204, update collisions task 207
+
+[33mcommit 18ec9f5d5d1bef705b0a9d65a5a286ece6eaf813[m
+Author: paulcprovence <pproven1@asu.edu>
+Date:   Thu Oct 31 20:20:45 2024 -0500
+
+    update gitignore
+
+[33mcommit f5a5f4793a2dd85d5cc050e418c50de945a15409[m
+Author: paulcprovence <pproven1@asu.edu>
+Date:   Thu Oct 31 20:20:14 2024 -0500
+
+    update gitignore
+
+[33mcommit 1a91c55d810249dcb8aacd391711f6eb733559cc[m
+Author: cmthom55 <cmthom55@asu.edu>
+Date:   Wed Oct 30 20:18:46 2024 -0700
+
+    Task #199 Adjust hoops to move along a set path instead of being stationary
+
+[33mcommit 863223336689cbd88203da170fe8280570238497[m
+Author: paulcprovence <pproven1@asu.edu>
+Date:   Tue Oct 29 22:29:09 2024 -0500
+
+    resize room and add viewport task 193 and 194
+
+[33mcommit 96c7151637bc7bee78ccf11f526b828a06d1c466[m
+Author: Elizabeth Akopov <156018147+eakopov@users.noreply.github.com>
+Date:   Tue Oct 29 18:40:10 2024 -0500
+
+    Task #184
+    
+    Create sprite, object, and attempt at implementation. Needs debugging to ensure all objects get paused and draw event can be unpaused.
+
+[33mcommit 02054f87c70e7ce2d8c615d7d0f384fd8767cd1a[m
+Author: paulcprovence <pproven1@asu.edu>
+Date:   Mon Oct 28 19:48:56 2024 -0500
+
+    change to gamemaker v 2024.8.1.171
+
+[33mcommit 9feda2f456fa777f1a37d2f5d5810ce144733523[m
+Author: Peter Dimian <peterdimian@gmail.com>
+Date:   Sat Oct 26 12:13:19 2024 -0400
+
+    #163 Create a new script to implement the game restart feature.
+
+[33mcommit 17e6866b479ed52334bc400e6157df2254353661[m
+Author: paulcprovence <pproven1@asu.edu>
+Date:   Sat Oct 26 08:07:52 2024 -0500
+
+    add simple game logic, with inventory, exit mechanic
+
+[33mcommit 95e4a8031e8d2a1f8507b03edc79458ff8530891[m
+Author: cmthom55 <cmthom55@asu.edu>
+Date:   Fri Oct 25 21:33:28 2024 -0700
+
+    Task #83, Task #84, Task#86 Implements a basic Game Over and Win Screen with restart game buttons that show up based on if the user has enough points
+
+[33mcommit 1ac00788bd44fee96be9049a6503f2ab1f9c8c9e[m
+Author: Peter Dimian <peterdimian@gmail.com>
+Date:   Sat Oct 26 00:24:41 2024 -0400
+
+    #100 Implement Basic Turn-Based Gameplay Logic
+
+[33mcommit 47a6bbf2efbf8e2caf6f498eef37d1af7dc3b2b1[m[33m ([m[1;32mclothing_1_134[m[33m)[m
+Author: paulcprovence <pproven1@asu.edu>
+Date:   Fri Oct 25 22:36:02 2024 -0500
+
+    organize inventory mechanic, start exit mechanic
+
+[33mcommit 3f91cff3fe8dad447ec91cdf6bee9b71c9d06778[m
+Author: Elizabeth Akopov <156018147+eakopov@users.noreply.github.com>
+Date:   Fri Oct 25 17:51:04 2024 -0500
+
+    Fix room order
+
+[33mcommit 2cf61b8a2846ffe2c6567d4c564798a561813574[m
+Author: Elizabeth Akopov <156018147+eakopov@users.noreply.github.com>
+Date:   Fri Oct 25 15:55:52 2024 -0500
+
+    Task 111, 115 & 116 implemented.
+
+[33mcommit 482c2e9c417b31d0096eb2d902ada4be01f56ee4[m
+Author: Elizabeth Akopov <156018147+eakopov@users.noreply.github.com>
+Date:   Fri Oct 25 15:09:36 2024 -0500
+
+    Task #110: Complete, need to add payment system
+
+[33mcommit 9a2a4d490c82f49ea442afe326c56cafed164d95[m
+Author: Elizabeth Akopov <156018147+eakopov@users.noreply.github.com>
+Date:   Fri Oct 25 13:48:24 2024 -0500
+
+    Bug fix: see description
+    
+    Fixed bug where customers in line would have their order taken.
+
+[33mcommit 9ffa337b6af01969e8bb01fb4a847979e2977178[m[33m ([m[1;31morigin/clothing_1_134[m[33m, [m[1;32mtest_10_25[m[33m)[m
+Author: paulcprovence <pproven1@asu.edu>
+Date:   Fri Oct 25 06:58:59 2024 -0500
+
+    update text box messages based on collisions with scientist, check for collision
+
+[33mcommit e90fe9506f58611fd071b5e9c1add37464fab5df[m
+Author: Elizabeth Akopov <156018147+eakopov@users.noreply.github.com>
+Date:   Thu Oct 24 15:01:40 2024 -0500
+
+    Tasks #113 and #114
+
+[33mcommit 214522818dcf8a3e74f4caabb874e19a18bb0fa2[m
+Author: Elizabeth Akopov <156018147+eakopov@users.noreply.github.com>
+Date:   Thu Oct 24 14:17:15 2024 -0500
+
+    Tasks #107 and #112
+
+[33mcommit 2e5599945ec4ac8590f8709370bdf6fa60289c6b[m
+Author: cmthom55 <cmthom55@asu.edu>
+Date:   Thu Oct 24 10:35:12 2024 -0700
+
+    Task#85 Add a countdown timer that displays on the screen, timer also advances room when it run out
+
+[33mcommit 579225e06512e24b0921f3f9512fbb7b2ad49a16[m
+Author: cmthom55 <cmthom55@asu.edu>
+Date:   Thu Oct 24 10:19:01 2024 -0700
+
+    Revert "Task #85 Add a countdown timer that displays on the screen, timer also advances game to next room"
+    
+    This reverts commit 05cd7ce978e89adcec171077e72dc3304083cb48.
+
+[33mcommit 67b991038261af74ecf7100b60b17b798f6618f4[m
+Author: cmthom55 <cmthom55@asu.edu>
+Date:   Thu Oct 24 10:18:41 2024 -0700
+
+    Revert "Task #85 Final adjustments"
+    
+    This reverts commit 32ddbbeb20d2c10af1f835aca7ebde9b5d1dd167.
+
+[33mcommit 32ddbbeb20d2c10af1f835aca7ebde9b5d1dd167[m
+Author: cmthom55 <cmthom55@asu.edu>
+Date:   Thu Oct 24 10:00:46 2024 -0700
+
+    Task #85 Final adjustments
+
+[33mcommit 05cd7ce978e89adcec171077e72dc3304083cb48[m
+Author: cmthom55 <cmthom55@asu.edu>
+Date:   Thu Oct 24 09:51:10 2024 -0700
+
+    Task #85 Add a countdown timer that displays on the screen, timer also advances game to next room
+
+[33mcommit be8e8f058d9e77d7cbe962e539ad774500637100[m
+Author: Jesus Ramos <128015460+jramos60asu@users.noreply.github.com>
+Date:   Fri Oct 25 00:04:07 2024 +0900
+
+    made notes smaller and added points to hit and missed notes
+
+[33mcommit e0fb7b023c72d83e319e89cb840aed28f7ae61a6[m
+Author: cmthom55 <cmthom55@asu.edu>
+Date:   Tue Oct 22 18:00:33 2024 -0700
+
+    Task #79, Task #81, Task #82 Implements Llama Collision Box detection with a displayed score that properly updates +50 pts per succesful hoop jump
+
+[33mcommit 1554b79d40a5bf86ce460d8a893310d6197f82ed[m[33m ([m[1;31morigin/clothing_1_123[m[33m, [m[1;32mclothing_1_127[m[33m, [m[1;32mclothing_1_123[m[33m)[m
+Author: paulcprovence <pproven1@asu.edu>
+Date:   Tue Oct 22 19:25:47 2024 -0500
+
+    add briefcase sprite and object
+
+[33mcommit e73c7857634d05c71fb301fa6777c156b52ce1b8[m[33m ([m[1;31morigin/clothing_1_125[m[33m, [m[1;32mclothing_1_125[m[33m)[m
+Author: paulcprovence <pproven1@asu.edu>
+Date:   Tue Oct 22 19:18:30 2024 -0500
+
+    reorg sprites, add helm object
+
+[33mcommit cc34eefcac724ea584c319dd8543945c79f30596[m
+Author: Elizabeth Akopov <156018147+eakopov@users.noreply.github.com>
+Date:   Tue Oct 22 19:13:46 2024 -0500
+
+    Update lula_v_0_1.yyp
+
+[33mcommit f0a7a28bf6724f8cc97c668cc6042efc03fc696c[m
+Author: Elizabeth Akopov <156018147+eakopov@users.noreply.github.com>
+Date:   Tue Oct 22 19:11:23 2024 -0500
+
+    Update sprite depth.
+
+[33mcommit 64331352285d42c208985db3234dc8b797a9b6a5[m[33m ([m[1;31morigin/clothing_1_124[m[33m, [m[1;32mclothing_1_124[m[33m)[m
+Author: paulcprovence <pproven1@asu.edu>
+Date:   Tue Oct 22 19:11:09 2024 -0500
+
+    reorg folders, add goggles obj
+
+[33mcommit 9d2fed5900f64a886930d9eb355eb83827e91894[m
+Author: paulcprovence <pproven1@asu.edu>
+Date:   Tue Oct 22 19:05:46 2024 -0500
+
+    adjust text box location
+
+[33mcommit 69244b649809249aa685f8303f356697916ece25[m
+Author: Elizabeth Akopov <156018147+eakopov@users.noreply.github.com>
+Date:   Tue Oct 22 17:31:09 2024 -0500
+
+    Minor code cleanup for sponsor meeting.
+
+[33mcommit d0ae38f389a6558791af03c995f897181dc62844[m
+Author: Elizabeth Akopov <156018147+eakopov@users.noreply.github.com>
+Date:   Tue Oct 22 15:13:55 2024 -0500
+
+    Completed tasks #106 and #108
+    
+    Created waiting queue, snapping customers to the waiting area, modifying spawn rates of customers, and fixing customers snapping to tables.
+
+[33mcommit 23198ea9894e5b0feacf1fb6a6e9c8d516015d3b[m
+Author: Elizabeth Akopov <156018147+eakopov@users.noreply.github.com>
+Date:   Tue Oct 22 13:51:07 2024 -0500
+
+    Task #108 fix depth of customers to spawn in
+
+[33mcommit 6583aa05d10b34079792b72f309125217751970a[m
+Author: Elizabeth Akopov <156018147+eakopov@users.noreply.github.com>
+Date:   Tue Oct 22 12:21:24 2024 -0500
+
+    Create scripts for task #106
+
+[33mcommit 0515b9109d8a5ed3c70e346b2e0bcb41600cf277[m
+Author: Elizabeth Akopov <156018147+eakopov@users.noreply.github.com>
+Date:   Tue Oct 22 12:20:59 2024 -0500
+
+    Finish task #104
+
+[33mcommit 4f522e6759eec661455091c185a851a1c1a36817[m
+Author: Elizabeth Akopov <156018147+eakopov@users.noreply.github.com>
+Date:   Tue Oct 22 11:03:01 2024 -0500
+
+    Update gitignore to include local files.
+
+[33mcommit 6752c584c116eb05fab2de97712cfe5ce3e4ac31[m
+Author: Jesus Ramos <128015460+jramos60asu@users.noreply.github.com>
+Date:   Tue Oct 22 23:43:04 2024 +0900
+
+    made notes that sync with music
+
+[33mcommit fbafd9c731bc59266d08d056c8196571971bfa84[m
+Author: Peter Dimian <peterdimian@gmail.com>
+Date:   Mon Oct 21 23:10:18 2024 -0400
+
+    Task 99. Added obj_quiz_manager to quiz setup, input handling, and drawing logic for better readability and maintainability.
+
+[33mcommit d4c1a4b4a078510772ba29cf59e93509e615f716[m[33m ([m[1;31morigin/clothing_1_121[m[33m, [m[1;32mclothing_1_121[m[33m)[m
+Author: paulcprovence <pproven1@asu.edu>
+Date:   Mon Oct 21 20:40:46 2024 -0500
+
+    add exit door sprite, collisions
+
+[33mcommit 694572a5ac878448d93d2ff82446ec077b311bd4[m
+Author: Peter Dimian <peterdimian@gmail.com>
+Date:   Mon Oct 21 21:27:34 2024 -0400
+
+    Task #147: Created Room for Selecting Scientists, Task #148: Added Objects for Each Scientist, Task #149: Created Sprites for Each Scientist.
+
+[33mcommit 0e047ab1cd9fec42d7f1da3cc45e67d7dd8ca4b0[m[33m ([m[1;31morigin/clothing_1_120[m[33m, [m[1;32mclothing_1_120[m[33m)[m
+Author: paulcprovence <pproven1@asu.edu>
+Date:   Mon Oct 21 20:13:10 2024 -0500
+
+    add tileset and tiles for clothing room
+
+[33mcommit a85fb891942bde33a30e255c42e1c1f4e31ff373[m
+Author: paulcprovence <pproven1@asu.edu>
+Date:   Mon Oct 21 20:12:28 2024 -0500
+
+    add scientist 3 sprite and object
+
+[33mcommit 4f4bc834aba3688439ea8946428cbf7e5ed0a012[m
+Merge: c6374c4 91ebf61
+Author: Peter Dimian <peterdimian@gmail.com>
+Date:   Mon Oct 21 18:27:26 2024 -0400
+
+    Merge remote-tracking branch 'origin/main' into deck_1_0
+
+[33mcommit c313733bdb74a8e20bd5aaa0c977762c8b9ca02f[m
+Author: Jesus Ramos <128015460+jramos60asu@users.noreply.github.com>
+Date:   Mon Oct 21 21:42:06 2024 +0900
+
+    added user input that hits notes
+
+[33mcommit 4a088f99b1953b58de7dd1b72b23a9d0b96e5064[m[33m ([m[1;31morigin/clothing_1_119[m[33m, [m[1;32mclothing_1_119[m[33m)[m
+Author: paulcprovence <pproven1@asu.edu>
+Date:   Sun Oct 20 09:07:20 2024 -0500
+
+    add scientist 2 object, update collisions
+
+[33mcommit ac1ada3976db278fedbbebdd7cb93f62cbff149a[m
+Author: Jesus Ramos <128015460+jramos60asu@users.noreply.github.com>
+Date:   Sun Oct 20 18:12:06 2024 +0900
+
+    made notes with place holder sprites that can be spawn in and despawns itself
+
+[33mcommit bd4c031d2829f4b2b859ce3da9b5be160c5430ed[m
+Author: Jesus Ramos <128015460+jramos60asu@users.noreply.github.com>
+Date:   Sun Oct 20 14:42:19 2024 +0900
+
+    parsed timings and notes and made way to read them in game
+
+[33mcommit c6374c4340417e48aa243c39415714ccf04826b4[m
+Author: Peter Dimian <peterdimian@gmail.com>
+Date:   Sat Oct 19 20:52:30 2024 -0400
+
+    #98 Design Card Layout for Llama Scientists
+
+[33mcommit f29f6ef310e5002905ad26c04a4e2c6c24b86714[m
+Author: cmthom55 <cmthom55@asu.edu>
+Date:   Sat Oct 19 14:42:27 2024 -0700
+
+    Task#79 Generate hoops on screen in at least three positions at random
+
+[33mcommit 003e03fdd86e84f00bc9ddb1413e9280273ab0e5[m
+Author: Jesus Ramos <128015460+jramos60asu@users.noreply.github.com>
+Date:   Sat Oct 19 15:04:51 2024 +0900
+
+    added song and annotation for said song in game maker
+
+[33mcommit 1bf7f796ab5c6e2f5109c71590a0867253100952[m[33m ([m[1;31morigin/clothing_1_118[m[33m, [m[1;32mclothing_1_118[m[33m)[m
+Author: paulcprovence <pproven1@asu.edu>
+Date:   Fri Oct 18 21:02:22 2024 -0500
+
+    create scientist 1 sprite, object, collisions
+
+[33mcommit 90f9f167a031ce005bf6e8c4ad1cfda96eb9663c[m
+Merge: c95b3b1 91ebf61
+Author: Elizabeth Akopov <eakopov@asu.edu>
+Date:   Fri Oct 18 20:00:28 2024 -0500
+
+    Merge branch 'main' into pizza_1_0
+
+[33mcommit c95b3b1d781ae51a45fcf10887c09dd95b8aea2c[m
+Author: Elizabeth Akopov <eakopov@asu.edu>
+Date:   Fri Oct 18 19:59:50 2024 -0500
+
+    Task #103: Finish food sprites
+
+[33mcommit 9fb65691889a1d9dcc7a166fbdef0c9a8bb50730[m[33m ([m[1;31morigin/clothing_1_117[m[33m, [m[1;32mclothing_1_117[m[33m)[m
+Merge: a29b21e 91ebf61
+Author: paulcprovence <pproven1@asu.edu>
+Date:   Fri Oct 18 19:47:09 2024 -0500
+
+    Merge branch 'main' into clothing_1_117
+
+[33mcommit c3705ff764dbf78d3d52f1e8c0104fbca6e80c8b[m
+Author: cmthom55 <cmthom55@asu.edu>
+Date:   Fri Oct 18 16:41:26 2024 -0700
+
+    #78 Implement screen refresh mechanic when Llama goes offscreen
+
+[33mcommit 3bebb2385ea7c2aef5c82ed0b44c773fb8d09202[m
+Author: Elizabeth Akopov <eakopov@asu.edu>
+Date:   Fri Oct 18 18:18:48 2024 -0500
+
+    Task #102: Finished environmental sprites
+
+[33mcommit 91ebf6171c9d30845022bd5dd1a0c9debbe142e9[m[33m ([m[1;32mmain[m[33m)[m
+Merge: 374716e 582c4ea
+Author: Jesus Ramos <128015460+jramos60asu@users.noreply.github.com>
+Date:   Fri Oct 18 19:11:20 2024 +0900
+
+    Merge branch 'refs/heads/rhythm_1_0'
+
+[33mcommit 582c4ea0c4a57371a65487102a9dc5da3a896342[m
+Author: Jesus Ramos <128015460+jramos60asu@users.noreply.github.com>
+Date:   Fri Oct 18 19:10:38 2024 +0900
+
+    display for total score
+
+[33mcommit a29b21ed65c13b741f360948d46556a49dd9542d[m
+Author: paulcprovence <pproven1@asu.edu>
+Date:   Thu Oct 17 21:16:26 2024 -0500
+
+    add Lula sprite for clothing game
+
+[33mcommit 955f16abfc8b5ca8f890153f8d54e9dfa8045bbd[m
+Author: Elizabeth Akopov <156018147+eakopov@users.noreply.github.com>
+Date:   Thu Oct 17 20:18:57 2024 -0500
+
+    Task # 102: Design and implement environment sprite assets
+
+[33mcommit a4199a8a604897a05570e61847f693846fbb3e18[m
+Author: Elizabeth Akopov <156018147+eakopov@users.noreply.github.com>
+Date:   Thu Oct 17 18:56:56 2024 -0500
+
+    Task #101: Create customer llama sprite.
+
+[33mcommit 5aca4bf9f42498116c24e760866755471aca502a[m
+Merge: a7bf07a 374716e
+Author: Elizabeth Akopov <156018147+eakopov@users.noreply.github.com>
+Date:   Thu Oct 17 18:56:02 2024 -0500
+
+    Merge branch 'main' into pizza_1_0
+
+[33mcommit d57186953188c48d65f0aed980dabd683d76f845[m
+Author: cmthom55 <cmthom55@asu.edu>
+Date:   Wed Oct 16 21:40:42 2024 -0700
+
+    Final additions for Task #77
+
+[33mcommit aa4a8ded86cd5891469dc25a40d606d2ae53b46f[m
+Author: cmthom55 <cmthom55@asu.edu>
+Date:   Wed Oct 16 21:30:27 2024 -0700
+
+    Task #77 Implement basic movement for Llama (WASD, Arrows)
+
+[33mcommit a99fa705122f8eba5f3b2808641fb20bb061e022[m
+Author: cmthom55 <cmthom55@asu.edu>
+Date:   Wed Oct 16 20:30:55 2024 -0700
+
+    Revert "Task #77 Implement basic movement for Llama (WASD and Arrows)"
+    
+    This reverts commit cbd482830ed637e79176259dcada102a0d21deeb.
+
+[33mcommit cbd482830ed637e79176259dcada102a0d21deeb[m
+Author: cmthom55 <cmthom55@asu.edu>
+Date:   Wed Oct 16 20:23:22 2024 -0700
+
+    Task #77 Implement basic movement for Llama (WASD and Arrows)
+
+[33mcommit 1e8ddf53eafc7835411845e9363d004340e103ff[m
+Merge: a25c77a 374716e
+Author: cmthom55 <cmthom55@asu.edu>
+Date:   Wed Oct 16 12:56:56 2024 -0700
+
+    Merge remote-tracking branch 'origin/main' into jump_1_0
+
+[33mcommit a25c77a343740e4d33c98408d2f9229cb462dda7[m
+Author: cmthom55 <cmthom55@asu.edu>
+Date:   Wed Oct 16 12:54:09 2024 -0700
+
+    Revert "Task #49, Task#43, Task#44 Adds basic logic and score to GameMaker jump game"
+    
+    This reverts commit 9f89120a4009027955f0407f9b8b2425250fcfc3.
+
+[33mcommit 374716ef10299c4324962c8d6c16c9a77830b077[m
+Author: Peter Dimian <63269364+peterdimian@users.noreply.github.com>
+Date:   Tue Oct 15 21:37:29 2024 -0400
+
+    Update README.md
+
+[33mcommit a7bf07ae338344cf480de60994c0b35baa4ab275[m
+Author: Elizabeth Akopov <156018147+eakopov@users.noreply.github.com>
+Date:   Mon Oct 14 19:01:12 2024 -0500
+
+    Added movement.
+
+[33mcommit 85d9be253b48e5f82309f793345fbed8f273a1d4[m
+Author: Elizabeth Akopov <156018147+eakopov@users.noreply.github.com>
+Date:   Mon Oct 14 17:22:09 2024 -0500
+
+    Initial commit
+
+[33mcommit 079487cdf66f292cda0564f385ef73441a026156[m
+Author: Paul Provence (they/them) <105061865+paulcprovence@users.noreply.github.com>
+Date:   Sat Oct 12 19:14:41 2024 -0500
+
+    Add approved game pitch presentation
+
+[33mcommit a3e87889e46bed80bca79b981a46db33b7017f8a[m
+Author: cmthom55 <147667983+cmthom55@users.noreply.github.com>
+Date:   Sat Oct 12 12:10:43 2024 -0700
+
+    Task#28_(Research).md
+
+[33mcommit 9f89120a4009027955f0407f9b8b2425250fcfc3[m
+Author: cmthom55 <cmthom55@asu.edu>
+Date:   Sat Oct 12 11:26:26 2024 -0700
+
+    Task #49, Task#43, Task#44 Adds basic logic and score to GameMaker jump game
+
+[33mcommit a4367a69a5e24ea08ccb3823c6c88ab2afec9f6f[m
+Author: Jesus Ramos <128015460+jramos60asu@users.noreply.github.com>
+Date:   Sat Oct 12 09:38:17 2024 +0900
+
+    added persistant globals, (singlton for globle variables), and added point scripts
+
+[33mcommit 72e0a4c2508d8f10e13ffa29618bf922bd9a1c8d[m
+Author: Jesus Ramos <128015460+jramos60asu@users.noreply.github.com>
+Date:   Sat Oct 12 08:14:28 2024 +0900
+
+    Revert "testin"
+    
+    This reverts commit 9dba867f241c12643c23917103257403c27e4eed.
+
+[33mcommit 9dba867f241c12643c23917103257403c27e4eed[m[33m ([m[1;32mtest_conflict_10_11[m[33m)[m
+Author: Jesus Ramos <128015460+jramos60asu@users.noreply.github.com>
+Date:   Sat Oct 12 08:08:30 2024 +0900
+
+    testin
+
+[33mcommit 5c133e4b580a3ac0d60439cb5525641c86b7adc7[m
+Author: paulcprovence <pproven1@asu.edu>
+Date:   Tue Oct 8 18:22:42 2024 -0500
+
+    fix bug in create events for 3 rooms
+
+[33mcommit c0b4d5b42ec6f6b3117bdd3b74481f5de778fc31[m[33m ([m[1;32mintro_1_0[m[33m, [m[1;32mend_1_0[m[33m)[m
+Author: paulcprovence <pproven1@asu.edu>
+Date:   Mon Oct 7 18:48:09 2024 -0500
+
+    initial file dump pt 2
+
+[33mcommit 3d0997a7e370ecc3845136f23a32a8079ac9713f[m
+Merge: 6719ec3 75aaca0
+Author: paulcprovence <pproven1@asu.edu>
+Date:   Mon Oct 7 18:45:42 2024 -0500
+
+    initial file dump
+
+[33mcommit 6719ec37e2315d50f743b7451c5374972df77232[m
+Merge: 5a7506c 049db8b
+Author: paulcprovence <pproven1@asu.edu>
+Date:   Sun Oct 6 18:21:16 2024 -0500
+
+    Merge branch 'main' of github.com:paulcprovence/lula_inter
+
+[33mcommit 5a7506c787b8d29f1067aee61d0cc37a3dc2bea0[m[33m ([m[1;32mmaster[m[33m)[m
+Author: paulcprovence <pproven1@asu.edu>
+Date:   Sun Oct 6 18:01:29 2024 -0500
+
+    initial file dump
+
+[33mcommit 049db8b34686b402265333083137a88eb6446f19[m
+Author: Paul Provence (they/them) <105061865+paulcprovence@users.noreply.github.com>
+Date:   Sun Oct 6 17:58:50 2024 -0500
+
+    Initial commit
+
+[33mcommit 75aaca02454d8619e750c22787aa064dfb27cf56[m
+Author: Peter Dimian <peterdimian@gmail.com>
+Date:   Sat Oct 5 23:58:24 2024 -0400
+
+    Add .gitignore & README for NASA Psyche Web Game project

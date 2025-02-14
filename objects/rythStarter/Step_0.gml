@@ -68,4 +68,6 @@ if(global.healthRyth <= 0 && canPause){
 	endRyth(true);
 			pauseRyth();
 		audio_pause_all();
+		instance_create_layer(64, 32, "onpause", Ryth_lose_screen);
+		
 }	

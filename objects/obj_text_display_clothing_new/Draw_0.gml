@@ -16,7 +16,7 @@ _x = x + 20;
 
 
 //if stopped means there is not more text or options, that is the end of the yarn file or path
-if ChatterboxIsStopped(chatterbox){
+if ChatterboxIsStopped(global.chatterbox_clothing){
    draw_text_ext_color(x,y," ",lineHeight,textWidth, c_aqua,  c_aqua,  c_aqua,  c_aqua, 1);
 } else 
 	//this else branch is to print the main text and the if is in case of options
@@ -24,9 +24,9 @@ if ChatterboxIsStopped(chatterbox){
  
 	 draw_text_ext_color(x,y,text,lineHeight,textWidth, c_aqua,  c_aqua,  c_aqua,  c_aqua, 1);
  
-	 if ChatterboxGetOptionCount(chatterbox) > 0{
-		 for (var _i = 0; _i < ChatterboxGetOptionCount(chatterbox); _i++){
-			 var _option = string(_i+1) +": " + ChatterboxGetOption(chatterbox, _i); 
+	 if ChatterboxGetOptionCount(global.chatterbox_clothing) > 0{
+		 for (var _i = 0; _i < ChatterboxGetOptionCount(global.chatterbox_clothing); _i++){
+			 var _option = string(_i+1) +": " + ChatterboxGetOption(global.chatterbox_clothing, _i); 
 			 draw_text_ext_color(_x, y+_opty,_option, lineHeight, textWidth, c_fuchsia, c_fuchsia, c_fuchsia, c_fuchsia, 1);
 				_opty+=20;  
 		}

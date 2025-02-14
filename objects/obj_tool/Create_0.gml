@@ -4,3 +4,4 @@ is_ready = false;
 attached_to_lula = false;
 lula_id = noone;
 tool_name = "";
+tool_delivery_ready = false;

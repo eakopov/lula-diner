@@ -3,13 +3,14 @@
   "%Name":"obj_leaderboard_display",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_leaderboard_display",
   "overriddenProperties":[],
   "parent":{
-    "name":"Deck",
-    "path":"folders/Objects/Deck.yy",
+    "name":"LeaderBoard",
+    "path":"folders/Objects/Deck/LeaderBoard.yy",
   },
   "parentObjectId":null,
   "persistent":false,

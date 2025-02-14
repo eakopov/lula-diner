@@ -8,6 +8,6 @@ order_timer = 300;
 seated = false;
 order_taken = false;
 entry_time = current_time; // Record the time the customer is created
-customer_tool = obj_DSOC; // default tool choice
+customer_tool = ""; // default tool choice
 customer_id = global.customer_counter;
 global.customer_counter += 1;

@@ -1,57 +1,65 @@
 var _select = -1;
 
 if (!obj_clothing_controller.convo_in_progress) {
+		intro_node = "";
+	
+	if (obj_clothing_controller.just_entered) {
+		intro_node = "Start";		
+		obj_clothing_controller.just_entered = false;	
+		start_conversation(intro_node);
+	}
+    
     // Check for Scientist 1
-    if (obj_clothing_controller.colliding_with_scientist_1 && !obj_clothing_controller.has_briefcase) {
-        start_conversation("Scientist1_Briefcase");
-    }
-    else if (obj_clothing_controller.colliding_with_scientist_1 && obj_clothing_controller.has_briefcase && !obj_clothing_controller.has_cravate) {
-        start_conversation("Scientist1_Cravate");
-    }
-    else if (obj_clothing_controller.colliding_with_scientist_1 && obj_clothing_controller.has_briefcase && obj_clothing_controller.has_cravate && !obj_clothing_controller.has_monocle) {
-        start_conversation("Scientist1_Monocle");
-    }
-    else if (obj_clothing_controller.colliding_with_scientist_1 && obj_clothing_controller.has_briefcase && obj_clothing_controller.has_cravate && obj_clothing_controller.has_monocle) {
-        start_conversation("Scientist1_Done");
+    if (obj_clothing_controller.colliding_with_scientist_1) {
+        if (obj_clothing_controller.scientist1_correct == 0) {
+            intro_node = "Scientist1_IntroA";
+        } else if (obj_clothing_controller.scientist1_correct == 1) {
+            intro_node = "Scientist1_IntroB";
+        } else if (obj_clothing_controller.scientist1_correct == 2) {
+            intro_node = "Scientist1_IntroC";
+        } else {
+            intro_node = "Scientist1_Done";
+        }
+        start_conversation(intro_node);
     }
 
     // Check for Scientist 2
-    else if (obj_clothing_controller.colliding_with_scientist_2 && !obj_clothing_controller.has_goggles) {
-        start_conversation("Scientist2_Goggles");
-    }
-    else if (obj_clothing_controller.colliding_with_scientist_2 && obj_clothing_controller.has_goggles && !obj_clothing_controller.has_snorkel) {
-        start_conversation("Scientist2_Snorkel");
-    }
-    else if (obj_clothing_controller.colliding_with_scientist_2 && obj_clothing_controller.has_goggles && obj_clothing_controller.has_snorkel && !obj_clothing_controller.has_floaties) {
-        start_conversation("Scientist2_Floaties");
-    }
-    else if (obj_clothing_controller.colliding_with_scientist_2 && obj_clothing_controller.has_goggles && obj_clothing_controller.has_snorkel && obj_clothing_controller.has_floaties) {
-        start_conversation("Scientist2_Done");
+    else if (obj_clothing_controller.colliding_with_scientist_2) {
+        if (obj_clothing_controller.scientist2_correct == 0) {
+            intro_node = "Scientist2_IntroA";
+        } else if (obj_clothing_controller.scientist2_correct == 1) {
+            intro_node = "Scientist2_IntroB";
+        } else if (obj_clothing_controller.scientist2_correct == 2) {
+            intro_node = "Scientist2_IntroC";
+        } else {
+            intro_node = "Scientist2_Done";
+        }
+        start_conversation(intro_node);
     }
 
-    // Check for Scientist 3 
-    else if (obj_clothing_controller.colliding_with_scientist_3 && !obj_clothing_controller.has_helm) {
-        start_conversation("Scientist3_Helm");
-    }
-    else if (obj_clothing_controller.colliding_with_scientist_3 && obj_clothing_controller.has_helm && !obj_clothing_controller.has_armor) {
-        start_conversation("Scientist3_Armor");
-    }
-    else if (obj_clothing_controller.colliding_with_scientist_3 && obj_clothing_controller.has_helm && obj_clothing_controller.has_armor && !obj_clothing_controller.has_boots) {
-        start_conversation("Scientist3_Boots");
-    }
-    else if (obj_clothing_controller.colliding_with_scientist_3 && obj_clothing_controller.has_helm && obj_clothing_controller.has_armor && obj_clothing_controller.has_boots) {
-        start_conversation("Scientist3_Done");
+    // Check for Scientist 3
+    else if (obj_clothing_controller.colliding_with_scientist_3) {
+        if (obj_clothing_controller.scientist3_correct == 0) {
+            intro_node = "Scientist3_IntroA";
+        } else if (obj_clothing_controller.scientist3_correct == 1) {
+            intro_node = "Scientist3_IntroB";
+        } else if (obj_clothing_controller.scientist3_correct == 2) {
+            intro_node = "Scientist3_IntroC";
+        } else {
+            intro_node = "Scientist3_Done";
+        }
+        start_conversation(intro_node);
     }
 	
 	// Check for mirror conditions
     else if (obj_clothing_controller.colliding_with_mirror && obj_clothing_controller.has_all && !obj_clothing_controller.dressed) {
-        start_conversation("Mirror");
+        intro_node = "Mirror"; start_conversation("Mirror");
     }
 
     // Check for door
    else if (obj_clothing_controller.colliding_with_door) {
 	    if (!obj_clothing_controller.dressed) {
-	        start_conversation("Door_Incomplete");
+	        intro_node = "Door_Incomplete"; start_conversation("Door_Incomplete");
 	    }
 	    else {
 			/*
@@ -65,7 +73,7 @@ if (!obj_clothing_controller.convo_in_progress) {
 	            start_conversation("Door_Knight");
 	        }
 			*/
-			
+			intro_node = "DoorGeneral";
 			start_conversation("DoorGeneral");
 		}
 	}
@@ -106,6 +114,14 @@ if (!obj_clothing_controller.convo_in_progress) {
 				start_conversation("Book8");
 	}
 	
+	else if (obj_clothing_controller.colliding_with_book9) {
+				start_conversation("Book9");
+	}
+	
+	else if (obj_clothing_controller.colliding_with_book10) {
+				start_conversation("Book10");
+	}
+	
 	    
 }
 
@@ -117,13 +133,13 @@ if (obj_clothing_controller.convo_in_progress) {
 		    // Displaying Text State
 		    case "displaying_text":
 				
-		        text = ChatterboxGetContent(chatterbox, 0);
-		        node_title = ChatterboxGetCurrent(chatterbox);
+		        text = ChatterboxGetContent(global.chatterbox_clothing, 0);
+		        node_title = ChatterboxGetCurrent(global.chatterbox_clothing);
         
 				
-		        if (ChatterboxIsWaiting(chatterbox)) {
+		        if (ChatterboxIsWaiting(global.chatterbox_clothing)) {
 		            obj_clothing_controller.conversation_state = "waiting_for_input";
-		        } else if (ChatterboxGetOptionCount(chatterbox)) {
+		        } else if (ChatterboxGetOptionCount(global.chatterbox_clothing)) {
 		            obj_clothing_controller.conversation_state = "waiting_for_choice";
 		        } else {
 		            obj_clothing_controller.conversation_state = "conversation_end";
@@ -133,7 +149,7 @@ if (obj_clothing_controller.convo_in_progress) {
 		    // Waiting for Input State
 		    case "waiting_for_input":
 		        if (keyboard_check_pressed(vk_space)) {
-		            ChatterboxContinue(chatterbox);
+		            ChatterboxContinue(global.chatterbox_clothing);
 		            obj_clothing_controller.conversation_state = "displaying_text";
 		        }
 		        break;
@@ -157,16 +173,14 @@ if (obj_clothing_controller.convo_in_progress) {
 			    }
 
 			    if (_select != -1) {
+					ChatterboxSelect(global.chatterbox_clothing, _select - 1);
 			        show_debug_message("Processing choice: " + string(_select) + " for node: " + string(node_title));
-			        process_choice(node_title, _select); // Call the choice-processing script
-					show_debug_message("ready for ChatterboxSelect");
-					ChatterboxSelect(chatterbox, _select - 1);
-			        _select = -1;
-					
-					
-		           
-					
-			        obj_clothing_controller.conversation_state = "displaying_text";
+			       
+					alarm[0]=1;
+				   
+					show_debug_message("ready for ChatterboxSelect");					
+					_select = -1;
+					obj_clothing_controller.conversation_state = "displaying_text";
 					show_debug_message("Set back to displaying text");
 			    }
 			    break;

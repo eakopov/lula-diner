@@ -52,6 +52,8 @@ obj_clothing_controller.colliding_with_book5 = collision_circle(x, y, detection_
 obj_clothing_controller.colliding_with_book6 = collision_circle(x, y, detection_radius+64, obj_clothing_book_6, true, true);
 obj_clothing_controller.colliding_with_book7 = collision_circle(x, y, detection_radius+64, obj_clothing_book_7, true, true);
 obj_clothing_controller.colliding_with_book8 = collision_circle(x, y, detection_radius+64, obj_clothing_book_8, true, true);
+obj_clothing_controller.colliding_with_book9 = collision_circle(x, y, detection_radius+64, obj_clothing_book_9, true, true);
+obj_clothing_controller.colliding_with_book10 = collision_circle(x, y, detection_radius+64, obj_clothing_book_10, true, true);
 
 
 // Initialize the flag if it doesn't already exist
