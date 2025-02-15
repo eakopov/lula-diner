@@ -7,17 +7,25 @@ if (global.gamepaused) {
 // Movement Logic for Customer Orders
 if (current_action == "move_to_customer") {
     if (move_target_x != -1 && move_target_y != -1) {
-        //show_debug_message("Lula Position: (" + string(x) + ", " + string(y) + ")");
-        //show_debug_message("Current Action: " + current_action);
-        //show_debug_message("Target Customer: " + string(target_customer));
-        //show_debug_message("Move Target: (" + string(move_target_x) + ", " + string(move_target_y) + ")");
-        
-        // Move toward the target point
-        move_speed = 3;
-        move_towards_point(move_target_x + 50, move_target_y - 50, move_speed);
+        // Create and follow a path using mp_grid
+        if (!path_active) {
+            if (path_id != -1) {
+                path_delete(path_id); // Ensure no old paths remain
+            }
+            path_id = path_add(); // Create a new path
+            if (mp_grid_path(global.nav_grid, path_id, x, y, move_target_x + 50, move_target_y - 50, true)) {
+                path_start(path_id, move_speed, path_action_stop, false);
+                path_active = true;
+            } else {
+                show_debug_message("No valid path found to the customer!");
+            }
+        }
+
 
         // Check if Lula has reached the target
         if (point_distance(x, y, move_target_x + 50, move_target_y - 50) < 5) {
+			path_end(); // Stop path following
+            path_active = false;
             x = move_target_x + 50;  // Snap to the target x
             y = move_target_y - 50;  // Snap to the target y
             move_target_x = -1; // Reset target x
