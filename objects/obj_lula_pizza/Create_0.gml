@@ -7,3 +7,5 @@ target_customer = noone; // The customer Lula is interacting with
 target_tool = noone; // The tool Lula is interacting with
 tool_attached = noone; // Stores the tool Lula is holding
 scientist_tool = ""; // Tracks the tool for customers
+
+global.nav_grid = mp_grid_create(0, 0, room_width div 16, room_height div 16, 16, 16); // Walk path grid creation
