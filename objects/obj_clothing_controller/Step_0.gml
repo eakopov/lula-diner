@@ -10,7 +10,17 @@ if (clothing_from_s3=2) {has_all_from_s3 = true;}
 
 if (has_all_from_s1 && has_all_from_s2 && has_all_from_s3) has_all = true;
 
-if (obj_clothing_controller.ready_for_results) {
+if (obj_clothing_controller.ready_for_results_1) {
+    if (obj_clothing_controller.wait_timer > 0) {
+        obj_clothing_controller.wait_timer--; // Countdown each frame
+    } else {
+       obj_clothing_controller.ready_for_results_1 = false;
+	   obj_clothing_controller.ready_for_results_2 = true;
+	   obj_clothing_controller.wait_timer = 360;
+    }
+}
+
+if (obj_clothing_controller.ready_for_results_2) {
     if (obj_clothing_controller.wait_timer > 0) {
         obj_clothing_controller.wait_timer--; // Countdown each frame
     } else {

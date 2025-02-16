@@ -120,11 +120,12 @@ function process_choice(_node_title, _choice, _obj) {
             break;
 			
 		case "DoorGeneral":
-			obj_clothing_controller.ready_for_results = true;
-			    
+			obj_clothing_controller.ready_for_results_1 = true;
+			
 			// Set the timer to 60 frames (1 second delay)
 			 obj_clothing_controller.wait_timer = 360;
-    break;
+			 
+			break;
 
         // Mirror Node
         case "Mirror":
