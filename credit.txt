@@ -1,0 +1,6 @@
+Sources Cited:
+Psyche Multispectral Imager: NASA/JPL-Caltech/ASU/MSSS
+Psyche Neutron Spectrometer: Johns Hopkins APL/Ed Whitman
+Psyche Gamma-Ray Spectrometer: Johns Hopkins APL/Ed Whitman
+Psyche Magnetrometer: NASA/JPL-Caltech
+X-Band Radio Telecommunications System: NASA/JPL-Caltech
