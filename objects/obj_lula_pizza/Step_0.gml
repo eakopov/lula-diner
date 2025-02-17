@@ -9,21 +9,20 @@ if (current_action == "move_to_customer") {
     if (move_target_x != -1 && move_target_y != -1) {
         // Create and follow a path using mp_grid
         if (!path_active) {
-            if (path_id != -1) {
-                path_delete(path_id); // Ensure no old paths remain
-            }
-            path_id = path_add(); // Create a new path
-            if (mp_grid_path(global.nav_grid, path_id, x, y, move_target_x + 50, move_target_y - 50, true)) {
-                path_start(path_id, move_speed, path_action_stop, false);
+			move_speed = 3;
+            
+			if (mp_grid_path(global.nav_grid, path, x, y, move_target_x + 50, move_target_y - 50, true)) {
+                show_debug_message("Lula: Path found to (" + string(move_target_x) + ", " + string(move_target_y) + ")");
+                path_start(path, move_speed, path_action_stop, false);
                 path_active = true;
             } else {
-                show_debug_message("No valid path found to the customer!");
+                show_debug_message("Lula: No valid path found!");
             }
         }
 
 
         // Check if Lula has reached the target
-        if (point_distance(x, y, move_target_x + 50, move_target_y - 50) < 5) {
+        if (path_active && point_distance(x, y, move_target_x + 50, move_target_y - 50) < 5) {
 			path_end(); // Stop path following
             path_active = false;
             x = move_target_x + 50;  // Snap to the target x
