@@ -1,4 +1,8 @@
 {
-  "FolderOrderSettings":[],
-  "ResourceOrderSettings":[],
+  "FolderOrderSettings":[
+    {"name":"Ending","order":1,"path":"folders/Objects/Ending.yy",},
+  ],
+  "ResourceOrderSettings":[
+    {"name":"room_ending","order":1,"path":"rooms/room_ending/room_ending.yy",},
+  ],
 }
