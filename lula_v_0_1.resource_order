@@ -4,6 +4,7 @@
     {"name":"Tools","order":2,"path":"folders/Objects/Pizza Objects/Tools.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"fnt_credits","order":3,"path":"fonts/fnt_credits/fnt_credits.yy",},
     {"name":"fnt_pizza_room","order":2,"path":"fonts/fnt_pizza_room/fnt_pizza_room.yy",},
     {"name":"backgroundScenes","order":20,"path":"objects/backgroundScenes/backgroundScenes.yy",},
     {"name":"backgroundSet","order":1,"path":"objects/backgroundSet/backgroundSet.yy",},
@@ -26,6 +27,7 @@
     {"name":"obj_clock","order":1,"path":"objects/obj_clock/obj_clock.yy",},
     {"name":"obj_controller","order":6,"path":"objects/obj_controller/obj_controller.yy",},
     {"name":"obj_counter","order":2,"path":"objects/obj_counter/obj_counter.yy",},
+    {"name":"obj_credits","order":18,"path":"objects/obj_credits/obj_credits.yy",},
     {"name":"obj_gamma","order":1,"path":"objects/obj_gamma/obj_gamma.yy",},
     {"name":"obj_instructions","order":10,"path":"objects/obj_instructions/obj_instructions.yy",},
     {"name":"obj_lawrence","order":1,"path":"objects/obj_lawrence/obj_lawrence.yy",},
@@ -71,6 +73,7 @@
     {"name":"sideBoost_ryth","order":13,"path":"objects/sideBoost_ryth/sideBoost_ryth.yy",},
     {"name":"winPrompt","order":10,"path":"objects/winPrompt/winPrompt.yy",},
     {"name":"room_clothing","order":1,"path":"rooms/room_clothing/room_clothing.yy",},
+    {"name":"room_credits","order":7,"path":"rooms/room_credits/room_credits.yy",},
     {"name":"room_deck","order":4,"path":"rooms/room_deck/room_deck.yy",},
     {"name":"room_end","order":6,"path":"rooms/room_end/room_end.yy",},
     {"name":"room_jump","order":2,"path":"rooms/room_jump/room_jump.yy",},

@@ -89,6 +89,7 @@
   },
   "name":"lula_v_0_1",
   "resources":[
+    {"id":{"name":"fnt_credits","path":"fonts/fnt_credits/fnt_credits.yy",},},
     {"id":{"name":"fnt_pizza_room","path":"fonts/fnt_pizza_room/fnt_pizza_room.yy",},},
     {"id":{"name":"Title1_room_select","path":"fonts/Title1_room_select/Title1_room_select.yy",},},
     {"id":{"name":"Title2_room_select","path":"fonts/Title2_room_select/Title2_room_select.yy",},},
@@ -129,6 +130,7 @@
     {"id":{"name":"obj_clothing_snorkel","path":"objects/obj_clothing_snorkel/obj_clothing_snorkel.yy",},},
     {"id":{"name":"obj_controller","path":"objects/obj_controller/obj_controller.yy",},},
     {"id":{"name":"obj_counter","path":"objects/obj_counter/obj_counter.yy",},},
+    {"id":{"name":"obj_credits","path":"objects/obj_credits/obj_credits.yy",},},
     {"id":{"name":"obj_customer","path":"objects/obj_customer/obj_customer.yy",},},
     {"id":{"name":"obj_d_wrong_feedback","path":"objects/obj_d_wrong_feedback/obj_d_wrong_feedback.yy",},},
     {"id":{"name":"obj_double_jump_powerup","path":"objects/obj_double_jump_powerup/obj_double_jump_powerup.yy",},},
@@ -216,6 +218,7 @@
     {"id":{"name":"sideBoost_ryth","path":"objects/sideBoost_ryth/sideBoost_ryth.yy",},},
     {"id":{"name":"winPrompt","path":"objects/winPrompt/winPrompt.yy",},},
     {"id":{"name":"room_clothing","path":"rooms/room_clothing/room_clothing.yy",},},
+    {"id":{"name":"room_credits","path":"rooms/room_credits/room_credits.yy",},},
     {"id":{"name":"room_deck","path":"rooms/room_deck/room_deck.yy",},},
     {"id":{"name":"room_end","path":"rooms/room_end/room_end.yy",},},
     {"id":{"name":"room_jump","path":"rooms/room_jump/room_jump.yy",},},
@@ -441,6 +444,7 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"room_credits","path":"rooms/room_credits/room_credits.yy",},},
     {"roomId":{"name":"room_pizza","path":"rooms/room_pizza/room_pizza.yy",},},
     {"roomId":{"name":"room_start","path":"rooms/room_start/room_start.yy",},},
     {"roomId":{"name":"room_clothing","path":"rooms/room_clothing/room_clothing.yy",},},
