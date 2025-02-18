@@ -10,7 +10,9 @@
   ],
   "ResourceOrderSettings":[
     {"name":"obj_jump_intro_manager","order":1,"path":"objects/obj_jump_intro_manager/obj_jump_intro_manager.yy",},
+    {"name":"obj_jump_outro_manager","order":2,"path":"objects/obj_jump_outro_manager/obj_jump_outro_manager.yy",},
     {"name":"room_jump_intro","order":1,"path":"rooms/room_jump_intro/room_jump_intro.yy",},
+    {"name":"room_jump_outro","order":2,"path":"rooms/room_jump_outro/room_jump_outro.yy",},
     {"name":"BackgroundSprite","order":8,"path":"sprites/BackgroundSprite/BackgroundSprite.yy",},
     {"name":"obj_double_jump_power_sprite","order":1,"path":"sprites/obj_double_jump_power_sprite/obj_double_jump_power_sprite.yy",},
     {"name":"obj_ph_fail_hoops_sprite","order":6,"path":"sprites/obj_ph_fail_hoops_sprite/obj_ph_fail_hoops_sprite.yy",},
