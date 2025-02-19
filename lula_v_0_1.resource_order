@@ -1,7 +1,7 @@
 {
   "FolderOrderSettings":[
-    {"name":"Select","order":7,"path":"folders/Objects/Deck/Select.yy",},
     {"name":"LeaderBoard","order":10,"path":"folders/Objects/Deck/LeaderBoard.yy",},
+    {"name":"Select","order":7,"path":"folders/Objects/Deck/Select.yy",},
     {"name":"Deck","order":1,"path":"folders/Scripts/Deck.yy",},
   ],
   "ResourceOrderSettings":[
@@ -17,6 +17,7 @@
     {"name":"obj_quiz_manager","order":1,"path":"objects/obj_quiz_manager/obj_quiz_manager.yy",},
     {"name":"obj_room_transition","order":6,"path":"objects/obj_room_transition/obj_room_transition.yy",},
     {"name":"obj_skip_button_deck","order":8,"path":"objects/obj_skip_button_deck/obj_skip_button_deck.yy",},
+    {"name":"room_intro","order":2,"path":"rooms/room_intro/room_intro.yy",},
     {"name":"room_leaderboard","order":1,"path":"rooms/room_leaderboard/room_leaderboard.yy",},
     {"name":"scr_load_leaderboard","order":2,"path":"scripts/scr_load_leaderboard/scr_load_leaderboard.yy",},
     {"name":"scr_save_leaderboard","order":1,"path":"scripts/scr_save_leaderboard/scr_save_leaderboard.yy",},
