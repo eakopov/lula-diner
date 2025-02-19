@@ -159,6 +159,7 @@
     {"id":{"name":"obj_fun_fact_display","path":"objects/obj_fun_fact_display/obj_fun_fact_display.yy",},},
     {"id":{"name":"obj_game_over","path":"objects/obj_game_over/obj_game_over.yy",},},
     {"id":{"name":"obj_gamma","path":"objects/obj_gamma/obj_gamma.yy",},},
+    {"id":{"name":"obj_hoop_burst","path":"objects/obj_hoop_burst/obj_hoop_burst.yy",},},
     {"id":{"name":"obj_hoop_manager","path":"objects/obj_hoop_manager/obj_hoop_manager.yy",},},
     {"id":{"name":"obj_instructions","path":"objects/obj_instructions/obj_instructions.yy",},},
     {"id":{"name":"obj_intro","path":"objects/obj_intro/obj_intro.yy",},},

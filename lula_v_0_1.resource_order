@@ -9,6 +9,7 @@
     {"name":"Text Boxes","order":8,"path":"folders/Sprites/Text Boxes.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"obj_hoop_burst","order":3,"path":"objects/obj_hoop_burst/obj_hoop_burst.yy",},
     {"name":"obj_jump_intro_manager","order":1,"path":"objects/obj_jump_intro_manager/obj_jump_intro_manager.yy",},
     {"name":"obj_jump_outro_manager","order":2,"path":"objects/obj_jump_outro_manager/obj_jump_outro_manager.yy",},
     {"name":"room_jump_intro","order":1,"path":"rooms/room_jump_intro/room_jump_intro.yy",},
