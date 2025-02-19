@@ -330,6 +330,7 @@
     {"id":{"name":"Mid_Note","path":"sprites/Mid_Note/Mid_Note.yy",},},
     {"id":{"name":"Mid_User","path":"sprites/Mid_User/Mid_User.yy",},},
     {"id":{"name":"MidNote","path":"sprites/MidNote/MidNote.yy",},},
+    {"id":{"name":"NASA_PSYCHE","path":"sprites/NASA_PSYCHE/NASA_PSYCHE.yy",},},
     {"id":{"name":"obj_double_jump_power_sprite","path":"sprites/obj_double_jump_power_sprite/obj_double_jump_power_sprite.yy",},},
     {"id":{"name":"obj_double_points_hoop_sprite","path":"sprites/obj_double_points_hoop_sprite/obj_double_points_hoop_sprite.yy",},},
     {"id":{"name":"obj_ph_fail_hoops_sprite","path":"sprites/obj_ph_fail_hoops_sprite/obj_ph_fail_hoops_sprite.yy",},},
