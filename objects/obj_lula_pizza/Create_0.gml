@@ -8,13 +8,11 @@ target_tool = noone; // The tool Lula is interacting with
 tool_attached = noone; // Stores the tool Lula is holding
 scientist_tool = ""; // Tracks the tool for customers
 path_active = false; // variable to track path for Lula's movement
-global.nav_grid = mp_grid_create(0, 0, room_width div 8, room_height div 8, 8, 8); // Walk path grid creation
+global.nav_grid = mp_grid_create(0, 0, room_width, room_height, 4, 4); // Walk path grid creation
+move_right = false;
 // Obstacles for the path grid for Lula to avoid
 // Tables
-mp_grid_add_instances(global.nav_grid, table1, true);
-mp_grid_add_instances(global.nav_grid, table2, true); 
-mp_grid_add_instances(global.nav_grid, table3, true); 
-mp_grid_add_instances(global.nav_grid, table4, true); 
+//
 //mp_grid_add_instances(global.nav_grid, obj_counter, false); // Counter
 
 path = path_add();

@@ -4,9 +4,20 @@ if (global.gamepaused) {
 }
 
 
+// Change sprite for direction
+if(move_target_x > x && !move_right) {
+    image_xscale = -1;
+    move_right = true;
+} else if (move_target_x < x && move_right) { 
+    image_xscale = 1;
+    move_right = false;
+}
+
 // Movement Logic for Customer Orders
 if (current_action == "move_to_customer") {
     if (move_target_x != -1 && move_target_y != -1) {
+        
+        
         // Create and follow a path using mp_grid
         if (!path_active) {
 			move_speed = 3;
@@ -73,10 +84,17 @@ if (current_action == "pick_up_tool") {
     if (move_target_x != -1 && move_target_y != -1) {
        
         move_speed = 3;
-        move_towards_point(move_target_x, move_target_y - 100, move_speed);
+        if (mp_grid_path(global.nav_grid, path, x, y, move_target_x, move_target_y - 100, false)) {
+            path_start(path, move_speed, path_action_stop, false);
+            path_active = true;
+        } else {
+            show_debug_message("Lula: No valid path to tool found!");
+        }
 
         // Check if Lula has reached the tool
-        if (point_distance(x, y, move_target_x, move_target_y - 100) < 5) {
+        if (path_active && point_distance(x, y, move_target_x, move_target_y - 100) < 5) {
+            path_end();
+            path_active = false;
             x = move_target_x;
             y = move_target_y - 100;
             move_target_x = -1;
@@ -127,11 +145,21 @@ if (current_action == "pick_up_tool") {
 // Deliver the tool once Lula reaches the table
 if (current_action == "deliver_tool") {
     if (move_target_x != -1 && move_target_y != -1) {
-        move_speed = 3;
-        move_towards_point(move_target_x + 50, move_target_y - 50, move_speed);
-
+        if (!path_active) {
+            move_speed = 3;
+            
+            if (mp_grid_path(global.nav_grid, path, x, y, move_target_x + 25, move_target_y + 25, false)) {
+                path_start(path, move_speed, path_action_stop, false);
+                path_active = true;
+            } else {
+                show_debug_message("Lula: No valid path to table found!");
+            }
+        }
+    
         // Check if Lula has reached the target table
-        if (point_distance(x, y, move_target_x, move_target_y) < 15) {
+        if (path_active && point_distance(x, y, move_target_x + 25, move_target_y + 25) < 5) {
+            path_end();
+            path_active = false;
             x = move_target_x + 25;
             y = move_target_y + 25;
             move_target_x = -1;
@@ -140,13 +168,13 @@ if (current_action == "deliver_tool") {
 
             var matching = true; //change later once issues resolved
             var customer = instance_nearest(x, y, obj_customer);
-			var tool = instance_nearest(x, y, obj_tool);
+            var tool = instance_nearest(x, y, obj_tool);
 
 
-             //Check if the tool matches the customer's request
+            //Check if the tool matches the customer's request
             if (instance_exists(customer) && instance_exists(tool)) {
-				show_debug_message("line 149 in step event lula");
-				tool.customer_id = customer.id;
+                show_debug_message("line 149 in step event lula");
+                tool.customer_id = customer.id;
                 //switch (customer.object_index) {
                 //    case obj_bell:
                 //        matching = (tool_attached.tool_name == "multispectral");
@@ -165,10 +193,10 @@ if (current_action == "deliver_tool") {
                 //        break;
                 //}
 
-               
+            
 
                     // Deliver tool
-					tool.attached_to_lula = false;
+                    tool.attached_to_lula = false;
                     tool.tool_delivery_ready = true;
                     customer.ready_to_eat = true;
                     
@@ -180,5 +208,6 @@ if (current_action == "deliver_tool") {
             
             current_action = "idle";
         }
+        
     }
 }
