@@ -1,10 +1,10 @@
 {
   "$GMSprite":"",
-  "%Name":"NASA_PSYCHE",
+  "%Name":"stars",
   "bboxMode":0,
-  "bbox_bottom":131,
+  "bbox_bottom":599,
   "bbox_left":0,
-  "bbox_right":343,
+  "bbox_right":899,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -12,16 +12,16 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"07f323e4-3c26-4ea3-8f0d-61ea11a3e754","name":"07f323e4-3c26-4ea3-8f0d-61ea11a3e754","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"f9074d6b-b700-43db-b0b1-e8a65b0a3500","name":"f9074d6b-b700-43db-b0b1-e8a65b0a3500","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":133,
+  "height":600,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"92860152-2987-407b-92cb-24e1d09b25ad","blendMode":0,"displayName":"default","isLocked":false,"name":"92860152-2987-407b-92cb-24e1d09b25ad","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"d2955e6f-29e4-46f0-81d6-5638aa77e8c3","blendMode":0,"displayName":"default","isLocked":false,"name":"d2955e6f-29e4-46f0-81d6-5638aa77e8c3","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"NASA_PSYCHE",
+  "name":"stars",
   "nineSlice":null,
   "origin":0,
   "parent":{
@@ -33,7 +33,7 @@
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"",
-    "%Name":"NASA_PSYCHE",
+    "%Name":"stars",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -57,7 +57,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"NASA_PSYCHE",
+    "name":"stars",
     "playback":1,
     "playbackSpeed":30.0,
     "playbackSpeedType":0,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"07f323e4-3c26-4ea3-8f0d-61ea11a3e754","path":"sprites/NASA_PSYCHE/NASA_PSYCHE.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"fd76cb79-9187-4d14-b579-1b15059b9585","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"f9074d6b-b700-43db-b0b1-e8a65b0a3500","path":"sprites/stars/stars.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"dd8d8733-9363-402a-8a62-7cd602324fa4","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":345,
+  "width":900,
 }
