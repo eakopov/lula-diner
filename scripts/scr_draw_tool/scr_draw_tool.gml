@@ -3,5 +3,6 @@
 function scr_draw_tool(){
 	var tool_sprite = asset_get_index(obj_customer.customer_tool);
 	var nearest_table = instance_nearest(obj_customer.x, obj_customer.y, obj_table);
+    show_debug_message(obj_customer.customer_tool);
     draw_sprite(tool_sprite, 0, nearest_table.x + 45, nearest_table.y + 20);
 }

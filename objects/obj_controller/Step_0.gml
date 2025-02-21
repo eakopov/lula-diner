@@ -35,7 +35,7 @@ var customer_waiting = false;  // Initialize as false
 
 // Loop through all obj_customer instances and check their position
 with (obj_customer) {
-    if (point_distance(x, y, 50, 576) < 10) {
+    if (point_distance(x, y, 50, 476) < 10) {
         customer_waiting = true; 
         break; 
     }
@@ -55,7 +55,7 @@ if (spawn_timer >= spawn_interval && !customer_waiting) {
     var selected_scientist = scientist_types[index];
     
     // Create the scientist instance
-    var customer = instance_create_layer(0, 576, "Instances", selected_scientist);
+    var customer = instance_create_layer(0, 476, "Instances", selected_scientist);
 
     // Initialize the customer
     scr_init_customer(customer);
