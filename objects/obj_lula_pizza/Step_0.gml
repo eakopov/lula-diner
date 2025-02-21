@@ -20,7 +20,7 @@ if (current_action == "move_to_customer") {
         
         // Create and follow a path using mp_grid
         if (!path_active) {
-			move_speed = 3;
+			move_speed = 4;
             
 			if (mp_grid_path(global.nav_grid, path, x, y, move_target_x + 50, move_target_y - 50, true)) {
                 show_debug_message("Lula: Path found to (" + string(move_target_x) + ", " + string(move_target_y) + ")");
@@ -83,7 +83,7 @@ if (target_customer != noone && current_action == "take_order") {
 if (current_action == "pick_up_tool") {
     if (move_target_x != -1 && move_target_y != -1) {
        
-        move_speed = 3;
+        move_speed = 4;
         if (mp_grid_path(global.nav_grid, path, x, y, move_target_x, move_target_y - 100, false)) {
             path_start(path, move_speed, path_action_stop, false);
             path_active = true;
@@ -146,7 +146,7 @@ if (current_action == "pick_up_tool") {
 if (current_action == "deliver_tool") {
     if (move_target_x != -1 && move_target_y != -1) {
         if (!path_active) {
-            move_speed = 3;
+            move_speed = 4;
             
             if (mp_grid_path(global.nav_grid, path, x, y, move_target_x + 25, move_target_y + 25, false)) {
                 path_start(path, move_speed, path_action_stop, false);

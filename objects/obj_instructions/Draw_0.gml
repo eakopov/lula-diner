@@ -8,7 +8,7 @@ if (!clicked) {
     draw_set_halign(fa_center);
     draw_set_valign(fa_middle);
     draw_set_color(c_black);
-    draw_text(room_width / 2, 100, "Lula's Science Diner");
+    draw_text(room_width / 2, 100, "Even Scientists Need Lunch!");
     
     // Draw Lula Sprite
     var lula_x = room_width / 2;
@@ -31,5 +31,4 @@ if (!clicked) {
     draw_rectangle(room_width / 2 - 100, room_height - 100, room_width / 2 + 100, room_height - 50, false);
     draw_set_color(c_black);
     draw_text(room_width / 2, room_height - 75, "Click to Play!");
-    
 }
