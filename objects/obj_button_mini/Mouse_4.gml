@@ -1,1 +1,1 @@
-room_goto(room_mini);
+room_goto(room_clothing);
