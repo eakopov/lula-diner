@@ -1,24 +1,35 @@
-// Set the text color and alignment
-draw_set_color(c_white);
-draw_set_font(fnt_pizza_room);
-draw_set_halign(fa_center);
-draw_set_valign(fa_middle);
-
-// Define the instructional text
-var instructions_text1 = "Click on a scientist to select them and seat them at an empty table.";
-var instructions_text2 = "Click on a tool prepared by chef and match it to the correct scientist.";
-var instructions_text3 = "Hover over the portraits for hints and information about the scientists!";
-var instructions_text4 = "Goal: Serve 5 scientists and make $100!";
-var instructions_text5 = "Press Pause to pause the game or Quit to move on to the next game!";
-
-// Position the text in the gray area at the top of the screen
-var text_x = room_width / 2;
-var text_y = 30; // Adjust this value based on how much space you have after resizing the windows
-var line_spacing = 20;
-
-// Draw the text on the screen
-draw_text(text_x, text_y, instructions_text1);
-draw_text(text_x, text_y + line_spacing, instructions_text2);
-draw_text(text_x, text_y + (line_spacing * 2), instructions_text3);
-draw_text(text_x, text_y + (line_spacing * 3), instructions_text4);
-draw_text(text_x, text_y + (line_spacing * 4), instructions_text5);
+if (!clicked) {
+    // Set Background Color
+    draw_set_color(c_white);
+    draw_rectangle(0, 0, room_width, room_height, false);
+    
+    // Set Title Text
+    draw_set_font(fnt_credits);
+    draw_set_halign(fa_center);
+    draw_set_valign(fa_middle);
+    draw_set_color(c_black);
+    draw_text(room_width / 2, 100, "Lula's Science Diner");
+    
+    // Draw Lula Sprite
+    var lula_x = room_width / 2;
+    var lula_y = 200;
+    draw_sprite(spr_lula, 0, lula_x - 50, lula_y - 20);
+    
+    // Instructions Text
+    var text_x = room_width / 2;
+    var text_y = 300;
+    var line_spacing = 25;
+    
+    draw_text(text_x, text_y, "Click on a scientist to seat them at a table.");
+    draw_text(text_x, text_y + line_spacing, "Click a tool and match it to the correct scientist.");
+    draw_text(text_x, text_y + (line_spacing * 2), "Hover over portraits for hints and scientist info!");
+    draw_text(text_x, text_y + (line_spacing * 3), "Goal: Serve 5 scientists and make $100!");
+    draw_text(text_x, text_y + (line_spacing * 4), "Press Pause to pause, or Quit to move on!");
+    
+    // Draw Play Button
+    draw_set_color(c_red);
+    draw_rectangle(room_width / 2 - 100, room_height - 100, room_width / 2 + 100, room_height - 50, false);
+    draw_set_color(c_black);
+    draw_text(room_width / 2, room_height - 75, "Click to Play!");
+    
+}

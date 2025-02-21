@@ -1,7 +1,10 @@
-// Display player money
-draw_set_color(c_fuchsia);
-//draw_set_font(font_large);
-draw_text_transformed(room_width - 110, room_height - 62, "$" + string(player_money), 2, 2, 0);
+if(obj_instructions.clicked == true) {
+    // Display player money
+    draw_set_color(c_fuchsia);
+    draw_set_font(fnt_pizza_room);
+    //draw_set_font(font_large);
+    draw_text_transformed(room_width - 110, room_height - 62, "$" + string(player_money), 2, 2, 0);
+}
 
 if (global.gamepaused) {
     draw_set_color(c_white);
