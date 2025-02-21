@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sprite82",
-    "path":"sprites/Sprite82/Sprite82.yy",
+    "name":"R_J",
+    "path":"sprites/R_J/R_J.yy",
   },
   "spriteMaskId":null,
   "visible":true,

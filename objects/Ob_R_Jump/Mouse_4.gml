@@ -1,1 +1,1 @@
-room_goto(room_clothing);
+room_goto(room_jump);
