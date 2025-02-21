@@ -565,7 +565,6 @@
     {"roomId":{"name":"room_leaderboard","path":"rooms/room_leaderboard/room_leaderboard.yy",},},
     {"roomId":{"name":"room_rhythm","path":"rooms/room_rhythm/room_rhythm.yy",},},
     {"roomId":{"name":"room_ending","path":"rooms/room_ending/room_ending.yy",},},
-    {"roomId":{"name":"room_end","path":"rooms/room_end/room_end.yy",},},
     {"roomId":{"name":"room_credits","path":"rooms/room_credits/room_credits.yy",},},
   ],
   "templateType":null,
