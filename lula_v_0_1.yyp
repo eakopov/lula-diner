@@ -284,6 +284,7 @@
     {"id":{"name":"room_pizza","path":"rooms/room_pizza/room_pizza.yy",},},
     {"id":{"name":"room_rhythm","path":"rooms/room_rhythm/room_rhythm.yy",},},
     {"id":{"name":"room_select_scientist","path":"rooms/room_select_scientist/room_select_scientist.yy",},},
+    {"id":{"name":"room_start","path":"rooms/room_start/room_start.yy",},},
     {"id":{"name":"__ChatterboxArrayCopyPart","path":"scripts/__ChatterboxArrayCopyPart/__ChatterboxArrayCopyPart.yy",},},
     {"id":{"name":"__ChatterboxArrayToString","path":"scripts/__ChatterboxArrayToString/__ChatterboxArrayToString.yy",},},
     {"id":{"name":"__ChatterboxBufferBatch","path":"scripts/__ChatterboxBufferBatch/__ChatterboxBufferBatch.yy",},},
@@ -566,6 +567,7 @@
     {"roomId":{"name":"room_rhythm","path":"rooms/room_rhythm/room_rhythm.yy",},},
     {"roomId":{"name":"room_ending","path":"rooms/room_ending/room_ending.yy",},},
     {"roomId":{"name":"room_credits","path":"rooms/room_credits/room_credits.yy",},},
+    {"roomId":{"name":"room_start","path":"rooms/room_start/room_start.yy",},},
   ],
   "templateType":null,
   "TextureGroups":[
