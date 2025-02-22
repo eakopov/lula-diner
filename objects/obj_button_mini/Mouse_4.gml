@@ -1,1 +1,2 @@
-room_goto(room_clothing);
+global.mode = "mini";
+room_goto(room_mini);
