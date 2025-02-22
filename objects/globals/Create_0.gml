@@ -12,3 +12,14 @@ if(instance_exists(globals)){
 
 global.PointsCounter = 0;
 
+
+global.clothingResult = "";
+global.pizzaResult = "";
+global.jumpResult = "";
+global.quizResult = "";
+global.rhythmResult = "";	
+
+global.mode = "";
+
+
+//S, A, B, C
