@@ -3,7 +3,6 @@ if (ready_to_seat) {
 }
 
 if (ready_to_order) {
-	show_debug_message("Customer clicked on.");
     obj_lula_pizza.target_customer = id;  // Set Lula's target customer
     obj_lula_pizza.move_target_x = x;  // Set Lula's target position
     obj_lula_pizza.move_target_y = y;

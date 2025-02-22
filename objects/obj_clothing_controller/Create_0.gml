@@ -79,7 +79,8 @@ clothing_from_s1 = 0;
 clothing_from_s2= 0;
 cloting_from_s3 = 0;
 
-ready_for_results = false;
+ready_for_results_1 = false;
+ready_for_results_2 = false;
 
 wait_timer = 3200;
 

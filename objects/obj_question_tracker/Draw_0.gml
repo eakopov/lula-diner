@@ -10,8 +10,8 @@ if(global.bonus_question_index < 10){
 
 
 // Define text position
-var text_x = 270;
-var text_y = 630;
+var text_x = x + 206;  // Adjust X position relative to the object's position
+var text_y = y + 374;  // Adjust Y position relative to the object's position
 
 // Define rectangle padding
 var padding_x = 10; // Extra space around text width

@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_clothing_message_box",
-    "path":"sprites/spr_clothing_message_box/spr_clothing_message_box.yy",
+    "name":"spr_jump_clothing_textbox_sprite",
+    "path":"sprites/spr_jump_clothing_textbox_sprite/spr_jump_clothing_textbox_sprite.yy",
   },
   "spriteMaskId":null,
   "visible":true,

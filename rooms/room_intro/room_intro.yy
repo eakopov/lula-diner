@@ -5,11 +5,25 @@
   "inheritCode":false,
   "inheritCreationOrder":false,
   "inheritLayers":false,
-  "instanceCreationOrder":[],
+  "instanceCreationOrder":[
+    {"name":"inst_30F8E6B2","path":"rooms/room_intro/room_intro.yy",},
+    {"name":"inst_626E118D","path":"rooms/room_intro/room_intro.yy",},
+    {"name":"inst_F20E20B","path":"rooms/room_intro/room_intro.yy",},
+  ],
   "isDnd":false,
   "layers":[
-    {"$GMRInstanceLayer":"","%Name":"Instances","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
-    {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4278190080,"depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
+    {"$GMRInstanceLayer":"","%Name":"Instances","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
+        {"$GMRInstance":"v1","%Name":"inst_30F8E6B2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_30F8E6B2","objectId":{"name":"obj_button_mini","path":"objects/obj_button_mini/obj_button_mini.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":7.1244726,"scaleX":0.84663373,"scaleY":0.64316136,"x":128.0,"y":416.0,},
+        {"$GMRInstance":"v1","%Name":"inst_626E118D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_626E118D","objectId":{"name":"obj_button_story","path":"objects/obj_button_story/obj_button_story.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":8.320883,"scaleX":0.786667,"scaleY":0.65333295,"x":128.0,"y":576.0,},
+        {"$GMRInstance":"v1","%Name":"inst_F20E20B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_F20E20B","objectId":{"name":"obj_view_credits","path":"objects/obj_view_credits/obj_view_credits.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.2,"scaleY":0.25333333,"x":0.0,"y":640.0,},
+      ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
+    {"$GMRAssetLayer":"","%Name":"Assets","assets":[
+        {"$GMRSpriteGraphic":"","%Name":"graphic_174EF0F2","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_174EF0F2","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0423989,"scaleY":1.2666667,"spriteId":{"name":"stars","path":"sprites/stars/stars.yy",},"x":-32.0,"y":0.0,},
+        {"$GMRSpriteGraphic":"","%Name":"graphic_2B85BAF3","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_2B85BAF3","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.9275364,"scaleY":1.0,"spriteId":{"name":"NASA_PSYCHE","path":"sprites/NASA_PSYCHE/NASA_PSYCHE.yy",},"x":32.0,"y":160.0,},
+        {"$GMRSpriteGraphic":"","%Name":"graphic_59E308E8","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_59E308E8","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0533333,"scaleY":1.1066667,"spriteId":{"name":"spr_Welcome_To","path":"sprites/spr_Welcome_To/spr_Welcome_To.yy",},"x":64.0,"y":-64.0,},
+        {"$GMRSpriteGraphic":"","%Name":"graphic_6D640542","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_6D640542","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"Please_Select","path":"sprites/Please_Select/Please_Select.yy",},"x":64.0,"y":224.0,},
+        {"$GMRSpriteGraphic":"","%Name":"graphic_784EBE50","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_784EBE50","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":0.30666667,"scaleY":0.25333333,"spriteId":{"name":"OR","path":"sprites/OR/OR.yy",},"x":288.0,"y":544.0,},
+      ],"depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Assets","properties":[],"resourceType":"GMRAssetLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
   ],
   "name":"room_intro",
   "parent":{
@@ -27,10 +41,10 @@
   "resourceType":"GMRoom",
   "resourceVersion":"2.0",
   "roomSettings":{
-    "Height":768,
+    "Height":720,
     "inheritRoomSettings":false,
     "persistent":false,
-    "Width":1366,
+    "Width":720,
   },
   "sequenceId":null,
   "views":[

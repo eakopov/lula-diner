@@ -82,3 +82,6 @@ if (!variable_global_exists("hoops_passed")) {
     global.hoops_passed = 0; // Initialize the hoop count
 }
 
+
+
+

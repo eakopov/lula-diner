@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"lula_v_0_1",
-    "path":"lula_v_0_1.yyp",
+    "name":"Text Boxes",
+    "path":"folders/Sprites/Text Boxes.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

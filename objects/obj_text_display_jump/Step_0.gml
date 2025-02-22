@@ -2,6 +2,8 @@ if (keyboard_check_pressed(vk_space))
 {
 	audio_stop_sound(global.bonusmusic_id);
     global.bonusmusic_id = -1;
+	audio_stop_sound(global.jumpmusic_id);
+    global.jumpmusic_id = -1;
     room_goto_next()
 }
 

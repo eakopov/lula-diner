@@ -68,6 +68,10 @@ if (x < 0 || x > room_width || y < 0 || y > room_height)
 // Check if the player has passed through a hoop
 if place_meeting(x, y, obj_ph_hoops)
 {
+	
+	// Get the x-position of the hoop the player is currently passing through
+	var hoop_x = instance_place(x, y, obj_ph_hoops).y;
+	
     // Get the y-position of the hoop the player is currently passing through
     var hoop_y = instance_place(x, y, obj_ph_hoops).y;
 
@@ -77,6 +81,9 @@ if place_meeting(x, y, obj_ph_hoops)
 	    if (!place_meeting(x, y, obj_ph_jump_ground)) { // Passing upward or downward
         global.jump_score += 50 * score_multiplier; // Add points
         global.hoops_passed += 1; // Increment hoop count
+		
+		// Create the burst effect at the hoop's position
+        instance_create_layer(hoop_x, hoop_y, "Effects", obj_hoop_burst);
 
         // Check if 3 hoops have been passed to advance the text
         if (global.hoops_passed >= 3) {
