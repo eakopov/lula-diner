@@ -1,4 +1,9 @@
 
+
+show_ending = true;
+
+wait_timer = 360;
+
 var results = [
     global.clothingResult,
     global.pizzaResult,
