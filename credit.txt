@@ -12,6 +12,13 @@ Psyche Gamma-Ray Spectrometer: Johns Hopkins APL/Ed Whitman
 Psyche Magnetrometer: NASA/JPL-Caltech
 X-Band Radio Telecommunications System: NASA/JPL-Caltech
 
+//Peter's Sources
+
+GameMaker Tutorials:  https://gamemaker.io/en/tutorials/
+Visual Assets:  https://psyche.asu.edu
+Knowledge Base: https://psyche.asu.edu
+AI Generated Art:  https://www.chatgpt.com
+
 //Paul's Sources
 
 GameMaker Tutorials:  https://gamemaker.io/en/tutorials/
