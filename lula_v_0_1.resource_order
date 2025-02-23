@@ -243,5 +243,6 @@
     {"name":"sprite_blk_bkground","order":1,"path":"sprites/sprite_blk_bkground/sprite_blk_bkground.yy",},
     {"name":"stars","order":10,"path":"sprites/stars/stars.yy",},
     {"name":"Story_Mode","order":4,"path":"sprites/Story_Mode/Story_Mode.yy",},
+    {"name":"white_bordered","order":18,"path":"sprites/white_bordered/white_bordered.yy",},
   ],
 }
