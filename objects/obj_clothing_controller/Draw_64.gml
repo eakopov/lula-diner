@@ -78,24 +78,24 @@ if (obj_clothing_controller.ready_for_results_1) {
     switch (obj_clothing_controller.number_professional) {
         case 0:
             ending_text = "Oh, no! You are unprofessionally dressed! Your pitch fails!";
-            points_to_add = 0;
+           
             break;
         case 1:
             ending_text = "You are still learning about professionalism in fashion, but you're not there yet! The board is skeptical, but you might get approved for the next round of funding!";
-            points_to_add = 10;
+           
             break;
         case 2:
             ending_text = "Looking professional! Your pitch is approved!";
-            points_to_add = 20;
+           
             break;
         case 3:
             ending_text = "Your professional attire has deeply impressed the board! Not only do they approve your pitch for funding a mission to Psyche, they award you an extra 10 million LlamaDollars! Congrats!";
-            points_to_add = 100;
+            
             break;
     }
 
     // Add points
-   addPoints(points_to_add);
+  
 
     // Display the ending text under Lula
     draw_text_ext(draw_x, draw_y + 150, ending_text, 20, gui_width - 40);

@@ -16,4 +16,4 @@ var _y = y; // Centered on sprite
 var text_scale = 2;
 
 // Draw the points counter with scaling
-draw_text_transformed(_x, _y, string(global.PointsCounter), text_scale, text_scale, 0);
+draw_text_transformed(_x, _y, string(obj_clothing_controller.clothing_points), text_scale, text_scale, 0);
