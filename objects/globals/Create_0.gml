@@ -21,5 +21,7 @@ global.rhythmResult = "";
 
 global.mode = "";
 
+global.ResultsPoints = 0;
+
 
 //S, A, B, C

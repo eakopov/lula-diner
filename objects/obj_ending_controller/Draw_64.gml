@@ -56,6 +56,10 @@ switch (ending) {
     case "best":
         ending_text = "Lula impressed everyone with her great work! \nThe mission launch was a success, and because of her impressive work, Lula has been promoted! \nKa-ching! \nHer boss gives her a raise (and more work to do)!";
         break;
+		
+		case "":
+        ending_text = "Ending not calculated correctly";
+        break;
 }
 
 // Display the ending text below the sprite
