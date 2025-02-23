@@ -23,6 +23,8 @@ if (obj_clothing_controller.dress_up_time) {
             obj_clothing_controller.dress_up_time = false; // Turn off dress-up mode
 			obj_clothing_controller.dressed = true;
 			
+			check_clothing_choices();
+			
         }
 
        

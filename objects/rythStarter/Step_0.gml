@@ -33,16 +33,22 @@ if(!audio_is_playing(singinID) && canPause){
 	addPoints(global.PointsCounter_ryth);
 	if(global.PointsCounter_ryth > 7648){
 		setRankRyth(0);
+		global.rhythmResult = "S";
 	} else if(global.PointsCounter_ryth > 6843) {
 		setRankRyth(1);
+		global.rhythmResult = "A";
 	} else if(global.PointsCounter_ryth > 5635) {
 		setRankRyth(2);
+		global.rhythmResult = "A";
 	} else if(global.PointsCounter_ryth > 4025) {
 		setRankRyth(3);
+		global.rhythmResult = "B";
 	} else if(global.PointsCounter_ryth > 2013) {
 		setRankRyth(4);
+		global.rhythmResult = "B";
 	} else {
 		setRankRyth(5);
+		global.rhythmResult = "C";
 	}
 	instance_create_layer(64, 32, "endRyth", winPrompt);
 	instance_create_layer(224, 608, "endRyth", resumrButton);

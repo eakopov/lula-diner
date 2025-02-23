@@ -43,14 +43,14 @@ function process_choice(_node_title, _choice, _obj) {
                 assign_clothing_item(clothing_awarded);
                // obj_clothing_controller.clothing_counter++;
                 update_inventory(clothing_awarded);
-				addPoints(10);
+				addClothingPoints(10);
             }
 
             obj_clothing_controller.scientist1_correct++;
             if (obj_clothing_controller.scientist1_correct >= 3) {
                 obj_clothing_controller.has_all_from_s1 = true;
 				show_debug_message("has all from s1 = true");
-                addPoints(20);
+                addClothingPoints(20);
             }
             break;
 
@@ -70,13 +70,13 @@ function process_choice(_node_title, _choice, _obj) {
                 assign_clothing_item(clothing_awarded);
                 //obj_clothing_controller.clothing_counter++;
                 update_inventory(clothing_awarded);
-				addPoints(10);
+				addClothingPoints(10);
             }
 
             obj_clothing_controller.scientist2_correct++;
             if (obj_clothing_controller.scientist2_correct >= 3) {
                 obj_clothing_controller.has_all_from_s2 = true;
-                addPoints(20);
+                addClothingPoints(20);
             }
             break;
 
@@ -96,13 +96,13 @@ function process_choice(_node_title, _choice, _obj) {
                 assign_clothing_item(clothing_awarded);
                 //obj_clothing_controller.clothing_counter++;
                 update_inventory(clothing_awarded);
-				addPoints(10);
+				addClothingPoints(10);
             }
 
             obj_clothing_controller.scientist3_correct++;
             if (obj_clothing_controller.scientist3_correct >= 3) {
                 obj_clothing_controller.has_all_from_s3 = true;
-                addPoints(30);
+                addClothingPoints(30);
             }
             break;
 
@@ -132,7 +132,7 @@ function process_choice(_node_title, _choice, _obj) {
 		
 			/*
             if (_choice == 1) {obj_clothing_controller.wear_professional = true; 
-			addPoints(100);}
+			addClothingPoints(100);}
             else if (_choice == 2) obj_clothing_controller.wear_swim = true;
             else if (_choice == 3) obj_clothing_controller.wear_knight = true;
 			
@@ -267,4 +267,39 @@ function get_unique_random_branch() {
     
 
     return current_rand;
+}
+
+function addClothingPoints(input) {
+	obj_clothing_controller.clothing_points += input;
+}
+
+function check_clothing_choices() {
+	var choice_counter = 0;
+if (obj_clothing_controller.clothing_item_1 == obj_clothing_monocle) {
+	choice_counter++;
+}
+
+if (obj_clothing_controller.clothing_item_2 == obj_clothing_cravate) {
+	choice_counter++;
+}
+
+if (obj_clothing_controller.clothing_item_3 == obj_clothing_briefcase) {
+	choice_counter++;
+}
+	
+if (choice_counter == 0) {}
+else if (choice_counter == 1) {addClothingPoints(50);}
+else if (choice_counter == 2) {addClothingPoints(100);}
+else if (choice_counter == 3) {addClothingPoints(200);}
+	
+}
+
+function assign_ending_result() {
+	
+	if (obj_clothing_controller.clothing_points < 200) {global.clothingResult = "C";}
+	else if (obj_clothing_controller.clothing_points >= 200 && obj_clothing_controller.clothing_points < 250) {global.clothingResult = "B";}
+	else if (obj_clothing_controller.clothing_points >= 250 && obj_clothing_controller.clothing_points < 300) {global.clothingResult = "A";}
+	else if (obj_clothing_controller.clothing_points >= 300) {global.clothingResult = "S";}
+	
+	
 }
