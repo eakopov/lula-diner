@@ -85,3 +85,5 @@ ready_for_results_2 = false;
 wait_timer = 3200;
 
 number_professional = 0;
+
+clothing_points = 0;
