@@ -1,0 +1,15 @@
+{
+  "$GMPath":"",
+  "%Name":"Path4",
+  "closed":false,
+  "kind":0,
+  "name":"Path4",
+  "parent":{
+    "name":"lula_v_0_1",
+    "path":"lula_v_0_1.yyp",
+  },
+  "points":[],
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
+}
