@@ -15,3 +15,19 @@ if (movement_type == "horizontal") {
         y_direction *= -1;
     }
 }
+
+if (active_fade)
+{
+    // Gradually shrink the hoop
+    image_xscale -= shrink_speed;
+    image_yscale -= shrink_speed;
+    
+    // Gradually fade out
+    image_alpha -= fade_speed;
+    
+    // Destroy the hoop when it's too small or fully transparent
+    if (image_alpha <= 0 || image_xscale <= 0.1)
+    {
+        instance_destroy();
+    }
+}
