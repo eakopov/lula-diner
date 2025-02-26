@@ -22,9 +22,9 @@ if (show_ending) {
 	// Display the main completion message
 	draw_text_ext(_x, _y, "You finished story mode! The mission takes off!", 20, gui_width - 40);
 
-	// ======================
+
 	// Draw the Ending Sprite
-	// ======================
+
 
 	// Scale factor for the ending sprite
 	var scale_factor = 5 / 2;
@@ -36,9 +36,8 @@ if (show_ending) {
 	// Draw the ending sprite (mirrored and scaled)
 	draw_sprite_ext(ending_sprite, 0, draw_x, draw_y, scale_factor, scale_factor, 0, c_white, 1);
 
-	// ======================
+	
 	// Branching Endings Based on Performance
-	// ======================
 
 	var ending_text = "";
 

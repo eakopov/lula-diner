@@ -45,7 +45,9 @@ if (obj_clothing_controller.ready_for_results_1) {
     var _y = gui_height / 4; // Move text up slightly so Lula is visible below
 
     // Display player's total points
-    draw_text_ext(_x, _y, "Congratulations!  You completed Dress for Success!\n You finished with " + string(global.PointsCounter) + " points!", 20, gui_width - 40);
+    draw_text_ext(_x, _y, "Congratulations!  You completed Dress for Success!\n You finished with a grade of " + global.clothingResult,20, gui_width - 40);
+
+	// string(/*obj_clothing_controller.clothing_points) + " points!*/ )
 
     // ======================
     // Draw Lula (Mirrored)
@@ -120,7 +122,7 @@ if (obj_clothing_controller.ready_for_results_2) {
     var _y = gui_height / 4; // Move text up slightly so Lula is visible below
 
     // Display player's total points
-    draw_text_ext(_x, _y, "Congratulations!  You completed Dress for Success!\n You finished with " + string(global.PointsCounter) + " points!", 20, gui_width - 40);
+     draw_text_ext(_x, _y, "Congratulations!  You completed Dress for Success!\n You finished with a grade of " + global.clothingResult,20, gui_width - 40);
 
     // ======================
     // Draw Lula (Mirrored)

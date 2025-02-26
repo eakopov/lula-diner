@@ -8,3 +8,4 @@ ready_for_results_1 = true;
 wait_timer = 360;
 
 dressed = true;
+global.clothingResult = "C";
