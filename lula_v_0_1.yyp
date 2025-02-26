@@ -568,7 +568,6 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"room_select_scientist","path":"rooms/room_select_scientist/room_select_scientist.yy",},},
     {"roomId":{"name":"room_intro","path":"rooms/room_intro/room_intro.yy",},},
     {"roomId":{"name":"room_mini","path":"rooms/room_mini/room_mini.yy",},},
     {"roomId":{"name":"room_start","path":"rooms/room_start/room_start.yy",},},
@@ -584,6 +583,7 @@
     {"roomId":{"name":"room_rhythm_end","path":"rooms/room_rhythm_end/room_rhythm_end.yy",},},
     {"roomId":{"name":"room_ending","path":"rooms/room_ending/room_ending.yy",},},
     {"roomId":{"name":"room_credits","path":"rooms/room_credits/room_credits.yy",},},
+    {"roomId":{"name":"room_select_scientist","path":"rooms/room_select_scientist/room_select_scientist.yy",},},
   ],
   "templateType":null,
   "TextureGroups":[
