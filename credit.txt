@@ -12,6 +12,13 @@ Psyche Gamma-Ray Spectrometer: Johns Hopkins APL/Ed Whitman
 Psyche Magnetrometer: NASA/JPL-Caltech
 X-Band Radio Telecommunications System: NASA/JPL-Caltech
 
+//Peter's Sources
+
+GameMaker Tutorials:  https://gamemaker.io/en/tutorials/
+Visual Assets:  https://psyche.asu.edu
+Knowledge Base: https://psyche.asu.edu
+AI Generated Art:  https://www.chatgpt.com
+
 //Paul's Sources
 
 GameMaker Tutorials:  https://gamemaker.io/en/tutorials/
@@ -19,3 +26,15 @@ Visual Assets:  https://psyche.asu.edu
 Knowledge Base: https://psyche.asu.edu
 Sprites:  https://www.piskelapp.com
 AI Generated Art:  https://www.chatgpt.com
+
+// Jesus's sources
+
+game song : 
+"RetroFuture Dirty" Kevin MacLeod (incompetech.com)
+Licensed under Creative Commons: By Attribution 4.0 License
+http://creativecommons.org/licenses/by/4.0/
+
+Visual Assets:
+https://www.freepik.com/
+https://www.vecteezy.com/
+https://itch.io/
