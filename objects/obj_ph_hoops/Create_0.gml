@@ -20,5 +20,6 @@ if (movement_type == "horizontal") {
 }
 
 active_fade = false; // Tracks if the hoop should start fading
-fade_speed = 0.02;   // How fast the hoop fades out
-shrink_speed = 0.02; // How fast the hoop shrinks
+collected = false;  // Hoop is initially collectible
+fade_speed = 0.05;   // How fast the hoop fades out
+shrink_speed = 0.05; // How fast the hoop shrinks

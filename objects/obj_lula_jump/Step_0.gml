@@ -66,13 +66,14 @@ if (x < 0 || x > room_width || y < 0 || y > room_height)
 }
 
 // Check if the player has passed through a hoop
-if place_meeting(x, y, obj_ph_hoops)
+// Check if the player has passed through a hoop 
+if place_meeting(x, y, obj_ph_hoops) 
 {
     // Get the hoop instance
     var hoop_instance = instance_place(x, y, obj_ph_hoops);
     
-    // If the hoop exists
-    if (hoop_instance != noone)
+    // Ensure the hoop exists **and hasn't already been collected**
+    if (hoop_instance != noone && !hoop_instance.collected)
     {
         // Get the x and y position of the hoop
         var hoop_x = hoop_instance.x;
@@ -80,7 +81,7 @@ if place_meeting(x, y, obj_ph_hoops)
 
         // Determine score multiplier
         var score_multiplier = global.double_points_active ? 2 : 1;
-	
+
         if (!place_meeting(x, y, obj_ph_jump_ground)) { // Passing upward or downward
             global.jump_score += 50 * score_multiplier; // Add points
             global.hoops_passed += 1; // Increment hoop count
@@ -88,14 +89,16 @@ if place_meeting(x, y, obj_ph_hoops)
             // Create the burst effect at the hoop's position
             instance_create_layer(hoop_x, hoop_y, "Effects", obj_hoop_burst);
 
-            // **Start the hoop fading & shrinking instead of destroying**
+            // **Mark the hoop as collected before fading starts**
+            hoop_instance.collected = true;
+            hoop_instance.solid = false;
             hoop_instance.active_fade = true;
 
             // Check if 3 hoops have been passed to advance the text
             if (global.hoops_passed >= 3) {
                 global.hoops_passed = 0; // Reset the hoop count
                 global.current_text_index += 1; // Advance the text index
-						
+
                 // Play the phase passed sound
                 audio_play_sound(phase_passed_sound, 1, false); // Sound, priority, looping (false)
 
@@ -111,6 +114,7 @@ if place_meeting(x, y, obj_ph_hoops)
         }
     }
 }
+
 
 
 // Double Jump Timer Logic

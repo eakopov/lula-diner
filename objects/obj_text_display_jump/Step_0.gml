@@ -1,5 +1,19 @@
 if (keyboard_check_pressed(vk_space))
 {
+    // Determine the player's rank based on global.jump_score
+    if (global.jump_score >= 10000) {
+        global.jumpResults = "S";
+    } 
+    else if (global.jump_score >= 7500) {
+        global.jumpResults = "A";
+    } 
+    else if (global.jump_score >= 5000) {
+        global.jumpResults = "B";
+    } 
+    else {
+        global.jumpResults = "C"; // Anything below B is a C
+    }
+	
 	audio_stop_sound(global.bonusmusic_id);
     global.bonusmusic_id = -1;
 	audio_stop_sound(global.jumpmusic_id);

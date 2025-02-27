@@ -1,13 +1,12 @@
-// Step Event of obj_hoop
-
-if (movement_type == "horizontal") {
+if (movement_type == "horizontal" && !active_fade) {
     x += movement_speed * x_direction;
 
     // Reverse direction if reaching boundaries
     if (x <= left_boundary || x >= right_boundary) {
         x_direction *= -1;
     }
-} else if (movement_type == "vertical") {
+} 
+else if (movement_type == "vertical" && !active_fade) {
     y += movement_speed * y_direction;
 
     // Reverse direction if reaching boundaries
@@ -16,8 +15,12 @@ if (movement_type == "horizontal") {
     }
 }
 
+// If the hoop is in the fading state, disable collisions
 if (active_fade)
 {
+    // Disable collision mask
+    solid = false;
+
     // Gradually shrink the hoop
     image_xscale -= shrink_speed;
     image_yscale -= shrink_speed;

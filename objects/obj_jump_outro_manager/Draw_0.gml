@@ -10,7 +10,8 @@ draw_set_color(c_black);
 var text = "Your pitch went off without a hitch!" + 
            " You jumped through those hoops like a pro!" +
 		   " After a well done pitch to NASA, I think lunch is in order!" +
-		   " Let's head to the NASA Psyche diner!";
+		   " Let's head to the NASA Psyche diner!" +
+		   " Performance Rating: " + global.jumpResults;
 
 // Define text bounds **relative to object position**
 var x_start = x;  // Start at the object's X position
