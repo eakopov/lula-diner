@@ -1,6 +1,6 @@
 {
   "$GMFont":"",
-  "%Name":"Select2",
+  "%Name":"Title2_room_select",
   "AntiAlias":1,
   "applyKerning":0,
   "ascender":25,
@@ -206,7 +206,7 @@
   "last":0,
   "lineHeight":31,
   "maintainGms1Font":false,
-  "name":"Select2",
+  "name":"Title2_room_select",
   "parent":{
     "name":"Fonts",
     "path":"folders/Fonts.yy",
@@ -216,7 +216,7 @@
     {"lower":32,"upper":127,},
     {"lower":9647,"upper":9647,},
   ],
-  "regenerateBitmap":false,
+  "regenerateBitmap":true,
   "resourceType":"GMFont",
   "resourceVersion":"2.0",
   "sampleText":"abcdef ABCDEF\n0123456789 .,<>\"'&!?\nthe quick brown fox jumps over the lazy dog\nTHE QUICK BROWN FOX JUMPS OVER THE LAZY DOG\nDefault character: ▯ (9647)",

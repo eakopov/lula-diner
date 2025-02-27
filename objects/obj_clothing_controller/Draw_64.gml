@@ -45,7 +45,9 @@ if (obj_clothing_controller.ready_for_results_1) {
     var _y = gui_height / 4; // Move text up slightly so Lula is visible below
 
     // Display player's total points
-    draw_text_ext(_x, _y, "Congratulations!  You completed Dress for Success!\n You finished with " + string(global.PointsCounter) + " points!", 20, gui_width - 40);
+    draw_text_ext(_x, _y, "Congratulations!  You completed Dress for Success!\n You finished with a grade of " + global.clothingResult,20, gui_width - 40);
+
+	// string(/*obj_clothing_controller.clothing_points) + " points!*/ )
 
     // ======================
     // Draw Lula (Mirrored)
@@ -78,24 +80,24 @@ if (obj_clothing_controller.ready_for_results_1) {
     switch (obj_clothing_controller.number_professional) {
         case 0:
             ending_text = "Oh, no! You are unprofessionally dressed! Your pitch fails!";
-            points_to_add = 0;
+           
             break;
         case 1:
             ending_text = "You are still learning about professionalism in fashion, but you're not there yet! The board is skeptical, but you might get approved for the next round of funding!";
-            points_to_add = 10;
+           
             break;
         case 2:
             ending_text = "Looking professional! Your pitch is approved!";
-            points_to_add = 20;
+           
             break;
         case 3:
             ending_text = "Your professional attire has deeply impressed the board! Not only do they approve your pitch for funding a mission to Psyche, they award you an extra 10 million LlamaDollars! Congrats!";
-            points_to_add = 100;
+            
             break;
     }
 
     // Add points
-   addPoints(points_to_add);
+  
 
     // Display the ending text under Lula
     draw_text_ext(draw_x, draw_y + 150, ending_text, 20, gui_width - 40);
@@ -120,7 +122,7 @@ if (obj_clothing_controller.ready_for_results_2) {
     var _y = gui_height / 4; // Move text up slightly so Lula is visible below
 
     // Display player's total points
-    draw_text_ext(_x, _y, "Congratulations!  You completed Dress for Success!\n You finished with " + string(global.PointsCounter) + " points!", 20, gui_width - 40);
+     draw_text_ext(_x, _y, "Congratulations!  You completed Dress for Success!\n You finished with a grade of " + global.clothingResult,20, gui_width - 40);
 
     // ======================
     // Draw Lula (Mirrored)

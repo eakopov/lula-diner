@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"lula_v_0_1",
-    "path":"lula_v_0_1.yyp",
+    "name":"Intro",
+    "path":"folders/Sprites/Intro.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

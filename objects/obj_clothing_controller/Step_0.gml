@@ -24,6 +24,11 @@ if (obj_clothing_controller.ready_for_results_2) {
     if (obj_clothing_controller.wait_timer > 0) {
         obj_clothing_controller.wait_timer--; // Countdown each frame
     } else {
+		
+		if (global.mode == "story") {
         room_goto_next(); // Only go to the next room when timer hits 0
+		}
+		
+		else room_goto(room_intro);
     }
 }
