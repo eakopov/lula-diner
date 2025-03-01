@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Story_Mode",
-    "path":"sprites/Story_Mode/Story_Mode.yy",
+    "name":"Mini_games",
+    "path":"sprites/Mini_games/Mini_games.yy",
   },
   "spriteMaskId":null,
   "visible":true,

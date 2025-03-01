@@ -1,1 +1,2 @@
-room_goto(room_mini);
+global.mode = "story";
+room_goto(room_start);
