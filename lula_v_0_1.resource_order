@@ -1,4 +1,6 @@
 {
-  "FolderOrderSettings":[],
+  "FolderOrderSettings":[
+    {"name":"Scenes","order":1,"path":"folders/Sprites/clothing_game/Scenes.yy",},
+  ],
   "ResourceOrderSettings":[],
 }
