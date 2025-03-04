@@ -1,5 +1,5 @@
 // Calculate the color transition based on time left
-var time_percentage = global.jump_timer / (500 * room_speed); // Normalize from 1 (full time) to 0 (no time)
+var time_percentage = global.jump_timer / (200 * room_speed); // Normalize from 1 (full time) to 0 (no time)
 var timer_color = make_color_rgb(255 * (1 - time_percentage), 255 * time_percentage, 0); // Green to Red
 
 // Calculate time left in seconds

@@ -416,6 +416,8 @@
     {"id":{"name":"snd_background_music","path":"sounds/snd_background_music/snd_background_music.yy",},},
     {"id":{"name":"snd_correct","path":"sounds/snd_correct/snd_correct.yy",},},
     {"id":{"name":"snd_wrong","path":"sounds/snd_wrong/snd_wrong.yy",},},
+    {"id":{"name":"time_warning_music","path":"sounds/time_warning_music/time_warning_music.yy",},},
+    {"id":{"name":"time_warning_sound","path":"sounds/time_warning_sound/time_warning_sound.yy",},},
     {"id":{"name":"background_desert","path":"sprites/background_desert/background_desert.yy",},},
     {"id":{"name":"BackgroundSprite","path":"sprites/BackgroundSprite/BackgroundSprite.yy",},},
     {"id":{"name":"bigBoost","path":"sprites/bigBoost/bigBoost.yy",},},

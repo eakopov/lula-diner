@@ -18,6 +18,10 @@ if (keyboard_check_pressed(vk_space))
     global.bonusmusic_id = -1;
 	audio_stop_sound(global.jumpmusic_id);
     global.jumpmusic_id = -1;
+	
+    audio_stop_sound(global.time_warning_music_id);
+	global.time_warning_music_id = -1;
+
     room_goto_next()
 }
 

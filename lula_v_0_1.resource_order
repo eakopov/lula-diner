@@ -1,4 +1,7 @@
 {
   "FolderOrderSettings":[],
-  "ResourceOrderSettings":[],
+  "ResourceOrderSettings":[
+    {"name":"time_warning_music","order":2,"path":"sounds/time_warning_music/time_warning_music.yy",},
+    {"name":"time_warning_sound","order":1,"path":"sounds/time_warning_sound/time_warning_sound.yy",},
+  ],
 }
