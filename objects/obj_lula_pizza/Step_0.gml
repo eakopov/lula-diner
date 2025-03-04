@@ -122,17 +122,39 @@ if (current_action == "deliver_tool") {
 
         // Deliver tool if valid
         if (instance_exists(customer) && instance_exists(tool)) {
-            show_debug_message("Lula delivering tool to customer.");
-            tool.customer_id = customer.id;
-
-            // Deliver tool
-            tool.attached_to_lula = false;
-            tool.tool_delivery_ready = true;
-            customer.ready_to_eat = true;
+            switch (customer.object_index) {
+                    case obj_bell:
+                        matching = (tool.object_index == obj_multispectral);
+                        break;
+                    case obj_lawrence:
+                        matching = (tool.object_index == obj_neutron || tool.object_index == obj_gamma);
+                        break;
+                    case obj_brauer:
+                        matching = (tool.object_index == obj_magnetrometer);
+                        break;
+                    case obj_zuber:
+                        matching = (tool.object_index == obj_DSOC || tool.object_index == obj_radio);
+                        break;
+                    default:
+                        show_debug_message("Wrong object index indicated");
+                        break;
+            }
             
-            // Clear the selected tool
-            obj_controller.selected_tool = noone;
-            instance_destroy(tool);
+            if (matching) {
+                show_debug_message("Lula delivering tool to customer.");
+                tool.customer_id = customer.id;
+    
+                // Deliver tool
+                tool.attached_to_lula = false;
+                tool.tool_delivery_ready = true;
+                customer.ready_to_eat = true;
+                
+                // Clear the selected tool
+                obj_controller.selected_tool = noone;
+                instance_destroy(tool);
+            } else {
+                show_debug_message("Lula did NOT deliver the tool to the right customer.");
+            }
         }
         
         current_action = "idle";
