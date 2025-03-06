@@ -1,6 +1,20 @@
 {
   "FolderOrderSettings":[],
   "ResourceOrderSettings":[
+    {"name":"Logo_no_bk","order":2,"path":"sprites/Logo_no_bk/Logo_no_bk.yy",},
     {"name":"Logo","order":1,"path":"sprites/Logo/Logo.yy",},
+    {"name":"luna_inspire_cartoon144","order":13,"path":"sprites/luna_inspire_cartoon144/luna_inspire_cartoon144.yy",},
+    {"name":"Spr_Correct","order":1,"path":"sprites/Spr_Correct/Spr_Correct.yy",},
+    {"name":"spr_gamma_ray_spectrometer","order":4,"path":"sprites/spr_gamma_ray_spectrometer/spr_gamma_ray_spectrometer.yy",},
+    {"name":"spr_imaging_system","order":5,"path":"sprites/spr_imaging_system/spr_imaging_system.yy",},
+    {"name":"spr_leaderboard_bg","order":12,"path":"sprites/spr_leaderboard_bg/spr_leaderboard_bg.yy",},
+    {"name":"spr_magnetometer","order":8,"path":"sprites/spr_magnetometer/spr_magnetometer.yy",},
+    {"name":"Spr_Wrong","order":2,"path":"sprites/Spr_Wrong/Spr_Wrong.yy",},
+    {"name":"Sprite_quiz_frame","order":11,"path":"sprites/Sprite_quiz_frame/Sprite_quiz_frame.yy",},
+    {"name":"Sprite_scientist_1","order":10,"path":"sprites/Sprite_scientist_1/Sprite_scientist_1.yy",},
+    {"name":"Sprite_scientist_2","order":6,"path":"sprites/Sprite_scientist_2/Sprite_scientist_2.yy",},
+    {"name":"Sprite_scientist_3","order":7,"path":"sprites/Sprite_scientist_3/Sprite_scientist_3.yy",},
+    {"name":"Sprite_scientist_5","order":9,"path":"sprites/Sprite_scientist_5/Sprite_scientist_5.yy",},
+    {"name":"Sprite_scientist_6","order":3,"path":"sprites/Sprite_scientist_6/Sprite_scientist_6.yy",},
   ],
 }
