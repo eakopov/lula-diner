@@ -1,4 +1,6 @@
 {
   "FolderOrderSettings":[],
-  "ResourceOrderSettings":[],
+  "ResourceOrderSettings":[
+    {"name":"Logo","order":1,"path":"sprites/Logo/Logo.yy",},
+  ],
 }

@@ -431,6 +431,7 @@
     {"id":{"name":"Left_Note","path":"sprites/Left_Note/Left_Note.yy",},},
     {"id":{"name":"Left_User","path":"sprites/Left_User/Left_User.yy",},},
     {"id":{"name":"LeftNote","path":"sprites/LeftNote/LeftNote.yy",},},
+    {"id":{"name":"Logo","path":"sprites/Logo/Logo.yy",},},
     {"id":{"name":"lose_screen_ryth","path":"sprites/lose_screen_ryth/lose_screen_ryth.yy",},},
     {"id":{"name":"luna_confuse_cartoon","path":"sprites/luna_confuse_cartoon/luna_confuse_cartoon.yy",},},
     {"id":{"name":"luna_excite_cartoon","path":"sprites/luna_excite_cartoon/luna_excite_cartoon.yy",},},
