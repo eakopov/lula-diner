@@ -2,5 +2,7 @@
   "FolderOrderSettings":[
     {"name":"Scenes","order":1,"path":"folders/Sprites/clothing_game/Scenes.yy",},
   ],
-  "ResourceOrderSettings":[],
+  "ResourceOrderSettings":[
+    {"name":"snd_design_for_dreaming_lo_fi_astronaut","order":1,"path":"sounds/snd_design_for_dreaming_lo_fi_astronaut/snd_design_for_dreaming_lo_fi_astronaut.yy",},
+  ],
 }
