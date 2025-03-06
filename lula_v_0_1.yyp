@@ -189,6 +189,8 @@
     {"id":{"name":"obj_inventory_top","path":"objects/obj_inventory_top/obj_inventory_top.yy",},},
     {"id":{"name":"obj_jump_checkbox","path":"objects/obj_jump_checkbox/obj_jump_checkbox.yy",},},
     {"id":{"name":"obj_jump_fade","path":"objects/obj_jump_fade/obj_jump_fade.yy",},},
+    {"id":{"name":"obj_jump_intro_arrow","path":"objects/obj_jump_intro_arrow/obj_jump_intro_arrow.yy",},},
+    {"id":{"name":"obj_jump_intro_banner","path":"objects/obj_jump_intro_banner/obj_jump_intro_banner.yy",},},
     {"id":{"name":"obj_jump_intro_manager","path":"objects/obj_jump_intro_manager/obj_jump_intro_manager.yy",},},
     {"id":{"name":"obj_jump_outro_manager","path":"objects/obj_jump_outro_manager/obj_jump_outro_manager.yy",},},
     {"id":{"name":"obj_lawrence","path":"objects/obj_lawrence/obj_lawrence.yy",},},
