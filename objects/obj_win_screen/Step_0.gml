@@ -7,7 +7,7 @@ if (keyboard_check_pressed(ord("P")))
     global.bonus_question_index = 0;
 	global.current_text_index = 0
 	global.leftOverTimeScore = 0;
-    global.jumpmusic_id = audio_play_sound(jump_minigame_music, 1, true); // Holds the audio index for the jump music
+    //global.jumpmusic_id = audio_play_sound(jump_minigame_music, 1, true); // Holds the audio index for the jump music
 	
     with (obj_jump_fade) {
         fading_out = true;

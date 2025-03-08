@@ -4,6 +4,7 @@ if (fading_out) {
     if (image_alpha >= 1) {
         image_alpha = 1; // Ensure it's fully black
         global.fading_in = true; // Set BEFORE restarting
+		global.jumpmusic_id = audio_play_sound(jump_minigame_music, 1, true); // Holds the audio index for the jump music
         room_restart(); // Restart the room
     }
 }
