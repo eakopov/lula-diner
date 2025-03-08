@@ -1,6 +1,9 @@
 {
   "FolderOrderSettings":[],
   "ResourceOrderSettings":[
+    {"name":"Back_Ground","order":4,"path":"sprites/Back_Ground/Back_Ground.yy",},
+    {"name":"Back_Ground2","order":5,"path":"sprites/Back_Ground2/Back_Ground2.yy",},
+    {"name":"background","order":3,"path":"sprites/background/background.yy",},
     {"name":"Logo_no_bk","order":2,"path":"sprites/Logo_no_bk/Logo_no_bk.yy",},
     {"name":"Logo","order":1,"path":"sprites/Logo/Logo.yy",},
     {"name":"luna_inspire_cartoon144","order":13,"path":"sprites/luna_inspire_cartoon144/luna_inspire_cartoon144.yy",},

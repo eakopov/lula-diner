@@ -416,7 +416,10 @@
     {"id":{"name":"snd_background_music","path":"sounds/snd_background_music/snd_background_music.yy",},},
     {"id":{"name":"snd_correct","path":"sounds/snd_correct/snd_correct.yy",},},
     {"id":{"name":"snd_wrong","path":"sounds/snd_wrong/snd_wrong.yy",},},
+    {"id":{"name":"Back_Ground","path":"sprites/Back_Ground/Back_Ground.yy",},},
+    {"id":{"name":"Back_Ground2","path":"sprites/Back_Ground2/Back_Ground2.yy",},},
     {"id":{"name":"background_desert","path":"sprites/background_desert/background_desert.yy",},},
+    {"id":{"name":"background","path":"sprites/background/background.yy",},},
     {"id":{"name":"BackgroundSprite","path":"sprites/BackgroundSprite/BackgroundSprite.yy",},},
     {"id":{"name":"bigBoost","path":"sprites/bigBoost/bigBoost.yy",},},
     {"id":{"name":"continueButton","path":"sprites/continueButton/continueButton.yy",},},
@@ -571,6 +574,7 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"room_select_scientist","path":"rooms/room_select_scientist/room_select_scientist.yy",},},
     {"roomId":{"name":"room_intro","path":"rooms/room_intro/room_intro.yy",},},
     {"roomId":{"name":"room_mini","path":"rooms/room_mini/room_mini.yy",},},
     {"roomId":{"name":"room_start","path":"rooms/room_start/room_start.yy",},},
@@ -587,7 +591,6 @@
     {"roomId":{"name":"room_rhythm_end","path":"rooms/room_rhythm_end/room_rhythm_end.yy",},},
     {"roomId":{"name":"room_ending","path":"rooms/room_ending/room_ending.yy",},},
     {"roomId":{"name":"room_credits","path":"rooms/room_credits/room_credits.yy",},},
-    {"roomId":{"name":"room_select_scientist","path":"rooms/room_select_scientist/room_select_scientist.yy",},},
   ],
   "templateType":null,
   "TextureGroups":[
