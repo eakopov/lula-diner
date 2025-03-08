@@ -219,6 +219,7 @@
     {"name":"spr_spinach_pizza","order":3,"path":"sprites/spr_spinach_pizza/spr_spinach_pizza.yy",},
     {"name":"spr_text_display_start","order":6,"path":"sprites/spr_text_display_start/spr_text_display_start.yy",},
     {"name":"spr_thought_bubble","order":1,"path":"sprites/spr_thought_bubble/spr_thought_bubble.yy",},
+    {"name":"spr_transition_scene","order":1,"path":"sprites/spr_transition_scene/spr_transition_scene.yy",},
     {"name":"sprite_blk_bkground","order":1,"path":"sprites/sprite_blk_bkground/sprite_blk_bkground.yy",},
   ],
 }

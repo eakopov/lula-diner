@@ -543,6 +543,7 @@
     {"id":{"name":"spr_table","path":"sprites/spr_table/spr_table.yy",},},
     {"id":{"name":"spr_text_display_start","path":"sprites/spr_text_display_start/spr_text_display_start.yy",},},
     {"id":{"name":"spr_thought_bubble","path":"sprites/spr_thought_bubble/spr_thought_bubble.yy",},},
+    {"id":{"name":"spr_transition_scene","path":"sprites/spr_transition_scene/spr_transition_scene.yy",},},
     {"id":{"name":"spr_Welcome_To","path":"sprites/spr_Welcome_To/spr_Welcome_To.yy",},},
     {"id":{"name":"Spr_Wrong","path":"sprites/Spr_Wrong/Spr_Wrong.yy",},},
     {"id":{"name":"sprite_blk_bkground","path":"sprites/sprite_blk_bkground/sprite_blk_bkground.yy",},},
