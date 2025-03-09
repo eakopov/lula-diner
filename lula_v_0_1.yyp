@@ -434,6 +434,7 @@
     {"id":{"name":"Left_Note","path":"sprites/Left_Note/Left_Note.yy",},},
     {"id":{"name":"Left_User","path":"sprites/Left_User/Left_User.yy",},},
     {"id":{"name":"LeftNote","path":"sprites/LeftNote/LeftNote.yy",},},
+    {"id":{"name":"logo_artwork","path":"sprites/logo_artwork/logo_artwork.yy",},},
     {"id":{"name":"Logo_no_bk","path":"sprites/Logo_no_bk/Logo_no_bk.yy",},},
     {"id":{"name":"Logo","path":"sprites/Logo/Logo.yy",},},
     {"id":{"name":"lose_screen_ryth","path":"sprites/lose_screen_ryth/lose_screen_ryth.yy",},},
