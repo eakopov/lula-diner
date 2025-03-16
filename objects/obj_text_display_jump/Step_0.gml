@@ -22,8 +22,12 @@ if (keyboard_check_pressed(vk_space))
     audio_stop_sound(global.time_warning_music_id);
 	global.time_warning_music_id = -1;
 
-    room_goto_next()
-}
+    if(global.mode == "story"){
+		 room_goto_next();
+	} else { 
+		 room_goto(room_intro);
+	}
+} 
 
 // If a question is in progress (in the bonus round)
 if (global.question_in_progress) {

@@ -45,7 +45,7 @@ if (global.jump_timer <= 0)
 var time_left = global.jump_timer / room_speed;
 
 // **Trigger warning music at exactly 100 seconds remaining**
-if (time_left == 100 && !global.time_warning_triggered) { 
+if (time_left <= 100 && !global.time_warning_triggered) { 
     // Stop all current music
     audio_stop_sound(global.jumpmusic_id);
     audio_stop_sound(global.bonusmusic_id);
@@ -53,7 +53,7 @@ if (time_left == 100 && !global.time_warning_triggered) {
     global.bonusmusic_id = -1;
 
     // Play warning sound (only once)
-    audio_play_sound(time_warning_sound, 1, false);
+    audio_play_sound(time_warning_sound, 1, true);
 
     // Start the warning music
     global.time_warning_music_id = audio_play_sound(time_warning_music, 1, true);
