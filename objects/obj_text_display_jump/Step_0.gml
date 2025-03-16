@@ -18,9 +18,17 @@ if (keyboard_check_pressed(vk_space))
     global.bonusmusic_id = -1;
 	audio_stop_sound(global.jumpmusic_id);
     global.jumpmusic_id = -1;
-	
     audio_stop_sound(global.time_warning_music_id);
 	global.time_warning_music_id = -1;
+	
+    global.jump_score = 0;
+    global.jump_timer = 200 * room_speed; // 200 seconds (in steps)
+
+    global.bonus_question_index = 0;
+	global.current_text_index = 0
+	global.leftOverTimeScore = 0;
+	global.time_warning_triggered = false;
+	global.jumpmusic_Began = false;
 
     if(global.mode == "story"){
 		 room_goto_next();
@@ -84,3 +92,4 @@ if (global.question_in_progress) {
 if (global.jump_timer <= 0) {
   audio_stop_sound(global.bonusmusic_id);
 }
+

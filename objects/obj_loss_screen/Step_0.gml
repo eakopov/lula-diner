@@ -9,6 +9,7 @@ if (keyboard_check_pressed(ord("P")))
 	global.leftOverTimeScore = 0;
 	global.time_warning_triggered = false;
 	global.time_warning_music_id = -1;
+	global.jumpmusic_Began = false;
 	
     with (obj_jump_fade) {
         fading_out = true;
