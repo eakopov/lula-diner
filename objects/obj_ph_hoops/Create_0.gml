@@ -18,3 +18,8 @@ if (movement_type == "horizontal") {
     y_direction = choose(-1, 1); // -1 for up, 1 for down
     x_direction = 0;              // No horizontal movement
 }
+
+active_fade = false; // Tracks if the hoop should start fading
+collected = false;  // Hoop is initially collectible
+fade_speed = 0.05;   // How fast the hoop fades out
+shrink_speed = 0.05; // How fast the hoop shrinks

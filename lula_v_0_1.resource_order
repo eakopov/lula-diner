@@ -1,6 +1,11 @@
 {
   "FolderOrderSettings":[],
   "ResourceOrderSettings":[
+    {"name":"obj_jump_fade","order":1,"path":"objects/obj_jump_fade/obj_jump_fade.yy",},
+    {"name":"obj_jump_intro_arrow","order":3,"path":"objects/obj_jump_intro_arrow/obj_jump_intro_arrow.yy",},
+    {"name":"obj_jump_intro_banner","order":2,"path":"objects/obj_jump_intro_banner/obj_jump_intro_banner.yy",},
+    {"name":"time_warning_music","order":2,"path":"sounds/time_warning_music/time_warning_music.yy",},
+    {"name":"time_warning_sound","order":1,"path":"sounds/time_warning_sound/time_warning_sound.yy",},
     {"name":"logo_artwork","order":20,"path":"sprites/logo_artwork/logo_artwork.yy",},
     {"name":"luna_anger_cartoon","order":8,"path":"sprites/luna_anger_cartoon/luna_anger_cartoon.yy",},
     {"name":"luna_annoy_cartoon","order":9,"path":"sprites/luna_annoy_cartoon/luna_annoy_cartoon.yy",},
