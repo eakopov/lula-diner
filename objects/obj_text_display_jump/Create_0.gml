@@ -168,7 +168,14 @@ if (!variable_global_exists("jumpmusic_id")) {
     global.jumpmusic_id = audio_play_sound(jump_minigame_music, 1, true); // Holds the audio index for the jump music
 }
 
+if (!variable_global_exists("jumpmusic_Began")) {
+    global.jumpmusic_Began = true;
+}
 
+if(global.mode == "mini" && global.jumpmusic_Began == false){
+  global.jumpmusic_id = audio_play_sound(jump_minigame_music, 1, true); // Holds the audio index for the jump music
+  global.jumpmusic_Began = true;
+}
 
 
 
