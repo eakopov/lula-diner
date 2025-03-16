@@ -53,7 +53,7 @@ if (time_left <= 100 && !global.time_warning_triggered) {
     global.bonusmusic_id = -1;
 
     // Play warning sound (only once)
-    audio_play_sound(time_warning_sound, 1, true);
+    audio_play_sound(time_warning_sound, 1, false);
 
     // Start the warning music
     global.time_warning_music_id = audio_play_sound(time_warning_music, 1, true);

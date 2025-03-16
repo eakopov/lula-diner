@@ -7,6 +7,9 @@ if (keyboard_check_pressed(ord("P")))
     global.bonus_question_index = 0;
 	global.current_text_index = 0
 	global.leftOverTimeScore = 0;
+	global.time_warning_triggered = false;
+	global.time_warning_triggered = false;
+	global.time_warning_music_id = -1;
     //global.jumpmusic_id = audio_play_sound(jump_minigame_music, 1, true); // Holds the audio index for the jump music
 	
     with (obj_jump_fade) {
@@ -38,6 +41,8 @@ if (keyboard_check_pressed(ord("C")))
     global.bonus_question_index = 0;
 	global.current_text_index = 0
 	global.leftOverTimeScore = 0;
+    global.time_warning_triggered = false;
+	global.time_warning_music_id = -1;
 	
 	if(global.mode == "story"){
 		 room_goto_next();  // Go to the next room
