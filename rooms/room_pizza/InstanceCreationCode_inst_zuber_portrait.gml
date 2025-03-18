@@ -1,4 +1,4 @@
 instance_name = "inst_zuber_portrait";
 scientist_name = "Maria Zuber";
-description = "The lead of the gravity science investigation team, implementing the X-band radio telecommunications system and the Deep Space Optical Communication technology to communicate between a probe in space and Earth.";
+description = "Leads the team that will harness the telecommunications system, used to send commands to and receive data from the spacecraft, to conduct gravity science.";
 tools = [spr_DSOC, spr_radio];

@@ -1,4 +1,4 @@
 instance_name = "inst_brauer_portrait";
-scientist_name = "Peter Brauer";
-description = "The Psyche Magnetometer Sensor Lead at the Technical University of Denmark, overseeing the distribution and functionality of the Magnetometer tool being used for the Psyche mission.";
+scientist_name = "Ben Weiss";
+description = "Leads the team that will use Psyche’s magnetometer to look for evidence of an ancient magnetic field at the asteroid Psyche.";
 tools = [spr_magnetrometer];
