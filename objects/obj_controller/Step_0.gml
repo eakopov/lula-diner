@@ -49,7 +49,7 @@ if (spawn_timer >= spawn_interval && !customer_waiting) {
 		instance_create_layer(13, 384, "Instances", obj_sign_closed);
 	} else {
 		// Randomly select a scientist object
-    var scientist_types = [obj_bell, obj_brauer, obj_lawrence, obj_zuber];
+    var scientist_types = [obj_bell, obj_weiss, obj_lawrence, obj_zuber];
 	randomize();
 	var index = irandom(3);
     var selected_scientist = scientist_types[index];
