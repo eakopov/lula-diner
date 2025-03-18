@@ -1,4 +1,4 @@
-// Draw the sprite of the object (if applicable)
+// Draw the sprite of the object
 draw_self();
 
 draw_set_halign(fa_center);
@@ -7,19 +7,18 @@ draw_set_halign(fa_center);
 draw_set_color(c_black);
 
 // Define text content
-var text = "Your pitch went off without a hitch!" + 
-           " You jumped through those hoops like a pro!" +
-		   " After a well done pitch to NASA, I think lunch is in order!" +
-		   " Let's head to the NASA Psyche diner!" +
-		   " Performance Rating: " + global.jumpResults;
+var text = "Your pitch went off without a hitch! " + 
+           "You jumped through those hoops like a pro! " +
+           "After a well-done pitch to NASA, I think lunch is in order! " +
+           "Let's head to the NASA Psyche diner!";
 
 // Define text bounds **relative to object position**
 var x_start = x;  // Start at the object's X position
-var x_end = x + 400;  // Maximum width
+var max_width = 410;  // Maximum width for wrapping
 var y_start = y;  // Start at the object's Y position
-var line_height = 20; // Vertical spacing between lines
+var line_height = 24; 
 
-// Function to wrap text at the given max width
+// **Function to wrap text properly**
 function string_wrap(_text, _max_width) {
     var words = string_split(_text, " "); // Split text into words
     var lines = []; // Store wrapped lines
@@ -27,6 +26,8 @@ function string_wrap(_text, _max_width) {
 
     for (var i = 0; i < array_length(words); i++) {
         var word = words[i];
+
+        // If adding the word exceeds max width, start a new line
         if (string_width(current_line + " " + word) > _max_width) {
             array_push(lines, current_line); // Save current line
             current_line = word; // Start new line
@@ -42,13 +43,23 @@ function string_wrap(_text, _max_width) {
     return lines;
 }
 
-// Wrap the text into multiple lines
-var lines = string_wrap(text, x_end - x_start);
+// **Wrap the text into multiple lines**
+var lines = string_wrap(text, max_width);
 
-// Draw each wrapped line relative to the object's position
+// **Draw each wrapped line relative to the object's position**
 for (var i = 0; i < array_length(lines); i++) {
     draw_text(x_start, y_start + (i * line_height), lines[i]);
 }
 
-// Display message to instruct the user to press C to continue
-draw_text(x_start, y_start + (array_length(lines) * line_height) + 10, "(Press C to continue)");
+// **Draw Performance Rating on a separate line below wrapped text**
+draw_text(x_start, y_start + (array_length(lines) * line_height) + 30, "Performance Rating: " + global.jumpResults);
+
+draw_set_color(c_yellow);
+// **Draw New Best Score if applicable**
+if (global.new_best_score) {
+    draw_text(x_start, y_start + (array_length(lines) * line_height) + 60, "New Best Score!");
+}
+
+draw_set_color(c_black);
+// **Additional Spacing for the "Press C to Continue" text**
+draw_text(x_start, y_start + (array_length(lines) * line_height) + 90, "(Press C to continue)");

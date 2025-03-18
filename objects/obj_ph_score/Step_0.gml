@@ -30,6 +30,11 @@ if (global.jump_timer <= 0)
 	
 	audio_stop_sound(global.time_warning_music_id);
 	global.time_warning_music_id = -1;
+	
+    if(global.jump_score > global.best_jump_score){
+	   global.best_jump_score = global.jump_score;
+	   global.new_best_score = true;
+	}
 
     if (global.jump_score >= 1050)
     {
