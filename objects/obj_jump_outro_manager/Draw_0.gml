@@ -54,7 +54,7 @@ for (var i = 0; i < array_length(lines); i++) {
 // **Draw Performance Rating on a separate line below wrapped text**
 draw_text(x_start, y_start + (array_length(lines) * line_height) + 30, "Performance Rating: " + global.jumpResults);
 
-draw_set_color(c_yellow);
+draw_set_color(c_blue);
 // **Draw New Best Score if applicable**
 if (global.new_best_score) {
     draw_text(x_start, y_start + (array_length(lines) * line_height) + 60, "New Best Score!");
