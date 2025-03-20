@@ -3,8 +3,8 @@ draw_self();
 
 draw_set_halign(fa_center);
 
-// Set the text color to black
-draw_set_color(c_black);
+// Set the text color t
+draw_set_color(c_blue);
 
 // Define text content
 var text = "Your pitch went off without a hitch! " + 
@@ -60,6 +60,6 @@ if (global.new_best_score) {
     draw_text(x_start, y_start + (array_length(lines) * line_height) + 60, "New Best Score!");
 }
 
-draw_set_color(c_black);
+draw_set_color(c_blue);
 // **Additional Spacing for the "Press C to Continue" text**
 draw_text(x_start, y_start + (array_length(lines) * line_height) + 90, "(Press C to continue)");
