@@ -1,4 +1,33 @@
-if (!clicked) {
+draw_set_color(c_white);
+draw_set_font(fnt_pizza_room);
+draw_set_halign(fa_center);
+draw_set_valign(fa_middle);
+
+var text_x = room_width / 2;
+var text_y = room_height - 40;
+
+if (!transition_done) {
+    var transition_text = "";
+
+    switch (transition_slide) {
+        case 1:
+            transition_text = "After all the hoop jumping, I know I sure am hungry!";
+            break;
+        case 2:
+            transition_text = "Let's go to the cafeteria and see what's on the menu...";
+            break;
+        case 3:
+            transition_text = "Oh, wow! The cafeteria is packed with hungry scientists...";
+            break;
+        case 4:
+            transition_text = "Let's help the scientists out!";
+            break;
+    }
+
+    draw_text(text_x, text_y, transition_text);
+}
+
+if (!clicked && transition_done) {
     // Set Background Color
     draw_set_color(c_white);
     draw_rectangle(0, 0, room_width, room_height, false);
