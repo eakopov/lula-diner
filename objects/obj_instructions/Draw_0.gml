@@ -27,7 +27,7 @@ if (!transition_done) {
     draw_text(text_x, text_y, transition_text);
 }
 
-if (!clicked && transition_done) {
+if (!global.clicked && transition_done) {
     // Set Background Color
     draw_set_color(c_white);
     draw_rectangle(0, 0, room_width, room_height, false);

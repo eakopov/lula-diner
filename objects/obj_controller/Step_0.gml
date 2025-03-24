@@ -28,7 +28,10 @@ if (global.gamepaused) {
 		instance_activate_object(inst_36958C6C); //obj_chef
 	}
 	// Increment the spawn timer
-spawn_timer += 1;
+if(obj_instructions.transition_done) {
+    spawn_timer += 1;
+}
+    
 
 // Check if any customer is near the carpet area
 var customer_waiting = false;  // Initialize as false
@@ -46,7 +49,7 @@ if (spawn_timer >= spawn_interval && !customer_waiting) {
 	if (customers_remaining == 0) {
 		game_over = true;
 	} else if (spawn_counter == 5) {
-		instance_create_layer(13, 384, "Instances", obj_sign_closed);
+		instance_create_layer(80, 400, "Instances", obj_sign_closed);
 	} else {
 		// Randomly select a scientist object
     var scientist_types = [obj_bell, obj_weiss, obj_lawrence, obj_zuber];
@@ -56,7 +59,7 @@ if (spawn_timer >= spawn_interval && !customer_waiting) {
     
     // Create the scientist instance
     var customer = instance_create_layer(0, 476, "Instances", selected_scientist);
-
+    show_debug_message("Number of customers spawned: " + string(spawn_counter));
     // Initialize the customer
     scr_init_customer(customer);
 

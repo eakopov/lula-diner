@@ -3,10 +3,9 @@ if (!transition_done) {
     instance_deactivate_object(inst_54E540F5); //obj_lula_pizza 
     instance_deactivate_object(inst_36958C6C); //obj_chef
     instance_deactivate_object(counter);
-    for(var i = 0; i <= 6; i++) {
-        var plate = "plate_" + string(i);
-        instance_deactivate_object(asset_get_index(plate));
-    }
+    instance_deactivate_object(obj_plate);
+    instance_deactivate_object(obj_customer);
+    instance_deactivate_object(obj_sign_closed);
     if (mouse_check_button_pressed(mb_left) || keyboard_check_pressed(vk_space)) {
         transition_slide += 1;
 
@@ -16,7 +15,13 @@ if (!transition_done) {
         }
     }
 } else {
-    if (!clicked && (mouse_check_button_pressed(mb_left) || keyboard_check_pressed(vk_space))) {
-        clicked = true;
+    if (!global.clicked && (mouse_check_button_pressed(mb_left) || keyboard_check_pressed(vk_space))) {
+        global.clicked = true;
+        instance_activate_object(inst_54E540F5); //obj_lula_pizza 
+        instance_activate_object(inst_36958C6C); //obj_chef
+        instance_activate_object(counter);
+        instance_activate_object(obj_plate);
+        //instance_activate_object(obj_customer);
+        instance_activate_object(obj_sign_closed);
     }
 }
