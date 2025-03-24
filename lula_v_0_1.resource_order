@@ -4,6 +4,8 @@
     {"name":"obj_jump_fade","order":1,"path":"objects/obj_jump_fade/obj_jump_fade.yy",},
     {"name":"obj_jump_intro_arrow","order":3,"path":"objects/obj_jump_intro_arrow/obj_jump_intro_arrow.yy",},
     {"name":"obj_jump_intro_banner","order":2,"path":"objects/obj_jump_intro_banner/obj_jump_intro_banner.yy",},
+    {"name":"obj_space_debris_manager","order":5,"path":"objects/obj_space_debris_manager/obj_space_debris_manager.yy",},
+    {"name":"obj_space_debris","order":4,"path":"objects/obj_space_debris/obj_space_debris.yy",},
     {"name":"jump_transition_music","order":3,"path":"sounds/jump_transition_music/jump_transition_music.yy",},
     {"name":"time_warning_music","order":2,"path":"sounds/time_warning_music/time_warning_music.yy",},
     {"name":"time_warning_sound","order":1,"path":"sounds/time_warning_sound/time_warning_sound.yy",},
@@ -27,6 +29,7 @@
     {"name":"spr_luna_push","order":5,"path":"sprites/spr_luna_push/spr_luna_push.yy",},
     {"name":"spr_luna_stand2","order":6,"path":"sprites/spr_luna_stand2/spr_luna_stand2.yy",},
     {"name":"spr_luna_Walk","order":11,"path":"sprites/spr_luna_Walk/spr_luna_Walk.yy",},
+    {"name":"spr_space_debris","order":2,"path":"sprites/spr_space_debris/spr_space_debris.yy",},
     {"name":"Transition_Image_Jump","order":1,"path":"sprites/Transition_Image_Jump/Transition_Image_Jump.yy",},
   ],
 }
