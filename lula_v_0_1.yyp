@@ -421,6 +421,7 @@
     {"id":{"name":"RetroFuture_Dirty","path":"sounds/RetroFuture_Dirty/RetroFuture_Dirty.yy",},},
     {"id":{"name":"snd_background_music","path":"sounds/snd_background_music/snd_background_music.yy",},},
     {"id":{"name":"snd_correct","path":"sounds/snd_correct/snd_correct.yy",},},
+    {"id":{"name":"snd_jump_knockback","path":"sounds/snd_jump_knockback/snd_jump_knockback.yy",},},
     {"id":{"name":"snd_wrong","path":"sounds/snd_wrong/snd_wrong.yy",},},
     {"id":{"name":"time_warning_music","path":"sounds/time_warning_music/time_warning_music.yy",},},
     {"id":{"name":"time_warning_sound","path":"sounds/time_warning_sound/time_warning_sound.yy",},},
