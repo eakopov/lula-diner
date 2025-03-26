@@ -537,6 +537,7 @@
     {"id":{"name":"spr_luna_push","path":"sprites/spr_luna_push/spr_luna_push.yy",},},
     {"id":{"name":"spr_luna_stand2","path":"sprites/spr_luna_stand2/spr_luna_stand2.yy",},},
     {"id":{"name":"spr_luna_Walk_1","path":"sprites/spr_luna_Walk_1/spr_luna_Walk_1.yy",},},
+    {"id":{"name":"spr_luna_walk_sad","path":"sprites/spr_luna_walk_sad/spr_luna_walk_sad.yy",},},
     {"id":{"name":"spr_luna_Walk","path":"sprites/spr_luna_Walk/spr_luna_Walk.yy",},},
     {"id":{"name":"spr_magnetometer","path":"sprites/spr_magnetometer/spr_magnetometer.yy",},},
     {"id":{"name":"spr_magnetrometer","path":"sprites/spr_magnetrometer/spr_magnetrometer.yy",},},

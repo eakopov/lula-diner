@@ -11,6 +11,7 @@ if (is_knocked_back) {
 	knockback_ysp *= 0.9;
 
     if (knockback_timer <= 0) {
+		sprite_index = spr_luna_Walk_1;
         is_knocked_back = false;
     }
 
@@ -116,6 +117,9 @@ if place_meeting(x, y, obj_ph_hoops) {
 // COLLISION WITH DEBRIS (KNOCKBACK)
 if (place_meeting(x, y, obj_space_debris)) {
     var debris = instance_place(x, y, obj_space_debris);
+	
+	sprite_index = spr_luna_walk_sad;
+
 
     if (!is_knocked_back) {
         is_knocked_back = true;
