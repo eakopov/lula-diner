@@ -4,6 +4,7 @@
     {"name":"obj_jump_fade","order":1,"path":"objects/obj_jump_fade/obj_jump_fade.yy",},
     {"name":"obj_jump_intro_arrow","order":3,"path":"objects/obj_jump_intro_arrow/obj_jump_intro_arrow.yy",},
     {"name":"obj_jump_intro_banner","order":2,"path":"objects/obj_jump_intro_banner/obj_jump_intro_banner.yy",},
+    {"name":"obj_reverse_message","order":6,"path":"objects/obj_reverse_message/obj_reverse_message.yy",},
     {"name":"obj_space_debris_manager","order":5,"path":"objects/obj_space_debris_manager/obj_space_debris_manager.yy",},
     {"name":"obj_space_debris","order":4,"path":"objects/obj_space_debris/obj_space_debris.yy",},
     {"name":"jump_transition_music","order":3,"path":"sounds/jump_transition_music/jump_transition_music.yy",},

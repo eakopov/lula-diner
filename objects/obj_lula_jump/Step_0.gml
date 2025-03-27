@@ -1,25 +1,23 @@
 // Initialize knockback movement
 if (is_knocked_back) {
-    // Apply knockback motion
     x += knockback_xsp;
     y += knockback_ysp;
-
     knockback_timer -= 1;
 
     // Slow down knockback over time
     knockback_xsp *= 0.9;
-	knockback_ysp *= 0.9;
+    knockback_ysp *= 0.9;
 
     if (knockback_timer <= 0) {
-		sprite_index = spr_luna_Walk_1;
+        sprite_index = spr_luna_Walk_1;
         is_knocked_back = false;
     }
 
-    // Skip rest of movement code while knocked back
+    // Skip movement while knocked back
     return;
 }
 
-// Define movement constants 
+// Define movement constants
 var move_speed = 0.5;
 var max_speed = 4;
 var frictionForJump = 0.2;
@@ -30,17 +28,21 @@ ysp += 0.1;
 // Check if speed boost is active
 var speed_multiplier = (global.speed_boost_active) ? 2 : 1;
 
+// REVERSE CONTROLS LOGIC
+var left_key = (global.controls_reversed) ? vk_right : vk_left;
+var right_key = (global.controls_reversed) ? vk_left : vk_right;
+
 // Horizontal movement
-if keyboard_check(vk_left) || keyboard_check(ord("A")) {
+if keyboard_check(left_key) || keyboard_check(ord("A")) {
     xsp -= move_speed * speed_multiplier;
 }
-if keyboard_check(vk_right) || keyboard_check(ord("D")) {
+if keyboard_check(right_key) || keyboard_check(ord("D")) {
     xsp += move_speed * speed_multiplier;
 }
 
 // Apply friction
-if !(keyboard_check(vk_left) || keyboard_check(ord("A")) ||
-     keyboard_check(vk_right) || keyboard_check(ord("D"))) {
+if !(keyboard_check(left_key) || keyboard_check(ord("A")) ||
+     keyboard_check(right_key) || keyboard_check(ord("D"))) {
     if (xsp > 0) xsp -= frictionForJump;
     if (xsp < 0) xsp += frictionForJump;
     if (abs(xsp) < frictionForJump) xsp = 0;
@@ -114,29 +116,51 @@ if place_meeting(x, y, obj_ph_hoops) {
     }
 }
 
+// COLLISION WITH obj_fail_hoops -> REVERSE CONTROLS
+/*if (place_meeting(x, y, obj_fail_hoops)) {
+    if (!global.controls_reversed) {
+        global.controls_reversed = true;
+        global.reverse_timer = 600; // 10 seconds at 60 FPS
+
+        // Show the reverse message
+        with (obj_reverse_message) {
+            visible = true;
+        }
+    }
+}*/
+
+// Handle reversed controls timer
+if (global.controls_reversed) {
+    global.reverse_timer -= 1;
+    if (global.reverse_timer <= 0) {
+        global.controls_reversed = false;
+        
+        // Hide the reverse message
+        with (obj_reverse_message) {
+            visible = false;
+        }
+    }
+}
+
 // COLLISION WITH DEBRIS (KNOCKBACK)
 if (place_meeting(x, y, obj_space_debris)) {
     var debris = instance_place(x, y, obj_space_debris);
-	
-	sprite_index = spr_luna_walk_sad;
-
+    sprite_index = spr_luna_walk_sad;
 
     if (!is_knocked_back) {
         is_knocked_back = true;
-        knockback_timer = 30; // 0.5 seconds of knockback
+        knockback_timer = 30;
 
         // Determine horizontal direction of knockback
         var dx = x - debris.x;
-        var dir = (dx >= 0) ? 180 : 0; // 180 = left, 0 = right
+        var dir = (dx >= 0) ? 180 : 0;
 
-        knockback_xsp = lengthdir_x(6, dir); // Horizontal push
-        knockback_ysp = -4; // Small upward "hop" — adjust as needed
+        knockback_xsp = lengthdir_x(6, dir);
+        knockback_ysp = -4;
 
         audio_play_sound(snd_jump_knockback, 1, false);
     }
 }
-
-
 
 // POWER-UP TIMERS
 if (global.double_jump_active) {
