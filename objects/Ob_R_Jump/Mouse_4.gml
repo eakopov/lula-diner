@@ -1,1 +1,1 @@
-room_goto(room_jump);
+room_goto(room_jump_intro);
