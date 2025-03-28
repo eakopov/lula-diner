@@ -17,3 +17,7 @@ if (tool_delivery_ready) {
 	x = customer_id.x + 50;
     y = customer_id.y + 10;	
 }
+
+if (draw_on_table) {
+    depth = 10;
+}

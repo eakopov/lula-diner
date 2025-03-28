@@ -6,6 +6,7 @@
     {"name":"obj_jump_fade","order":1,"path":"objects/obj_jump_fade/obj_jump_fade.yy",},
     {"name":"obj_jump_intro_arrow","order":3,"path":"objects/obj_jump_intro_arrow/obj_jump_intro_arrow.yy",},
     {"name":"obj_jump_intro_banner","order":2,"path":"objects/obj_jump_intro_banner/obj_jump_intro_banner.yy",},
+    {"name":"obj_tool_controller","order":2,"path":"objects/obj_tool_controller/obj_tool_controller.yy",},
     {"name":"obj_transition","order":1,"path":"objects/obj_transition/obj_transition.yy",},
     {"name":"time_warning_music","order":2,"path":"sounds/time_warning_music/time_warning_music.yy",},
     {"name":"time_warning_sound","order":1,"path":"sounds/time_warning_sound/time_warning_sound.yy",},

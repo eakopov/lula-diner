@@ -257,6 +257,7 @@
     {"id":{"name":"obj_text_display_rhythm","path":"objects/obj_text_display_rhythm/obj_text_display_rhythm.yy",},},
     {"id":{"name":"obj_text_display_start","path":"objects/obj_text_display_start/obj_text_display_start.yy",},},
     {"id":{"name":"obj_timer_powerup","path":"objects/obj_timer_powerup/obj_timer_powerup.yy",},},
+    {"id":{"name":"obj_tool_controller","path":"objects/obj_tool_controller/obj_tool_controller.yy",},},
     {"id":{"name":"obj_tool","path":"objects/obj_tool/obj_tool.yy",},},
     {"id":{"name":"obj_transition","path":"objects/obj_transition/obj_transition.yy",},},
     {"id":{"name":"obj_view_credits","path":"objects/obj_view_credits/obj_view_credits.yy",},},

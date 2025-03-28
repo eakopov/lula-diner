@@ -5,6 +5,7 @@ if (ready_to_seat && ready_to_order) {
     draw_sprite(spr_thought_bubble, 0, x - 10, y - 175);
 }
 
-if (eating_timer > 10 && ready_to_eat) {
-	scr_draw_tool();
-}
+//if (draw) {
+	//scr_draw_tool();
+//}
+

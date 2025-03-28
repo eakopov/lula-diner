@@ -1,8 +1,8 @@
 ready_to_eat = false; // Customer is not seated yet
 move_speed = 2;
 ready_to_seat = false;
-depth = -20;
 image_xscale = -1;
+depth = -20;
 ready_to_order = false;
 order_timer = 300;
 seated = false;
@@ -10,4 +10,5 @@ order_taken = false;
 entry_time = current_time; // Record the time the customer is created
 customer_tool = ""; // default tool choice
 customer_id = global.customer_counter;
+draw = false;
 global.customer_counter += 1;
