@@ -6,6 +6,9 @@ if (!transition_done) {
     instance_deactivate_object(obj_plate);
     instance_deactivate_object(obj_customer);
     instance_deactivate_object(obj_sign_closed);
+    instance_deactivate_object(obj_score);
+    instance_deactivate_object(obj_pause);
+    instance_deactivate_object(obj_quit);
     if (mouse_check_button_pressed(mb_left) || keyboard_check_pressed(vk_space)) {
         transition_slide += 1;
 
@@ -23,5 +26,8 @@ if (!transition_done) {
         instance_activate_object(obj_plate);
         //instance_activate_object(obj_customer);
         instance_activate_object(obj_sign_closed);
+        instance_activate_object(obj_score);
+        instance_activate_object(obj_pause);
+        instance_activate_object(obj_quit);
     }
 }

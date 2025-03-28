@@ -6,6 +6,7 @@
     {"name":"obj_jump_fade","order":1,"path":"objects/obj_jump_fade/obj_jump_fade.yy",},
     {"name":"obj_jump_intro_arrow","order":3,"path":"objects/obj_jump_intro_arrow/obj_jump_intro_arrow.yy",},
     {"name":"obj_jump_intro_banner","order":2,"path":"objects/obj_jump_intro_banner/obj_jump_intro_banner.yy",},
+    {"name":"obj_score","order":1,"path":"objects/obj_score/obj_score.yy",},
     {"name":"obj_tool_controller","order":2,"path":"objects/obj_tool_controller/obj_tool_controller.yy",},
     {"name":"obj_transition","order":1,"path":"objects/obj_transition/obj_transition.yy",},
     {"name":"snd_bell","order":2,"path":"sounds/snd_bell/snd_bell.yy",},
@@ -32,5 +33,6 @@
     {"name":"spr_luna_push","order":5,"path":"sprites/spr_luna_push/spr_luna_push.yy",},
     {"name":"spr_luna_stand2","order":6,"path":"sprites/spr_luna_stand2/spr_luna_stand2.yy",},
     {"name":"spr_luna_Walk","order":11,"path":"sprites/spr_luna_Walk/spr_luna_Walk.yy",},
+    {"name":"spr_score","order":1,"path":"sprites/spr_score/spr_score.yy",},
   ],
 }
