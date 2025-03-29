@@ -80,3 +80,9 @@ if (ready_to_eat) {
     }
 }
 }
+
+if (eating_timer > 10 && ready_to_eat) {
+    draw = true;
+} else {
+    draw = false;
+}

@@ -1,4 +1,4 @@
 instance_name = "inst_bell_portrait";
 scientist_name = "Jim Bell";
-description = "The planetary scientist and Psyche mission co-investigator of Arizona State University who led his instrument team in the development of the Psyche Multispectral Imager.";
+description = "Leads the team that will use Psyche's pair of multispectral imagers to provide information about the mineral composition of Psyche as well as its topography.";
 tools = [spr_multispectral];

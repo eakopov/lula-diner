@@ -1,16 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_quit",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_transition",
+  "eventList":[],
   "managed":true,
-  "name":"obj_quit",
+  "name":"obj_transition",
   "overriddenProperties":[],
   "parent":{
-    "name":"Environmentals",
-    "path":"folders/Objects/Pizza Objects/Environmentals.yy",
+    "name":"Pizza Objects",
+    "path":"folders/Objects/Pizza Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_quit",
-    "path":"sprites/spr_quit/spr_quit.yy",
+    "name":"spr_transition_scene",
+    "path":"sprites/spr_transition_scene/spr_transition_scene.yy",
   },
   "spriteMaskId":null,
   "visible":true,
