@@ -3,7 +3,7 @@ draw_self();
 
 draw_set_halign(fa_center);
 
-// Set the text color t
+// Set the text color to blue
 draw_set_color(c_blue);
 
 // Define text content
@@ -17,6 +17,9 @@ var x_start = x;  // Start at the object's X position
 var max_width = 410;  // Maximum width for wrapping
 var y_start = y;  // Start at the object's Y position
 var line_height = 24; 
+
+// **Extra spacing to adjust how far down additional text appears**
+var extra_spacing = 175;
 
 // **Function to wrap text properly**
 function string_wrap(_text, _max_width) {
@@ -51,15 +54,14 @@ for (var i = 0; i < array_length(lines); i++) {
     draw_text(x_start, y_start + (i * line_height), lines[i]);
 }
 
-// **Draw Performance Rating on a separate line below wrapped text**
-draw_text(x_start, y_start + (array_length(lines) * line_height) + 30, "Performance Rating: " + global.jumpResults);
+// **Draw Performance Rating on a separate line below wrapped text with extra spacing**
+draw_text(x_start, y_start + (array_length(lines) * line_height) + extra_spacing, "Performance Rating: " + global.jumpResults);
 
-draw_set_color(c_blue);
 // **Draw New Best Score if applicable**
 if (global.new_best_score) {
-    draw_text(x_start, y_start + (array_length(lines) * line_height) + 60, "New Best Score!");
+    draw_text(x_start, y_start + (array_length(lines) * line_height) + extra_spacing + 30, "New Best Score!");
 }
 
-draw_set_color(c_blue);
+draw_set_color(c_green);
 // **Additional Spacing for the "Press C to Continue" text**
-draw_text(x_start, y_start + (array_length(lines) * line_height) + 90, "(Press C to continue)");
+draw_text(x_start, y_start + (array_length(lines) * line_height) + extra_spacing + 60, "(Press C to continue)");
