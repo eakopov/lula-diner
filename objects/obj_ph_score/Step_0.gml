@@ -7,7 +7,8 @@ var objects_to_destroy = [
     obj_double_points_hoop, 
     obj_timer_powerup, 
     obj_jump_checkbox,
-	obj_lula_jump
+	obj_lula_jump,
+	obj_space_debris
 ];
 
 // Decrease the global timer
@@ -30,6 +31,11 @@ if (global.jump_timer <= 0)
 	
 	audio_stop_sound(global.time_warning_music_id);
 	global.time_warning_music_id = -1;
+	
+    if(global.jump_score > global.best_jump_score){
+	   global.best_jump_score = global.jump_score;
+	   global.new_best_score = true;
+	}
 
     if (global.jump_score >= 1050)
     {

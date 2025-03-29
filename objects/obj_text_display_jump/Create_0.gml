@@ -177,5 +177,11 @@ if(global.mode == "mini" && global.jumpmusic_Began == false){
   global.jumpmusic_Began = true;
 }
 
+if (!variable_global_exists("best_jump_score")) {
+    global.best_jump_score = 0;
+}
 
+if (!variable_global_exists("new_best_score")) {
+    global.new_best_score = false;
+}
 

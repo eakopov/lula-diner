@@ -11,6 +11,7 @@ if (keyboard_check_pressed(ord("P")))
 	global.time_warning_triggered = false;
 	global.time_warning_music_id = -1;
 	global.jumpmusic_Began = false;
+	global.new_best_score = false;
     //global.jumpmusic_id = audio_play_sound(jump_minigame_music, 1, true); // Holds the audio index for the jump music
 	
     with (obj_jump_fade) {
@@ -49,6 +50,7 @@ if (keyboard_check_pressed(ord("C")))
 	if(global.mode == "story"){
 		 room_goto_next();  // Go to the next room
 	} else { 
+		 global.new_best_score = false;
 		 room_goto(room_intro);
 	}
 }

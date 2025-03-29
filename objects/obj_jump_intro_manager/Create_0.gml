@@ -1,0 +1,1 @@
+global.jump_transition_music_id = -1;
