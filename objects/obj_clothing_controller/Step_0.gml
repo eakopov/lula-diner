@@ -8,6 +8,12 @@ if (clothing_from_s3=2) {has_all_from_s3 = true;}
 
 */
 
+if (obj_clothing_controller.intro_counter > 0) {
+	obj_clothing_controller.intro_counter--;
+}
+
+else {obj_clothing_controller.intro = false;}
+
 if (has_all_from_s1 && has_all_from_s2 && has_all_from_s3) has_all = true;
 
 if (obj_clothing_controller.ready_for_results_1) {

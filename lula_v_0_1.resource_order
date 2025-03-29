@@ -1,5 +1,7 @@
 {
-  "FolderOrderSettings":[],
+  "FolderOrderSettings":[
+    {"name":"Scenes","order":1,"path":"folders/Sprites/clothing_game/Scenes.yy",},
+  ],
   "ResourceOrderSettings":[
     {"name":"obj_jump_fade","order":1,"path":"objects/obj_jump_fade/obj_jump_fade.yy",},
     {"name":"obj_jump_intro_arrow","order":3,"path":"objects/obj_jump_intro_arrow/obj_jump_intro_arrow.yy",},
@@ -9,6 +11,7 @@
     {"name":"obj_space_debris","order":4,"path":"objects/obj_space_debris/obj_space_debris.yy",},
     {"name":"jump_transition_music","order":3,"path":"sounds/jump_transition_music/jump_transition_music.yy",},
     {"name":"snd_jump_knockback","order":4,"path":"sounds/snd_jump_knockback/snd_jump_knockback.yy",},
+    {"name":"snd_design_for_dreaming_lo_fi_astronaut","order":1,"path":"sounds/snd_design_for_dreaming_lo_fi_astronaut/snd_design_for_dreaming_lo_fi_astronaut.yy",},
     {"name":"time_warning_music","order":2,"path":"sounds/time_warning_music/time_warning_music.yy",},
     {"name":"time_warning_sound","order":1,"path":"sounds/time_warning_sound/time_warning_sound.yy",},
     {"name":"logo_artwork","order":20,"path":"sprites/logo_artwork/logo_artwork.yy",},

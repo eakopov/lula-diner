@@ -1,1 +1,1 @@
-room_goto(room_deck);
+room_goto(room_select_scientist);

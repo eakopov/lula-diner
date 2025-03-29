@@ -1,25 +1,44 @@
 // Easy questions with feedback messages for each answer choice
 global.easy_questions = [
     ["Which planet does Psyche orbit near?", "1) Mars", "2) Jupiter", "3) Saturn", 1, 
-        ["Correct! Psyche orbits near Mars in the asteroid belt.", "Incorrect. Psyche does not orbit near Jupiter.", "Incorrect. Psyche is not near Saturn."]],
+        ["Correct! Psyche orbits near Mars in the asteroid belt.", "Incorrect. Psyche does not orbit near Jupiter.", "Incorrect. Psyche is not near Saturn."],
+        "It’s in the asteroid belt between Mars and Jupiter."],
+
     ["What is the Psyche mission named after?", "1) A scientist", "2) A goddess", "3) A planet", 2, 
-        ["Incorrect. Psyche is not named after a scientist.", "Correct! Psyche is named after the Greek goddess of the soul.", "Incorrect. Psyche is not a planet."]],
+        ["Incorrect. Psyche is not named after a scientist.", "Correct! Psyche is named after the Greek goddess of the soul.", "Incorrect. Psyche is not a planet."],
+        "Think mythology — Psyche was a goddess of the soul."],
+
     ["How does Psyche's size compare to other asteroids?", "1) Very small", "2) Average", "3) One of the largest", 3, 
-        ["Incorrect. Psyche is not very small.", "Incorrect. Psyche is larger than average.", "Correct! Psyche is one of the largest asteroids in the belt."]],
+        ["Incorrect. Psyche is not very small.", "Incorrect. Psyche is larger than average.", "Correct! Psyche is one of the largest asteroids in the belt."],
+        "It’s one of the largest metal-rich asteroids we've found."],
+
     ["What does the Psyche mission hope to understand?", "1) The early solar system", "2) Alien life", "3) Star formation", 1, 
-        ["Correct! Psyche helps us understand the early solar system.", "Incorrect. Psyche does not study alien life.", "Incorrect. Star formation is not related to Psyche."]],
+        ["Correct! Psyche helps us understand the early solar system.", "Incorrect. Psyche does not study alien life.", "Incorrect. Star formation is not related to Psyche."],
+        "We’re looking back to the formation of planets."],
+
     ["What makes Psyche unique?", "1) It’s made of metal", "2) It’s the closest asteroid", "3) It has life on it", 1, 
-        ["Correct! Psyche is unique because it’s metal-rich.", "Incorrect. Psyche is not the closest asteroid.", "Incorrect. Psyche does not have life."]],
+        ["Correct! Psyche is unique because it’s metal-rich.", "Incorrect. Psyche is not the closest asteroid.", "Incorrect. Psyche does not have life."],
+        "Most asteroids are rock or ice — not metal."],
+
     ["Who is the principal investigator of the Psyche mission?", "1) Jim Green", "2) Lindy Elkins-Tanton", "3) Elon Musk", 2, 
-        ["Incorrect. Jim Green is not the principal investigator.", "Correct! Lindy Elkins-Tanton leads the Psyche mission.", "Incorrect. Elon Musk is not involved with this mission."]],
+        ["Incorrect. Jim Green is not the principal investigator.", "Correct! Lindy Elkins-Tanton leads the Psyche mission.", "Incorrect. Elon Musk is not involved with this mission."],
+        "She's a planetary scientist and professor at ASU."],
+
     ["What is the mission's spacecraft called?", "1) Psyche", "2) Voyager", "3) Perseverance", 1, 
-        ["Correct! The spacecraft itself is called Psyche.", "Incorrect. Voyager is a different mission.", "Incorrect. Perseverance is a Mars rover."]],
+        ["Correct! The spacecraft itself is called Psyche.", "Incorrect. Voyager is a different mission.", "Incorrect. Perseverance is a Mars rover."],
+        "It shares the name with the asteroid it’s visiting."],
+
     ["What is the asteroid belt?", "1) A collection of rocks and metals between Mars and Jupiter", "2) A ring of gas around Saturn", "3) A magnetic field around Earth", 1, 
-        ["Correct! The asteroid belt is between Mars and Jupiter.", "Incorrect. Saturn’s rings are gas and ice.", "Incorrect. Earth’s magnetic field is unrelated."]],
+        ["Correct! The asteroid belt is between Mars and Jupiter.", "Incorrect. Saturn’s rings are gas and ice.", "Incorrect. Earth’s magnetic field is unrelated."],
+        "It lies between Mars and Jupiter."],
+
     ["How was Psyche discovered?", "1) By telescope", "2) By spacecraft", "3) By accident", 1, 
-        ["Correct! Psyche was discovered using telescopes.", "Incorrect. No spacecraft discovered Psyche.", "Incorrect. Psyche was identified intentionally."]],
+        ["Correct! Psyche was discovered using telescopes.", "Incorrect. No spacecraft discovered Psyche.", "Incorrect. Psyche was identified intentionally."],
+        "Think 1800s — long before we had space probes."],
+
     ["How long has Psyche been known to scientists?", "1) Over 100 years", "2) 50 years", "3) Less than 10 years", 1, 
-        ["Correct! Psyche was discovered in the 19th century.", "Incorrect. Psyche was discovered much earlier.", "Incorrect. Psyche has been known for over a century."]]
+        ["Correct! Psyche was discovered in the 19th century.", "Incorrect. Psyche was discovered much earlier.", "Incorrect. Psyche has been known for over a century."],
+        "Discovered in 1852 — it’s not new!"]
 ];
 
 
@@ -85,6 +104,10 @@ global.show_difficulty_selection = true; // Start with difficulty selection scre
 global.show_instrument_popup = false;  // Determines if the pop-up should be shown
 global.current_instrument_index = -1; // Tracks which instrument to display
 global.instrument_popup_timer = 0;    // Timer for how long the pop-up is displayed
+
+// Hints display
+global.show_hint = false;
+global.current_hint = "No hint available yet."; // Default value
 
 
 // Play background music on a loop

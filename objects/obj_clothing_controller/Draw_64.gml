@@ -23,6 +23,33 @@ draw_rectangle(view_x - border_thickness, view_y,
 // Draw the right border
 draw_rectangle(view_x + view_w - border_thickness, view_y, 
                view_x + view_w, view_y + view_h, false);
+			   
+if (obj_clothing_controller.intro) {
+    // Get screen dimensions
+    var gui_width = display_get_gui_width();
+    var gui_height = display_get_gui_height();
+
+    // Draw a white background
+    draw_set_color(c_white);
+    draw_rectangle(0, 0, gui_width, gui_height, false); // Solid white background
+
+    // Load and draw the intro image
+    var intro_image = sprite_get_texture(spr_intro_image, 0); // Ensure 'spr_intro_image' is assigned in the asset manager
+    var img_width = sprite_get_width(spr_intro_image);
+    var img_height = sprite_get_height(spr_intro_image);
+
+    // Calculate the scaling factor to fit within the screen
+    var scale_x = gui_width / img_width;
+    var scale_y = gui_height / img_height;
+    var scale_factor = min(scale_x, scale_y); // Maintain aspect ratio
+
+    // Center the image on screen
+    var draw_x = (gui_width - img_width * scale_factor) / 2;
+    var draw_y = (gui_height - img_height * scale_factor) / 2;
+
+    // Draw the image
+    draw_sprite_ext(spr_intro_image, 0, draw_x, draw_y, scale_factor, scale_factor, 0, c_white, 1);
+}
 
 
 
@@ -69,7 +96,8 @@ if (obj_clothing_controller.ready_for_results_1) {
         draw_sprite_ext(obj_clothing_controller.clothing_item_2.sprite_index, 0, draw_x, draw_y, scale_factor, scale_factor, 0, c_white, 1);
         draw_sprite_ext(obj_clothing_controller.clothing_item_3.sprite_index, 0, draw_x, draw_y, scale_factor, scale_factor, 0, c_white, 1);
     }
-
+	
+	
     // ======================
     // Branching Endings Based on Professional Attire
     // ======================

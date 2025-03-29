@@ -87,3 +87,5 @@ wait_timer = 3200;
 number_professional = 0;
 
 clothing_points = 0;
+intro = true;
+intro_counter = 600;
