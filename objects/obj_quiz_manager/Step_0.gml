@@ -70,3 +70,4 @@ if (global.quiz_completed) {
         global.result_text = "Your score is too low. Try again for a better result!";
     }
 }
+
