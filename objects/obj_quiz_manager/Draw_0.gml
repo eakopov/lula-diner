@@ -27,8 +27,7 @@ else if (!global.quiz_completed) {
 
     // Draw Hint Button
     draw_set_color(c_white);
-    draw_rectangle(170, 580, 370, 615, false); // Button outline
-    draw_text(180, 590, "Need a Hint?");
+    draw_text(300, 600, "Need a Hint?");
 
     // Draw Hint Text if enabled
     if (global.show_hint) {
