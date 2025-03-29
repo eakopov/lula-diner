@@ -89,25 +89,44 @@ global.medium_questions = [
 // Hard questions with feedback messages
 global.hard_questions = [
     ["How does Psyche’s density compare to Earth’s core?", "1) About the same", "2) Much denser", "3) Much less dense", 1, 
-        ["Correct! Psyche’s density is comparable to Earth’s core.", "Incorrect. Psyche is not denser than Earth’s core.", "Incorrect. Psyche is not less dense than Earth’s core."]],
+        ["Correct! Psyche’s density is comparable to Earth’s core.", "Incorrect. Psyche is not denser than Earth’s core.", "Incorrect. Psyche is not less dense than Earth’s core."],
+        "Think about what kind of material makes up a planet’s core."],
+
     ["What unique feature is Psyche expected to reveal?", "1) Surface composition", "2) Planetary core remnants", "3) Atmosphere dynamics", 2, 
-        ["Incorrect. Surface composition is secondary.", "Correct! Psyche may reveal planetary core remnants.", "Incorrect. Psyche has no atmosphere."]],
+        ["Incorrect. Surface composition is secondary.", "Correct! Psyche may reveal planetary core remnants.", "Incorrect. Psyche has no atmosphere."],
+        "It’s like looking at the inside of a planet."],
+
     ["What type of radiation does the Psyche spacecraft analyze?", "1) Gamma rays", "2) Infrared", "3) Ultraviolet", 1, 
-        ["Correct! Psyche analyzes gamma rays.", "Incorrect. Infrared is not used in this context.", "Incorrect. Ultraviolet radiation is not analyzed."]],
+        ["Correct! Psyche analyzes gamma rays.", "Incorrect. Infrared is not used in this context.", "Incorrect. Ultraviolet radiation is not analyzed."],
+        "These rays help detect what elements are present."],
+
     ["How old is the Psyche asteroid thought to be?", "1) 4.5 billion years", "2) 2 billion years", "3) Less than 1 billion years", 1, 
-        ["Correct! Psyche is around 4.5 billion years old.", "Incorrect. Psyche is older than 2 billion years.", "Incorrect. Psyche is older than 1 billion years."]],
+        ["Correct! Psyche is around 4.5 billion years old.", "Incorrect. Psyche is older than 2 billion years.", "Incorrect. Psyche is older than 1 billion years."],
+        "Psyche likely formed when the solar system did."],
+
     ["What role do Psyche’s craters play?", "1) Reveal metal surface beneath", "2) Indicate volcanic activity", "3) Provide landing spots", 1, 
-        ["Correct! Craters reveal Psyche’s metal-rich surface.", "Incorrect. Psyche shows no volcanic activity.", "Incorrect. Psyche is not a landing mission."]],
+        ["Correct! Craters reveal Psyche’s metal-rich surface.", "Incorrect. Psyche shows no volcanic activity.", "Incorrect. Psyche is not a landing mission."],
+        "Craters help scientists study what’s under the surface."],
+
     ["What is the main challenge of studying Psyche?", "1) Distance from Earth", "2) Harsh atmosphere", "3) Its small size", 1, 
-        ["Correct! Psyche’s distance makes it challenging.", "Incorrect. Psyche has no atmosphere.", "Incorrect. Psyche is not particularly small."]],
+        ["Correct! Psyche’s distance makes it challenging.", "Incorrect. Psyche has no atmosphere.", "Incorrect. Psyche is not particularly small."],
+        "The farther something is, the harder it is to study."],
+
     ["What does Psyche tell us about core formation?", "1) Temperatures in early planets", "2) Magnetic field origins", "3) Both 1 and 2", 3, 
-        ["Incorrect. Temperatures alone don’t cover it.", "Incorrect. Magnetic fields alone don’t cover it.", "Correct! Psyche reveals temperatures and magnetic fields."]],
+        ["Incorrect. Temperatures alone don’t cover it.", "Incorrect. Magnetic fields alone don’t cover it.", "Correct! Psyche reveals temperatures and magnetic fields."],
+        "Planetary cores influence both heat and magnetism."],
+
     ["What type of orbits will Psyche’s spacecraft use?", "1) Fixed elliptical", "2) Spiral-down orbits", "3) Geostationary orbits", 2, 
-        ["Incorrect. Psyche does not use fixed orbits.", "Correct! Psyche uses spiral-down orbits.", "Incorrect. Geostationary orbits don’t apply here."]],
+        ["Incorrect. Psyche does not use fixed orbits.", "Correct! Psyche uses spiral-down orbits.", "Incorrect. Geostationary orbits don’t apply here."],
+        "The spacecraft gets closer with each orbit."],
+
     ["What metals might be on Psyche?", "1) Iron and nickel", "2) Gold and silver", "3) Aluminum and copper", 1, 
-        ["Correct! Iron and nickel are expected on Psyche.", "Incorrect. Gold and silver are unlikely primary components.", "Incorrect. Aluminum and copper are not expected."]],
+        ["Correct! Iron and nickel are expected on Psyche.", "Incorrect. Gold and silver are unlikely primary components.", "Incorrect. Aluminum and copper are not expected."],
+        "Think about the metals in Earth’s core."],
+
     ["How will Psyche study its surface?", "1) Gamma-ray spectrometer and cameras", "2) Infrared sensors", "3) Touch-and-go sampling", 1, 
-        ["Correct! Psyche uses spectrometers and cameras.", "Incorrect. Infrared is not used.", "Incorrect. Psyche does not sample directly."]]
+        ["Correct! Psyche uses spectrometers and cameras.", "Incorrect. Infrared is not used.", "Incorrect. Psyche does not sample directly."],
+        "It doesn’t land — it observes from orbit using instruments."]
 ];
 
 // Initialize global variables
