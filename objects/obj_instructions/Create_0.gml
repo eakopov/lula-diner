@@ -1,3 +1,4 @@
-clicked = false; // keep track of player clicking through screen
-transition_slide = 0; // keep track of slides for transition
-depth = -100;
+transition_slide = 1; // keep track of transition slide number
+transition_done = false; // transition scene tracker
+global.clicked = false; // instructions tracker
+depth = -200;

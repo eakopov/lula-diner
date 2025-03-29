@@ -37,7 +37,7 @@ if (target_customer != noone && current_action == "take_order") {
                 case obj_lawrence:
 					scientist_tool = choose("neutron", "gamma");
 					break;
-                case obj_brauer:
+                case obj_weiss:
                     scientist_tool = "magnetrometer";
                     break;
                 case obj_zuber:
@@ -129,7 +129,7 @@ if (current_action == "deliver_tool") {
                     case obj_lawrence:
                         matching = (tool.object_index == obj_neutron || tool.object_index == obj_gamma);
                         break;
-                    case obj_brauer:
+                    case obj_weiss:
                         matching = (tool.object_index == obj_magnetrometer);
                         break;
                     case obj_zuber:
