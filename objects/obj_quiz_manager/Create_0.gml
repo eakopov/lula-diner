@@ -45,26 +45,46 @@ global.easy_questions = [
 // Medium questions with feedback messages
 global.medium_questions = [
     ["What is Psyche's surface likely to be?", "1) Smooth", "2) Cratered and uneven", "3) Covered in ice", 2, 
-        ["Incorrect. Psyche’s surface is not smooth.", "Correct! Psyche’s surface is likely cratered and uneven.", "Incorrect. Psyche is not covered in ice."]],
+        ["Incorrect. Psyche’s surface is not smooth.", "Correct! Psyche’s surface is likely cratered and uneven.", "Incorrect. Psyche is not covered in ice."],
+        "Think of ancient, unprotected surfaces in space — lots of craters."],
+
     ["How does the Psyche mission communicate with Earth?", "1) Radio waves", "2) Laser signals", "3) Internet satellites", 1, 
-        ["Correct! The Psyche mission uses radio waves.", "Incorrect. Laser signals are not used here.", "Incorrect. Internet satellites are not part of Psyche."]],
+        ["Correct! The Psyche mission uses radio waves.", "Incorrect. Laser signals are not used here.", "Incorrect. Internet satellites are not part of Psyche."],
+        "Deep space missions use the same system used by earlier NASA probes."],
+
     ["How is Psyche thought to have formed?", "1) As a leftover planetary core", "2) As a gas giant", "3) As a moon", 1, 
-        ["Correct! Psyche is likely a leftover planetary core.", "Incorrect. Psyche is not a gas giant.", "Incorrect. Psyche is not a moon."]],
+        ["Correct! Psyche is likely a leftover planetary core.", "Incorrect. Psyche is not a gas giant.", "Incorrect. Psyche is not a moon."],
+        "Imagine a stripped-down planet that lost its outer layers."],
+
     ["What powers the Psyche spacecraft?", "1) Solar-electric propulsion", "2) Nuclear energy", "3) Gas thrusters", 1, 
-        ["Correct! The spacecraft is powered by solar-electric propulsion.", "Incorrect. Nuclear energy is not used.", "Incorrect. Gas thrusters are not used on Psyche."]],
+        ["Correct! The spacecraft is powered by solar-electric propulsion.", "Incorrect. Nuclear energy is not used.", "Incorrect. Gas thrusters are not used on Psyche."],
+        "The mission uses solar panels and electric propulsion for efficiency."],
+
     ["What instrument measures Psyche's gravitational field?", "1) Magnetometer", "2) X-ray spectrometer", "3) Radio science system", 3, 
-        ["Incorrect. Magnetometer measures magnetic fields.", "Incorrect. X-ray spectrometer is not used for gravity.", "Correct! The radio science system measures gravitational fields."]],
+        ["Incorrect. Magnetometer measures magnetic fields.", "Incorrect. X-ray spectrometer is not used for gravity.", "Correct! The radio science system measures gravitational fields."],
+        "It tracks subtle changes in the spacecraft’s motion to infer gravity."],
+
     ["Which type of orbit will Psyche enter?", "1) Circular", "2) Elliptical", "3) Spiraling closer", 3, 
-        ["Incorrect. Psyche’s orbit isn’t strictly circular.", "Incorrect. Psyche doesn’t use elliptical orbits.", "Correct! Psyche will spiral closer during its mission."]],
+        ["Incorrect. Psyche’s orbit isn’t strictly circular.", "Incorrect. Psyche doesn’t use elliptical orbits.", "Correct! Psyche will spiral closer during its mission."],
+        "It slowly tightens its orbit for different observation stages."],
+
     ["What material might Psyche help locate in asteroids?", "1) Water", "2) Metal", "3) Diamonds", 2, 
-        ["Incorrect. Psyche isn’t expected to locate water.", "Correct! Psyche helps us understand metal-rich asteroids.", "Incorrect. Diamonds are not a focus of Psyche."]],
+        ["Incorrect. Psyche isn’t expected to locate water.", "Correct! Psyche helps us understand metal-rich asteroids.", "Incorrect. Diamonds are not a focus of Psyche."],
+        "This mission’s main interest is what’s under a rocky planet — its core."],
+
     ["How will Psyche’s magnetic field be studied?", "1) Gamma-ray spectrometer", "2) Magnetometer", "3) Solar panels", 2, 
-        ["Incorrect. Gamma-ray spectrometer measures elements.", "Correct! The magnetometer measures magnetic fields.", "Incorrect. Solar panels don’t study magnetic fields."]],
+        ["Incorrect. Gamma-ray spectrometer measures elements.", "Correct! The magnetometer measures magnetic fields.", "Incorrect. Solar panels don’t study magnetic fields."],
+        "This instrument detects any lingering magnetic signature."],
+
     ["What is Psyche’s estimated mass?", "1) 2.7 x 10^19 kg", "2) 1.5 x 10^18 kg", "3) 9.8 x 10^20 kg", 1, 
-        ["Correct! Psyche’s mass is estimated at 2.7 x 10^19 kg.", "Incorrect. This value is too low for Psyche.", "Incorrect. This value is too high for Psyche."]],
+        ["Correct! Psyche’s mass is estimated at 2.7 x 10^19 kg.", "Incorrect. This value is too low for Psyche.", "Incorrect. This value is too high for Psyche."],
+        "It’s heavy but not *planet-sized* heavy."],
+
     ["Why is Psyche significant?", "1) First mission to a metal-rich asteroid", "2) Closest asteroid to Earth", "3) Part of a new planetary system", 1, 
-        ["Correct! Psyche is the first mission to a metal-rich asteroid.", "Incorrect. Psyche is not the closest to Earth.", "Incorrect. Psyche is not part of a new planetary system."]]
+        ["Correct! Psyche is the first mission to a metal-rich asteroid.", "Incorrect. Psyche is not the closest to Earth.", "Incorrect. Psyche is not part of a new planetary system."],
+        "This is the first time we’re visiting a mostly-metal object like this."]
 ];
+
 
 // Hard questions with feedback messages
 global.hard_questions = [
