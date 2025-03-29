@@ -1,5 +1,19 @@
 if (keyboard_check_pressed(vk_space))
 {
+	
+	with (obj_space_debris) {
+		instance_destroy();
+	
+	}
+	if(global.jump_score > global.best_jump_score){
+	
+	global.best_jump_score = global.jump_score;
+	
+	if(global.mode == "story") {
+		global.new_best_score = true;
+	  }
+	  
+	}
     // Determine the player's rank based on global.jump_score
     if (global.jump_score >= 10000) {
         global.jumpResults = "S";

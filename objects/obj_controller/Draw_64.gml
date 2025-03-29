@@ -1,4 +1,4 @@
-if(obj_instructions.clicked == true) {
+if(global.clicked == true) {
     // Display player money
     draw_set_color(c_fuchsia);
     draw_set_font(fnt_pizza_room);

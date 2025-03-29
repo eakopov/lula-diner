@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"jump_transition_music",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":86.17794,
+  "name":"jump_transition_music",
+  "parent":{
+    "name":"jump_sounds",
+    "path":"folders/Sounds/jump_sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"jump_transition_music.mp3",
+  "type":0,
+  "volume":1.0,
+}

@@ -1,8 +1,8 @@
 // Draw the sprite of the object (if applicable)
 draw_self();
 
-// Set the text color to black
-draw_set_color(c_black);
+// Set the text color to blue
+draw_set_color(c_blue);
 
 // Define text content
 var text = "Now that you're dressed professionally, we're ready to pitch our NASA Psyche-inspired mission! " + 

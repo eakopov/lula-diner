@@ -1,5 +1,15 @@
+global.controls_reversed = true;
+global.reverse_timer = 600; // 10 seconds at 60 FPS
+
+// Show the reverse message
+with (obj_reverse_message) {
+   visible = true;
+}
+
+instance_destroy();
+
 // Check the failure type and apply the corresponding effect
-if (failure_type == "decrease_timer")
+/*if (failure_type == "decrease_timer")
 {
     global.jump_timer -= room_speed * 5; // Reduces timer by 5 seconds
     instance_destroy(); // Remove the failure hoop after collision

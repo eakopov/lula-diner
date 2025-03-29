@@ -11,6 +11,7 @@ if (!occupied && obj_controller.selected_customer != noone) {
         // Mark the table as occupied and set the customer as ready to order
         occupied = true;
         customer_id.seated = true;
+        audio_play_sound(snd_seat, 0, false);
 
         // Clear the selected customer
         obj_controller.selected_customer = noone;
