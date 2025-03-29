@@ -16,21 +16,17 @@ if (global.gamepaused) {
     draw_text_transformed(room_width / 2, room_height / 2, "PAUSED", 3, 3, 0);  // Centered, scaled text
     draw_set_color(c_white);  // Reset color afterward
 } else {
-	if(obj_pause.pause_clicked && !global.gamepaused) {
-		//instance_activate_object(inst_27313940); //obj_table 1
-		//instance_activate_object(inst_60E9FA6A); //obj_table 2
-		//instance_activate_object(inst_A9CA90D); //obj_table 3
-		//instance_activate_object(inst_1C5C055F); //obj_table 4
-		//instance_activate_object(inst_4F22473A); //obj_counter
-		//instance_activate_object(inst_2D4F779F); //obj_clock
-		//instance_activate_object(inst_74CAE414); //obj_sign
-		instance_activate_object(inst_54E540F5); //obj_lula_pizza
-		instance_activate_object(inst_36958C6C); //obj_chef
-	}
+    with(obj_pause) {
+        if (pause_clicked) {
+            instance_activate_object(inst_54E540F5); //obj_lula_pizza
+                    instance_activate_object(inst_36958C6C); //obj_chef
+        }
+    }
+    
 	// Increment the spawn timer
-if(obj_instructions.transition_done) {
+    if(obj_instructions.transition_done) {
     spawn_timer += 1;
-}
+    }
     
 
 // Check if any customer is near the carpet area
