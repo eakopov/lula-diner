@@ -3,7 +3,11 @@ if (mouse_check_button_pressed(mb_left)) {
     if (mouse_x >= 100 && mouse_x <= 150 && mouse_y >= 100 && mouse_y <= 150) {
         // Debugging: Confirm the test rectangle was clicked
         show_debug_message("Test Rectangle Clicked!");
-        // Reset game state
+        
+		// Stop all music
+        audio_stop_all();
+		
+		// Reset game state
         global.current_question = 0; // Reset the question index
         global.show_difficulty_selection = true; // Show difficulty selection screen
         global.quiz_completed = false; // Reset quiz completion flag
