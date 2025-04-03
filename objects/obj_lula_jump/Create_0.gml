@@ -7,3 +7,6 @@ knockback_timer = 0;
 knockback_xsp = 0;
 knockback_ysp = 0;
 is_knocked_back = false;
+
+invincible = false;
+invincibility_timer = 0;
