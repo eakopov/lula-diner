@@ -23,6 +23,7 @@ if (global.show_difficulty_selection) {
         global.timeouts += 1;
         global.result_text = "Time's up!";
         global.current_question += 1;
+		global.show_hint = false;
 
         // Check if quiz is completed
         if (global.current_question >= array_length(global.questions)) {
@@ -38,12 +39,15 @@ if (global.show_difficulty_selection) {
         if (mouse_y_pos >= 300 && mouse_y_pos <= 350) {
             global.player_answer = 1;
             check_answer();
+			global.show_hint = false;
         } else if (mouse_y_pos >= 350 && mouse_y_pos <= 400) {
             global.player_answer = 2;
             check_answer();
+			global.show_hint = false;
         } else if (mouse_y_pos >= 400 && mouse_y_pos <= 450) {
             global.player_answer = 3;
             check_answer();
+			global.show_hint = false;
         }
     }
 
