@@ -1,3 +1,5 @@
+audio_stop_all();
+
 // Easy questions with feedback messages for each answer choice
 global.easy_questions = [
     ["Which planet does Psyche orbit near?", "1) Mars", "2) Jupiter", "3) Saturn", 1, 
