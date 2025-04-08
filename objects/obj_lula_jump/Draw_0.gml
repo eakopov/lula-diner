@@ -1,17 +1,25 @@
-// Check for active power-ups
-if (global.double_jump_active || global.speed_boost_active || global.double_points_active) {
-    // Calculate a pulsating scale factor
-    var scale_factor = 1.5 + 0.1 * sin(current_time / 300); // Pulsates between 1.5 and 1.6
+// Flashing logic for invincibility
+var draw_alpha = 1;
 
-    // Draw the glowing effect
-    draw_set_color(c_yellow); // Set the glow color
-    draw_set_alpha(0.5); // Make it semi-transparent
-    draw_sprite_ext(sprite_index, image_index, x, y, scale_factor, scale_factor, 0, c_yellow, 0.5);
+if (invincible) {
+    if ((invincibility_timer div 10) mod 2 == 0) {
+        draw_alpha = 0.2;
+    }
 }
 
-// Reset the alpha and color
+// Power-up glow
+if (global.double_jump_active || global.speed_boost_active || global.double_points_active) {
+    var scale_factor = 1.5 + 0.1 * sin(current_time / 300);
+    draw_set_color(c_yellow);
+    draw_set_alpha(0.5 * draw_alpha);
+    draw_sprite_ext(sprite_index, image_index, x, y, scale_factor, scale_factor, 0, c_yellow, 0.5 * draw_alpha);
+}
+
+// Draw player sprite with flashing alpha
+draw_set_color(c_white);
+draw_set_alpha(draw_alpha);
+draw_sprite(sprite_index, image_index, x, y);
+
+// Reset alpha and color so nothing else is affected!
 draw_set_alpha(1);
 draw_set_color(c_white);
-
-// Draw the actual sprite
-draw_sprite(sprite_index, image_index, x, y);
