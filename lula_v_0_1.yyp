@@ -481,6 +481,7 @@
     {"id":{"name":"NASA_PSYCHE","path":"sprites/NASA_PSYCHE/NASA_PSYCHE.yy",},},
     {"id":{"name":"obj_double_jump_power_sprite","path":"sprites/obj_double_jump_power_sprite/obj_double_jump_power_sprite.yy",},},
     {"id":{"name":"obj_double_points_hoop_sprite","path":"sprites/obj_double_points_hoop_sprite/obj_double_points_hoop_sprite.yy",},},
+    {"id":{"name":"obj_newQuiz_bg","path":"sprites/obj_newQuiz_bg/obj_newQuiz_bg.yy",},},
     {"id":{"name":"obj_ph_fail_hoops_sprite","path":"sprites/obj_ph_fail_hoops_sprite/obj_ph_fail_hoops_sprite.yy",},},
     {"id":{"name":"obj_ph_hoops_sprite","path":"sprites/obj_ph_hoops_sprite/obj_ph_hoops_sprite.yy",},},
     {"id":{"name":"obj_ph_jum_ground_sprite","path":"sprites/obj_ph_jum_ground_sprite/obj_ph_jum_ground_sprite.yy",},},

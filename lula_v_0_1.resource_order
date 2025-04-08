@@ -36,6 +36,7 @@
     {"name":"luna_stare_cartoon","order":15,"path":"sprites/luna_stare_cartoon/luna_stare_cartoon.yy",},
     {"name":"luna_think_cartoon","order":7,"path":"sprites/luna_think_cartoon/luna_think_cartoon.yy",},
     {"name":"luna_wave_cartoon","order":1,"path":"sprites/luna_wave_cartoon/luna_wave_cartoon.yy",},
+    {"name":"obj_newQuiz_bg","order":2,"path":"sprites/obj_newQuiz_bg/obj_newQuiz_bg.yy",},
     {"name":"spr_lula_walk","order":16,"path":"sprites/spr_lula_walk/spr_lula_walk.yy",},
     {"name":"spr_lula","order":17,"path":"sprites/spr_lula/spr_lula.yy",},
     {"name":"spr_luna_Jump","order":2,"path":"sprites/spr_luna_Jump/spr_luna_Jump.yy",},
