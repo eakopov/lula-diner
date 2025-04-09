@@ -55,6 +55,7 @@ if (time_left <= 100 && !global.time_warning_triggered) {
     // Stop all current music
     audio_stop_sound(global.jumpmusic_id);
     audio_stop_sound(global.bonusmusic_id);
+	audio_stop_all();
     global.jumpmusic_id = -1;
     global.bonusmusic_id = -1;
 

@@ -1,5 +1,6 @@
 if (keyboard_check_pressed(ord("P")))
 {
+	
 	global.jump_score = 0;
     global.jump_timer = 200 * room_speed; // 200 seconds (in steps)
     audio_stop_sound(global.bonusmusic_id);
@@ -10,6 +11,8 @@ if (keyboard_check_pressed(ord("P")))
 	global.time_warning_triggered = false;
 	global.time_warning_music_id = -1;
 	global.jumpmusic_Began = false;
+	
+	audio_stop_all();
 	
     with (obj_jump_fade) {
         fading_out = true;

@@ -30,6 +30,7 @@ else {
     if (global.bonusmusic_id == -1) { 
         audio_stop_sound(global.jumpmusic_id);
         global.jumpmusic_id = -1;
+		audio_stop_all();
         global.bonusmusic_id = audio_play_sound(bonusmusic, 1, true);
     }
 
