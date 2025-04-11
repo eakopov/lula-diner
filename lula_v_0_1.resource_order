@@ -45,6 +45,7 @@
     {"name":"obj_tool_controller","order":2,"path":"objects/obj_tool_controller/obj_tool_controller.yy",},
     {"name":"obj_transition","order":1,"path":"objects/obj_transition/obj_transition.yy",},
     {"name":"jump_transition_music","order":3,"path":"sounds/jump_transition_music/jump_transition_music.yy",},
+    {"name":"obj_volume","order":2,"path":"objects/obj_volume/obj_volume.yy",},
     {"name":"snd_bell","order":2,"path":"sounds/snd_bell/snd_bell.yy",},
     {"name":"snd_design_for_dreaming_lo_fi_astronaut","order":1,"path":"sounds/snd_design_for_dreaming_lo_fi_astronaut/snd_design_for_dreaming_lo_fi_astronaut.yy",},
     {"name":"snd_intro_music","order":2,"path":"sounds/snd_intro_music/snd_intro_music.yy",},
@@ -80,5 +81,8 @@
     {"name":"spr_space_debris","order":2,"path":"sprites/spr_space_debris/spr_space_debris.yy",},
     {"name":"sprite_blk_bkground","order":1,"path":"sprites/sprite_blk_bkground/sprite_blk_bkground.yy",},
     {"name":"Transition_Image_Jump","order":1,"path":"sprites/Transition_Image_Jump/Transition_Image_Jump.yy",},
+    {"name":"spr_mute","order":3,"path":"sprites/spr_mute/spr_mute.yy",},
+    {"name":"spr_score","order":1,"path":"sprites/spr_score/spr_score.yy",},
+    {"name":"spr_sound","order":2,"path":"sprites/spr_sound/spr_sound.yy",},
   ],
 }

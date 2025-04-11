@@ -1,0 +1,1 @@
+mute = false; // boolean for whether game is muted
