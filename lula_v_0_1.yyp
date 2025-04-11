@@ -546,6 +546,7 @@
     {"id":{"name":"spr_magnetrometer","path":"sprites/spr_magnetrometer/spr_magnetrometer.yy",},},
     {"id":{"name":"spr_maria_zuber","path":"sprites/spr_maria_zuber/spr_maria_zuber.yy",},},
     {"id":{"name":"spr_multispectral","path":"sprites/spr_multispectral/spr_multispectral.yy",},},
+    {"id":{"name":"spr_mute","path":"sprites/spr_mute/spr_mute.yy",},},
     {"id":{"name":"spr_nasa_psyche_logo","path":"sprites/spr_nasa_psyche_logo/spr_nasa_psyche_logo.yy",},},
     {"id":{"name":"spr_neutron","path":"sprites/spr_neutron/spr_neutron.yy",},},
     {"id":{"name":"spr_pause","path":"sprites/spr_pause/spr_pause.yy",},},

@@ -33,6 +33,7 @@
     {"name":"spr_luna_push","order":5,"path":"sprites/spr_luna_push/spr_luna_push.yy",},
     {"name":"spr_luna_stand2","order":6,"path":"sprites/spr_luna_stand2/spr_luna_stand2.yy",},
     {"name":"spr_luna_Walk","order":11,"path":"sprites/spr_luna_Walk/spr_luna_Walk.yy",},
+    {"name":"spr_mute","order":2,"path":"sprites/spr_mute/spr_mute.yy",},
     {"name":"spr_score","order":1,"path":"sprites/spr_score/spr_score.yy",},
   ],
 }
