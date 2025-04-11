@@ -5,6 +5,7 @@ if (global.show_difficulty_selection) {
     draw_text(170, 300, "Medium");
     draw_text(170, 350, "Hard");
 } 
+
 // If the quiz is in progress
 else if (!global.quiz_completed) {
     var question_data = global.questions[global.current_question];
@@ -24,11 +25,21 @@ else if (!global.quiz_completed) {
     draw_text(400, 500, "Score: " + string(global.score));
     draw_text(400, 550, "Time: " + string(global.timer div 60) + " seconds");
 
+    // Draw Hint Button
+    draw_set_color(c_white);
+    draw_text(300, 600, "Need a Hint?");
+
+    // Draw Hint Text if enabled
+    if (global.show_hint) {
+        draw_text_wrapped(170, 630, "Hint: " + global.current_hint, 50, 25);
+    }
+
     // Display feedback with line-breaking
     if (global.result_text != "") {
         draw_text_wrapped(170, 450, global.result_text, char_limit, line_spacing);
     }
-} 
+}
+
 // If the quiz is completed
 else {
     // Draw win/lose message with line-breaking
@@ -48,11 +59,13 @@ else {
             global.result_text = "";
             global.timeouts = 0;
             global.show_difficulty_selection = true;
+            global.show_hint = false;
         } else if (mouse_y_pos >= 400 && mouse_y_pos <= 430) {
             room_goto(room_leaderboard);
         }
     }
 }
+
 /// draw_text_wrapped(x, y, text, char_limit, line_spacing)
 /// @param x The x position to start drawing text.
 /// @param y The y position to start drawing text.
@@ -77,9 +90,9 @@ function draw_text_wrapped(x, y, text, char_limit, line_spacing) {
             text = string_copy(text, char_limit + 1, string_length(text) - char_limit);
         }
         
-        current_y += line_spacing; // Move down to the next line
+        current_y += line_spacing;
     }
-    
+
     // Draw any remaining text
     draw_text(x, current_y, text);
 }
