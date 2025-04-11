@@ -1,5 +1,7 @@
 if (keyboard_check_pressed(ord("P")))
 {
+	audio_stop_all();
+	
 	global.jump_score = 0;
     global.jump_timer = 200 * room_speed; // 200 seconds (in steps)
     audio_stop_sound(global.bonusmusic_id);
@@ -22,6 +24,7 @@ if (keyboard_check_pressed(ord("P")))
 }
 if (keyboard_check_pressed(ord("C")))
 {
+	
 	// Determine the player's rank based on global.jump_score
     if (global.jump_score >= 10000) {
         global.jumpResults = "S";
@@ -46,6 +49,8 @@ if (keyboard_check_pressed(ord("C")))
     global.time_warning_triggered = false;
 	global.time_warning_music_id = -1;
 	global.jumpmusic_Began = false;
+	
+	audio_stop_all();
 	
 	if(global.mode == "story"){
 		 room_goto_next();  // Go to the next room

@@ -1,5 +1,6 @@
 if (keyboard_check_pressed(vk_space))
 {
+	audio_stop_all();
 	
 	with (obj_space_debris) {
 		instance_destroy();

@@ -1,3 +1,11 @@
+if (invincible) {
+    invincibility_timer -= 1;
+    if (invincibility_timer <= 0) {
+        invincible = false;
+    }
+}
+
+
 // Initialize knockback movement
 if (is_knocked_back) {
     x += knockback_xsp;
@@ -116,19 +124,6 @@ if place_meeting(x, y, obj_ph_hoops) {
     }
 }
 
-// COLLISION WITH obj_fail_hoops -> REVERSE CONTROLS
-/*if (place_meeting(x, y, obj_fail_hoops)) {
-    if (!global.controls_reversed) {
-        global.controls_reversed = true;
-        global.reverse_timer = 600; // 10 seconds at 60 FPS
-
-        // Show the reverse message
-        with (obj_reverse_message) {
-            visible = true;
-        }
-    }
-}*/
-
 // Handle reversed controls timer
 if (global.controls_reversed) {
     global.reverse_timer -= 1;
@@ -143,24 +138,26 @@ if (global.controls_reversed) {
 }
 
 // COLLISION WITH DEBRIS (KNOCKBACK)
-if (place_meeting(x, y, obj_space_debris)) {
+if (!invincible && place_meeting(x, y, obj_space_debris)) {
     var debris = instance_place(x, y, obj_space_debris);
     sprite_index = spr_luna_walk_sad;
 
-    if (!is_knocked_back) {
-        is_knocked_back = true;
-        knockback_timer = 30;
+    is_knocked_back = true;
+    knockback_timer = 30;
 
-        // Determine horizontal direction of knockback
-        var dx = x - debris.x;
-        var dir = (dx >= 0) ? 180 : 0;
+    // Stronger knockback: increase power
+    var dx = x - debris.x;
+    var dir = (dx >= 0) ? 180 : 0;
+    knockback_xsp = lengthdir_x(15, dir);
+    knockback_ysp = -9;
 
-        knockback_xsp = lengthdir_x(6, dir);
-        knockback_ysp = -4;
+    audio_play_sound(snd_jump_knockback, 1, false);
 
-        audio_play_sound(snd_jump_knockback, 1, false);
-    }
+    // Activate invincibility
+    invincible = true;
+    invincibility_timer = 300; // 5 seconds at 60fps
 }
+
 
 // POWER-UP TIMERS
 if (global.double_jump_active) {
