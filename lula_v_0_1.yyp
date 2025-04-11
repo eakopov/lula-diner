@@ -449,6 +449,7 @@
     {"id":{"name":"Explosion_01","path":"sprites/Explosion_01/Explosion_01.yy",},},
     {"id":{"name":"healthSprite","path":"sprites/healthSprite/healthSprite.yy",},},
     {"id":{"name":"introRyth_1","path":"sprites/introRyth_1/introRyth_1.yy",},},
+    {"id":{"name":"introRyth_2","path":"sprites/introRyth_2/introRyth_2.yy",},},
     {"id":{"name":"introRyth","path":"sprites/introRyth/introRyth.yy",},},
     {"id":{"name":"Jump_Through_Hoops","path":"sprites/Jump_Through_Hoops/Jump_Through_Hoops.yy",},},
     {"id":{"name":"Knowledge_builder_","path":"sprites/Knowledge_builder_/Knowledge_builder_.yy",},},

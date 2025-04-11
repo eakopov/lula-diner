@@ -52,6 +52,7 @@
     {"name":"snd_seat","order":1,"path":"sounds/snd_seat/snd_seat.yy",},
     {"name":"time_warning_music","order":2,"path":"sounds/time_warning_music/time_warning_music.yy",},
     {"name":"time_warning_sound","order":1,"path":"sounds/time_warning_sound/time_warning_sound.yy",},
+    {"name":"introRyth_2","order":1,"path":"sprites/introRyth_2/introRyth_2.yy",},
     {"name":"logo_artwork","order":20,"path":"sprites/logo_artwork/logo_artwork.yy",},
     {"name":"luna_anger_cartoon","order":8,"path":"sprites/luna_anger_cartoon/luna_anger_cartoon.yy",},
     {"name":"luna_annoy_cartoon","order":9,"path":"sprites/luna_annoy_cartoon/luna_annoy_cartoon.yy",},
