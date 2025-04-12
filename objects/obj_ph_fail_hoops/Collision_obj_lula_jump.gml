@@ -1,7 +1,7 @@
 global.controls_reversed = true;
 global.reverse_timer = 420; // 7 seconds at 60 FPS, reduced from 10 seconds
 
-global.jump_score =- 300;
+global.jump_score = global.jump_score - 300;
 
 // Show the reverse message
 with (obj_reverse_message) {
