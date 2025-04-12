@@ -10,8 +10,8 @@
   "name":"obj_room_menu",
   "overriddenProperties":[],
   "parent":{
-    "name":"Deck",
-    "path":"folders/Objects/Deck.yy",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
