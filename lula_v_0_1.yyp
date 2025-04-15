@@ -578,6 +578,7 @@
     {"id":{"name":"spr_sign_closed","path":"sprites/spr_sign_closed/spr_sign_closed.yy",},},
     {"id":{"name":"spr_sign","path":"sprites/spr_sign/spr_sign.yy",},},
     {"id":{"name":"spr_skip","path":"sprites/spr_skip/spr_skip.yy",},},
+    {"id":{"name":"spr_space_debris_big","path":"sprites/spr_space_debris_big/spr_space_debris_big.yy",},},
     {"id":{"name":"spr_space_debris","path":"sprites/spr_space_debris/spr_space_debris.yy",},},
     {"id":{"name":"spr_spinach_pizza","path":"sprites/spr_spinach_pizza/spr_spinach_pizza.yy",},},
     {"id":{"name":"spr_table","path":"sprites/spr_table/spr_table.yy",},},

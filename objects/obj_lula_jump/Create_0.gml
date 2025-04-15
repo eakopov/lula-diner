@@ -10,3 +10,6 @@ is_knocked_back = false;
 
 invincible = false;
 invincibility_timer = 0;
+
+is_frozen = false;
+freeze_timer = 0;

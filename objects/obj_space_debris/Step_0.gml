@@ -1,3 +1,11 @@
+// Check score and update sprite
+if (global.jump_score >= 2000 && sprite_index != spr_space_debris_big) {
+    sprite_index = spr_space_debris_big;
+}
+else if (global.jump_score < 2000 && sprite_index != spr_space_debris) {
+    sprite_index = spr_space_debris;
+}
+
 // Move debris
 x += hsp;
 y += vsp;

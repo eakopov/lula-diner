@@ -45,6 +45,7 @@
     {"name":"spr_luna_walk_sad","order":3,"path":"sprites/spr_luna_walk_sad/spr_luna_walk_sad.yy",},
     {"name":"spr_luna_Walk","order":11,"path":"sprites/spr_luna_Walk/spr_luna_Walk.yy",},
     {"name":"spr_score","order":1,"path":"sprites/spr_score/spr_score.yy",},
+    {"name":"spr_space_debris_big","order":4,"path":"sprites/spr_space_debris_big/spr_space_debris_big.yy",},
     {"name":"spr_space_debris","order":2,"path":"sprites/spr_space_debris/spr_space_debris.yy",},
     {"name":"Sprite162","order":1,"path":"sprites/Sprite162/Sprite162.yy",},
     {"name":"Transition_Image_Jump","order":1,"path":"sprites/Transition_Image_Jump/Transition_Image_Jump.yy",},
