@@ -166,6 +166,9 @@ if (!invincible && place_meeting(x, y, obj_space_debris)) {
         is_frozen = true;
         freeze_timer = 180; // 3 seconds at 60 fps
         sprite_index = spr_luna_walk_sad;
+		
+		// Create the ice block overlay
+        instance_create_layer(x, y, "Instances", obj_ice_block);
     } else {
         // Normal knockback logic
         is_knocked_back = true;

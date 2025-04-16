@@ -4,6 +4,7 @@
     {"name":"Scenes","order":1,"path":"folders/Sprites/clothing_game/Scenes.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"obj_ice_block","order":7,"path":"objects/obj_ice_block/obj_ice_block.yy",},
     {"name":"obj_jump_fade","order":1,"path":"objects/obj_jump_fade/obj_jump_fade.yy",},
     {"name":"obj_jump_intro_arrow","order":3,"path":"objects/obj_jump_intro_arrow/obj_jump_intro_arrow.yy",},
     {"name":"obj_jump_intro_banner","order":2,"path":"objects/obj_jump_intro_banner/obj_jump_intro_banner.yy",},
@@ -37,6 +38,7 @@
     {"name":"luna_think_cartoon","order":7,"path":"sprites/luna_think_cartoon/luna_think_cartoon.yy",},
     {"name":"luna_wave_cartoon","order":1,"path":"sprites/luna_wave_cartoon/luna_wave_cartoon.yy",},
     {"name":"obj_newQuiz_bg","order":2,"path":"sprites/obj_newQuiz_bg/obj_newQuiz_bg.yy",},
+    {"name":"spr_ice_block","order":6,"path":"sprites/spr_ice_block/spr_ice_block.yy",},
     {"name":"spr_lula_walk","order":16,"path":"sprites/spr_lula_walk/spr_lula_walk.yy",},
     {"name":"spr_lula","order":17,"path":"sprites/spr_lula/spr_lula.yy",},
     {"name":"spr_luna_Jump","order":2,"path":"sprites/spr_luna_Jump/spr_luna_Jump.yy",},
