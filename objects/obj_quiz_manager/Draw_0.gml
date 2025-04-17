@@ -46,7 +46,7 @@ else {
     draw_text_wrapped(170, 300, global.result_text, 40, 30);
 
     draw_text(170, 350, "Click here to retry.");
-    draw_text(170, 400, "Click here to continue to the leaderboard.");
+    draw_text(170, 400, "Click here to continue to the next game.");
 
     // Handle mouse click to restart or continue
     if (mouse_check_button_pressed(mb_left)) {
@@ -61,7 +61,7 @@ else {
             global.show_difficulty_selection = true;
             global.show_hint = false;
         } else if (mouse_y_pos >= 400 && mouse_y_pos <= 430) {
-            room_goto(room_leaderboard);
+            room_goto(room_rhythm_intro);
         }
     }
 }
