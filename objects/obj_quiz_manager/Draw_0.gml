@@ -13,8 +13,9 @@ else if (!global.quiz_completed) {
     var char_limit = 40;
     var line_spacing = 30;
 
-    // Draw wrapped question text
-    draw_text_wrapped(170, 200, question_text, char_limit, line_spacing);
+	draw_text_wrapped_bounded(170, 200, question_text, 380, 90, 30); 
+	// 380 = max width, 90 = max height
+
 
     // Draw answer options
     draw_text(170, 300, question_data[1]);
@@ -95,4 +96,26 @@ function draw_text_wrapped(x, y, text, char_limit, line_spacing) {
 
     // Draw any remaining text
     draw_text(x, current_y, text);
+}
+
+function draw_text_wrapped_bounded(x, y, text, max_width, max_height, line_spacing) {
+    var current_y = y;
+    var words = string_split(text, " ");
+    var line = "";
+
+    for (var i = 0; i < array_length(words); i++) {
+        var test_line = line + words[i] + " ";
+        if (string_width(test_line) > max_width) {
+            if (current_y + line_spacing > y + max_height) break;
+            draw_text(x, current_y, line);
+            current_y += line_spacing;
+            line = words[i] + " ";
+        } else {
+            line = test_line;
+        }
+    }
+
+    if (current_y + line_spacing <= y + max_height) {
+        draw_text(x, current_y, line); // draw final line
+    }
 }
