@@ -4,6 +4,7 @@
     {"name":"Scenes","order":1,"path":"folders/Sprites/clothing_game/Scenes.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"obj_duststorm_overlay","order":9,"path":"objects/obj_duststorm_overlay/obj_duststorm_overlay.yy",},
     {"name":"obj_ice_block","order":7,"path":"objects/obj_ice_block/obj_ice_block.yy",},
     {"name":"obj_jump_fade","order":1,"path":"objects/obj_jump_fade/obj_jump_fade.yy",},
     {"name":"obj_jump_intro_arrow","order":3,"path":"objects/obj_jump_intro_arrow/obj_jump_intro_arrow.yy",},

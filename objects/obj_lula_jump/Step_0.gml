@@ -187,6 +187,24 @@ if (!invincible && place_meeting(x, y, obj_space_debris)) {
     }
 }
 
+// COLLISION WITH MARS DEBRIS (Dust Storm)
+if (!invincible && place_meeting(x, y, obj_space_debris_mars)) {
+    var mars_debris = instance_place(x, y, obj_space_debris_mars);
+
+    if (!global.dust_storm_active) {
+        global.dust_storm_active = true;
+        global.dust_storm_timer = room_speed * 7; // 7 seconds
+        instance_create_layer(0, 0, "Effects", obj_duststorm_overlay);
+    }
+
+    // Set invincibility for the duration of the storm
+    invincible = true;
+    invincibility_timer = room_speed * 7;
+
+    sprite_index = spr_luna_walk_sad;
+}
+
+
 
 // POWER-UP TIMERS
 if (global.double_jump_active) {

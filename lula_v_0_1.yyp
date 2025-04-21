@@ -173,6 +173,7 @@
     {"id":{"name":"obj_double_jump_powerup","path":"objects/obj_double_jump_powerup/obj_double_jump_powerup.yy",},},
     {"id":{"name":"obj_double_points_hoop","path":"objects/obj_double_points_hoop/obj_double_points_hoop.yy",},},
     {"id":{"name":"obj_DSOC","path":"objects/obj_DSOC/obj_DSOC.yy",},},
+    {"id":{"name":"obj_duststorm_overlay","path":"objects/obj_duststorm_overlay/obj_duststorm_overlay.yy",},},
     {"id":{"name":"obj_ending_controller","path":"objects/obj_ending_controller/obj_ending_controller.yy",},},
     {"id":{"name":"obj_fun_fact_display","path":"objects/obj_fun_fact_display/obj_fun_fact_display.yy",},},
     {"id":{"name":"obj_game_over","path":"objects/obj_game_over/obj_game_over.yy",},},
