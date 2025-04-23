@@ -14,6 +14,8 @@ if (keyboard_check_pressed(ord("P")))
 	global.time_warning_music_id = -1;
 	global.jumpmusic_Began = false;
 	global.new_best_score = false;
+	global.level2_popup_shown = false;
+	global.level3_popup_shown = false;
     //global.jumpmusic_id = audio_play_sound(jump_minigame_music, 1, true); // Holds the audio index for the jump music
 	
     with (obj_jump_fade) {
@@ -49,6 +51,8 @@ if (keyboard_check_pressed(ord("C")))
     global.time_warning_triggered = false;
 	global.time_warning_music_id = -1;
 	global.jumpmusic_Began = false;
+    global.level2_popup_shown = false;
+	global.level3_popup_shown = false;
 	
 	audio_stop_all();
 	

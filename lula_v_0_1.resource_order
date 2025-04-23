@@ -9,6 +9,7 @@
     {"name":"obj_jump_fade","order":1,"path":"objects/obj_jump_fade/obj_jump_fade.yy",},
     {"name":"obj_jump_intro_arrow","order":3,"path":"objects/obj_jump_intro_arrow/obj_jump_intro_arrow.yy",},
     {"name":"obj_jump_intro_banner","order":2,"path":"objects/obj_jump_intro_banner/obj_jump_intro_banner.yy",},
+    {"name":"obj_level_popup","order":10,"path":"objects/obj_level_popup/obj_level_popup.yy",},
     {"name":"obj_music_controller","order":1,"path":"objects/obj_music_controller/obj_music_controller.yy",},
     {"name":"obj_reverse_message","order":6,"path":"objects/obj_reverse_message/obj_reverse_message.yy",},
     {"name":"obj_score","order":1,"path":"objects/obj_score/obj_score.yy",},

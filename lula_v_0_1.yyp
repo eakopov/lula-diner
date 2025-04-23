@@ -199,6 +199,7 @@
     {"id":{"name":"obj_lawrence","path":"objects/obj_lawrence/obj_lawrence.yy",},},
     {"id":{"name":"obj_leaderboard_controller","path":"objects/obj_leaderboard_controller/obj_leaderboard_controller.yy",},},
     {"id":{"name":"obj_leaderboard_display","path":"objects/obj_leaderboard_display/obj_leaderboard_display.yy",},},
+    {"id":{"name":"obj_level_popup","path":"objects/obj_level_popup/obj_level_popup.yy",},},
     {"id":{"name":"obj_loss_screen","path":"objects/obj_loss_screen/obj_loss_screen.yy",},},
     {"id":{"name":"obj_lula_clothing","path":"objects/obj_lula_clothing/obj_lula_clothing.yy",},},
     {"id":{"name":"obj_lula_deck","path":"objects/obj_lula_deck/obj_lula_deck.yy",},},
