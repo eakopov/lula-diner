@@ -40,33 +40,31 @@ draw_set_color(c_yellow);
 draw_text(360, 420 + y_offset, "Sources & References:");
 draw_set_color(c_white);
 
-// General sources
-draw_text(360, 450 + y_offset, "Preliminary Design Image: psyche.asu.edu/timeline");
-draw_text(360, 470 + y_offset, "Mission Phases Info: psyche.asu.edu/timeline");
-draw_text(360, 490 + y_offset, "Free Use Music: pixabay.com/P_Lorenz/drmseq");
-draw_text(360, 510 + y_offset, "Jump Minigame Code: gamemaker.io/tutorials/platformer");
-draw_text(360, 530 + y_offset, "Psyche Fun Facts: astronomy.com");
+// Alphabetized sources list
+var sources = [
+    "AI Art: chatgpt.com",
+    "Assets: freepik.com, vecteezy.com, itch.io",
+    "Free Use Music: pixabay.com/P_Lorenz/drmseq",
+    "GameMaker Tutorials: gamemaker.io/tutorials",
+    "Jump Minigame Code: gamemaker.io/tutorials/platformer",
+    "Licensed under CC BY 4.0: incompetech.com",
+    "Magnetometer & X-Band: NASA/JPL-Caltech",
+    "Mission Phases Info: psyche.asu.edu/timeline",
+    "Multispectral Imager: NASA/JPL-Caltech/ASU/MSSS",
+    "Neutron & Gamma Spectrometers: JHUAPL/Ed Whitman",
+    "Preliminary Design Image: psyche.asu.edu/timeline",
+    "Psyche Fun Facts: astronomy.com",
+    "Song: 'RetroFuture Dirty' by Kevin MacLeod",
+    "Visuals & KB: psyche.asu.edu",
+    "Visuals: psyche.asu.edu & piskelapp.com"
+];
 
-// Elizabeth’s Sources
-draw_text(360, 560 + y_offset, "Multispectral Imager: NASA/JPL-Caltech/ASU/MSSS");
-draw_text(360, 580 + y_offset, "Neutron & Gamma Spectrometers: JHUAPL/Ed Whitman");
-draw_text(360, 600 + y_offset, "Magnetometer & X-Band: NASA/JPL-Caltech");
+// Fix spacing between sources
+var base_y = 450 + y_offset;
+for (var i = 0; i < array_length(sources); i++) {
+    draw_text(360, base_y + (i * 25), sources[i]);
+}
 
-// Peter’s Sources
-draw_text(360, 630 + y_offset, "GameMaker Tutorials: gamemaker.io/tutorials");
-draw_text(360, 650 + y_offset, "Visuals & KB: psyche.asu.edu");
-draw_text(360, 670 + y_offset, "AI Art: chatgpt.com");
-
-// Paul's Sources
-draw_text(360, 700 + y_offset, "GameMaker Tutorials: gamemaker.io/tutorials");
-draw_text(360, 720 + y_offset, "Visuals: psyche.asu.edu & piskelapp.com");
-draw_text(360, 740 + y_offset, "AI Art: chatgpt.com");
-
-// Jesus’s Sources
-draw_text(360, 770 + y_offset, "Song: 'RetroFuture Dirty' by Kevin MacLeod");
-draw_text(360, 790 + y_offset, "Licensed under CC BY 4.0: incompetech.com");
-draw_text(360, 810 + y_offset, "Assets: freepik.com, vecteezy.com, itch.io");
-
-// Exit instructions
+// Exit instructions (not scrolled)
 draw_set_color(c_red);
 draw_text(360, 680, "Press ESC to return to the Main Menu");
