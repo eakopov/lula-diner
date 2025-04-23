@@ -11,6 +11,7 @@
     {"name":"obj_transition","order":1,"path":"objects/obj_transition/obj_transition.yy",},
     {"name":"obj_volume","order":2,"path":"objects/obj_volume/obj_volume.yy",},
     {"name":"snd_bell","order":2,"path":"sounds/snd_bell/snd_bell.yy",},
+    {"name":"snd_credits","order":2,"path":"sounds/snd_credits/snd_credits.yy",},
     {"name":"snd_seat","order":1,"path":"sounds/snd_seat/snd_seat.yy",},
     {"name":"time_warning_music","order":2,"path":"sounds/time_warning_music/time_warning_music.yy",},
     {"name":"time_warning_sound","order":1,"path":"sounds/time_warning_sound/time_warning_sound.yy",},

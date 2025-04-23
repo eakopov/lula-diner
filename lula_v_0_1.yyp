@@ -425,6 +425,7 @@
     {"id":{"name":"snd_bell","path":"sounds/snd_bell/snd_bell.yy",},},
     {"id":{"name":"snd_bg_music","path":"sounds/snd_bg_music/snd_bg_music.yy",},},
     {"id":{"name":"snd_correct","path":"sounds/snd_correct/snd_correct.yy",},},
+    {"id":{"name":"snd_credits","path":"sounds/snd_credits/snd_credits.yy",},},
     {"id":{"name":"snd_seat","path":"sounds/snd_seat/snd_seat.yy",},},
     {"id":{"name":"snd_wrong","path":"sounds/snd_wrong/snd_wrong.yy",},},
     {"id":{"name":"time_warning_music","path":"sounds/time_warning_music/time_warning_music.yy",},},
