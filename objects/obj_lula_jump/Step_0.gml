@@ -1,7 +1,7 @@
-if (invincible) {
-    invincibility_timer -= 1;
-    if (invincibility_timer <= 0) {
-        invincible = false;
+if (global.invincible) {
+    global.invincibility_timer -= 1;
+    if (global.invincibility_timer <= 0) {
+        global.invincible = false;
     }
 }
 
@@ -36,8 +36,8 @@ if (is_frozen) {
         sprite_index = spr_luna_Walk_1;
 		
 		// After being frozen become invincible
-        invincible = true;
-        invincibility_timer = 300;
+        global.invincible = true;
+        global.invincibility_timer = 300;
     }
 
     // Skip rest of step logic while frozen
@@ -157,7 +157,7 @@ if (global.controls_reversed) {
 }
 
 // COLLISION WITH DEBRIS (Knockback or Freeze)
-if (!invincible && place_meeting(x, y, obj_space_debris)) {
+if (!global.invincible && place_meeting(x, y, obj_space_debris)) {
     var debris = instance_place(x, y, obj_space_debris);
 
     // Check if it's the big sprite or score is 2000+
@@ -182,13 +182,13 @@ if (!invincible && place_meeting(x, y, obj_space_debris)) {
 
         audio_play_sound(snd_jump_knockback, 1, false);
 
-        invincible = true;
-        invincibility_timer = 300;
+        global.invincible = true;
+        global.invincibility_timer = 300;
     }
 }
 
 // COLLISION WITH MARS DEBRIS (Dust Storm)
-if (!invincible && place_meeting(x, y, obj_space_debris_mars)) {
+if (!global.invincible && place_meeting(x, y, obj_space_debris_mars)) {
     var mars_debris = instance_place(x, y, obj_space_debris_mars);
 
     if (!global.dust_storm_active) {
@@ -198,8 +198,8 @@ if (!invincible && place_meeting(x, y, obj_space_debris_mars)) {
     }
 
     // Set invincibility for the duration of the storm
-    invincible = true;
-    invincibility_timer = room_speed * 7;
+    global.invincible = true;
+    global.invincibility_timer = room_speed * 7;
 
     sprite_index = spr_luna_walk_sad;
 }

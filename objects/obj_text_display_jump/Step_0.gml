@@ -4,8 +4,16 @@ if (keyboard_check_pressed(vk_space))
 	
 	with (obj_space_debris) {
 		instance_destroy();
-	
 	}
+	
+	with(obj_space_debris_mars) {
+		instance_destroy();
+	}
+	
+	with(obj_space_debris_jupiter) { 
+		instance_destroy();
+	}
+	
 	if(global.jump_score > global.best_jump_score){
 	
 	global.best_jump_score = global.jump_score;
