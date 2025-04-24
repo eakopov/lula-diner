@@ -13,14 +13,22 @@ else if (!global.quiz_completed) {
     var char_limit = 40;
     var line_spacing = 30;
 
-	draw_text_wrapped_bounded(170, 200, question_text, 380, 90, 30); 
-	// 380 = max width, 90 = max height
+    // Draw wrapped question text with bounding
+    draw_text_wrapped_bounded(170, 200, question_text, 380, 90, 30); 
+    // 380 = max width, 90 = max height
 
+    // Draw answer options inside bounding box
+    var answer_x = 170;
+    var answer_y = 300;
+    var answer_width = 380;
+    var answer_height = 40;
+    var answer_spacing = 10;
 
-    // Draw answer options
-    draw_text(170, 300, question_data[1]);
-    draw_text(170, 350, question_data[2]);
-    draw_text(170, 400, question_data[3]);
+    for (var i = 1; i <= 3; i++) {
+        var answer_text = question_data[i];
+        var y_pos = answer_y + (i - 1) * (answer_height + answer_spacing);
+        draw_text_wrapped_bounded(answer_x, y_pos, answer_text, answer_width, answer_height, 20);
+    }
 
     // Display score and timer
     draw_text(400, 500, "Score: " + string(global.score));
@@ -67,22 +75,14 @@ else {
     }
 }
 
-/// draw_text_wrapped(x, y, text, char_limit, line_spacing)
-/// @param x The x position to start drawing text.
-/// @param y The y position to start drawing text.
-/// @param text The text to draw.
-/// @param char_limit The maximum number of characters per line.
-/// @param line_spacing The vertical spacing between lines.
+// Original wrapped draw function
 function draw_text_wrapped(x, y, text, char_limit, line_spacing) {
     var current_y = y;
     while (string_length(text) > char_limit) {
         var split_index = char_limit;
-        
-        // Find the last space within the character limit
         while (string_char_at(text, split_index) != " " && split_index > 0) {
             split_index -= 1;
         }
-        
         if (split_index > 0) {
             draw_text(x, current_y, string_copy(text, 1, split_index));
             text = string_copy(text, split_index + 1, string_length(text) - split_index);
@@ -90,14 +90,12 @@ function draw_text_wrapped(x, y, text, char_limit, line_spacing) {
             draw_text(x, current_y, string_copy(text, 1, char_limit));
             text = string_copy(text, char_limit + 1, string_length(text) - char_limit);
         }
-        
         current_y += line_spacing;
     }
-
-    // Draw any remaining text
     draw_text(x, current_y, text);
 }
 
+// New bounded wrap function
 function draw_text_wrapped_bounded(x, y, text, max_width, max_height, line_spacing) {
     var current_y = y;
     var words = string_split(text, " ");
