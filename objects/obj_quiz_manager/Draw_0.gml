@@ -1,3 +1,5 @@
+// === Draw Event for obj_quiz_manager ===
+
 // If showing difficulty selection
 if (global.show_difficulty_selection) {
     draw_text(170, 200, "Select Difficulty:");
@@ -5,7 +7,6 @@ if (global.show_difficulty_selection) {
     draw_text(170, 300, "Medium");
     draw_text(170, 350, "Hard");
 } 
-
 // If the quiz is in progress
 else if (!global.quiz_completed) {
     var question_data = global.questions[global.current_question];
@@ -13,22 +14,12 @@ else if (!global.quiz_completed) {
     var char_limit = 40;
     var line_spacing = 30;
 
-    // Draw wrapped question text with bounding
-    draw_text_wrapped_bounded(170, 200, question_text, 380, 90, 30); 
-    // 380 = max width, 90 = max height
+    draw_text_wrapped(170, 200, question_text, char_limit, line_spacing);
 
-    // Draw answer options inside bounding box
-    var answer_x = 170;
-    var answer_y = 300;
-    var answer_width = 380;
-    var answer_height = 40;
-    var answer_spacing = 10;
-
-    for (var i = 1; i <= 3; i++) {
-        var answer_text = question_data[i];
-        var y_pos = answer_y + (i - 1) * (answer_height + answer_spacing);
-        draw_text_wrapped_bounded(answer_x, y_pos, answer_text, answer_width, answer_height, 20);
-    }
+    // Draw answer options
+    draw_text_wrapped(170, 300, question_data[1], char_limit, line_spacing);
+    draw_text_wrapped(170, 350, question_data[2], char_limit, line_spacing);
+    draw_text_wrapped(170, 400, question_data[3], char_limit, line_spacing);
 
     // Display score and timer
     draw_text(400, 500, "Score: " + string(global.score));
@@ -47,13 +38,22 @@ else if (!global.quiz_completed) {
     if (global.result_text != "") {
         draw_text_wrapped(170, 450, global.result_text, char_limit, line_spacing);
     }
-}
-
+} 
 // If the quiz is completed
 else {
-    // Draw win/lose message with line-breaking
-    draw_text_wrapped(170, 300, global.result_text, 40, 30);
+    var score_percent = (global.score / array_length(global.questions)) * 100;
+    var grade = "";
 
+    if (score_percent >= 90) grade = "S (Super)";
+    else if (score_percent >= 80) grade = "A";
+    else if (score_percent >= 70) grade = "B";
+    else grade = "C";
+
+    draw_set_color(c_yellow);
+    draw_text(300, 250, "Your Grade: " + grade);
+
+    draw_set_color(c_white);
+    draw_text_wrapped(170, 300, global.result_text, 40, 30);
     draw_text(170, 350, "Click here to retry.");
     draw_text(170, 400, "Click here to continue to the next game.");
 
@@ -75,14 +75,16 @@ else {
     }
 }
 
-// Original wrapped draw function
+// === Helper function for text wrapping ===
 function draw_text_wrapped(x, y, text, char_limit, line_spacing) {
     var current_y = y;
     while (string_length(text) > char_limit) {
         var split_index = char_limit;
+
         while (string_char_at(text, split_index) != " " && split_index > 0) {
             split_index -= 1;
         }
+
         if (split_index > 0) {
             draw_text(x, current_y, string_copy(text, 1, split_index));
             text = string_copy(text, split_index + 1, string_length(text) - split_index);
@@ -90,30 +92,9 @@ function draw_text_wrapped(x, y, text, char_limit, line_spacing) {
             draw_text(x, current_y, string_copy(text, 1, char_limit));
             text = string_copy(text, char_limit + 1, string_length(text) - char_limit);
         }
+
         current_y += line_spacing;
     }
+
     draw_text(x, current_y, text);
-}
-
-// New bounded wrap function
-function draw_text_wrapped_bounded(x, y, text, max_width, max_height, line_spacing) {
-    var current_y = y;
-    var words = string_split(text, " ");
-    var line = "";
-
-    for (var i = 0; i < array_length(words); i++) {
-        var test_line = line + words[i] + " ";
-        if (string_width(test_line) > max_width) {
-            if (current_y + line_spacing > y + max_height) break;
-            draw_text(x, current_y, line);
-            current_y += line_spacing;
-            line = words[i] + " ";
-        } else {
-            line = test_line;
-        }
-    }
-
-    if (current_y + line_spacing <= y + max_height) {
-        draw_text(x, current_y, line); // draw final line
-    }
 }
