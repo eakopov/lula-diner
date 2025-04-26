@@ -434,6 +434,7 @@
     {"id":{"name":"snd_design_for_dreaming_lo_fi_astronaut","path":"sounds/snd_design_for_dreaming_lo_fi_astronaut/snd_design_for_dreaming_lo_fi_astronaut.yy",},},
     {"id":{"name":"snd_intro_music","path":"sounds/snd_intro_music/snd_intro_music.yy",},},
     {"id":{"name":"snd_jump_knockback","path":"sounds/snd_jump_knockback/snd_jump_knockback.yy",},},
+    {"id":{"name":"snd_credits","path":"sounds/snd_credits/snd_credits.yy",},},
     {"id":{"name":"snd_seat","path":"sounds/snd_seat/snd_seat.yy",},},
     {"id":{"name":"snd_wrong","path":"sounds/snd_wrong/snd_wrong.yy",},},
     {"id":{"name":"time_warning_music","path":"sounds/time_warning_music/time_warning_music.yy",},},
@@ -619,8 +620,8 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"room_intro","path":"rooms/room_intro/room_intro.yy",},},
-    {"roomId":{"name":"room_mini","path":"rooms/room_mini/room_mini.yy",},},
     {"roomId":{"name":"room_start","path":"rooms/room_start/room_start.yy",},},
+    {"roomId":{"name":"room_mini","path":"rooms/room_mini/room_mini.yy",},},
     {"roomId":{"name":"room_clothing","path":"rooms/room_clothing/room_clothing.yy",},},
     {"roomId":{"name":"room_jump_intro","path":"rooms/room_jump_intro/room_jump_intro.yy",},},
     {"roomId":{"name":"room_jump","path":"rooms/room_jump/room_jump.yy",},},
