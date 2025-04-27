@@ -235,6 +235,7 @@
     {"id":{"name":"obj_results_textbox","path":"objects/obj_results_textbox/obj_results_textbox.yy",},},
     {"id":{"name":"obj_reverse_message","path":"objects/obj_reverse_message/obj_reverse_message.yy",},},
     {"id":{"name":"obj_room_menu","path":"objects/obj_room_menu/obj_room_menu.yy",},},
+    {"id":{"name":"obj_room_rythem","path":"objects/obj_room_rythem/obj_room_rythem.yy",},},
     {"id":{"name":"obj_room_transition","path":"objects/obj_room_transition/obj_room_transition.yy",},},
     {"id":{"name":"obj_scientist_1_select","path":"objects/obj_scientist_1_select/obj_scientist_1_select.yy",},},
     {"id":{"name":"obj_scientist_1","path":"objects/obj_scientist_1/obj_scientist_1.yy",},},
