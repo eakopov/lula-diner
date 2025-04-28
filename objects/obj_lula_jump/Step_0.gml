@@ -1,10 +1,9 @@
-if (invincible) {
-    invincibility_timer -= 1;
-    if (invincibility_timer <= 0) {
-        invincible = false;
+if (global.invincible) {
+    global.invincibility_timer -= 1;
+    if (global.invincibility_timer <= 0) {
+        global.invincible = false;
     }
 }
-
 
 // Initialize knockback movement
 if (is_knocked_back) {
@@ -22,6 +21,26 @@ if (is_knocked_back) {
     }
 
     // Skip movement while knocked back
+    return;
+}
+
+// Freeze/Shiver Logic
+if (is_frozen) {
+    freeze_timer -= 1;
+
+    // Shivering effect (oscillate left/right slightly)
+    x += sin(current_time / 100) * 2; 
+
+    if (freeze_timer <= 0) {
+        is_frozen = false;
+        sprite_index = spr_luna_Walk_1;
+		
+		// After being frozen become invincible
+        global.invincible = true;
+        global.invincibility_timer = 300;
+    }
+
+    // Skip rest of step logic while frozen
     return;
 }
 
@@ -94,7 +113,7 @@ if place_meeting(x, y, obj_ph_hoops) {
         var score_multiplier = global.double_points_active ? 2 : 1;
 
         if (!place_meeting(x, y, obj_ph_jump_ground)) {
-            global.jump_score += 50 * score_multiplier;
+            global.jump_score += 100 * score_multiplier;
             global.hoops_passed += 1;
 
             instance_create_layer(hoop_x, hoop_y, "Effects", obj_hoop_burst);
@@ -137,26 +156,54 @@ if (global.controls_reversed) {
     }
 }
 
-// COLLISION WITH DEBRIS (KNOCKBACK)
-if (!invincible && place_meeting(x, y, obj_space_debris)) {
+// COLLISION WITH DEBRIS (Knockback or Freeze)
+if (!global.invincible && place_meeting(x, y, obj_space_debris)) {
     var debris = instance_place(x, y, obj_space_debris);
-    sprite_index = spr_luna_walk_sad;
 
-    is_knocked_back = true;
-    knockback_timer = 30;
+    // Check if it's the big sprite or score is 2000+
+    if (debris.sprite_index == spr_space_debris_big || global.jump_score >= 2000) {
+        // Freeze instead of knockback
+        is_frozen = true;
+        freeze_timer = 180; // 3 seconds at 60 fps
+        sprite_index = spr_luna_walk_sad;
+		
+		// Create the ice block overlay
+        instance_create_layer(x, y, "Instances", obj_ice_block);
+    } else {
+        // Normal knockback logic
+        is_knocked_back = true;
+        knockback_timer = 30;
+        sprite_index = spr_luna_walk_sad;
 
-    // Stronger knockback: increase power
-    var dx = x - debris.x;
-    var dir = (dx >= 0) ? 180 : 0;
-    knockback_xsp = lengthdir_x(15, dir);
-    knockback_ysp = -9;
+        var dx = x - debris.x;
+        var dir = (dx >= 0) ? 180 : 0;
+        knockback_xsp = lengthdir_x(15, dir);
+        knockback_ysp = -9;
 
-    audio_play_sound(snd_jump_knockback, 1, false);
+        audio_play_sound(snd_jump_knockback, 1, false);
 
-    // Activate invincibility
-    invincible = true;
-    invincibility_timer = 300; // 5 seconds at 60fps
+        global.invincible = true;
+        global.invincibility_timer = 300;
+    }
 }
+
+// COLLISION WITH MARS DEBRIS (Dust Storm)
+if (!global.invincible && place_meeting(x, y, obj_space_debris_mars)) {
+    var mars_debris = instance_place(x, y, obj_space_debris_mars);
+
+    if (!global.dust_storm_active) {
+        global.dust_storm_active = true;
+        global.dust_storm_timer = room_speed * 7; // 7 seconds
+        instance_create_layer(0, 0, "Effects", obj_duststorm_overlay);
+    }
+
+    // Set invincibility for the duration of the storm
+    global.invincible = true;
+    global.invincibility_timer = room_speed * 7;
+
+    sprite_index = spr_luna_walk_sad;
+}
+
 
 
 // POWER-UP TIMERS

@@ -8,7 +8,9 @@ var objects_to_destroy = [
     obj_timer_powerup, 
     obj_jump_checkbox,
 	obj_lula_jump,
-	obj_space_debris
+	obj_space_debris,
+	obj_space_debris_jupiter,
+	obj_space_debris_mars
 ];
 
 // Decrease the global timer

@@ -12,6 +12,9 @@ if (keyboard_check_pressed(ord("P")))
 	global.time_warning_music_id = -1;
 	global.jumpmusic_Began = false;
 	
+    global.level2_popup_shown = false;
+	global.level3_popup_shown = false;
+	
 	audio_stop_all();
 	
     with (obj_jump_fade) {

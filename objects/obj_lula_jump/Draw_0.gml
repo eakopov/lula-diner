@@ -1,8 +1,8 @@
 // Flashing logic for invincibility
 var draw_alpha = 1;
 
-if (invincible) {
-    if ((invincibility_timer div 10) mod 2 == 0) {
+if (global.invincible) {
+    if ((global.invincibility_timer div 10) mod 2 == 0) {
         draw_alpha = 0.2;
     }
 }
