@@ -76,10 +76,12 @@
     {"name":"inst_7A8A544A","path":"rooms/room_clothing/room_clothing.yy",},
     {"name":"inst_706A0225","path":"rooms/room_clothing/room_clothing.yy",},
     {"name":"inst_5C89F667","path":"rooms/room_clothing/room_clothing.yy",},
+    {"name":"inst_63D28AD0","path":"rooms/room_clothing/room_clothing.yy",},
   ],
   "isDnd":false,
   "layers":[
     {"$GMRInstanceLayer":"","%Name":"Boundary","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
+        {"$GMRInstance":"v1","%Name":"inst_63D28AD0","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_63D28AD0","objectId":{"name":"obj_room_menu","path":"objects/obj_room_menu/obj_room_menu.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.06860707,"scaleY":0.07514452,"x":2112.0,"y":416.0,},
         {"$GMRInstance":"v1","%Name":"inst_3B4EBF19","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3B4EBF19","objectId":{"name":"obj_boundary","path":"objects/obj_boundary/obj_boundary.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":90.0,"scaleX":1.0,"scaleY":39.0,"x":2688.0,"y":320.0,},
         {"$GMRInstance":"v1","%Name":"inst_261BED66","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_261BED66","objectId":{"name":"obj_boundary","path":"objects/obj_boundary/obj_boundary.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":14.000001,"x":3328.0,"y":528.0,},
         {"$GMRInstance":"v1","%Name":"inst_34510BF3","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_34510BF3","objectId":{"name":"obj_boundary","path":"objects/obj_boundary/obj_boundary.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":32.0,"x":3328.0,"y":1296.0,},

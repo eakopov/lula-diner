@@ -21,7 +21,10 @@ if (array_length(order_queue) > 0) {
         // Create the tool at the available plate's position
         var tool_object = asset_get_index("obj_" + current_order.tool_id);
         var tool_instance = instance_create_layer(available_plate.x, available_plate.y, "Instances", tool_object);
-        audio_play_sound(snd_bell, 0, false);
+        if (!obj_volume.mute) {
+            audio_play_sound(snd_bell, 0, false);
+        }
+        
 		show_debug_message("Creating tool at x: " + string(available_plate.x) + " y: " + string(available_plate.y));
 
         // Assign customer_id to the tool for tracking

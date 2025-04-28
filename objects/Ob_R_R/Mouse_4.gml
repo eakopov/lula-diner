@@ -1,1 +1,1 @@
-room_goto(room_rhythm_intro);
+room_goto(room_rhythm);

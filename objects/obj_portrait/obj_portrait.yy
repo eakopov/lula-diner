@@ -11,8 +11,8 @@
   "name":"obj_portrait",
   "overriddenProperties":[],
   "parent":{
-    "name":"Environmentals",
-    "path":"folders/Objects/Pizza Objects/Environmentals.yy",
+    "name":"Environment",
+    "path":"folders/Objects/Pizza Objects/Environment.yy",
   },
   "parentObjectId":null,
   "persistent":false,

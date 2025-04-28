@@ -33,23 +33,48 @@ if (global.show_difficulty_selection) {
         }
     }
 
-    // Handle answer selection
+	// Countdown the cooldown timer
+if (global.answer_cooldown > 0) {
+    global.answer_cooldown -= 1;
+}
+
+// Only allow answer click if cooldown is 0
+if (global.player_answer == -1 && global.answer_cooldown <= 0) {
     if (mouse_check_button_pressed(mb_left)) {
         var mouse_y_pos = mouse_y;
         if (mouse_y_pos >= 300 && mouse_y_pos <= 350) {
             global.player_answer = 1;
             check_answer();
-			global.show_hint = false;
+            global.show_hint = false;
+            global.answer_cooldown = room_speed * 4; // 4 seconds lockout (room_speed = 60 normally)
         } else if (mouse_y_pos >= 350 && mouse_y_pos <= 400) {
             global.player_answer = 2;
             check_answer();
-			global.show_hint = false;
+            global.show_hint = false;
+            global.answer_cooldown = room_speed * 4;
         } else if (mouse_y_pos >= 400 && mouse_y_pos <= 450) {
             global.player_answer = 3;
             check_answer();
-			global.show_hint = false;
+            global.show_hint = false;
+            global.answer_cooldown = room_speed * 4;
         }
     }
+}
+
+// After answer selected, wait for cooldown to expire before moving on
+if (global.player_answer != -1 && global.answer_cooldown <= 0) {
+    global.current_question += 1;
+    global.player_answer = -1;
+    global.result_text = "";
+    global.timer = 1000;
+    global.show_hint = false;
+
+    if (global.current_question >= array_length(global.questions)) {
+        global.quiz_completed = true;
+    }
+}
+
+
 
     // Handle hint button click
     if (mouse_check_button_pressed(mb_left)) {

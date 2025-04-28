@@ -150,6 +150,8 @@ global.instrument_popup_timer = 0;    // Timer for how long the pop-up is displa
 global.show_hint = false;
 global.current_hint = "No hint available yet."; // Default value
 
+global.answer_cooldown = 0;
+
 
 // Play background music on a loop
 audio_play_sound(snd_background_music, 1, true);
