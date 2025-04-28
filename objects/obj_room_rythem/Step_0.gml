@@ -19,14 +19,14 @@ if (mouse_check_button_pressed(mb_left)) {
 						if(global.mode == "story"){
 							room_goto_next();
 						} else {
-							room_goto(room_intro);
+							
 						}	 
 					break;
                     case 1: 
 							if(global.mode == "story"){
-								room_goto_next();
-							} else {
 								room_goto(room_deck);
+							} else {
+								room_goto(room_intro);
 							}	
 					break;
                     case 2: game_restart(); break;
