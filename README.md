@@ -4,7 +4,7 @@
 [![HTML5](https://img.shields.io/badge/HTML5-Game-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://psyche.asu.edu/)
 [![NASA](https://img.shields.io/badge/NASA-Psyche_Mission-0B3D91?style=for-the-badge&logo=nasa&logoColor=white)](https://psyche.asu.edu/)
 [![Educational](https://img.shields.io/badge/Educational-Game-1DA1F2?style=for-the-badge&logo=bookstack&logoColor=white)](https://psyche.asu.edu/get-involved/psyche-inspired/)
-[![Status](https://img.shields.io/badge/Status-In_Development-yellow?style=for-the-badge)](https://github.com/MissionToPsyche-Iridium/iridium_21d_web_game-se)
+[![Status](https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge)](https://github.com/MissionToPsyche-Iridium/iridium_21d_web_game-se)
 [![ASU](https://img.shields.io/badge/ASU-Project-8C1D40?style=for-the-badge&logo=arizona-state-university&logoColor=white)](https://psyche.asu.edu/)
 [![Space](https://img.shields.io/badge/Space-Exploration-000000?style=for-the-badge&logo=spacex&logoColor=white)](https://psyche.asu.edu/about/)
 [![Asteroid](https://img.shields.io/badge/Asteroid-Psyche-FF9900?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI0ZGRiIgZD0iTTExLjYsMTAuOEw0LjksOC45bDcuMy0yLjJsMi4zLTcuM2wyLjMsNy4zbDcuMywyLjJsLTYuNywxLjlsMS45LDYuN2wtNC44LTUuMkwxMy41LDE3LjVMMTEuNiwxMC44eiIvPjwvc3ZnPg==)](https://psyche.asu.edu/mission/)
