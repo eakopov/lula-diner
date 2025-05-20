@@ -51,5 +51,5 @@ if (game_over) {
     draw_set_color(c_black);
     draw_rectangle(rect_x1, rect_y1, rect_x2, rect_y2, false); // Outline rectangle
     draw_set_color(c_white);
-    draw_text(center_x, center_y + 60, "Press Space to move to the next mini game!");
+    draw_text(center_x, center_y + 60, "Press Space to view credits!");
 }
